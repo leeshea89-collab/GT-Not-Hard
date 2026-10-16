@@ -14,6 +14,7 @@ import static gregtech.api.enums.Textures.BlockIcons.OVERLAY_FRONT_ORE_FACTORY_A
 import static gregtech.api.enums.Textures.BlockIcons.OVERLAY_FRONT_ORE_FACTORY_ACTIVE_GLOW;
 import static gregtech.api.enums.Textures.BlockIcons.OVERLAY_FRONT_ORE_FACTORY_GLOW;
 import static gregtech.api.enums.Textures.BlockIcons.casingTexturePages;
+import static gregtech.api.metatileentity.BaseTileEntity.TOOLTIP_DELAY;
 import static gregtech.api.util.GTStructureUtility.buildHatchAdder;
 import static gregtech.api.util.GTUtility.validMTEList;
 import static gregtech.common.misc.WirelessNetworkManager.addEUToGlobalEnergyMap;
@@ -47,16 +48,15 @@ import net.minecraftforge.common.util.ForgeDirection;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.cleanroommc.modularui.drawable.DynamicDrawable;
-import com.cleanroommc.modularui.screen.ModularPanel;
-import com.cleanroommc.modularui.value.sync.BooleanSyncValue;
-import com.cleanroommc.modularui.value.sync.PanelSyncManager;
-import com.cleanroommc.modularui.widgets.ButtonWidget;
-import com.cleanroommc.modularui.widgets.layout.Flow;
 import com.gtnewhorizon.structurelib.alignment.constructable.ISurvivalConstructable;
 import com.gtnewhorizon.structurelib.structure.IStructureDefinition;
 import com.gtnewhorizon.structurelib.structure.ISurvivalBuildEnvironment;
 import com.gtnewhorizon.structurelib.structure.StructureDefinition;
+import com.gtnewhorizons.modularui.api.drawable.IDrawable;
+import com.gtnewhorizons.modularui.api.screen.ModularWindow;
+import com.gtnewhorizons.modularui.api.screen.UIBuildContext;
+import com.gtnewhorizons.modularui.common.widget.ButtonWidget;
+import com.gtnewhorizons.modularui.common.widget.FakeSyncWidget;
 
 import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Acid;
 import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Combustion;
@@ -73,27 +73,25 @@ import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_UCFE;
 import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Water;
 import gregtech.api.GregTechAPI;
 import gregtech.api.enums.Textures;
+import gregtech.api.gui.modularui.GTUITextures;
 import gregtech.api.interfaces.ISecondaryDescribable;
 import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.metatileentity.IMetaTileEntity;
 import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.logic.ProcessingLogic;
 import gregtech.api.metatileentity.implementations.MTEHatch;
-import gregtech.api.modularui2.GTGuiTextures;
 import gregtech.api.recipe.RecipeMap;
 import gregtech.api.recipe.check.CheckRecipeResult;
 import gregtech.api.recipe.check.CheckRecipeResultRegistry;
 import gregtech.api.render.TextureFactory;
-import gregtech.api.structure.error.StructureError;
-import gregtech.api.structure.error.StructureErrorRegistry;
 import gregtech.api.util.GTRecipe;
 import gregtech.api.util.GTUtility;
 import gregtech.api.util.MultiblockTooltipBuilder;
 import gregtech.api.util.shutdown.ShutDownReasonRegistry;
-import gregtech.common.gui.modularui.multiblock.base.MTEMultiBlockBaseGui;
 import gtPlusPlus.xmod.gregtech.api.metatileentity.implementations.base.GTPPMultiBlockBase;
 import mcp.mobius.waila.api.IWailaConfigHandler;
 import mcp.mobius.waila.api.IWailaDataAccessor;
+import util.ModGuiTextures;
 
 public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConstructable, ISecondaryDescribable {
 
@@ -310,139 +308,11 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
         super(aName);
     }
 
-    // ========== 主机插槽缓存相关全局变量与工具方法 ==========
-
-    /**
-     * 缓存的主机插槽物品栈。
-     * 用于替代各处频繁调用的 getControllerSlot()，避免在客户端/服务端反复访问主机插槽导致性能问题。
-     * 该值由 updateControllerSlotCache() 统一更新，并持久化到 NBT。
-     */
-    private ItemStack controllerSlot = null;
-
-    /**
-     * 缓存的主机物品 meta 值（即 getItemDamage() 的返回值）。
-     * 用于替代各处频繁调用的 getControllerSlot().getItemDamage()。
-     * 该值由 updateControllerSlotCache() 统一更新，并持久化到 NBT。
-     */
-    private int MachineID = -1;
-
-    /**
-     * 缓存的主机物品显示名称（即 getDisplayName() 的返回值）。
-     * 用于替代各处频繁调用的 getControllerSlot().getDisplayName()，并用于 RunningMode 的显示。
-     * 该值由 updateControllerSlotCache() 统一更新，并持久化到 NBT。
-     */
-    private String machineName = null;
-
-    /**
-     * 统一更新主机插槽缓存的方法。
-     * 该方法从 getControllerSlot() 读取当前主机插槽物品，并同步更新 controllerSlot、MachineID、machineName 三个全局变量。
-     * 当检测到主机插槽内容发生变化时，会写入 NBT 以便持久化。
-     * 由于该方法在多个位置被调用（不同位置调用频率不同），因此内部做了空值保护与变化检测，保证不会影响机器正常运转。
-     */
-    private void updateControllerSlotCache() {
-        try {
-            // 从主机插槽读取当前物品栈
-            ItemStack currentSlot = getControllerSlot();
-
-            // 空值保护：如果当前插槽为空，则将缓存值统一清空
-            if (currentSlot == null || currentSlot.getItem() == null) {
-                // 仅当缓存之前不为空时才进行清空与写 NBT，避免频繁写入
-                if (controllerSlot != null || MachineID != -1 || machineName != null) {
-                    controllerSlot = null;
-                    MachineID = -1;
-                    machineName = null;
-                    // 将变化写入 NBT 持久化
-                    NBTTagCompound aNBT = new NBTTagCompound();
-                    saveNBTData(aNBT);
-                }
-                return;
-            }
-
-            // 读取当前物品的 meta 值与显示名称
-            int currentMachineID = currentSlot.getItemDamage();
-            String currentMachineName = currentSlot.getDisplayName();
-
-            // 判断主机插槽内容是否发生变化（meta 值或显示名称变化都视为变化）
-            boolean changed = controllerSlot == null || MachineID != currentMachineID
-                || machineName == null
-                || !machineName.equals(currentMachineName);
-
-            // 更新缓存值
-            controllerSlot = currentSlot;
-            MachineID = currentMachineID;
-            machineName = currentMachineName;
-
-            // 当发生变化时，写入 NBT 持久化
-            if (changed) {
-                NBTTagCompound aNBT = new NBTTagCompound();
-                saveNBTData(aNBT);
-            }
-        } catch (Exception e) {
-            handleException("Origin", "updateControllerSlotCache", e);
-        }
-    }
-
-    /**
-     * 获取缓存的主机物品 meta 值。
-     * 若缓存值无效（-1），会尝试先刷新一次缓存。
-     *
-     * @return 主机物品的 meta 值，无效时返回 -1
-     */
-    private int getMachineID() {
-        try {
-            // 当缓存无效时，尝试刷新缓存
-            if (MachineID == -1) {
-                updateControllerSlotCache();
-            }
-            return MachineID;
-        } catch (Exception e) {
-            handleException("Origin", "getMachineID", e);
-            return -1;
-        }
-    }
-
-    /**
-     * 获取缓存的主机物品显示名称。
-     * 若缓存值无效（null），会尝试先刷新一次缓存。
-     *
-     * @return 主机物品的显示名称，无效时返回 null
-     */
-    private String getMachineName() {
-        try {
-            // 当缓存无效时，尝试刷新缓存
-            if (machineName == null) {
-                updateControllerSlotCache();
-            }
-            return machineName;
-        } catch (Exception e) {
-            handleException("Origin", "getMachineName", e);
-            return null;
-        }
-    }
-
-    // ========== 主机插槽缓存相关全局变量与工具方法结束 ==========
-
     // 保存NBT数据
     @Override
     public void saveNBTData(NBTTagCompound aNBT) {
         super.saveNBTData(aNBT);
         aNBT.setBoolean("wireless_mode", wireless_mode);
-        // 保存主机插槽缓存物品栈
-        if (controllerSlot != null) {
-            NBTTagCompound controllerSlotTag = new NBTTagCompound();
-            controllerSlot.writeToNBT(controllerSlotTag);
-            aNBT.setTag("controllerSlot", controllerSlotTag);
-        } else {
-            aNBT.removeTag("controllerSlot");
-        }
-        // 保存主机物品 meta 值
-        aNBT.setInteger("MachineID", MachineID);
-        // 保存主机物品显示名称
-        if (machineName != null) {
-            aNBT.setString("machineName", machineName);
-        } else {
-            aNBT.removeTag("machineName");
-        }
     }
 
     // 加载NBT数据
@@ -450,20 +320,6 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
     public void loadNBTData(NBTTagCompound aNBT) {
         super.loadNBTData(aNBT);
         wireless_mode = aNBT.getBoolean("wireless_mode");
-        // 加载主机插槽缓存物品栈
-        if (aNBT.hasKey("controllerSlot")) {
-            controllerSlot = ItemStack.loadItemStackFromNBT(aNBT.getCompoundTag("controllerSlot"));
-        } else {
-            controllerSlot = null;
-        }
-        // 加载主机物品 meta 值
-        MachineID = aNBT.getInteger("MachineID");
-        // 加载主机物品显示名称
-        if (aNBT.hasKey("machineName")) {
-            machineName = aNBT.getString("machineName");
-        } else {
-            machineName = null;
-        }
     }
 
     private static final int mcasingIndex = Textures.BlockIcons.getTextureIndex(
@@ -555,46 +411,32 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
         buildPiece(STRUCTURE_PIECE_MAIN, aStack, aHintsOnly, 1, 1, 0);
     }
 
-    /**
-     * 生存模式自动搭建
-     */
+    // 生存自动搭建
     @Override
     public int survivalConstruct(ItemStack stackSize, int elementBudget, ISurvivalBuildEnvironment env) {
         if (mMachine) {
             return -1;
         }
-        return survivalBuildPiece(STRUCTURE_PIECE_MAIN, stackSize, 1, 1, 0, elementBudget, env, false, true);
+        return survivialBuildPiece(STRUCTURE_PIECE_MAIN, stackSize, 1, 1, 0, elementBudget, env, false, true);
     }
 
+    // 检查机器结构
     @Override
-    public void checkMachine(IGregTechTileEntity aBaseMetaTileEntity, ItemStack aStack, List<StructureError> errors) {
-        if (errors == null) {
-            return;
-        }
-        this.mDynamoHatches.clear();
-        this.mTecTechDynamoHatches.clear();
-        mCasingAmount = 0;
-        long startTime = System.currentTimeMillis();
-        long endTime = System.currentTimeMillis();
-        if (endTime - startTime > 100) {
-            handleException("Origin", "checkMachine", "checkMachine took " + (endTime - startTime) + " ms", null);
-        }
-        // 结构检查完成后刷新主机插槽缓存，保证后续运行使用最新主机数据
-        updateControllerSlotCache();
-
-        boolean isMainStructureValid = checkPiece(STRUCTURE_PIECE_MAIN, 1, 1, 0, errors);
-
-        if (!isMainStructureValid) {
-            return;
-        }
-
-        if (mCasingAmount < 4) {
-            errors.add(StructureErrorRegistry.UNKNOWN_STRUCTURE_ERROR);
-            return;
-        }
-
-        if (mMaintenanceHatches.size() != 1) {
-            errors.add(StructureErrorRegistry.UNKNOWN_STRUCTURE_ERROR);
+    public boolean checkMachine(IGregTechTileEntity aBaseMetaTileEntity, ItemStack aStack) {
+        try {
+            this.mDynamoHatches.clear();
+            this.mTecTechDynamoHatches.clear();
+            mCasingAmount = 0;
+            long startTime = System.currentTimeMillis();
+            boolean result = checkPiece(STRUCTURE_PIECE_MAIN, 1, 1, 0) && mCasingAmount >= 4 && checkHatches();
+            long endTime = System.currentTimeMillis();
+            if (endTime - startTime > 100) {
+                handleException("Origin", "checkMachine", "checkMachine took " + (endTime - startTime) + " ms", null);
+            }
+            return result;
+        } catch (Exception e) {
+            handleException("Origin", "checkMachine", e);
+            return false;
         }
     }
 
@@ -619,33 +461,15 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
         return 0;
     }
 
+    @Override
+    public boolean explodesOnComponentBreak(ItemStack aStack) {
+        return false;
+    }
+
     // 获取机器类型
     @Override
     public String getMachineType() {
         return "Origin";
-    }
-
-    /**
-     * 重写机器模式名称获取方法。
-     * 父类默认实现返回 "unknown mode"，导致 GUI 中 RunningMode 显示为 unknown mode。
-     * 此处改为返回由 getControllerSlot() 缓存得到的主机名称 machineName，为空时返回 "None"。
-     *
-     * @return 机器模式显示名称，即主机物品的显示名称
-     */
-    @Override
-    public String getMachineModeName() {
-        try {
-            // 刷新主机插槽缓存，保证 machineName 为最新值
-            updateControllerSlotCache();
-            // 如果缓存的主机名称为空，返回 None，避免显示为 unknown mode
-            if (machineName == null || machineName.isEmpty()) {
-                return "None";
-            }
-            return machineName;
-        } catch (Exception e) {
-            handleException("Origin", "getMachineModeName", e);
-            return "None";
-        }
     }
 
     // 添加缓存变量，减少重复计算
@@ -668,8 +492,7 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
                 }
             }
 
-            // 刷新主机插槽缓存，保证 controllerSlot 为最新值
-            updateControllerSlotCache();
+            ItemStack controllerSlot = getControllerSlot();
 
             // 服务器端或客户端有有效数据时正常计算
             if (controllerSlot == null) {
@@ -785,17 +608,14 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
                 processingLogic = new ProcessingLogic();
             }
 
-            // 刷新主机插槽缓存，保证 controllerSlot 与 MachineID 为最新值
-            updateControllerSlotCache();
-
-            if (controllerSlot == null) {
+            if (getControllerSlot() == null) {
                 if (isServer) {
                     handleException("Origin", "setEnergyUsage", "Controller slot is NULL in setEnergyUsage", null);
                 }
                 lEUt = 0;
                 return;
             }
-            if (controllerSlot.getItem() == null) {
+            if (getControllerSlot().getItem() == null) {
                 if (isServer) {
                     handleException("Origin", "setEnergyUsage", "Controller slot item is NULL in setEnergyUsage", null);
                 }
@@ -803,8 +623,8 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
                 return;
             }
 
-            int generatorId = getMachineID();
-            int stackSize = controllerSlot.stackSize;
+            int generatorId = getControllerSlot().getItemDamage();
+            int stackSize = getControllerSlot().stackSize;
             long calculatedEut = processingLogic.getCalculatedEut();
 
             if (isServer) {
@@ -813,7 +633,7 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
                 handleException("Origin", "setEnergyUsage", "Calculated EUt: " + calculatedEut, null);
             }
 
-            if (controllerSlot.getItem() != null) {
+            if (getControllerSlot().getItem() != null) {
                 switch (generatorId) {
                     case 753, 837, 1110, 1115, 1120, 1123, 2733, 12793, 32752 -> {
                         lEUt = -processingLogic.getCalculatedEut() * LV_Tier;
@@ -1252,14 +1072,12 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
     @Override
     public RecipeMap<?> getRecipeMap() {
         try {
-            // 刷新主机插槽缓存，保证 MachineID 为最新值
-            updateControllerSlotCache();
-
-            if (controllerSlot == null || controllerSlot.getItem() == null) {
+            ItemStack itemStack = getControllerSlot();
+            if (itemStack == null || itemStack.getItem() == null) {
                 return null;
             }
 
-            int GeneratorID = getMachineID();
+            int GeneratorID = itemStack.getItemDamage();
             switch (GeneratorID) {
                 // Steam Small Generator
                 // "Advanced Boiler [LV]" - 753
@@ -1461,8 +1279,6 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
         try {
             super.onFirstTick(aBaseMetaTileEntity);
             this.ownerUUID = aBaseMetaTileEntity.getOwnerUuid();
-            // 首次 tick 时刷新主机插槽缓存，保证初始状态正确
-            updateControllerSlotCache();
         } catch (Exception e) {
             handleException("Origin", "onFirstTick", e);
         }
@@ -1471,53 +1287,26 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
     private boolean wireless_mode = false;
 
     @Override
-    public boolean supportsMachineModeSwitch() {
-        return true;
-    }
+    public void addUIWidgets(ModularWindow.Builder builder, UIBuildContext buildContext) {
+        super.addUIWidgets(builder, buildContext);
 
-    @Override
-    public void setMachineMode(int mode) {
-        super.setMachineMode(mode);
-        wireless_mode = mode == 1;
-    }
-
-    @Override
-    protected @NotNull MTEMultiBlockBaseGui<?> getGui() {
-        return new MTEMultiBlockBaseGui<>(this) {
-
-            @Override
-            protected void registerSyncValues(PanelSyncManager syncManager) {
-                super.registerSyncValues(syncManager);
-
-                syncManager.syncValue(
-                    "wirelessModeToggle",
-                    new BooleanSyncValue(() -> wireless_mode, enabled -> wireless_mode = enabled).allowC2S());
-            }
-
-            @Override
-            protected Flow createLeftPanelGapRow(ModularPanel parent, PanelSyncManager syncManager) {
-
-                BooleanSyncValue wireless = syncManager.findSyncHandler("wirelessModeToggle", BooleanSyncValue.class);
-
-                return super.createLeftPanelGapRow(parent, syncManager).child(
-                    new ButtonWidget<>().size(18, 18)
-                        .playClickSound(true)
-                        .overlay(
-                            new DynamicDrawable(
-                                () -> wireless.getBoolValue() ? GTGuiTextures.OVERLAY_BUTTON_WIRELESS_ON
-                                    : GTGuiTextures.OVERLAY_BUTTON_WIRELESS_OFF))
-                        .onMousePressed(data -> {
-                            wireless.setBoolValue(!wireless.getBoolValue());
-                            return true;
-                        })
-                        .tooltipBuilder(tooltip -> {
-                            tooltip.setAutoUpdate(true);
-                            tooltip.addLine(
-                                StatCollector
-                                    .translateToLocal("Wireless_Mode_" + (wireless.getBoolValue() ? "ON" : "OFF")));
-                        }));
-            }
-        };
+        builder.widget(
+            new ButtonWidget().setOnClick((clickData, widget) -> { wireless_mode = !wireless_mode; })
+                .setPlayClickSound(true)
+                .setBackground(() -> {
+                    if (wireless_mode) {
+                        return new IDrawable[] { GTUITextures.BUTTON_STANDARD_PRESSED,
+                            ModGuiTextures.OVERLAY_BUTTON_WIRELESS_ON };
+                    } else {
+                        return new IDrawable[] { GTUITextures.BUTTON_STANDARD,
+                            ModGuiTextures.OVERLAY_BUTTON_WIRELESS_OFF };
+                    }
+                })
+                .setPos(80, 91)
+                .setSize(16, 16)
+                .addTooltip(StatCollector.translateToLocal("Wireless Mode"))
+                .setTooltipShowUpDelay(TOOLTIP_DELAY))
+            .widget(new FakeSyncWidget.BooleanSyncer(() -> wireless_mode, val -> wireless_mode = val));
     }
 
     @Override
@@ -1527,18 +1316,12 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
             super.getWailaNBTData(player, tile, tag, world, x, y, z);
             // 只在服务器端添加NBT数据，客户端从NBT读取
             if (!world.isRemote) {
-                // 刷新主机插槽缓存，保证 machineName 为最新值
-                updateControllerSlotCache();
-                // 始终写入 Machine 键，为空时写入 None，避免客户端因缺失键而误判
-                if (machineName != null && !machineName.isEmpty()) {
-                    tag.setString("Machine", machineName);
-                } else {
-                    tag.setString("Machine", "None");
-                }
-                // 无线模式下额外写入能量输出信息
-                if (wireless_mode) {
-                    DecimalFormat process = new DecimalFormat("#,###");
-                    tag.setString("EnergyGenerate", process.format(powers));
+                if (getControllerSlot() != null) {
+                    tag.setString("Machine", getControllerSlot().getDisplayName());
+                    if (wireless_mode) {
+                        DecimalFormat process = new DecimalFormat("#,###");
+                        tag.setString("EnergyGenerate", process.format(powers));
+                    }
                 }
             }
         } catch (Exception e) {
@@ -1552,7 +1335,6 @@ public class Origin extends GTPPMultiBlockBase<Origin> implements ISurvivalConst
         try {
             super.getWailaBody(itemStack, currentTip, accessor, config);
             final NBTTagCompound tag = accessor.getNBTData();
-            // RunningMode 显示名称改为读取缓存的 machineName（由主机物品 getDisplayName() 得到）
             if (tag.hasKey("Machine")) {
                 currentTip.add("Machine: " + EnumChatFormatting.YELLOW + tag.getString("Machine"));
                 if (tag.hasKey("EnergyGenerate")) {

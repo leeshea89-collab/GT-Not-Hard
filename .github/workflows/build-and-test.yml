@@ -1,11 +1,11 @@
-
 name: Build and test
 
 on:
+  workflow_dispatch:
   pull_request:
-    branches: [ master, main ]
+    branches: [main]
   push:
-    branches: [ master, main ]
+    branches: [main, gtnh-2.9-rc2]
 
 jobs:
   build-and-test:
