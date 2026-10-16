@@ -1,0 +1,65 @@
+name: Publish GT-Not-Hard RC2 preview
+
+on:
+  push:
+    branches: [gtnh-2.9-rc2]
+    paths: ['.github/workflows/publish-rc2-preview.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  publish-preview:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Configure Java 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: '25'
+      - name: Configure Gradle
+        uses: gradle/actions/setup-gradle@v4
+      - name: Build installable JAR
+        shell: bash
+        run: |
+          chmod +x ./gradlew
+          ./gradlew assemble --no-daemon
+          mkdir -p dist
+          find build/libs -maxdepth 1 -type f -name '*.jar' ! -name '*-dev.jar' ! -name '*-sources.jar' -exec cp '{}' dist/ \\;
+          test -n "$(ls -A dist)"
+          ls -lah dist
+      - name: Write release notes
+        shell: bash
+        run: |
+          cat > release-notes.md <<'NOTES'
+          ## GT-Not-Hard — GTNH 2.9.0-RC-2 community preview
+
+          **Unofficial community compatibility build** for the GT New Horizons 2.9.0-RC-2 modpack.
+
+          ### Status
+          - Compiled and packaged with Java 25 / GTNHGradle.
+          - Reported to load in GTNH 2.9.0-RC-2 and register Chaos, Origin and Singularity in NEI.
+          - **Preview only:** complete multiblock operation, recipes, world stability and dedicated server behavior are not yet verified.
+
+          ### Installing
+          Download the normal `.jar` from **Assets** below (not the Source code ZIP).
+          Back up your world, remove older GT-Not-Hard JAR versions from the Minecraft `mods` folder, and install this JAR in a GTNH 2.9.0-RC-2 instance.
+
+          ### Attribution and sources
+          - Original mod by [z1564058782](https://github.com/z1564058782/GT-Not-Hard); original repository identifies its license as MIT.
+          - GTNH 2.9 API migration work based on [Ch4oooooooLL's upstream pull request #31](https://github.com/z1564058782/GT-Not-Hard/pull/31).
+          - Built from the [leeshea89-collab fork](https://github.com/leeshea89-collab/GT-Not-Hard/tree/gtnh-2.9-rc2).
+          - This release is not endorsed by the original mod author or the GTNH team.
+          NOTES
+      - name: Publish GitHub prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "v1.2.5-gtnh2.9.0-rc2-preview1" dist/*.jar \
+            --repo "${{ github.repository }}" \
+            --target "${{ github.sha }}" \
+            --title "GT-Not-Hard for GTNH 2.9.0-RC-2 (Preview 1)" \
+            --notes-file release-notes.md \
+            --prerelease
