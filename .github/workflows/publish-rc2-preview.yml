@@ -29,6 +29,7 @@ jobs:
           mkdir -p dist
           find build/libs -maxdepth 1 -type f -name '*.jar' ! -name '*-dev.jar' ! -name '*-sources.jar' -exec cp '{}' dist/ \;
           test -n "$(ls -A dist)"
+          mv dist/*.jar dist/GT-Not-Hard-1.2.5-GTNH-2.9.0-RC2-Preview1.jar
           ls -lah dist
       - name: Write release notes
         shell: bash
@@ -57,9 +58,18 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "v1.2.5-gtnh2.9.0-rc2-preview1" dist/*.jar \
-            --repo "${{ github.repository }}" \
-            --target "${{ github.sha }}" \
-            --title "GT-Not-Hard for GTNH 2.9.0-RC-2 (Preview 1)" \
-            --notes-file release-notes.md \
-            --prerelease
+          TAG="v1.2.5-gtnh2.9.0-rc2-preview1"
+          if gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            gh release upload "$TAG" dist/*.jar --repo "${{ github.repository }}" --clobber
+            # Only remove old, machine-generated asset after the friendly-name upload succeeds.
+            gh api "repos/${{ github.repository }}/releases/tags/$TAG" --jq '.assets[] | select(.name | startswith("gtnothard-")) | .id' | while read -r id; do
+              gh api -X DELETE "repos/${{ github.repository }}/releases/assets/$id"
+            done
+          else
+            gh release create "$TAG" dist/*.jar \
+              --repo "${{ github.repository }}" \
+              --target "${{ github.sha }}" \
+              --title "GT-Not-Hard for GTNH 2.9.0-RC-2 (Preview 1)" \
+              --notes-file release-notes.md \
+              --prerelease
+          fi
