@@ -1,16 +1,32 @@
 package EnumList.EnumItemList.EnumMiscList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.NewHorizonsCoreMod;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class CoinList {
-    public static final ItemStack Chunkloader_Coin_Tier_I = getModItem(NewHorizonsCoreMod.ID, "CoinChunkloaderTierI", 1L);
-    public static final ItemStack Chunkloader_Coin_Tier_II = getModItem(NewHorizonsCoreMod.ID, "CoinChunkloaderTierII", 1L);
-    public static final ItemStack Chunkloader_Coin_Tier_III = getModItem(NewHorizonsCoreMod.ID, "CoinChunkloaderTierIII", 1L);
-    public static final ItemStack Chunkloader_Coin_Tier_IV = getModItem(NewHorizonsCoreMod.ID, "CoinChunkloaderTierIV", 1L);
-    public static final ItemStack Chunkloader_Coin_Tier_V = getModItem(NewHorizonsCoreMod.ID, "CoinChunkloaderTierV", 1L);
+
+    public static final ItemStack Chunkloader_Coin_Tier_I = getModItem(
+        NewHorizonsCoreMod.ID,
+        "CoinChunkloaderTierI",
+        1L);
+    public static final ItemStack Chunkloader_Coin_Tier_II = getModItem(
+        NewHorizonsCoreMod.ID,
+        "CoinChunkloaderTierII",
+        1L);
+    public static final ItemStack Chunkloader_Coin_Tier_III = getModItem(
+        NewHorizonsCoreMod.ID,
+        "CoinChunkloaderTierIII",
+        1L);
+    public static final ItemStack Chunkloader_Coin_Tier_IV = getModItem(
+        NewHorizonsCoreMod.ID,
+        "CoinChunkloaderTierIV",
+        1L);
+    public static final ItemStack Chunkloader_Coin_Tier_V = getModItem(
+        NewHorizonsCoreMod.ID,
+        "CoinChunkloaderTierV",
+        1L);
     public static final ItemStack Coin_The_Explorer_1 = getModItem(NewHorizonsCoreMod.ID, "CoinAdventure", 1L);
     public static final ItemStack Coin_The_Explorer_10 = getModItem(NewHorizonsCoreMod.ID, "CoinAdventureI", 1L);
     public static final ItemStack Coin_The_Explorer_100 = getModItem(NewHorizonsCoreMod.ID, "CoinAdventureII", 1L);
@@ -44,7 +60,10 @@ public class CoinList {
     public static final ItemStack Coin_The_Dark_Wizard_1 = getModItem(NewHorizonsCoreMod.ID, "CoinDarkWizard", 1L);
     public static final ItemStack Coin_The_Dark_Wizard_10 = getModItem(NewHorizonsCoreMod.ID, "CoinDarkWizardI", 1L);
     public static final ItemStack Coin_The_Dark_Wizard_100 = getModItem(NewHorizonsCoreMod.ID, "CoinDarkWizardII", 1L);
-    public static final ItemStack Coin_The_Dark_Wizard_1000 = getModItem(NewHorizonsCoreMod.ID, "CoinDarkWizardIII", 1L);
+    public static final ItemStack Coin_The_Dark_Wizard_1000 = getModItem(
+        NewHorizonsCoreMod.ID,
+        "CoinDarkWizardIII",
+        1L);
     public static final ItemStack Coin_The_Dark_Wizard_10k = getModItem(NewHorizonsCoreMod.ID, "CoinDarkWizardIV", 1L);
     public static final ItemStack Coin_The_Farmer_1 = getModItem(NewHorizonsCoreMod.ID, "CoinFarmer", 1L);
     public static final ItemStack Coin_The_Farmer_10 = getModItem(NewHorizonsCoreMod.ID, "CoinFarmerI", 1L);
@@ -59,7 +78,10 @@ public class CoinList {
     public static final ItemStack Coin_The_Forest_Ranger_1 = getModItem(NewHorizonsCoreMod.ID, "CoinForestry", 1L);
     public static final ItemStack Coin_The_Forest_Ranger_10 = getModItem(NewHorizonsCoreMod.ID, "CoinForestryI", 1L);
     public static final ItemStack Coin_The_Forest_Ranger_100 = getModItem(NewHorizonsCoreMod.ID, "CoinForestryII", 1L);
-    public static final ItemStack Coin_The_Forest_Ranger_1000 = getModItem(NewHorizonsCoreMod.ID, "CoinForestryIII", 1L);
+    public static final ItemStack Coin_The_Forest_Ranger_1000 = getModItem(
+        NewHorizonsCoreMod.ID,
+        "CoinForestryIII",
+        1L);
     public static final ItemStack Coin_The_Forest_Ranger_10k = getModItem(NewHorizonsCoreMod.ID, "CoinForestryIV", 1L);
     public static final ItemStack Coin_Blacksmith_1 = getModItem(NewHorizonsCoreMod.ID, "CoinSmith", 1L);
     public static final ItemStack Coin_Blacksmith_10 = getModItem(NewHorizonsCoreMod.ID, "CoinSmithI", 1L);
@@ -87,4 +109,23 @@ public class CoinList {
     public static final ItemStack Coin_The_Technician_1000 = getModItem(NewHorizonsCoreMod.ID, "CoinTechnicianIII", 1L);
     public static final ItemStack Coin_The_Technician_10k = getModItem(NewHorizonsCoreMod.ID, "CoinTechnicianIV", 1L);
 
+    public static final ItemStack[] Coin_List = new ItemStack[] { Chunkloader_Coin_Tier_I, Chunkloader_Coin_Tier_II,
+        Chunkloader_Coin_Tier_III, Chunkloader_Coin_Tier_IV, Chunkloader_Coin_Tier_V, Coin_The_Explorer_1,
+        Coin_The_Explorer_10, Coin_The_Explorer_100, Coin_The_Explorer_1000, Coin_The_Explorer_10k,
+        Coin_The_Beekeeper_1, Coin_The_Beekeeper_10, Coin_The_Beekeeper_100, Coin_The_Beekeeper_1000,
+        Coin_The_Beekeeper_10k, Coin_Blank_1, Coin_Blank_10, Coin_Blank_100, Coin_Blank_1000, Coin_Blank_10k,
+        Coin_The_Vampire_1, Coin_The_Vampire_10, Coin_The_Vampire_100, Coin_The_Vampire_1000, Coin_The_Vampire_10k,
+        Coin_The_Chemist_1, Coin_The_Chemist_10, Coin_The_Chemist_100, Coin_The_Chemist_1000, Coin_The_Chemist_10k,
+        Coin_The_Cook_1, Coin_The_Cook_10, Coin_The_Cook_100, Coin_The_Cook_1000, Coin_The_Cook_10k,
+        Coin_The_Dark_Wizard_1, Coin_The_Dark_Wizard_10, Coin_The_Dark_Wizard_100, Coin_The_Dark_Wizard_1000,
+        Coin_The_Dark_Wizard_10k, Coin_The_Farmer_1, Coin_The_Farmer_10, Coin_The_Farmer_100, Coin_The_Farmer_1000,
+        Coin_The_Farmer_10k, Coin_The_Gardener_1, Coin_The_Gardener_10, Coin_The_Gardener_100, Coin_The_Gardener_1000,
+        Coin_The_Gardener_10k, Coin_The_Forest_Ranger_1, Coin_The_Forest_Ranger_10, Coin_The_Forest_Ranger_100,
+        Coin_The_Forest_Ranger_1000, Coin_The_Forest_Ranger_10k, Coin_Blacksmith_1, Coin_Blacksmith_10,
+        Coin_Blacksmith_100, Coin_Blacksmith_1000, Coin_Blacksmith_10k, Coin_Spirit_1, Coin_Spirit_10, Coin_Spirit_100,
+        Coin_Spirit_1000, Coin_Spirit_10k, Coin_The_Space_Invaders_1, Coin_The_Space_Invaders_10,
+        Coin_The_Space_Invaders_100, Coin_The_Space_Invaders_1000, Coin_The_Space_Invaders_10k, Coin_The_Survivor_1,
+        Coin_The_Survivor_10, Coin_The_Survivor_100, Coin_The_Survivor_1000, Coin_The_Survivor_10k,
+        Coin_The_Technician_1, Coin_The_Technician_10, Coin_The_Technician_100, Coin_The_Technician_1000,
+        Coin_The_Technician_10k, };
 }

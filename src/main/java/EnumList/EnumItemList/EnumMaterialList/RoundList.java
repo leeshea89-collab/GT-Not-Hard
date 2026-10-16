@@ -1,11 +1,12 @@
 package EnumList.EnumItemList.EnumMaterialList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class RoundList {
+
     public static final ItemStack Lithium_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25006);
     public static final ItemStack Beryllium_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25008);
     public static final ItemStack Carbon_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25010);
@@ -80,7 +81,11 @@ public class RoundList {
     public static final ItemStack Six_Phased_Copper_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25147);
     public static final ItemStack Mellion_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25148);
     public static final ItemStack Creon_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25149);
-    public static final ItemStack Hot_Proto_Halkonite_Steel_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25153);
+    public static final ItemStack Hot_Proto_Halkonite_Steel_Round = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        25153);
     public static final ItemStack Proto_Halkonite_Steel_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25154);
     public static final ItemStack Hot_Exo_Halkonite_Steel_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25156);
     public static final ItemStack Exo_Halkonite_Steel_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25157);
@@ -199,7 +204,11 @@ public class RoundList {
     public static final ItemStack Epoxid_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25470);
     public static final ItemStack Silicone_Rubber_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25471);
     public static final ItemStack Polycaprolactam_PCL_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25472);
-    public static final ItemStack Polytetrafluoroethylene_PTFE_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25473);
+    public static final ItemStack Polytetrafluoroethylene_PTFE_Round = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        25473);
     public static final ItemStack Alduorite_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25485);
     public static final ItemStack Rubracium_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25488);
     public static final ItemStack Vulcanite_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25489);
@@ -208,16 +217,32 @@ public class RoundList {
     public static final ItemStack TPV_Alloy_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25576);
     public static final ItemStack Transcendent_Metal_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25581);
     public static final ItemStack Enriched_Holmium_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25582);
-    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25583);
+    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Round = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        25583);
     public static final ItemStack White_Dwarf_Matter_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25585);
     public static final ItemStack Black_Dwarf_Matter_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25586);
     public static final ItemStack SpaceTime_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25588);
     public static final ItemStack Polybenzimidazole_PBI_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25599);
-    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25610);
+    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Round = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        25610);
     public static final ItemStack Borosilicate_Glass_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25611);
     public static final ItemStack Nickel_Zinc_Ferrite_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25613);
-    public static final ItemStack Polyphenylene_Sulfide_PPS_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25631);
-    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25635);
+    public static final ItemStack Polyphenylene_Sulfide_PPS_Round = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        25631);
+    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Round = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        25635);
     public static final ItemStack Polystyrene_PS_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25636);
     public static final ItemStack Polyvinyl_Chloride_PVC_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25649);
     public static final ItemStack Kevlar_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25765);
@@ -226,7 +251,11 @@ public class RoundList {
     public static final ItemStack Obsidian_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25804);
     public static final ItemStack Wood_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25809);
     public static final ItemStack Deep_Iron_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25829);
-    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25856);
+    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Round = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        25856);
     public static final ItemStack Trinium_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25868);
     public static final ItemStack Polyethylene_PE_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25874);
     public static final ItemStack Rubber_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25880);
@@ -258,4 +287,53 @@ public class RoundList {
     public static final ItemStack Superconductor_Base_LuV_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25991);
     public static final ItemStack Superconductor_Base_ZPM_Round = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 25992);
 
+    public static final ItemStack[] Round_List = new ItemStack[] { Lithium_Round, Beryllium_Round, Carbon_Round,
+        Magnesium_Round, Aluminium_Round, Raw_Silicon_Round, Potassium_Round, Scandium_Round, Titanium_Round,
+        Vanadium_Round, Chrome_Round, Manganese_Round, Iron_Round, Cobalt_Round, Nickel_Round, Copper_Round, Zinc_Round,
+        Gallium_Round, Arsenic_Round, Rubidium_Round, Strontium_Round, Yttrium_Round, Niobium_Round, Molybdenum_Round,
+        Palladium_Round, Silver_Round, Indium_Round, Tin_Round, Antimony_Round, Tellurium_Round, Caesium_Round,
+        Barium_Round, Lanthanum_Round, Cerium_Round, Praseodymium_Round, Neodymium_Round, Promethium_Round,
+        Samarium_Round, Europium_Round, Gadolinium_Round, Terbium_Round, Dysprosium_Round, Holmium_Round, Erbium_Round,
+        Thulium_Round, Ytterbium_Round, Lutetium_Round, Tantalum_Round, Tungsten_Round, Osmium_Round, Iridium_Round,
+        Platinum_Round, Gold_Round, Lead_Round, Bismuth_Round, Thorium_Round, Uranium_235_Round, Uranium_238_Round,
+        Plutonium_239_Round, Plutonium_241_Round, Americium_Round, Purified_Tengam_Round, Attuned_Tengam_Round,
+        Hellish_Metal_Round, Neutronium_Round, Superconductor_Base_UIV_Round, Netherite_Round,
+        Superconductor_Base_UMV_Round, Universium_Round, Eternity_Round, Magmatter_Round, Six_Phased_Copper_Round,
+        Mellion_Round, Creon_Round, Hot_Proto_Halkonite_Steel_Round, Proto_Halkonite_Steel_Round,
+        Hot_Exo_Halkonite_Steel_Round, Exo_Halkonite_Steel_Round, Prismatic_Naquadah_Round, Hexanite_Round,
+        Shijima_Round, Churitsu_Round, Manasteel_Round, Terrasteel_Round, Elven_Elementium_Round, Gaia_Spirit_Round,
+        Livingwood_Round, Dreamwood_Round, Bronze_Round, Brass_Round, Invar_Round, Electrum_Round, Cast_Iron_Round,
+        Steel_Round, Stainless_Steel_Round, Pig_Iron_Round, Red_Alloy_Round, Blue_Alloy_Round, Cupronickel_Round,
+        Nichrome_Round, Kanthal_Round, Magnalium_Round, Soldering_Alloy_Round, Battery_Alloy_Round, Tungstensteel_Round,
+        Osmiridium_Round, Sunnarium_Round, Adamantium_Round, Fluxed_Electrum_Round, Enderium_Round, Infused_Gold_Round,
+        Naquadah_Round, Naquadah_Alloy_Round, Enriched_Naquadah_Round, Naquadria_Round, Duranium_Round, Tritanium_Round,
+        Thaumium_Round, Mithril_Round, Astral_Silver_Round, Black_Steel_Round, Damascus_Steel_Round, Shadow_Iron_Round,
+        Shadow_Steel_Round, Ironwood_Round, Steeleaf_Round, Meteoric_Iron_Round, Meteoric_Steel_Round,
+        Deep_Dark_Iron_Round, Cobalt_Brass_Round, Ultimet_Round, Annealed_Copper_Round, Fiery_Steel_Round,
+        Red_Steel_Round, Blue_Steel_Round, Sterling_Silver_Round, Rose_Gold_Round, Black_Bronze_Round,
+        Bismuth_Bronze_Round, Magnetic_Iron_Round, Magnetic_Steel_Round, Magnetic_Neodymium_Round,
+        Vanadium_Gallium_Round, Yttrium_Barium_Cuprate_Round, Niobium_Nitride_Round, Niobium_Titanium_Round,
+        Chromium_Dioxide_Round, Knightmetal_Round, Tin_Alloy_Round, Dark_Steel_Round, Electrical_Steel_Round,
+        Energetic_Alloy_Round, Vibrant_Alloy_Round, Shadow_Metal_Round, Conductive_Iron_Round, Tungstencarbide_Round,
+        Vanadiumsteel_Round, HSSG_Round, HSSE_Round, HSSS_Round, Pulsating_Iron_Round, Soularium_Round,
+        Enderium_Base_Round, Redstone_Alloy_Round, Ardite_Round, Reinforced_Round, Galgadorian_Round,
+        Enhanced_Galgadorian_Round, Manyullyn_Round, Mytryl_Round, Black_Plutonium_Round, Callisto_Ice_Round,
+        Ledox_Round, Quantium_Round, Duralumin_Round, Oriharukon_Round, Infinity_Catalyst_Round, Bedrockium_Round,
+        Infinity_Round, Mysterious_Crystal_Round, Magnetic_Samarium_Round, Obzinite_Round, End_Steel_Round,
+        Clay_Compound_Round, Crystalline_Alloy_Round, Melodic_Alloy_Round, Stellar_Alloy_Round,
+        Crystalline_Pink_Slime_Round, Energetic_Silver_Round, Vivid_Alloy_Round, Epoxid_Round, Silicone_Rubber_Round,
+        Polycaprolactam_PCL_Round, Polytetrafluoroethylene_PTFE_Round, Alduorite_Round, Rubracium_Round,
+        Vulcanite_Round, Force_Round, Vinteum_Round, TPV_Alloy_Round, Transcendent_Metal_Round, Enriched_Holmium_Round,
+        Magnetohydrodynamically_Constrained_Star_Matter_Round, White_Dwarf_Matter_Round, Black_Dwarf_Matter_Round,
+        SpaceTime_Round, Polybenzimidazole_PBI_Round, Fiber_Reinforced_Epoxy_Resin_Round, Borosilicate_Glass_Round,
+        Nickel_Zinc_Ferrite_Round, Polyphenylene_Sulfide_PPS_Round, Styrene_Butadiene_Rubber_SBR_Round,
+        Polystyrene_PS_Round, Polyvinyl_Chloride_PVC_Round, Kevlar_Round, Endium_Round, Nickel_Aluminide_Round,
+        Obsidian_Round, Wood_Round, Deep_Iron_Round, Silicon_Solar_Grade_Poly_SI_Round, Trinium_Round,
+        Polyethylene_PE_Round, Rubber_Round, Desh_Round, Sealed_Wood_Round, Chrysotile_Round, Realgar_Round,
+        Vyroxeres_Round, Ceruclase_Round, Tartarite_Round, Orichalcum_Round, Void_Metal_Round,
+        Superconductor_Base_UEV_Round, Draconium_Round, Awakened_Draconium_Round, Blood_Infused_Iron_Round,
+        Ichorium_Round, Radox_Polymer_Round, Gallium_Arsenide_Round, Indium_Gallium_Phosphide_Round,
+        Cosmic_Neutronium_Round, Flerovium_Round, Superconductor_Base_UHV_Round, Superconductor_Base_UV_Round,
+        Superconductor_Base_MV_Round, Superconductor_Base_HV_Round, Superconductor_Base_EV_Round,
+        Superconductor_Base_IV_Round, Superconductor_Base_LuV_Round, Superconductor_Base_ZPM_Round };
 }

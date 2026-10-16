@@ -1,38 +1,79 @@
 package EnumList.EnumItemList.EnumMaterialList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.BartWorks;
 import static gregtech.api.enums.Mods.GTPlusPlus;
 import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class RotorList {
+
     public static final ItemStack Ruthenium_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 64);
     public static final ItemStack Rhodium_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 78);
-    public static final ItemStack Rhodium_Plated_Palladium_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 88);
+    public static final ItemStack Rhodium_Plated_Palladium_Rotor = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedrotor",
+        1L,
+        88);
     public static final ItemStack Tiberium_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 89);
     public static final ItemStack Ruridit_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 90);
-    public static final ItemStack High_Durability_Compound_Steel_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 92);
+    public static final ItemStack High_Durability_Compound_Steel_Rotor = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedrotor",
+        1L,
+        92);
     public static final ItemStack Ademic_Steel_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 96);
-    public static final ItemStack Atomic_Separation_Catalyst_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10022);
-    public static final ItemStack Extremely_Unstable_Naquadah_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10024);
+    public static final ItemStack Atomic_Separation_Catalyst_Rotor = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedrotor",
+        1L,
+        10022);
+    public static final ItemStack Extremely_Unstable_Naquadah_Rotor = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedrotor",
+        1L,
+        10024);
     public static final ItemStack Zircaloy_4_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10082);
     public static final ItemStack Zircaloy_2_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10083);
     public static final ItemStack Incoloy_903_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10084);
-    public static final ItemStack Adamantium_Alloy_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10085);
+    public static final ItemStack Adamantium_Alloy_Rotor = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedrotor",
+        1L,
+        10085);
     public static final ItemStack MAR_M200_Steel_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10096);
-    public static final ItemStack MAR_Ce_M200_Steel_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10097);
+    public static final ItemStack MAR_Ce_M200_Steel_Rotor = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedrotor",
+        1L,
+        10097);
     public static final ItemStack Signalium_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10099);
     public static final ItemStack Lumiium_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10101);
     public static final ItemStack Artherium_Sn_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10102);
-    public static final ItemStack Tanmolyium_Beta_C_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10103);
+    public static final ItemStack Tanmolyium_Beta_C_Rotor = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedrotor",
+        1L,
+        10103);
     public static final ItemStack Dalisenite_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10104);
     public static final ItemStack Hikarium_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10105);
     public static final ItemStack Tairitsu_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10106);
-    public static final ItemStack Precious_Metals_Alloy_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10109);
-    public static final ItemStack Enriched_Naquadah_Alloy_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10110);
-    public static final ItemStack Metastable_Oganesson_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10111);
+    public static final ItemStack Precious_Metals_Alloy_Rotor = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedrotor",
+        1L,
+        10109);
+    public static final ItemStack Enriched_Naquadah_Alloy_Rotor = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedrotor",
+        1L,
+        10110);
+    public static final ItemStack Metastable_Oganesson_Rotor = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedrotor",
+        1L,
+        10111);
     public static final ItemStack Shirabon_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 10112);
     public static final ItemStack Mu_metal_Rotor = getModItem(BartWorks.ID, "gt.bwMetaGeneratedrotor", 1L, 11351);
     public static final ItemStack Carbon_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21010);
@@ -65,7 +106,11 @@ public class RotorList {
     public static final ItemStack Six_Phased_Copper_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21147);
     public static final ItemStack Mellion_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21148);
     public static final ItemStack Creon_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21149);
-    public static final ItemStack Hot_Proto_Halkonite_Steel_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21153);
+    public static final ItemStack Hot_Proto_Halkonite_Steel_Rotor = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        21153);
     public static final ItemStack Proto_Halkonite_Steel_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21154);
     public static final ItemStack Hot_Exo_Halkonite_Steel_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21156);
     public static final ItemStack Exo_Halkonite_Steel_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21157);
@@ -158,21 +203,37 @@ public class RotorList {
     public static final ItemStack Vivid_Alloy_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21408);
     public static final ItemStack Epoxid_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21470);
     public static final ItemStack Polycaprolactam_PCL_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21472);
-    public static final ItemStack Polytetrafluoroethylene_PTFE_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21473);
+    public static final ItemStack Polytetrafluoroethylene_PTFE_Rotor = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        21473);
     public static final ItemStack Alduorite_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21485);
     public static final ItemStack Rubracium_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21488);
     public static final ItemStack Vulcanite_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21489);
     public static final ItemStack Vinteum_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21529);
     public static final ItemStack TPV_Alloy_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21576);
     public static final ItemStack Transcendent_Metal_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21581);
-    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21583);
+    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Rotor = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        21583);
     public static final ItemStack White_Dwarf_Matter_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21585);
     public static final ItemStack Black_Dwarf_Matter_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21586);
     public static final ItemStack SpaceTime_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21588);
     public static final ItemStack Polybenzimidazole_PBI_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21599);
-    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21610);
+    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Rotor = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        21610);
     public static final ItemStack Nickel_Zinc_Ferrite_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21613);
-    public static final ItemStack Polyphenylene_Sulfide_PPS_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21631);
+    public static final ItemStack Polyphenylene_Sulfide_PPS_Rotor = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        21631);
     public static final ItemStack Kevlar_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21765);
     public static final ItemStack Endium_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21770);
     public static final ItemStack Wood_Rotor = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 21809);
@@ -196,7 +257,10 @@ public class RotorList {
     public static final ItemStack Thallium_Rotor = getModItem(GTPlusPlus.ID, "itemRotorThallium", 1L);
     public static final ItemStack Germanium_Rotor = getModItem(GTPlusPlus.ID, "itemRotorGermanium", 1L);
     public static final ItemStack Astral_Titanium_Rotor = getModItem(GTPlusPlus.ID, "itemRotorAstralTitanium", 1L);
-    public static final ItemStack Celestial_Tungsten_Rotor = getModItem(GTPlusPlus.ID, "itemRotorCelestialTungsten", 1L);
+    public static final ItemStack Celestial_Tungsten_Rotor = getModItem(
+        GTPlusPlus.ID,
+        "itemRotorCelestialTungsten",
+        1L);
     public static final ItemStack Hypogen_Rotor = getModItem(GTPlusPlus.ID, "itemRotorHypogen", 1L);
     public static final ItemStack Chromatic_Glass_Rotor = getModItem(GTPlusPlus.ID, "itemRotorChromaticGlass", 1L);
     public static final ItemStack Black_Metal_Rotor = getModItem(GTPlusPlus.ID, "itemRotorBlackMetal", 1L);
@@ -205,7 +269,10 @@ public class RotorList {
     public static final ItemStack Zirconium_Carbide_Rotor = getModItem(GTPlusPlus.ID, "itemRotorZirconiumCarbide", 1L);
     public static final ItemStack Tantalum_Carbide_Rotor = getModItem(GTPlusPlus.ID, "itemRotorTantalumCarbide", 1L);
     public static final ItemStack Niobium_Carbide_Rotor = getModItem(GTPlusPlus.ID, "itemRotorNiobiumCarbide", 1L);
-    public static final ItemStack Tungsten_Titanium_Carbide_Rotor = getModItem(GTPlusPlus.ID, "itemRotorTungstenTitaniumCarbide", 1L);
+    public static final ItemStack Tungsten_Titanium_Carbide_Rotor = getModItem(
+        GTPlusPlus.ID,
+        "itemRotorTungstenTitaniumCarbide",
+        1L);
     public static final ItemStack Energy_Crystal_Rotor = getModItem(GTPlusPlus.ID, "itemRotorEnergyCrystal", 1L);
     public static final ItemStack Blood_Steel_Rotor = getModItem(GTPlusPlus.ID, "itemRotorBloodSteel", 1L);
     public static final ItemStack Zeron_100_Rotor = getModItem(GTPlusPlus.ID, "itemRotorZeron100", 1L);
@@ -233,8 +300,14 @@ public class RotorList {
     public static final ItemStack Incoloy_DS_Rotor = getModItem(GTPlusPlus.ID, "itemRotorIncoloyDS", 1L);
     public static final ItemStack Incoloy_MA956_Rotor = getModItem(GTPlusPlus.ID, "itemRotorIncoloyMA956", 1L);
     public static final ItemStack Grisium_Rotor = getModItem(GTPlusPlus.ID, "itemRotorGrisium", 1L);
-    public static final ItemStack Trinium_Titanium_Alloy_Rotor = getModItem(GTPlusPlus.ID, "itemRotorTriniumTitaniumAlloy", 1L);
-    public static final ItemStack Trinium_Naquadah_Carbonite_Rotor = getModItem(GTPlusPlus.ID, "itemRotorTriniumNaquadahCarbonite", 1L);
+    public static final ItemStack Trinium_Titanium_Alloy_Rotor = getModItem(
+        GTPlusPlus.ID,
+        "itemRotorTriniumTitaniumAlloy",
+        1L);
+    public static final ItemStack Trinium_Naquadah_Carbonite_Rotor = getModItem(
+        GTPlusPlus.ID,
+        "itemRotorTriniumNaquadahCarbonite",
+        1L);
     public static final ItemStack Arceus_Alloy_2B_Rotor = getModItem(GTPlusPlus.ID, "itemRotorArceusAlloy2B", 1L);
     public static final ItemStack HeLiCoPtEr_Rotor = getModItem(GTPlusPlus.ID, "itemRotorHeLiCoPtEr", 1L);
     public static final ItemStack Lafium_Compound_Rotor = getModItem(GTPlusPlus.ID, "itemRotorLafiumCompound", 1L);
@@ -248,4 +321,52 @@ public class RotorList {
     public static final ItemStack Arcanite_Rotor = getModItem(GTPlusPlus.ID, "itemRotorArcanite", 1L);
     public static final ItemStack Octiron_Rotor = getModItem(GTPlusPlus.ID, "itemRotorOctiron", 1L);
     public static final ItemStack Quantum_Rotor = getModItem(GTPlusPlus.ID, "itemRotorQuantum", 1L);
+
+    public static final ItemStack[] Rotor_List = new ItemStack[] { Ruthenium_Rotor, Rhodium_Rotor,
+        Rhodium_Plated_Palladium_Rotor, Tiberium_Rotor, Ruridit_Rotor, High_Durability_Compound_Steel_Rotor,
+        Ademic_Steel_Rotor, Atomic_Separation_Catalyst_Rotor, Extremely_Unstable_Naquadah_Rotor, Zircaloy_4_Rotor,
+        Zircaloy_2_Rotor, Incoloy_903_Rotor, Adamantium_Alloy_Rotor, MAR_M200_Steel_Rotor, MAR_Ce_M200_Steel_Rotor,
+        Signalium_Rotor, Lumiium_Rotor, Artherium_Sn_Rotor, Tanmolyium_Beta_C_Rotor, Dalisenite_Rotor, Hikarium_Rotor,
+        Tairitsu_Rotor, Precious_Metals_Alloy_Rotor, Enriched_Naquadah_Alloy_Rotor, Metastable_Oganesson_Rotor,
+        Shirabon_Rotor, Mu_metal_Rotor, Carbon_Rotor, Aluminium_Rotor, Titanium_Rotor, Chrome_Rotor, Iron_Rotor,
+        Cobalt_Rotor, Nickel_Rotor, Copper_Rotor, Strontium_Rotor, Palladium_Rotor, Silver_Rotor, Tin_Rotor,
+        Neodymium_Rotor, Tungsten_Rotor, Osmium_Rotor, Iridium_Rotor, Platinum_Rotor, Gold_Rotor, Lead_Rotor,
+        Bismuth_Rotor, Purified_Tengam_Rotor, Attuned_Tengam_Rotor, Neutronium_Rotor, Netherite_Rotor, Universium_Rotor,
+        Eternity_Rotor, Magmatter_Rotor, Six_Phased_Copper_Rotor, Mellion_Rotor, Creon_Rotor,
+        Hot_Proto_Halkonite_Steel_Rotor, Proto_Halkonite_Steel_Rotor, Hot_Exo_Halkonite_Steel_Rotor,
+        Exo_Halkonite_Steel_Rotor, Hexanite_Rotor, Shijima_Rotor, Churitsu_Rotor, Manasteel_Rotor, Terrasteel_Rotor,
+        Elven_Elementium_Rotor, Gaia_Spirit_Rotor, Livingwood_Rotor, Dreamwood_Rotor, Bronze_Rotor, Brass_Rotor,
+        Invar_Rotor, Electrum_Rotor, Cast_Iron_Rotor, Steel_Rotor, Stainless_Steel_Rotor, Magnalium_Rotor,
+        Tungstensteel_Rotor, Osmiridium_Rotor, Sunnarium_Rotor, Adamantium_Rotor, Fluxed_Electrum_Rotor, Enderium_Rotor,
+        Infused_Gold_Rotor, Naquadah_Rotor, Naquadah_Alloy_Rotor, Thaumium_Rotor, Black_Steel_Rotor,
+        Damascus_Steel_Rotor, Ironwood_Rotor, Steeleaf_Rotor, Cobalt_Brass_Rotor, Ultimet_Rotor, Annealed_Copper_Rotor,
+        Fiery_Steel_Rotor, Red_Steel_Rotor, Blue_Steel_Rotor, Sterling_Silver_Rotor, Rose_Gold_Rotor,
+        Black_Bronze_Rotor, Bismuth_Bronze_Rotor, Magnetic_Iron_Rotor, Magnetic_Steel_Rotor, Magnetic_Neodymium_Rotor,
+        Vanadium_Gallium_Rotor, Knightmetal_Rotor, Tin_Alloy_Rotor, Dark_Steel_Rotor, Electrical_Steel_Rotor,
+        Energetic_Alloy_Rotor, Vibrant_Alloy_Rotor, Shadow_Metal_Rotor, Conductive_Iron_Rotor, Tungstencarbide_Rotor,
+        Vanadiumsteel_Rotor, HSSG_Rotor, HSSE_Rotor, HSSS_Rotor, Pulsating_Iron_Rotor, Soularium_Rotor,
+        Enderium_Base_Rotor, Redstone_Alloy_Rotor, Ardite_Rotor, Reinforced_Rotor, Galgadorian_Rotor,
+        Enhanced_Galgadorian_Rotor, Manyullyn_Rotor, Mytryl_Rotor, Black_Plutonium_Rotor, Callisto_Ice_Rotor,
+        Ledox_Rotor, Quantium_Rotor, Duralumin_Rotor, Oriharukon_Rotor, Infinity_Catalyst_Rotor, Infinity_Rotor,
+        Mysterious_Crystal_Rotor, Magnetic_Samarium_Rotor, Obzinite_Rotor, End_Steel_Rotor, Clay_Compound_Rotor,
+        Crystalline_Alloy_Rotor, Melodic_Alloy_Rotor, Stellar_Alloy_Rotor, Crystalline_Pink_Slime_Rotor,
+        Energetic_Silver_Rotor, Vivid_Alloy_Rotor, Epoxid_Rotor, Polycaprolactam_PCL_Rotor,
+        Polytetrafluoroethylene_PTFE_Rotor, Alduorite_Rotor, Rubracium_Rotor, Vulcanite_Rotor, Vinteum_Rotor,
+        TPV_Alloy_Rotor, Transcendent_Metal_Rotor, Magnetohydrodynamically_Constrained_Star_Matter_Rotor,
+        White_Dwarf_Matter_Rotor, Black_Dwarf_Matter_Rotor, SpaceTime_Rotor, Polybenzimidazole_PBI_Rotor,
+        Fiber_Reinforced_Epoxy_Resin_Rotor, Nickel_Zinc_Ferrite_Rotor, Polyphenylene_Sulfide_PPS_Rotor, Kevlar_Rotor,
+        Endium_Rotor, Wood_Rotor, Trinium_Rotor, Desh_Rotor, Sealed_Wood_Rotor, Chrysotile_Rotor, Realgar_Rotor,
+        Ceruclase_Rotor, Orichalcum_Rotor, Void_Metal_Rotor, Draconium_Rotor, Awakened_Draconium_Rotor,
+        Blood_Infused_Iron_Rotor, Ichorium_Rotor, Cosmic_Neutronium_Rotor, Flerovium_Rotor, Selenium_Rotor,
+        Iodine_Rotor, Rhenium_Rotor, Thallium_Rotor, Germanium_Rotor, Astral_Titanium_Rotor, Celestial_Tungsten_Rotor,
+        Hypogen_Rotor, Chromatic_Glass_Rotor, Black_Metal_Rotor, Dragonblood_Rotor, Silicon_Carbide_Rotor,
+        Zirconium_Carbide_Rotor, Tantalum_Carbide_Rotor, Niobium_Carbide_Rotor, Tungsten_Titanium_Carbide_Rotor,
+        Energy_Crystal_Rotor, Blood_Steel_Rotor, Zeron_100_Rotor, Tumbaga_Rotor, Potin_Rotor, Staballoy_Rotor,
+        Tantalloy_60_Rotor, Tantalloy_61_Rotor, Inconel_625_Rotor, Inconel_690_Rotor, Inconel_792_Rotor,
+        Eglin_Steel_Rotor, Maraging_Steel_250_Rotor, Maraging_Steel_300_Rotor, Maraging_Steel_350_Rotor,
+        Watertight_Steel_Rotor, Nitinol_60_Rotor, Stellite_Rotor, Talonite_Rotor, Hastelloy_W_Rotor, Hastelloy_X_Rotor,
+        Hastelloy_C276_Rotor, Hastelloy_N_Rotor, Incoloy_020_Rotor, Incoloy_DS_Rotor, Incoloy_MA956_Rotor,
+        Grisium_Rotor, Trinium_Titanium_Alloy_Rotor, Trinium_Naquadah_Carbonite_Rotor, Arceus_Alloy_2B_Rotor,
+        HeLiCoPtEr_Rotor, Lafium_Compound_Rotor, Cinobite_A243_Rotor, Pikyonium_64B_Rotor, Abyssal_Alloy_Rotor,
+        Laurenium_Rotor, Botmium_Rotor, HS188_A_Rotor, Titansteel_Rotor, Arcanite_Rotor, Octiron_Rotor, Quantum_Rotor };
 }

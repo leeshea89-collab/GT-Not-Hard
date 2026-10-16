@@ -1,19 +1,28 @@
 package EnumList.EnumItemList.EnumMaterialList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.BartWorks;
 import static gregtech.api.enums.Mods.GTPlusPlus;
 import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class PlateList {
+
     public static final ItemStack Bismutite_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 1);
     public static final ItemStack Zirconium_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 3);
     public static final ItemStack Cubic_Zirconia_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 4);
     public static final ItemStack Fluor_Buergerite_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 5);
-    public static final ItemStack Chromo_Alumino_Povondraite_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 7);
-    public static final ItemStack Vanadio_Oxy_Dravite_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 8);
+    public static final ItemStack Chromo_Alumino_Povondraite_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        7);
+    public static final ItemStack Vanadio_Oxy_Dravite_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        8);
     public static final ItemStack Olenite_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 9);
     public static final ItemStack Red_Zircon_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 19);
     public static final ItemStack Salt_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 20);
@@ -30,43 +39,103 @@ public class PlateList {
     public static final ItemStack BArTiMaEuSNeK_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 43);
     public static final ItemStack Ruthenium_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 64);
     public static final ItemStack Rhodium_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 78);
-    public static final ItemStack Rhodium_Plated_Palladium_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 88);
+    public static final ItemStack Rhodium_Plated_Palladium_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        88);
     public static final ItemStack Tiberium_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 89);
     public static final ItemStack Ruridit_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 90);
     public static final ItemStack Fluorspar_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 91);
-    public static final ItemStack High_Durability_Compound_Steel_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 92);
+    public static final ItemStack High_Durability_Compound_Steel_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        92);
     public static final ItemStack Ademic_Steel_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 96);
     public static final ItemStack Fluorophlogopite_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 104);
-    public static final ItemStack Tantalum_Hafnium_Carbide_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 11503);
+    public static final ItemStack Tantalum_Hafnium_Carbide_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        11503);
     public static final ItemStack Magnesia_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 32237);
     public static final ItemStack Orundum_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10023);
-    public static final ItemStack Atomic_Separation_Catalyst_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10022);
-    public static final ItemStack Extremely_Unstable_Naquadah_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10024);
+    public static final ItemStack Atomic_Separation_Catalyst_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        10022);
+    public static final ItemStack Extremely_Unstable_Naquadah_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        10024);
     public static final ItemStack Zn_Th_Alloy_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10053);
     public static final ItemStack Zircaloy_4_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10082);
     public static final ItemStack Zircaloy_2_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10083);
     public static final ItemStack Incoloy_903_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10084);
-    public static final ItemStack Adamantium_Alloy_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10085);
+    public static final ItemStack Adamantium_Alloy_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        10085);
     public static final ItemStack MAR_M200_Steel_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10096);
-    public static final ItemStack MAR_Ce_M200_Steel_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10097);
-    public static final ItemStack Lithium_Chloride_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10098);
+    public static final ItemStack MAR_Ce_M200_Steel_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        10097);
+    public static final ItemStack Lithium_Chloride_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        10098);
     public static final ItemStack Signalium_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10099);
     public static final ItemStack Lumiium_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10101);
     public static final ItemStack Artherium_Sn_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10102);
-    public static final ItemStack Tanmolyium_Beta_C_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10103);
+    public static final ItemStack Tanmolyium_Beta_C_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        10103);
     public static final ItemStack Dalisenite_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10104);
     public static final ItemStack Hikarium_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10105);
     public static final ItemStack Tairitsu_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10106);
-    public static final ItemStack Precious_Metals_Alloy_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10109);
-    public static final ItemStack Enriched_Naquadah_Alloy_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10110);
-    public static final ItemStack Metastable_Oganesson_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10111);
+    public static final ItemStack Precious_Metals_Alloy_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        10109);
+    public static final ItemStack Enriched_Naquadah_Alloy_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        10110);
+    public static final ItemStack Metastable_Oganesson_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        10111);
     public static final ItemStack Shirabon_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 10112);
     public static final ItemStack Hafnium_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 11000);
-    public static final ItemStack Cerium_doped_Lutetium_Aluminium_Garnet_Ce_LuAG_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 11499);
+    public static final ItemStack Cerium_doped_Lutetium_Aluminium_Garnet_Ce_LuAG_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        11499);
     public static final ItemStack Permalloy_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 11350);
     public static final ItemStack Mu_metal_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 11351);
-    public static final ItemStack Silicon_Nitride_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 11353);
-    public static final ItemStack Lanthanum_Hexaboride_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplate", 1L, 11358);
+    public static final ItemStack Silicon_Nitride_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        11353);
+    public static final ItemStack Lanthanum_Hexaboride_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplate",
+        1L,
+        11358);
     public static final ItemStack Lithium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17006);
     public static final ItemStack Beryllium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17008);
     public static final ItemStack Carbon_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17010);
@@ -141,7 +210,11 @@ public class PlateList {
     public static final ItemStack Six_Phased_Copper_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17147);
     public static final ItemStack Mellion_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17148);
     public static final ItemStack Creon_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17149);
-    public static final ItemStack Hot_Proto_Halkonite_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17153);
+    public static final ItemStack Hot_Proto_Halkonite_Steel_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        17153);
     public static final ItemStack Proto_Halkonite_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17154);
     public static final ItemStack Hot_Exo_Halkonite_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17156);
     public static final ItemStack Exo_Halkonite_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17157);
@@ -264,7 +337,11 @@ public class PlateList {
     public static final ItemStack Epoxid_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17470);
     public static final ItemStack Silicone_Rubber_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17471);
     public static final ItemStack Polycaprolactam_PCL_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17472);
-    public static final ItemStack Polytetrafluoroethylene_PTFE_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17473);
+    public static final ItemStack Polytetrafluoroethylene_PTFE_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        17473);
     public static final ItemStack Alduorite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17485);
     public static final ItemStack Rubracium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17488);
     public static final ItemStack Vulcanite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17489);
@@ -315,16 +392,32 @@ public class PlateList {
     public static final ItemStack TPV_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17576);
     public static final ItemStack Transcendent_Metal_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17581);
     public static final ItemStack Enriched_Holmium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17582);
-    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17583);
+    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        17583);
     public static final ItemStack White_Dwarf_Matter_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17585);
     public static final ItemStack Black_Dwarf_Matter_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17586);
     public static final ItemStack SpaceTime_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17588);
     public static final ItemStack Polybenzimidazole_PBI_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17599);
-    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17610);
+    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        17610);
     public static final ItemStack Borosilicate_Glass_Pane = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17611);
     public static final ItemStack Nickel_Zinc_Ferrite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17613);
-    public static final ItemStack Polyphenylene_Sulfide_PPS_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17631);
-    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17635);
+    public static final ItemStack Polyphenylene_Sulfide_PPS_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        17631);
+    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        17635);
     public static final ItemStack Polystyrene_PS_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17636);
     public static final ItemStack Polyvinyl_Chloride_PVC_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17649);
     public static final ItemStack Kevlar_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17765);
@@ -340,7 +433,11 @@ public class PlateList {
     public static final ItemStack Marble_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17845);
     public static final ItemStack Black_Granite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17849);
     public static final ItemStack Red_Granite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17850);
-    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17856);
+    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        17856);
     public static final ItemStack Trinium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17868);
     public static final ItemStack Polyethylene_PE_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17874);
     public static final ItemStack Rubber_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 17880);
@@ -386,7 +483,10 @@ public class PlateList {
     public static final ItemStack Uranium_233_Plate = getModItem(GTPlusPlus.ID, "itemPlateUranium233", 1L);
     public static final ItemStack Advanced_Nitinol_Plate = getModItem(GTPlusPlus.ID, "itemPlateAdvancedNitinol", 1L);
     public static final ItemStack Astral_Titanium_Plate = getModItem(GTPlusPlus.ID, "itemPlateAstralTitanium", 1L);
-    public static final ItemStack Celestial_Tungsten_Plate = getModItem(GTPlusPlus.ID, "itemPlateCelestialTungsten", 1L);
+    public static final ItemStack Celestial_Tungsten_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateCelestialTungsten",
+        1L);
     public static final ItemStack Hypogen_Plate = getModItem(GTPlusPlus.ID, "itemPlateHypogen", 1L);
     public static final ItemStack Chromatic_Glass_Plate = getModItem(GTPlusPlus.ID, "itemPlateChromaticGlass", 1L);
     public static final ItemStack Black_Metal_Plate = getModItem(GTPlusPlus.ID, "itemPlateBlackMetal", 1L);
@@ -397,7 +497,10 @@ public class PlateList {
     public static final ItemStack Zirconium_Carbide_Plate = getModItem(GTPlusPlus.ID, "itemPlateZirconiumCarbide", 1L);
     public static final ItemStack Tantalum_Carbide_Plate = getModItem(GTPlusPlus.ID, "itemPlateTantalumCarbide", 1L);
     public static final ItemStack Niobium_Carbide_Plate = getModItem(GTPlusPlus.ID, "itemPlateNiobiumCarbide", 1L);
-    public static final ItemStack Tungsten_Titanium_Carbide_Plate = getModItem(GTPlusPlus.ID, "itemPlateTungstenTitaniumCarbide", 1L);
+    public static final ItemStack Tungsten_Titanium_Carbide_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateTungstenTitaniumCarbide",
+        1L);
     public static final ItemStack Energy_Crystal_Plate = getModItem(GTPlusPlus.ID, "itemPlateEnergyCrystal", 1L);
     public static final ItemStack Blood_Steel_Plate = getModItem(GTPlusPlus.ID, "itemPlateBloodSteel", 1L);
     public static final ItemStack Zeron_100_Plate = getModItem(GTPlusPlus.ID, "itemPlateZeron100", 1L);
@@ -426,9 +529,18 @@ public class PlateList {
     public static final ItemStack Incoloy_MA956_Plate = getModItem(GTPlusPlus.ID, "itemPlateIncoloyMA956", 1L);
     public static final ItemStack Grisium_Plate = getModItem(GTPlusPlus.ID, "itemPlateGrisium", 1L);
     public static final ItemStack HG_1223_Plate = getModItem(GTPlusPlus.ID, "itemPlateHG1223", 1L);
-    public static final ItemStack Trinium_Titanium_Alloy_Plate = getModItem(GTPlusPlus.ID, "itemPlateTriniumTitaniumAlloy", 1L);
-    public static final ItemStack Trinium_Naquadah_Alloy_Plate = getModItem(GTPlusPlus.ID, "itemPlateTriniumNaquadahAlloy", 1L);
-    public static final ItemStack Trinium_Naquadah_Carbonite_Plate = getModItem(GTPlusPlus.ID, "itemPlateTriniumNaquadahCarbonite", 1L);
+    public static final ItemStack Trinium_Titanium_Alloy_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateTriniumTitaniumAlloy",
+        1L);
+    public static final ItemStack Trinium_Naquadah_Alloy_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateTriniumNaquadahAlloy",
+        1L);
+    public static final ItemStack Trinium_Naquadah_Carbonite_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateTriniumNaquadahCarbonite",
+        1L);
     public static final ItemStack Arceus_Alloy_2B_Plate = getModItem(GTPlusPlus.ID, "itemPlateArceusAlloy2B", 1L);
     public static final ItemStack HeLiCoPtEr_Plate = getModItem(GTPlusPlus.ID, "itemPlateHeLiCoPtEr", 1L);
     public static final ItemStack Lafium_Compound_Plate = getModItem(GTPlusPlus.ID, "itemPlateLafiumCompound", 1L);
@@ -447,4 +559,88 @@ public class PlateList {
     public static final ItemStack Rhugnor_Plate = getModItem(GTPlusPlus.ID, "itemPlateRhugnor", 1L);
     public static final ItemStack Quantum_Plate = getModItem(GTPlusPlus.ID, "itemPlateQuantum", 1L);
 
+    public static final ItemStack[] Plate_List = new ItemStack[] { Bismutite_Plate, Zirconium_Plate,
+        Cubic_Zirconia_Plate, Fluor_Buergerite_Plate, Chromo_Alumino_Povondraite_Plate, Vanadio_Oxy_Dravite_Plate,
+        Olenite_Plate, Red_Zircon_Plate, Salt_Plate, Spodumene_Plate, Rock_Salt_Plate, Fayalite_Plate, Forsterite_Plate,
+        Hedenbergite_Plate, Thorium_232_Plate, Prasiolite_Plate, Magneto_Resonatic_Plate, Californium_Plate,
+        Calcium_Plate, BArTiMaEuSNeK_Plate, Ruthenium_Plate, Rhodium_Plate, Rhodium_Plated_Palladium_Plate,
+        Tiberium_Plate, Ruridit_Plate, Fluorspar_Plate, High_Durability_Compound_Steel_Plate, Ademic_Steel_Plate,
+        Fluorophlogopite_Plate, Tantalum_Hafnium_Carbide_Plate, Magnesia_Plate, Orundum_Plate,
+        Atomic_Separation_Catalyst_Plate, Extremely_Unstable_Naquadah_Plate, Zn_Th_Alloy_Plate, Zircaloy_4_Plate,
+        Zircaloy_2_Plate, Incoloy_903_Plate, Adamantium_Alloy_Plate, MAR_M200_Steel_Plate, MAR_Ce_M200_Steel_Plate,
+        Lithium_Chloride_Plate, Signalium_Plate, Lumiium_Plate, Artherium_Sn_Plate, Tanmolyium_Beta_C_Plate,
+        Dalisenite_Plate, Hikarium_Plate, Tairitsu_Plate, Precious_Metals_Alloy_Plate, Enriched_Naquadah_Alloy_Plate,
+        Metastable_Oganesson_Plate, Shirabon_Plate, Hafnium_Plate, Cerium_doped_Lutetium_Aluminium_Garnet_Ce_LuAG_Plate,
+        Permalloy_Plate, Mu_metal_Plate, Silicon_Nitride_Plate, Lanthanum_Hexaboride_Plate, Lithium_Plate,
+        Beryllium_Plate, Carbon_Plate, Magnesium_Plate, Aluminium_Plate, Raw_Silicon_Plate, Potassium_Plate,
+        Scandium_Plate, Titanium_Plate, Vanadium_Plate, Chrome_Plate, Manganese_Plate, Iron_Plate, Cobalt_Plate,
+        Nickel_Plate, Copper_Plate, Zinc_Plate, Gallium_Plate, Arsenic_Plate, Rubidium_Plate, Strontium_Plate,
+        Yttrium_Plate, Niobium_Plate, Molybdenum_Plate, Palladium_Plate, Silver_Plate, Indium_Plate, Tin_Plate,
+        Antimony_Plate, Tellurium_Plate, Caesium_Plate, Barium_Plate, Lanthanum_Plate, Cerium_Plate, Praseodymium_Plate,
+        Neodymium_Plate, Promethium_Plate, Samarium_Plate, Europium_Plate, Gadolinium_Plate, Terbium_Plate,
+        Dysprosium_Plate, Holmium_Plate, Erbium_Plate, Thulium_Plate, Ytterbium_Plate, Lutetium_Plate, Tantalum_Plate,
+        Tungsten_Plate, Osmium_Plate, Iridium_Plate, Platinum_Plate, Gold_Plate, Lead_Plate, Bismuth_Plate,
+        Thorium_Plate, Uranium_235_Plate, Uranium_238_Plate, Plutonium_239_Plate, Plutonium_241_Plate, Americium_Plate,
+        Purified_Tengam_Plate, Attuned_Tengam_Plate, Hellish_Metal_Plate, Neutronium_Plate,
+        Superconductor_Base_UIV_Plate, Netherite_Plate, Superconductor_Base_UMV_Plate, Universium_Plate, Eternity_Plate,
+        Magmatter_Plate, Six_Phased_Copper_Plate, Mellion_Plate, Creon_Plate, Hot_Proto_Halkonite_Steel_Plate,
+        Proto_Halkonite_Steel_Plate, Hot_Exo_Halkonite_Steel_Plate, Exo_Halkonite_Steel_Plate, Prismatic_Naquadah_Plate,
+        Hexanite_Plate, Shijima_Plate, Churitsu_Plate, Manasteel_Plate, Terrasteel_Plate, Elven_Elementium_Plate,
+        Livingrock_Plate, Gaia_Spirit_Plate, Livingwood_Plate, Dreamwood_Plate, Mana_Diamond_Plate, Dragonstone_Plate,
+        Bronze_Plate, Brass_Plate, Invar_Plate, Electrum_Plate, Cast_Iron_Plate, Steel_Plate, Stainless_Steel_Plate,
+        Pig_Iron_Plate, Red_Alloy_Plate, Blue_Alloy_Plate, Cupronickel_Plate, Nichrome_Plate, Kanthal_Plate,
+        Magnalium_Plate, Soldering_Alloy_Plate, Battery_Alloy_Plate, Tungstensteel_Plate, Osmiridium_Plate,
+        Sunnarium_Plate, Adamantium_Plate, Fluxed_Electrum_Plate, Enderium_Plate, Infused_Gold_Plate, Naquadah_Plate,
+        Naquadah_Alloy_Plate, Enriched_Naquadah_Plate, Naquadria_Plate, Duranium_Plate, Tritanium_Plate, Thaumium_Plate,
+        Mithril_Plate, Astral_Silver_Plate, Black_Steel_Plate, Damascus_Steel_Plate, Shadow_Iron_Plate,
+        Shadow_Steel_Plate, Ironwood_Plate, Steeleaf_Plate, Meteoric_Iron_Plate, Meteoric_Steel_Plate,
+        Deep_Dark_Iron_Plate, Cobalt_Brass_Plate, Ultimet_Plate, Annealed_Copper_Plate, Fiery_Steel_Plate,
+        Firestone_Plate, Red_Steel_Plate, Blue_Steel_Plate, Sterling_Silver_Plate, Rose_Gold_Plate, Black_Bronze_Plate,
+        Bismuth_Bronze_Plate, Magnetic_Iron_Plate, Magnetic_Steel_Plate, Magnetic_Neodymium_Plate,
+        Vanadium_Gallium_Plate, Yttrium_Barium_Cuprate_Plate, Niobium_Nitride_Plate, Niobium_Titanium_Plate,
+        Chromium_Dioxide_Plate, Knightmetal_Plate, Tin_Alloy_Plate, Dark_Steel_Plate, Electrical_Steel_Plate,
+        Energetic_Alloy_Plate, Vibrant_Alloy_Plate, Shadow_Metal_Plate, Conductive_Iron_Plate, Tungstencarbide_Plate,
+        Vanadiumsteel_Plate, HSSG_Plate, HSSE_Plate, HSSS_Plate, Pulsating_Iron_Plate, Soularium_Plate,
+        Enderium_Base_Plate, Redstone_Alloy_Plate, Ardite_Plate, Reinforced_Plate, Galgadorian_Plate,
+        Enhanced_Galgadorian_Plate, Manyullyn_Plate, Mytryl_Plate, Black_Plutonium_Plate, Callisto_Ice_Plate,
+        Ledox_Plate, Quantium_Plate, Duralumin_Plate, Oriharukon_Plate, Infinity_Catalyst_Plate, Bedrockium_Plate,
+        Infinity_Plate, Mysterious_Crystal_Plate, Magnetic_Samarium_Plate, Obzinite_Plate, End_Steel_Plate,
+        Clay_Compound_Plate, Crystalline_Alloy_Plate, Melodic_Alloy_Plate, Stellar_Alloy_Plate,
+        Crystalline_Pink_Slime_Plate, Energetic_Silver_Plate, Vivid_Alloy_Plate, Epoxid_Sheet, Silicone_Rubber_Sheet,
+        Polycaprolactam_PCL_Sheet, Polytetrafluoroethylene_PTFE_Sheet, Alduorite_Plate, Rubracium_Plate,
+        Vulcanite_Plate, Diamond_Plate, Emerald_Plate, Ruby_Plate, Sapphire_Plate, Green_Sapphire_Plate, Olivine_Plate,
+        Nether_Star_Plate, Topaz_Plate, Tanzanite_Plate, Amethyst_Plate, Opal_Plate, Jasper_Plate, Spinel_Plate,
+        Blue_Topaz_Plate, Amber_Plate, Dilithium_Plate, Certus_Quartz_Plate, Forcicium_Plate, Forcillium_Plate,
+        Monazite_Plate, Force_Plate, Nether_Quartz_Plate, Quartzite_Plate, Lazurite_Plate, Sodalite_Plate, Lapis_Plate,
+        Red_Garnet_Plate, Yellow_Garnet_Plate, Vinteum_Plate, Apatite_Plate, Niter_Plate, Enderpearl_Plate,
+        Endereye_Plate, Tricalcium_Phosphate_Plate, Coal_Plate, Charcoal_Plate, Jade_Plate, Lignite_Coal_Plate,
+        Aer_Crystal_Plate, Ignis_Crystal_Plate, Terra_Crystal_Plate, Aqua_Crystal_Plate, Perditio_Crystal_Plate,
+        Ordo_Crystal_Plate, TPV_Alloy_Plate, Transcendent_Metal_Plate, Enriched_Holmium_Plate,
+        Magnetohydrodynamically_Constrained_Star_Matter_Plate, White_Dwarf_Matter_Plate, Black_Dwarf_Matter_Plate,
+        SpaceTime_Plate, Polybenzimidazole_PBI_Sheet, Fiber_Reinforced_Epoxy_Resin_Sheet, Borosilicate_Glass_Pane,
+        Nickel_Zinc_Ferrite_Plate, Polyphenylene_Sulfide_PPS_Sheet, Styrene_Butadiene_Rubber_SBR_Sheet,
+        Polystyrene_PS_Sheet, Polyvinyl_Chloride_PVC_Sheet, Kevlar_Plate, Endium_Plate, Nickel_Aluminide_Plate,
+        Obsidian_Plate, Wood_Plank, Redstone_Plate, Glowstone_Plate, Electrotine_Plate, Deep_Iron_Plate, Basalt_Plate,
+        Marble_Plate, Black_Granite_Plate, Red_Granite_Plate, Silicon_Solar_Grade_Poly_SI_Plate, Trinium_Plate,
+        Polyethylene_PE_Sheet, Rubber_Sheet, Desh_Plate, Sealed_Wood_Plank, Glass_Pane, Chrysotile_Plate, Realgar_Plate,
+        Concrete_Plate, Vyroxeres_Plate, Ceruclase_Plate, Tartarite_Plate, Orichalcum_Plate, Void_Metal_Plate,
+        Superconductor_Base_UEV_Plate, Draconium_Plate, Awakened_Draconium_Plate, Blood_Infused_Iron_Plate,
+        Ichorium_Plate, Radox_Polymer_Sheet, Gallium_Arsenide_Plate, Indium_Gallium_Phosphide_Plate,
+        Cosmic_Neutronium_Plate, Flerovium_Plate, Superconductor_Base_UHV_Plate, Superconductor_Base_UV_Plate,
+        Superconductor_Base_MV_Plate, Superconductor_Base_HV_Plate, Superconductor_Base_EV_Plate,
+        Superconductor_Base_IV_Plate, Superconductor_Base_LuV_Plate, Superconductor_Base_ZPM_Plate, Clay_Plate,
+        Sodium_Plate, Selenium_Plate, Iodine_Plate, Rhenium_Plate, Thallium_Plate, Germanium_Plate, Technetium_Plate,
+        Lithium_7_Plate, Uranium_232_Plate, Uranium_233_Plate, Advanced_Nitinol_Plate, Astral_Titanium_Plate,
+        Celestial_Tungsten_Plate, Hypogen_Plate, Chromatic_Glass_Plate, Black_Metal_Plate, Ancient_Granite_Plate,
+        Runite_Plate, Dragonblood_Plate, Silicon_Carbide_Plate, Zirconium_Carbide_Plate, Tantalum_Carbide_Plate,
+        Niobium_Carbide_Plate, Tungsten_Titanium_Carbide_Plate, Energy_Crystal_Plate, Blood_Steel_Plate,
+        Zeron_100_Plate, Tumbaga_Plate, Potin_Plate, Staballoy_Plate, Tantalloy_60_Plate, Tantalloy_61_Plate,
+        Inconel_625_Plate, Inconel_690_Plate, Inconel_792_Plate, Eglin_Steel_Plate, Maraging_Steel_250_Plate,
+        Maraging_Steel_300_Plate, Maraging_Steel_350_Plate, Watertight_Steel_Plate, Nitinol_60_Plate, Stellite_Plate,
+        Talonite_Plate, Hastelloy_W_Plate, Hastelloy_X_Plate, Hastelloy_C276_Plate, Hastelloy_N_Plate,
+        Incoloy_020_Plate, Incoloy_DS_Plate, Incoloy_MA956_Plate, Grisium_Plate, HG_1223_Plate,
+        Trinium_Titanium_Alloy_Plate, Trinium_Naquadah_Alloy_Plate, Trinium_Naquadah_Carbonite_Plate,
+        Arceus_Alloy_2B_Plate, HeLiCoPtEr_Plate, Lafium_Compound_Plate, Cinobite_A243_Plate, Pikyonium_64B_Plate,
+        Abyssal_Alloy_Plate, Laurenium_Plate, Botmium_Plate, HS188_A_Plate, Titansteel_Plate, Arcanite_Plate,
+        Octiron_Plate, Babbit_Alloy_Plate, Black_Titanium_Plate, Indalloy_140_Plate, Rhugnor_Plate, Quantum_Plate };
 }

@@ -8,42 +8,25 @@ import net.minecraftforge.common.MinecraftForge;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import EnumList.EnumListCheck.EnumFluidListCheck;
+import EnumList.EnumListCheck.EnumItemListCheck;
 import Recipes.ChaosRecipes.ChaosAntimatterRecipes;
-import Recipes.ChaosRecipes.ChaosArcaneWorktableRecipes;
-import Recipes.ChaosRecipes.ChaosBloodMagicRecipes;
-import Recipes.ChaosRecipes.ChaosBotaniaRecipes;
-import Recipes.ChaosRecipes.ChaosCircuitAssemblerRecipes;
-import Recipes.ChaosRecipes.ChaosCrucibleRecipes;
-import Recipes.ChaosRecipes.ChaosEssenceFarmRecipes;
 import Recipes.ChaosRecipes.ChaosExoticRecipes;
-import Recipes.ChaosRecipes.ChaosFallingTowerRecipes;
+import Recipes.ChaosRecipes.ChaosOfAssemblyLine.ChaosAssemblyLine_NormalCasingRecipe;
+import Recipes.ChaosRecipes.ChaosOfAssemblyLine.ChaosAssemblyLine_NormalHatchRecipe;
+import Recipes.ChaosRecipes.ChaosOfAssemblyLine.ChaosAssemblyLine_NormalItemRecipe;
+import Recipes.ChaosRecipes.ChaosOfAssemblyLine.ChaosAssemblyLine_NormalMachineRecipe;
 import Recipes.ChaosRecipes.ChaosOreRecipes;
 import Recipes.ChaosRecipes.ChaosReplicatorRecipes;
-import Recipes.ChaosRecipes.ChaosRunicMatrixRecipes;
 import Recipes.ChaosRecipes.ChaosSpecialCompressRecipes;
-import Recipes.ChaosRecipes.ChaosXtremeCraftingRecipes;
 import Recipes.ChaosRecipes.ChaosZhuHaiRecipes;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Acid;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Combustion;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Gas;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Magic;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Naquadah;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Nuclear;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Plasma;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Rocket;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Semifluid;
 import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Solar;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Steam;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_UCFE;
-import Recipes.OriginGeneratorRecipes.OriginGeneratorRecipes_Water;
 import Recipes.SingularityRecipes_Ecosystem.FakeSingularityEcosystemRecipes;
 import Recipes.SingularityRecipes_Ecosystem.SingularityEcosystemRecipes;
-import Recipes.SingularityRecipes_ModItem.FakeSingularityModItemRecipes_Show;
 import Recipes.SingularityRecipes_Pachinko.FakeSingularityPachinkoRecipes;
 import Recipes.SingularityRecipes_Pachinko.SingularityPachinkoRecipes;
 import Recipes.SingularityRecipes_VoidDust.FakeSingularityDustRecipes;
 import Recipes.SingularityRecipes_VoidDust.SingularityDustRecipes;
-import Recipes.SingularityRecipes_VoidDust.SingularityDustRecipes_T10;
 import Recipes.SingularityRecipes_VoidFluid.FakeSingularityFluidRecipes;
 import Recipes.SingularityRecipes_VoidFluid.SingularityFluidRecipes;
 import Recipes.SingularityRecipes_VoidFluid.SingularityFluidRecipes_T10;
@@ -62,7 +45,6 @@ import cpw.mods.fml.common.event.FMLLoadCompleteEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
-import loader.AssemblyLineWithoutResearchRecipePool;
 import loader.CraftingLoader;
 
 @Mod(modid = MyMod.MODID, version = Tags.VERSION, name = "GT Not Hard", acceptedMinecraftVersions = "[1.7.10]")
@@ -107,28 +89,32 @@ public class MyMod {
         proxy.postInit(event);
 
         // Chaos Recipes
+        ChaosAssemblyLine_NormalCasingRecipe.addChaosAssemblyLine_NormalCasingRecipe();
+        ChaosAssemblyLine_NormalHatchRecipe.addChaosAssemblyLine_NormalHatchRecipe();
+        ChaosAssemblyLine_NormalItemRecipe.addChaosAssemblyLine_NormalItemRecipe();
+        ChaosAssemblyLine_NormalMachineRecipe.addChaosAssemblyLine_NormalMachineRecipe();
+
         ChaosReplicatorRecipes.addReplicatorRecipes_Item();
         ChaosReplicatorRecipes.addReplicatorRecipes_Fluid();
         ChaosExoticRecipes.addExoticRecipes_DegenerateQuarkGluon();
         ChaosExoticRecipes.addExoticRecipes_Magmatter();
         ChaosAntimatterRecipes.addAntimatterRecipes();
-        ChaosFallingTowerRecipes.addChaosFallingTowerRecipes();
         ChaosOreRecipes.addChaosOreRecipes();
         ChaosSpecialCompressRecipes.addSpecialCompressRecipes();
 
         // OriginGeneratorRecipes
-        OriginGeneratorRecipes_Steam.addGeneratorRecipes_Steam();
-        OriginGeneratorRecipes_Semifluid.addGeneratorRecipes_Semifluid();
-        OriginGeneratorRecipes_Combustion.addGeneratorRecipes_Combustion();
-        OriginGeneratorRecipes_Plasma.addGeneratorRecipes_Plasma();
-        OriginGeneratorRecipes_Rocket.addGeneratorRecipes_Rocket();
-        OriginGeneratorRecipes_Gas.addGeneratorRecipes_Gas();
-        OriginGeneratorRecipes_UCFE.addGeneratorRecipes_UCFE();
-        OriginGeneratorRecipes_Magic.addGeneratorRecipes_Magic();
-        OriginGeneratorRecipes_Nuclear.addGeneratorRecipes_Nuclear();
-        OriginGeneratorRecipes_Naquadah.addGeneratorRecipes_Naquadah();
-        OriginGeneratorRecipes_Acid.addGeneratorRecipes_Acid();
-        OriginGeneratorRecipes_Water.addGeneratorRecipes_Water();
+        // OriginGeneratorRecipes_Steam.addGeneratorRecipes_Steam();
+        // OriginGeneratorRecipes_Semifluid.addGeneratorRecipes_Semifluid();
+        // OriginGeneratorRecipes_Combustion.addGeneratorRecipes_Combustion();
+        // OriginGeneratorRecipes_Plasma.addGeneratorRecipes_Plasma();
+        // OriginGeneratorRecipes_Rocket.addGeneratorRecipes_Rocket();
+        // OriginGeneratorRecipes_Gas.addGeneratorRecipes_Gas();
+        // OriginGeneratorRecipes_UCFE.addGeneratorRecipes_UCFE();
+        // OriginGeneratorRecipes_Magic.addGeneratorRecipes_Magic();
+        // OriginGeneratorRecipes_Nuclear.addGeneratorRecipes_Nuclear();
+        // OriginGeneratorRecipes_Naquadah.addGeneratorRecipes_Naquadah();
+        // OriginGeneratorRecipes_Acid.addGeneratorRecipes_Acid();
+        // OriginGeneratorRecipes_Water.addGeneratorRecipes_Water();
         OriginGeneratorRecipes_Solar.addGeneratorRecipes_Solar();
 
         // Singularity of Void Ore
@@ -200,6 +186,8 @@ public class MyMod {
         FakeSingularityDustRecipes.addFakeVoidDustRecipes_T8();
         SingularityDustRecipes.addVoidDustRecipes_T9();
         FakeSingularityDustRecipes.addFakeVoidDustRecipes_T9();
+        SingularityDustRecipes.addVoidDustRecipes_T10();
+        FakeSingularityDustRecipes.addFakeVoidDustRecipes_T10();
 
         // Singularity of Void Fluid
         SingularityFluidRecipes.addVoidFluidRecipes_T0();
@@ -268,15 +256,16 @@ public class MyMod {
         FakeSingularityPachinkoRecipes.addFakePachinkoRecipes_Storage();
 
         ChaosZhuHaiRecipes.addChaosZhuHaiFisheryRecipes();
-        ChaosXtremeCraftingRecipes.addChaosXtremeCraftingRecipes();
+        // ChaosXtremeCraftingRecipes.addChaosXtremeCraftingRecipes();
 
-        //ChaosArcaneWorktableRecipes.addArcaneWorktableRecipes();
-        //ChaosBloodMagicRecipes.addBloodMagicRecipes();
-        //ChaosBotaniaRecipes.addBotaniaRecipes();
-        //ChaosCrucibleRecipes.addCrucibleRecipes();
-        //ChaosEssenceFarmRecipes.addEssenceFarmRecipes();
-        //ChaosRunicMatrixRecipes.addRunicMatrixRecipes_1();
-        //ChaosRunicMatrixRecipes.addRunicMatrixRecipes_2();
+        // ChaosArcaneWorktableRecipes.addArcaneWorktableRecipes();
+        // ChaosBloodMagicRecipes.addBloodMagicRecipes();
+        // ChaosBotaniaRecipes.addBotaniaRecipes();
+        // ChaosCrucibleRecipes.addCrucibleRecipes();
+        // ChaosEssenceFarmRecipes.addEssenceFarmRecipes();
+        // ChaosFallingTowerRecipes.addChaosFallingTowerRecipes();
+        // ChaosRunicMatrixRecipes.addRunicMatrixRecipes_1();
+        // ChaosRunicMatrixRecipes.addRunicMatrixRecipes_2();
 
         // Debug
         // ChaosArcaneWorktableRecipes.addArcaneWorktableRecipes_test();
@@ -286,6 +275,17 @@ public class MyMod {
         // ChaosEssenceFarmRecipes.addEssenceFarmRecipes_test();
         // ChaosRunicMatrixRecipes.addRunicMatrixRecipes_test();
         // ItemNBTCheck.addItemNBTCheckRecipes();
+        // ItemNBTCheck.addDevItemNBTCheckRecipes();
+
+        // Debug
+        EnumItemListCheck.addEnumGTListCheckRecipes();
+        EnumItemListCheck.addEnumMagicListCheckRecipes();
+        EnumItemListCheck.addEnumMaterialListCheckRecipes();
+        EnumItemListCheck.addEnumMiscListCheckRecipes();
+        EnumItemListCheck.addEnumModListCheckRecipes();
+        EnumItemListCheck.addEnumOreProductListCheckRecipes();
+        EnumItemListCheck.addEnumTinkerConstructListCheckRecipes();
+        EnumFluidListCheck.addEnumFluidListCheckRecipes();
 
         FMLCommonHandler.instance()
             .bus()
@@ -294,14 +294,11 @@ public class MyMod {
 
     @Mod.EventHandler
     public void completeInit(FMLLoadCompleteEvent event) {
-        AssemblyLineWithoutResearchRecipePool assemblyLineWithoutResearchRecipePool = new AssemblyLineWithoutResearchRecipePool();
+        // AssemblyLineWithoutResearchRecipePool assemblyLineWithoutResearchRecipePool = new
+        // AssemblyLineWithoutResearchRecipePool();
         // assemblyLineWithoutResearchRecipePool.loadRecipes();
-        ChaosCircuitAssemblerRecipes.addChaosCircuitAssemblerRecipes();
-        SingularityDustRecipes_T10.addVoidDustRecipes_T10();
-        SingularityDustRecipes_T10.addFakeVoidDustRecipes_T10();
-        FakeSingularityModItemRecipes_Show.addFakeModItemRecipes_Show();
-
-        // Debug
+        // ChaosCircuitAssemblerRecipes.addChaosCircuitAssemblerRecipes();
+        // FakeSingularityModItemRecipes_Show.addFakeModItemRecipes_Show();
 
         // ChaosArcaneWorktableRecipes.addArcaneWorktableRecipes();
         // ChaosBloodMagicRecipes.addBloodMagicRecipes();
@@ -309,6 +306,7 @@ public class MyMod {
         // ChaosCrucibleRecipes.addCrucibleRecipes();
         // ChaosRunicMatrixRecipes.addRunicMatrixRecipes_1();
         // ChaosRunicMatrixRecipes.addRunicMatrixRecipes_2();
+
     }
 
     @Mod.EventHandler

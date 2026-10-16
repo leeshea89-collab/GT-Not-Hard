@@ -1,38 +1,79 @@
 package EnumList.EnumItemList.EnumMaterialList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.BartWorks;
 import static gregtech.api.enums.Mods.GTPlusPlus;
 import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class GearList {
+
     public static final ItemStack Ruthenium_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 64);
     public static final ItemStack Rhodium_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 78);
-    public static final ItemStack Rhodium_Plated_Palladium_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 88);
+    public static final ItemStack Rhodium_Plated_Palladium_Gear = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedgearGt",
+        1L,
+        88);
     public static final ItemStack Tiberium_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 89);
     public static final ItemStack Ruridit_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 90);
-    public static final ItemStack High_Durability_Compound_Steel_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 92);
+    public static final ItemStack High_Durability_Compound_Steel_Gear = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedgearGt",
+        1L,
+        92);
     public static final ItemStack Ademic_Steel_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 96);
-    public static final ItemStack Atomic_Separation_Catalyst_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10022);
-    public static final ItemStack Extremely_Unstable_Naquadah_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10024);
+    public static final ItemStack Atomic_Separation_Catalyst_Gear = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedgearGt",
+        1L,
+        10022);
+    public static final ItemStack Extremely_Unstable_Naquadah_Gear = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedgearGt",
+        1L,
+        10024);
     public static final ItemStack Zircaloy_4_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10082);
     public static final ItemStack Zircaloy_2_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10083);
     public static final ItemStack Incoloy_903_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10084);
-    public static final ItemStack Adamantium_Alloy_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10085);
+    public static final ItemStack Adamantium_Alloy_Gear = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedgearGt",
+        1L,
+        10085);
     public static final ItemStack MAR_M200_Steel_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10096);
-    public static final ItemStack MAR_Ce_M200_Steel_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10097);
+    public static final ItemStack MAR_Ce_M200_Steel_Gear = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedgearGt",
+        1L,
+        10097);
     public static final ItemStack Signalium_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10099);
     public static final ItemStack Lumiium_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10101);
     public static final ItemStack Artherium_Sn_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10102);
-    public static final ItemStack Tanmolyium_Beta_C_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10103);
+    public static final ItemStack Tanmolyium_Beta_C_Gear = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedgearGt",
+        1L,
+        10103);
     public static final ItemStack Dalisenite_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10104);
     public static final ItemStack Hikarium_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10105);
     public static final ItemStack Tairitsu_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10106);
-    public static final ItemStack Precious_Metals_Alloy_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10109);
-    public static final ItemStack Enriched_Naquadah_Alloy_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10110);
-    public static final ItemStack Metastable_Oganesson_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10111);
+    public static final ItemStack Precious_Metals_Alloy_Gear = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedgearGt",
+        1L,
+        10109);
+    public static final ItemStack Enriched_Naquadah_Alloy_Gear = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedgearGt",
+        1L,
+        10110);
+    public static final ItemStack Metastable_Oganesson_Gear = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedgearGt",
+        1L,
+        10111);
     public static final ItemStack Shirabon_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 10112);
     public static final ItemStack Mu_metal_Gear = getModItem(BartWorks.ID, "gt.bwMetaGeneratedgearGt", 1L, 11351);
     public static final ItemStack Carbon_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31010);
@@ -161,7 +202,11 @@ public class GearList {
     public static final ItemStack Epoxid_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31470);
     public static final ItemStack Silicone_Rubber_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31471);
     public static final ItemStack Polycaprolactam_PCL_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31472);
-    public static final ItemStack Polytetrafluoroethylene_PTFE_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31473);
+    public static final ItemStack Polytetrafluoroethylene_PTFE_Gear = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        31473);
     public static final ItemStack Alduorite_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31485);
     public static final ItemStack Rubracium_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31488);
     public static final ItemStack Vulcanite_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31489);
@@ -176,15 +221,27 @@ public class GearList {
     public static final ItemStack Ordo_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31545);
     public static final ItemStack TPV_Alloy_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31576);
     public static final ItemStack Transcendent_Metal_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31581);
-    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31583);
+    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Gear = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        31583);
     public static final ItemStack White_Dwarf_Matter_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31585);
     public static final ItemStack Black_Dwarf_Matter_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31586);
     public static final ItemStack SpaceTime_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31588);
     public static final ItemStack Polybenzimidazole_PBI_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31599);
-    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31610);
+    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Gear = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        31610);
     public static final ItemStack Nickel_Zinc_Ferrite_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31613);
     public static final ItemStack Polyphenylene_Sulfide_PPS_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31631);
-    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31635);
+    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Gear = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        31635);
     public static final ItemStack Polystyrene_PS_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31636);
     public static final ItemStack Polyvinyl_Chloride_PVC_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31649);
     public static final ItemStack Kevlar_Gear = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 31765);
@@ -227,7 +284,10 @@ public class GearList {
     public static final ItemStack Zirconium_Carbide_Gear = getModItem(GTPlusPlus.ID, "itemGearZirconiumCarbide", 1L);
     public static final ItemStack Tantalum_Carbide_Gear = getModItem(GTPlusPlus.ID, "itemGearTantalumCarbide", 1L);
     public static final ItemStack Niobium_Carbide_Gear = getModItem(GTPlusPlus.ID, "itemGearNiobiumCarbide", 1L);
-    public static final ItemStack Tungsten_Titanium_Carbide_Gear = getModItem(GTPlusPlus.ID, "itemGearTungstenTitaniumCarbide", 1L);
+    public static final ItemStack Tungsten_Titanium_Carbide_Gear = getModItem(
+        GTPlusPlus.ID,
+        "itemGearTungstenTitaniumCarbide",
+        1L);
     public static final ItemStack Energy_Crystal_Gear = getModItem(GTPlusPlus.ID, "itemGearEnergyCrystal", 1L);
     public static final ItemStack Blood_Steel_Gear = getModItem(GTPlusPlus.ID, "itemGearBloodSteel", 1L);
     public static final ItemStack Zeron_100_Gear = getModItem(GTPlusPlus.ID, "itemGearZeron100", 1L);
@@ -255,8 +315,14 @@ public class GearList {
     public static final ItemStack Incoloy_DS_Gear = getModItem(GTPlusPlus.ID, "itemGearIncoloyDS", 1L);
     public static final ItemStack Incoloy_MA956_Gear = getModItem(GTPlusPlus.ID, "itemGearIncoloyMA956", 1L);
     public static final ItemStack Grisium_Gear = getModItem(GTPlusPlus.ID, "itemGearGrisium", 1L);
-    public static final ItemStack Trinium_Titanium_Alloy_Gear = getModItem(GTPlusPlus.ID, "itemGearTriniumTitaniumAlloy", 1L);
-    public static final ItemStack Trinium_Naquadah_Carbonite_Gear = getModItem(GTPlusPlus.ID, "itemGearTriniumNaquadahCarbonite", 1L);
+    public static final ItemStack Trinium_Titanium_Alloy_Gear = getModItem(
+        GTPlusPlus.ID,
+        "itemGearTriniumTitaniumAlloy",
+        1L);
+    public static final ItemStack Trinium_Naquadah_Carbonite_Gear = getModItem(
+        GTPlusPlus.ID,
+        "itemGearTriniumNaquadahCarbonite",
+        1L);
     public static final ItemStack Arceus_Alloy_2B_Gear = getModItem(GTPlusPlus.ID, "itemGearArceusAlloy2B", 1L);
     public static final ItemStack HeLiCoPtEr_Gear = getModItem(GTPlusPlus.ID, "itemGearHeLiCoPtEr", 1L);
     public static final ItemStack Lafium_Compound_Gear = getModItem(GTPlusPlus.ID, "itemGearLafiumCompound", 1L);
@@ -271,4 +337,52 @@ public class GearList {
     public static final ItemStack Octiron_Gear = getModItem(GTPlusPlus.ID, "itemGearOctiron", 1L);
     public static final ItemStack Quantum_Gear = getModItem(GTPlusPlus.ID, "itemGearQuantum", 1L);
 
+    public static final ItemStack[] Gear_List = new ItemStack[] { Ruthenium_Gear, Rhodium_Gear,
+        Rhodium_Plated_Palladium_Gear, Tiberium_Gear, Ruridit_Gear, High_Durability_Compound_Steel_Gear,
+        Ademic_Steel_Gear, Atomic_Separation_Catalyst_Gear, Extremely_Unstable_Naquadah_Gear, Zircaloy_4_Gear,
+        Zircaloy_2_Gear, Incoloy_903_Gear, Adamantium_Alloy_Gear, MAR_M200_Steel_Gear, MAR_Ce_M200_Steel_Gear,
+        Signalium_Gear, Lumiium_Gear, Artherium_Sn_Gear, Tanmolyium_Beta_C_Gear, Dalisenite_Gear, Hikarium_Gear,
+        Tairitsu_Gear, Precious_Metals_Alloy_Gear, Enriched_Naquadah_Alloy_Gear, Metastable_Oganesson_Gear,
+        Shirabon_Gear, Mu_metal_Gear, Carbon_Gear, Aluminium_Gear, Titanium_Gear, Chrome_Gear, Iron_Gear, Cobalt_Gear,
+        Nickel_Gear, Copper_Gear, Strontium_Gear, Palladium_Gear, Silver_Gear, Tin_Gear, Neodymium_Gear, Tungsten_Gear,
+        Osmium_Gear, Iridium_Gear, Platinum_Gear, Gold_Gear, Lead_Gear, Bismuth_Gear, Purified_Tengam_Gear,
+        Attuned_Tengam_Gear, Neutronium_Gear, Netherite_Gear, Universium_Gear, Eternity_Gear, Magmatter_Gear,
+        Six_Phased_Copper_Gear, Mellion_Gear, Creon_Gear, Hot_Proto_Halkonite_Steel_Gear, Proto_Halkonite_Steel_Gear,
+        Hot_Exo_Halkonite_Steel_Gear, Exo_Halkonite_Steel_Gear, Hexanite_Gear, Shijima_Gear, Churitsu_Gear,
+        Manasteel_Gear, Terrasteel_Gear, Elven_Elementium_Gear, Livingrock_Gear, Gaia_Spirit_Gear, Livingwood_Gear,
+        Dreamwood_Gear, Stone_Gear, Bronze_Gear, Brass_Gear, Invar_Gear, Electrum_Gear, Cast_Iron_Gear, Steel_Gear,
+        Stainless_Steel_Gear, Magnalium_Gear, Tungstensteel_Gear, Osmiridium_Gear, Sunnarium_Gear, Adamantium_Gear,
+        Fluxed_Electrum_Gear, Enderium_Gear, Infused_Gold_Gear, Naquadah_Gear, Naquadah_Alloy_Gear, Thaumium_Gear,
+        Black_Steel_Gear, Damascus_Steel_Gear, Ironwood_Gear, Steeleaf_Gear, Cobalt_Brass_Gear, Ultimet_Gear,
+        Annealed_Copper_Gear, Fiery_Steel_Gear, Red_Steel_Gear, Blue_Steel_Gear, Sterling_Silver_Gear, Rose_Gold_Gear,
+        Black_Bronze_Gear, Bismuth_Bronze_Gear, Magnetic_Iron_Gear, Magnetic_Steel_Gear, Magnetic_Neodymium_Gear,
+        Vanadium_Gallium_Gear, Knightmetal_Gear, Tin_Alloy_Gear, Dark_Steel_Gear, Electrical_Steel_Gear,
+        Energetic_Alloy_Gear, Vibrant_Alloy_Gear, Shadow_Metal_Gear, Conductive_Iron_Gear, Tungstencarbide_Gear,
+        Vanadiumsteel_Gear, HSSG_Gear, HSSE_Gear, HSSS_Gear, Pulsating_Iron_Gear, Soularium_Gear, Enderium_Base_Gear,
+        Redstone_Alloy_Gear, Ardite_Gear, Reinforced_Gear, Galgadorian_Gear, Enhanced_Galgadorian_Gear, Manyullyn_Gear,
+        Mytryl_Gear, Black_Plutonium_Gear, Callisto_Ice_Gear, Ledox_Gear, Quantium_Gear, Duralumin_Gear,
+        Oriharukon_Gear, Infinity_Catalyst_Gear, Infinity_Gear, Mysterious_Crystal_Gear, Magnetic_Samarium_Gear,
+        Obzinite_Gear, End_Steel_Gear, Clay_Compound_Gear, Crystalline_Alloy_Gear, Melodic_Alloy_Gear,
+        Stellar_Alloy_Gear, Crystalline_Pink_Slime_Gear, Energetic_Silver_Gear, Vivid_Alloy_Gear, Epoxid_Gear,
+        Silicone_Rubber_Gear, Polycaprolactam_PCL_Gear, Polytetrafluoroethylene_PTFE_Gear, Alduorite_Gear,
+        Rubracium_Gear, Vulcanite_Gear, Diamond_Gear, Force_Gear, Vinteum_Gear, Aer_Gear, Ignis_Gear, Terra_Gear,
+        Aqua_Gear, Perditio_Gear, Ordo_Gear, TPV_Alloy_Gear, Transcendent_Metal_Gear,
+        Magnetohydrodynamically_Constrained_Star_Matter_Gear, White_Dwarf_Matter_Gear, Black_Dwarf_Matter_Gear,
+        SpaceTime_Gear, Polybenzimidazole_PBI_Gear, Fiber_Reinforced_Epoxy_Resin_Gear, Nickel_Zinc_Ferrite_Gear,
+        Polyphenylene_Sulfide_PPS_Gear, Styrene_Butadiene_Rubber_SBR_Gear, Polystyrene_PS_Gear,
+        Polyvinyl_Chloride_PVC_Gear, Kevlar_Gear, Endium_Gear, Wood_Gear, Basalt_Gear, Marble_Gear, Black_Granite_Gear,
+        Red_Granite_Gear, Construction_Foam_Gear, Trinium_Gear, Polyethylene_PE_Gear, Rubber_Gear, Desh_Gear,
+        Sealed_Wood_Gear, Chrysotile_Gear, Realgar_Gear, Ceruclase_Gear, Orichalcum_Gear, Void_Metal_Gear,
+        Draconium_Gear, Awakened_Draconium_Gear, Blood_Infused_Iron_Gear, Ichorium_Gear, Cosmic_Neutronium_Gear,
+        Flerovium_Gear, Rhugnor_Gear, Selenium_Gear, Iodine_Gear, Rhenium_Gear, Thallium_Gear, Germanium_Gear,
+        Astral_Titanium_Gear, Celestial_Tungsten_Gear, Hypogen_Gear, Chromatic_Glass_Gear, Black_Metal_Gear,
+        Dragonblood_Gear, Silicon_Carbide_Gear, Zirconium_Carbide_Gear, Tantalum_Carbide_Gear, Niobium_Carbide_Gear,
+        Tungsten_Titanium_Carbide_Gear, Energy_Crystal_Gear, Blood_Steel_Gear, Zeron_100_Gear, Tumbaga_Gear, Potin_Gear,
+        Staballoy_Gear, Tantalloy_60_Gear, Tantalloy_61_Gear, Inconel_625_Gear, Inconel_690_Gear, Inconel_792_Gear,
+        Eglin_Steel_Gear, Maraging_Steel_250_Gear, Maraging_Steel_300_Gear, Maraging_Steel_350_Gear,
+        Watertight_Steel_Gear, Nitinol_60_Gear, Stellite_Gear, Talonite_Gear, Hastelloy_W_Gear, Hastelloy_X_Gear,
+        Hastelloy_C276_Gear, Hastelloy_N_Gear, Incoloy_020_Gear, Incoloy_DS_Gear, Incoloy_MA956_Gear, Grisium_Gear,
+        Trinium_Titanium_Alloy_Gear, Trinium_Naquadah_Carbonite_Gear, Arceus_Alloy_2B_Gear, HeLiCoPtEr_Gear,
+        Lafium_Compound_Gear, Cinobite_A243_Gear, Pikyonium_64B_Gear, Abyssal_Alloy_Gear, Laurenium_Gear, Botmium_Gear,
+        HS188_A_Gear, Titansteel_Gear, Arcanite_Gear, Octiron_Gear, Quantum_Gear };
 }

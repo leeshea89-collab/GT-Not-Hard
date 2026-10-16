@@ -1,7 +1,5 @@
 package EnumList.EnumItemList.EnumBiologyList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.ExtraBees;
 import static gregtech.api.enums.Mods.Forestry;
 import static gregtech.api.enums.Mods.GTPlusPlus;
@@ -10,7 +8,10 @@ import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.enums.Mods.MagicBees;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class CombList {
+
     public static final ItemStack Oily_Comb = getModItem(ExtraBees.ID, "honeyComb", 1L, 3);
     public static final ItemStack Fossilised_Comb = getModItem(ExtraBees.ID, "honeyComb", 1L, 4);
     public static final ItemStack Petroleum_Comb = getModItem(ExtraBees.ID, "honeyComb", 1L, 5);
@@ -160,7 +161,7 @@ public class CombList {
     public static final ItemStack Plutonium_Comb = getModItem(GregTech.ID, "gt.comb", 1L, 78);
     public static final ItemStack Naquadah_Comb = getModItem(GregTech.ID, "gt.comb", 1L, 79);
     public static final ItemStack Naquadria_Comb = getModItem(GregTech.ID, "gt.comb", 1L, 80);
-    public static final ItemStack Dob_Comb = getModItem(GregTech.ID, "gt.comb", 1L, 81);
+    public static final ItemStack D_o_b_Comb = getModItem(GregTech.ID, "gt.comb", 1L, 81);
     public static final ItemStack Thorium_Comb = getModItem(GregTech.ID, "gt.comb", 1L, 82);
     public static final ItemStack Lutetium_Comb = getModItem(GregTech.ID, "gt.comb", 1L, 83);
     public static final ItemStack Americium_Comb = getModItem(GregTech.ID, "gt.comb", 1L, 84);

@@ -40,7 +40,6 @@ import com.gtnewhorizon.structurelib.structure.StructureDefinition;
 import Recipes.SingularityRecipes_Ecosystem.SingularityEcosystemRecipes;
 import Recipes.SingularityRecipes_Pachinko.SingularityPachinkoRecipes;
 import Recipes.SingularityRecipes_VoidDust.SingularityDustRecipes;
-import Recipes.SingularityRecipes_VoidDust.SingularityDustRecipes_T10;
 import Recipes.SingularityRecipes_VoidFluid.SingularityFluidRecipes;
 import Recipes.SingularityRecipes_VoidFluid.SingularityFluidRecipes_T10;
 import Recipes.SingularityRecipes_VoidGem.SingularityGemRecipes;
@@ -299,7 +298,7 @@ public class Singularity extends MTEExtendedPowerMultiBlockBase<Singularity> imp
             }
 
             ItemStack[] OreRecipes = switch (dim) {
-                case "Ow", "Ne", "TF", "ED", "EA" -> SingularityOreRecipes.VoidOreRecipes_T0.get(dim);
+                case "Ow", "Ne", "TF", "ED", "EA", "Eg" -> SingularityOreRecipes.VoidOreRecipes_T0.get(dim);
                 case "Mo" -> SingularityOreRecipes.VoidOreRecipes_T1.get(dim);
                 case "De", "Ma", "Ph" -> SingularityOreRecipes.VoidOreRecipes_T2.get(dim);
                 case "As", "Ca", "Ce", "Eu", "Ga", "Rb" -> SingularityOreRecipes.VoidOreRecipes_T3.get(dim);
@@ -394,7 +393,7 @@ public class Singularity extends MTEExtendedPowerMultiBlockBase<Singularity> imp
             }
 
             ItemStack[] DustRecipes = switch (dim) {
-                case "Ow", "Ne", "TF", "ED", "EA" -> SingularityDustRecipes.VoidDustRecipes_T0.get(dim);
+                case "Ow", "Ne", "TF", "ED", "EA", "Eg" -> SingularityDustRecipes.VoidDustRecipes_T0.get(dim);
                 case "Mo" -> SingularityDustRecipes.VoidDustRecipes_T1.get(dim);
                 case "De", "Ma", "Ph" -> SingularityDustRecipes.VoidDustRecipes_T2.get(dim);
                 case "As", "Ca", "Ce", "Eu", "Ga", "Rb" -> SingularityDustRecipes.VoidDustRecipes_T3.get(dim);
@@ -404,7 +403,7 @@ public class Singularity extends MTEExtendedPowerMultiBlockBase<Singularity> imp
                 case "Ha", "KB", "MM", "Pl" -> SingularityDustRecipes.VoidDustRecipes_T7.get(dim);
                 case "BC", "BE", "BF", "CB", "TE", "VB" -> SingularityDustRecipes.VoidDustRecipes_T8.get(dim);
                 case "An", "Ho", "Mh", "MB", "Np", "Se" -> SingularityDustRecipes.VoidDustRecipes_T9.get(dim);
-                case "DD" -> SingularityDustRecipes_T10.VoidDustRecipes_T10.get(dim);
+                case "DD" -> SingularityDustRecipes.VoidDustRecipes_T10.get(dim);
                 default -> null;
             };
 
@@ -416,7 +415,7 @@ public class Singularity extends MTEExtendedPowerMultiBlockBase<Singularity> imp
                     ItemStack recipeDust = DustRecipes[index];
                     recipeDust.stackSize = getMaxParallel();
                     for (int mStack = 0; mStack < 64; mStack++) {
-                        //addOutput(recipeDust);
+                        // addOutput(recipeDust);
                         addOutputAtomic(recipeDust);
                     }
                 }
@@ -1135,7 +1134,7 @@ public class Singularity extends MTEExtendedPowerMultiBlockBase<Singularity> imp
         int z) {
         super.getWailaNBTData(player, tile, tag, world, x, y, z);
         if (getControllerSlot() != null) {
-            tag.setString("Item", getControllerSlot().getDisplayName());
+            tag.setString("EnumList/EnumListCheck", getControllerSlot().getDisplayName());
             tag.setString("Type", machineType);
         }
     }
@@ -1145,8 +1144,8 @@ public class Singularity extends MTEExtendedPowerMultiBlockBase<Singularity> imp
         IWailaConfigHandler config) {
         super.getWailaBody(itemStack, currentTip, accessor, config);
         final NBTTagCompound tag = accessor.getNBTData();
-        if (tag.hasKey("Item")) {
-            currentTip.add("Item: " + EnumChatFormatting.YELLOW + tag.getString("Item"));
+        if (tag.hasKey("EnumList/EnumListCheck")) {
+            currentTip.add("Item: " + EnumChatFormatting.YELLOW + tag.getString("EnumList/EnumListCheck"));
             currentTip.add("Type: " + EnumChatFormatting.YELLOW + tag.getString("Type"));
             currentTip.add("Parallel: " + EnumChatFormatting.YELLOW + getMaxParallel());
         }

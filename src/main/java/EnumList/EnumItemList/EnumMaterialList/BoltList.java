@@ -1,38 +1,75 @@
 package EnumList.EnumItemList.EnumMaterialList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.BartWorks;
 import static gregtech.api.enums.Mods.GTPlusPlus;
 import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class BoltList {
+
     public static final ItemStack Ruthenium_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 64);
     public static final ItemStack Rhodium_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 78);
-    public static final ItemStack Rhodium_Plated_Palladium_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 88);
+    public static final ItemStack Rhodium_Plated_Palladium_Bolt = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedbolt",
+        1L,
+        88);
     public static final ItemStack Tiberium_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 89);
     public static final ItemStack Ruridit_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 90);
-    public static final ItemStack High_Durability_Compound_Steel_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 92);
+    public static final ItemStack High_Durability_Compound_Steel_Bolt = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedbolt",
+        1L,
+        92);
     public static final ItemStack Ademic_Steel_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 96);
-    public static final ItemStack Atomic_Separation_Catalyst_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10022);
-    public static final ItemStack Extremely_Unstable_Naquadah_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10024);
+    public static final ItemStack Atomic_Separation_Catalyst_Bolt = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedbolt",
+        1L,
+        10022);
+    public static final ItemStack Extremely_Unstable_Naquadah_Bolt = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedbolt",
+        1L,
+        10024);
     public static final ItemStack Zircaloy_4_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10082);
     public static final ItemStack Zircaloy_2_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10083);
     public static final ItemStack Incoloy_903_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10084);
     public static final ItemStack Adamantium_Alloy_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10085);
     public static final ItemStack MAR_M200_Steel_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10096);
-    public static final ItemStack MAR_Ce_M200_Steel_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10097);
+    public static final ItemStack MAR_Ce_M200_Steel_Bolt = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedbolt",
+        1L,
+        10097);
     public static final ItemStack Signalium_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10099);
     public static final ItemStack Lumiium_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10101);
     public static final ItemStack Artherium_Sn_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10102);
-    public static final ItemStack Tanmolyium_Beta_C_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10103);
+    public static final ItemStack Tanmolyium_Beta_C_Bolt = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedbolt",
+        1L,
+        10103);
     public static final ItemStack Dalisenite_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10104);
     public static final ItemStack Hikarium_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10105);
     public static final ItemStack Tairitsu_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10106);
-    public static final ItemStack Precious_Metals_Alloy_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10109);
-    public static final ItemStack Enriched_Naquadah_Alloy_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10110);
-    public static final ItemStack Metastable_Oganesson_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10111);
+    public static final ItemStack Precious_Metals_Alloy_Bolt = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedbolt",
+        1L,
+        10109);
+    public static final ItemStack Enriched_Naquadah_Alloy_Bolt = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedbolt",
+        1L,
+        10110);
+    public static final ItemStack Metastable_Oganesson_Bolt = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedbolt",
+        1L,
+        10111);
     public static final ItemStack Shirabon_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 10112);
     public static final ItemStack Mu_metal_Bolt = getModItem(BartWorks.ID, "gt.bwMetaGeneratedbolt", 1L, 11351);
     public static final ItemStack Lithium_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26006);
@@ -231,7 +268,11 @@ public class BoltList {
     public static final ItemStack Epoxid_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26470);
     public static final ItemStack Silicone_Rubber_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26471);
     public static final ItemStack Polycaprolactam_PCL_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26472);
-    public static final ItemStack Polytetrafluoroethylene_PTFE_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26473);
+    public static final ItemStack Polytetrafluoroethylene_PTFE_Bolt = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        26473);
     public static final ItemStack Alduorite_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26485);
     public static final ItemStack Rubracium_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26488);
     public static final ItemStack Vulcanite_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26489);
@@ -282,16 +323,28 @@ public class BoltList {
     public static final ItemStack TPV_Alloy_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26576);
     public static final ItemStack Transcendent_Metal_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26581);
     public static final ItemStack Enriched_Holmium_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26582);
-    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26583);
+    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Bolt = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        26583);
     public static final ItemStack White_Dwarf_Matter_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26585);
     public static final ItemStack Black_Dwarf_Matter_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26586);
     public static final ItemStack SpaceTime_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26588);
     public static final ItemStack Polybenzimidazole_PBI_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26599);
-    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26610);
+    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Bolt = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        26610);
     public static final ItemStack Borosilicate_Glass_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26611);
     public static final ItemStack Nickel_Zinc_Ferrite_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26613);
     public static final ItemStack Polyphenylene_Sulfide_PPS_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26631);
-    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26635);
+    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Bolt = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        26635);
     public static final ItemStack Polystyrene_PS_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26636);
     public static final ItemStack Polyvinyl_Chloride_PVC_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26649);
     public static final ItemStack Kevlar_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26765);
@@ -300,7 +353,11 @@ public class BoltList {
     public static final ItemStack Obsidian_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26804);
     public static final ItemStack Short_Wood_Stick = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26809);
     public static final ItemStack Deep_Iron_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26829);
-    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26856);
+    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Bolt = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        26856);
     public static final ItemStack Trinium_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26868);
     public static final ItemStack Polyethylene_PE_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26874);
     public static final ItemStack Rubber_Bolt = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 26880);
@@ -347,7 +404,10 @@ public class BoltList {
     public static final ItemStack Zirconium_Carbide_Bolt = getModItem(GTPlusPlus.ID, "itemBoltZirconiumCarbide", 1L);
     public static final ItemStack Tantalum_Carbide_Bolt = getModItem(GTPlusPlus.ID, "itemBoltTantalumCarbide", 1L);
     public static final ItemStack Niobium_Carbide_Bolt = getModItem(GTPlusPlus.ID, "itemBoltNiobiumCarbide", 1L);
-    public static final ItemStack Tungsten_Titanium_Carbide_Bolt = getModItem(GTPlusPlus.ID, "itemBoltTungstenTitaniumCarbide", 1L);
+    public static final ItemStack Tungsten_Titanium_Carbide_Bolt = getModItem(
+        GTPlusPlus.ID,
+        "itemBoltTungstenTitaniumCarbide",
+        1L);
     public static final ItemStack Energy_Crystal_Bolt = getModItem(GTPlusPlus.ID, "itemBoltEnergyCrystal", 1L);
     public static final ItemStack Blood_Steel_Bolt = getModItem(GTPlusPlus.ID, "itemBoltBloodSteel", 1L);
     public static final ItemStack Zeron_100_Bolt = getModItem(GTPlusPlus.ID, "itemBoltZeron100", 1L);
@@ -375,8 +435,14 @@ public class BoltList {
     public static final ItemStack Incoloy_DS_Bolt = getModItem(GTPlusPlus.ID, "itemBoltIncoloyDS", 1L);
     public static final ItemStack Incoloy_MA956_Bolt = getModItem(GTPlusPlus.ID, "itemBoltIncoloyMA956", 1L);
     public static final ItemStack Grisium_Bolt = getModItem(GTPlusPlus.ID, "itemBoltGrisium", 1L);
-    public static final ItemStack Trinium_Titanium_Alloy_Bolt = getModItem(GTPlusPlus.ID, "itemBoltTriniumTitaniumAlloy", 1L);
-    public static final ItemStack Trinium_Naquadah_Carbonite_Bolt = getModItem(GTPlusPlus.ID, "itemBoltTriniumNaquadahCarbonite", 1L);
+    public static final ItemStack Trinium_Titanium_Alloy_Bolt = getModItem(
+        GTPlusPlus.ID,
+        "itemBoltTriniumTitaniumAlloy",
+        1L);
+    public static final ItemStack Trinium_Naquadah_Carbonite_Bolt = getModItem(
+        GTPlusPlus.ID,
+        "itemBoltTriniumNaquadahCarbonite",
+        1L);
     public static final ItemStack Arceus_Alloy_2B_Bolt = getModItem(GTPlusPlus.ID, "itemBoltArceusAlloy2B", 1L);
     public static final ItemStack HeLiCoPtEr_Bolt = getModItem(GTPlusPlus.ID, "itemBoltHeLiCoPtEr", 1L);
     public static final ItemStack Lafium_Compound_Bolt = getModItem(GTPlusPlus.ID, "itemBoltLafiumCompound", 1L);
@@ -391,4 +457,74 @@ public class BoltList {
     public static final ItemStack Octiron_Bolt = getModItem(GTPlusPlus.ID, "itemBoltOctiron", 1L);
     public static final ItemStack Quantum_Bolt = getModItem(GTPlusPlus.ID, "itemBoltQuantum", 1L);
 
+    public static final ItemStack[] Bolt_List = new ItemStack[] { Ruthenium_Bolt, Rhodium_Bolt,
+        Rhodium_Plated_Palladium_Bolt, Tiberium_Bolt, Ruridit_Bolt, High_Durability_Compound_Steel_Bolt,
+        Ademic_Steel_Bolt, Atomic_Separation_Catalyst_Bolt, Extremely_Unstable_Naquadah_Bolt, Zircaloy_4_Bolt,
+        Zircaloy_2_Bolt, Incoloy_903_Bolt, Adamantium_Alloy_Bolt, MAR_M200_Steel_Bolt, MAR_Ce_M200_Steel_Bolt,
+        Signalium_Bolt, Lumiium_Bolt, Artherium_Sn_Bolt, Tanmolyium_Beta_C_Bolt, Dalisenite_Bolt, Hikarium_Bolt,
+        Tairitsu_Bolt, Precious_Metals_Alloy_Bolt, Enriched_Naquadah_Alloy_Bolt, Metastable_Oganesson_Bolt,
+        Shirabon_Bolt, Mu_metal_Bolt, Lithium_Bolt, Beryllium_Bolt, Carbon_Bolt, Magnesium_Bolt, Aluminium_Bolt,
+        Raw_Silicon_Bolt, Potassium_Bolt, Scandium_Bolt, Titanium_Bolt, Vanadium_Bolt, Chrome_Bolt, Manganese_Bolt,
+        Iron_Bolt, Cobalt_Bolt, Nickel_Bolt, Copper_Bolt, Zinc_Bolt, Gallium_Bolt, Arsenic_Bolt, Rubidium_Bolt,
+        Strontium_Bolt, Yttrium_Bolt, Niobium_Bolt, Molybdenum_Bolt, Palladium_Bolt, Silver_Bolt, Indium_Bolt, Tin_Bolt,
+        Antimony_Bolt, Tellurium_Bolt, Caesium_Bolt, Barium_Bolt, Lanthanum_Bolt, Cerium_Bolt, Praseodymium_Bolt,
+        Neodymium_Bolt, Promethium_Bolt, Samarium_Bolt, Europium_Bolt, Gadolinium_Bolt, Terbium_Bolt, Dysprosium_Bolt,
+        Holmium_Bolt, Erbium_Bolt, Thulium_Bolt, Ytterbium_Bolt, Lutetium_Bolt, Tantalum_Bolt, Tungsten_Bolt,
+        Osmium_Bolt, Iridium_Bolt, Platinum_Bolt, Gold_Bolt, Lead_Bolt, Bismuth_Bolt, Thorium_Bolt, Uranium_235_Bolt,
+        Uranium_238_Bolt, Plutonium_239_Bolt, Plutonium_241_Bolt, Americium_Bolt, Purified_Tengam_Bolt,
+        Attuned_Tengam_Bolt, Hellish_Metal_Bolt, Neutronium_Bolt, Superconductor_Base_UIV_Bolt, Netherite_Bolt,
+        Superconductor_Base_UMV_Bolt, Universium_Bolt, Eternity_Bolt, Magmatter_Bolt, Six_Phased_Copper_Bolt,
+        Mellion_Bolt, Creon_Bolt, Hot_Proto_Halkonite_Steel_Bolt, Proto_Halkonite_Steel_Bolt,
+        Hot_Exo_Halkonite_Steel_Bolt, Exo_Halkonite_Steel_Bolt, Prismatic_Naquadah_Bolt, Hexanite_Bolt, Shijima_Bolt,
+        Churitsu_Bolt, Manasteel_Bolt, Terrasteel_Bolt, Elven_Elementium_Bolt, Gaia_Spirit_Bolt, Livingwood_Bolt,
+        Dreamwood_Bolt, Mana_Diamond_Bolt, Dragonstone_Bolt, Bronze_Bolt, Brass_Bolt, Invar_Bolt, Electrum_Bolt,
+        Cast_Iron_Bolt, Steel_Bolt, Stainless_Steel_Bolt, Pig_Iron_Bolt, Red_Alloy_Bolt, Blue_Alloy_Bolt,
+        Cupronickel_Bolt, Nichrome_Bolt, Kanthal_Bolt, Magnalium_Bolt, Soldering_Alloy_Bolt, Battery_Alloy_Bolt,
+        Tungstensteel_Bolt, Osmiridium_Bolt, Sunnarium_Bolt, Adamantium_Bolt, Fluxed_Electrum_Bolt, Enderium_Bolt,
+        Infused_Gold_Bolt, Naquadah_Bolt, Naquadah_Alloy_Bolt, Enriched_Naquadah_Bolt, Naquadria_Bolt, Duranium_Bolt,
+        Tritanium_Bolt, Thaumium_Bolt, Mithril_Bolt, Astral_Silver_Bolt, Black_Steel_Bolt, Damascus_Steel_Bolt,
+        Shadow_Iron_Bolt, Shadow_Steel_Bolt, Ironwood_Bolt, Steeleaf_Bolt, Meteoric_Iron_Bolt, Meteoric_Steel_Bolt,
+        Deep_Dark_Iron_Bolt, Cobalt_Brass_Bolt, Ultimet_Bolt, Annealed_Copper_Bolt, Fiery_Steel_Bolt, Firestone_Bolt,
+        Red_Steel_Bolt, Blue_Steel_Bolt, Sterling_Silver_Bolt, Rose_Gold_Bolt, Black_Bronze_Bolt, Bismuth_Bronze_Bolt,
+        Magnetic_Iron_Bolt, Magnetic_Steel_Bolt, Magnetic_Neodymium_Bolt, Vanadium_Gallium_Bolt,
+        Yttrium_Barium_Cuprate_Bolt, Niobium_Nitride_Bolt, Niobium_Titanium_Bolt, Chromium_Dioxide_Bolt,
+        Knightmetal_Bolt, Tin_Alloy_Bolt, Dark_Steel_Bolt, Electrical_Steel_Bolt, Energetic_Alloy_Bolt,
+        Vibrant_Alloy_Bolt, Shadow_Metal_Bolt, Conductive_Iron_Bolt, Tungstencarbide_Bolt, Vanadiumsteel_Bolt,
+        HSSG_Bolt, HSSE_Bolt, HSSS_Bolt, Pulsating_Iron_Bolt, Soularium_Bolt, Enderium_Base_Bolt, Redstone_Alloy_Bolt,
+        Ardite_Bolt, Reinforced_Bolt, Galgadorian_Bolt, Enhanced_Galgadorian_Bolt, Manyullyn_Bolt, Mytryl_Bolt,
+        Black_Plutonium_Bolt, Callisto_Ice_Bolt, Ledox_Bolt, Quantium_Bolt, Duralumin_Bolt, Oriharukon_Bolt,
+        Infinity_Catalyst_Bolt, Bedrockium_Bolt, Infinity_Bolt, Mysterious_Crystal_Bolt, Magnetic_Samarium_Bolt,
+        Obzinite_Bolt, End_Steel_Bolt, Clay_Compound_Bolt, Crystalline_Alloy_Bolt, Melodic_Alloy_Bolt,
+        Stellar_Alloy_Bolt, Crystalline_Pink_Slime_Bolt, Energetic_Silver_Bolt, Vivid_Alloy_Bolt, Epoxid_Bolt,
+        Silicone_Rubber_Bolt, Polycaprolactam_PCL_Bolt, Polytetrafluoroethylene_PTFE_Bolt, Alduorite_Bolt,
+        Rubracium_Bolt, Vulcanite_Bolt, Diamond_Bolt, Emerald_Bolt, Ruby_Bolt, Sapphire_Bolt, Green_Sapphire_Bolt,
+        Olivine_Bolt, Nether_Star_Bolt, Topaz_Bolt, Tanzanite_Bolt, Amethyst_Bolt, Opal_Bolt, Jasper_Bolt, Spinel_Bolt,
+        Blue_Topaz_Bolt, Amber_Bolt, Dilithium_Bolt, Certus_Quartz_Bolt, Forcicium_Bolt, Forcillium_Bolt, Monazite_Bolt,
+        Force_Bolt, Nether_Quartz_Bolt, Quartzite_Bolt, Lazurite_Bolt, Sodalite_Bolt, Lapis_Bolt, Red_Garnet_Bolt,
+        Yellow_Garnet_Bolt, Vinteum_Bolt, Apatite_Bolt, Niter_Bolt, Enderpearl_Bolt, Endereye_Bolt,
+        Tricalcium_Phosphate_Bolt, Coal_Bolt, Charcoal_Bolt, Jade_Bolt, Lignite_Coal_Bolt, Aer_Bolt, Ignis_Bolt,
+        Terra_Bolt, Aqua_Bolt, Perditio_Bolt, Ordo_Bolt, TPV_Alloy_Bolt, Transcendent_Metal_Bolt, Enriched_Holmium_Bolt,
+        Magnetohydrodynamically_Constrained_Star_Matter_Bolt, White_Dwarf_Matter_Bolt, Black_Dwarf_Matter_Bolt,
+        SpaceTime_Bolt, Polybenzimidazole_PBI_Bolt, Fiber_Reinforced_Epoxy_Resin_Bolt, Borosilicate_Glass_Bolt,
+        Nickel_Zinc_Ferrite_Bolt, Polyphenylene_Sulfide_PPS_Bolt, Styrene_Butadiene_Rubber_SBR_Bolt,
+        Polystyrene_PS_Bolt, Polyvinyl_Chloride_PVC_Bolt, Kevlar_Bolt, Endium_Bolt, Nickel_Aluminide_Bolt,
+        Obsidian_Bolt, Short_Wood_Stick, Deep_Iron_Bolt, Silicon_Solar_Grade_Poly_SI_Bolt, Trinium_Bolt,
+        Polyethylene_PE_Bolt, Rubber_Bolt, Desh_Bolt, Short_Sealed_Wood_Stick, Glass_Bolt, Chrysotile_Bolt,
+        Realgar_Bolt, Vyroxeres_Bolt, Ceruclase_Bolt, Tartarite_Bolt, Orichalcum_Bolt, Void_Metal_Bolt,
+        Superconductor_Base_UEV_Bolt, Draconium_Bolt, Awakened_Draconium_Bolt, Blood_Infused_Iron_Bolt, Ichorium_Bolt,
+        Radox_Polymer_Bolt, Gallium_Arsenide_Bolt, Indium_Gallium_Phosphide_Bolt, Cosmic_Neutronium_Bolt,
+        Flerovium_Bolt, Superconductor_Base_UHV_Bolt, Superconductor_Base_UV_Bolt, Superconductor_Base_MV_Bolt,
+        Superconductor_Base_HV_Bolt, Superconductor_Base_EV_Bolt, Superconductor_Base_IV_Bolt,
+        Superconductor_Base_LuV_Bolt, Superconductor_Base_ZPM_Bolt, Selenium_Bolt, Iodine_Bolt, Rhenium_Bolt,
+        Thallium_Bolt, Germanium_Bolt, Astral_Titanium_Bolt, Celestial_Tungsten_Bolt, Hypogen_Bolt,
+        Chromatic_Glass_Bolt, Black_Metal_Bolt, Dragonblood_Bolt, Silicon_Carbide_Bolt, Zirconium_Carbide_Bolt,
+        Tantalum_Carbide_Bolt, Niobium_Carbide_Bolt, Tungsten_Titanium_Carbide_Bolt, Energy_Crystal_Bolt,
+        Blood_Steel_Bolt, Zeron_100_Bolt, Tumbaga_Bolt, Potin_Bolt, Staballoy_Bolt, Tantalloy_60_Bolt,
+        Tantalloy_61_Bolt, Inconel_625_Bolt, Inconel_690_Bolt, Inconel_792_Bolt, Eglin_Steel_Bolt,
+        Maraging_Steel_250_Bolt, Maraging_Steel_300_Bolt, Maraging_Steel_350_Bolt, Watertight_Steel_Bolt,
+        Nitinol_60_Bolt, Stellite_Bolt, Talonite_Bolt, Hastelloy_W_Bolt, Hastelloy_X_Bolt, Hastelloy_C276_Bolt,
+        Hastelloy_N_Bolt, Incoloy_020_Bolt, Incoloy_DS_Bolt, Incoloy_MA956_Bolt, Grisium_Bolt,
+        Trinium_Titanium_Alloy_Bolt, Trinium_Naquadah_Carbonite_Bolt, Arceus_Alloy_2B_Bolt, HeLiCoPtEr_Bolt,
+        Lafium_Compound_Bolt, Cinobite_A243_Bolt, Pikyonium_64B_Bolt, Abyssal_Alloy_Bolt, Laurenium_Bolt, Botmium_Bolt,
+        HS188_A_Bolt, Titansteel_Bolt, Arcanite_Bolt, Octiron_Bolt, Quantum_Bolt };
 }

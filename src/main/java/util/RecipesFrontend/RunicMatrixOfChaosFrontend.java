@@ -2,7 +2,6 @@ package util.RecipesFrontend;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Supplier;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
@@ -17,6 +16,7 @@ import gregtech.api.recipe.NEIRecipePropertiesBuilder;
 import gregtech.api.recipe.RecipeMapFrontend;
 import gregtech.api.util.MethodsReturnNonnullByDefault;
 import gregtech.common.gui.modularui.UIHelper;
+import gregtech.nei.GTNEIDefaultHandler;
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
@@ -84,13 +84,13 @@ public class RunicMatrixOfChaosFrontend extends RecipeMapFrontend {
         return UIHelper.getGridPositions(fluidOutputCount, 0, 0, 0, 0);
     }
 
-    public void addProgressBar(ModularWindow.Builder builder, Supplier<Float> progressSupplier, Pos2d windowOffset) {
+    public void addProgressBar(ModularWindow.Builder builder, GTNEIDefaultHandler.NEITemplateContext ctx) {
         builder.widget(
             (new ProgressBar()).setTexture(GTUITextures.PROGRESSBAR_ARROW, 16)
                 .setDirection(ProgressBar.Direction.RIGHT)
-                .setProgress(progressSupplier)
+                .setProgress(ctx.progressSupplier)
                 .setSynced(false, false)
-                .setPos((new Pos2d(105, 64)).add(windowOffset))
+                .setPos((new Pos2d(105, 64)).add(ctx.windowOffset))
                 .setSize(20, 16));
     }
 }

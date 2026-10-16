@@ -1,38 +1,75 @@
 package EnumList.EnumItemList.EnumMaterialList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.BartWorks;
 import static gregtech.api.enums.Mods.GTPlusPlus;
 import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class RingList {
+
     public static final ItemStack Ruthenium_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 64);
     public static final ItemStack Rhodium_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 78);
-    public static final ItemStack Rhodium_Plated_Palladium_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 88);
+    public static final ItemStack Rhodium_Plated_Palladium_Ring = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedring",
+        1L,
+        88);
     public static final ItemStack Tiberium_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 89);
     public static final ItemStack Ruridit_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 90);
-    public static final ItemStack High_Durability_Compound_Steel_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 92);
+    public static final ItemStack High_Durability_Compound_Steel_Ring = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedring",
+        1L,
+        92);
     public static final ItemStack Ademic_Steel_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 96);
-    public static final ItemStack Atomic_Separation_Catalyst_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10022);
-    public static final ItemStack Extremely_Unstable_Naquadah_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10024);
+    public static final ItemStack Atomic_Separation_Catalyst_Ring = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedring",
+        1L,
+        10022);
+    public static final ItemStack Extremely_Unstable_Naquadah_Ring = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedring",
+        1L,
+        10024);
     public static final ItemStack Zircaloy_4_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10082);
     public static final ItemStack Zircaloy_2_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10083);
     public static final ItemStack Incoloy_903_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10084);
     public static final ItemStack Adamantium_Alloy_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10085);
     public static final ItemStack MAR_M200_Steel_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10096);
-    public static final ItemStack MAR_Ce_M200_Steel_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10097);
+    public static final ItemStack MAR_Ce_M200_Steel_Ring = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedring",
+        1L,
+        10097);
     public static final ItemStack Signalium_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10099);
     public static final ItemStack Lumiium_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10101);
     public static final ItemStack Artherium_Sn_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10102);
-    public static final ItemStack Tanmolyium_Beta_C_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10103);
+    public static final ItemStack Tanmolyium_Beta_C_Ring = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedring",
+        1L,
+        10103);
     public static final ItemStack Dalisenite_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10104);
     public static final ItemStack Hikarium_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10105);
     public static final ItemStack Tairitsu_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10106);
-    public static final ItemStack Precious_Metals_Alloy_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10109);
-    public static final ItemStack Enriched_Naquadah_Alloy_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10110);
-    public static final ItemStack Metastable_Oganesson_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10111);
+    public static final ItemStack Precious_Metals_Alloy_Ring = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedring",
+        1L,
+        10109);
+    public static final ItemStack Enriched_Naquadah_Alloy_Ring = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedring",
+        1L,
+        10110);
+    public static final ItemStack Metastable_Oganesson_Ring = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedring",
+        1L,
+        10111);
     public static final ItemStack Shirabon_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 10112);
     public static final ItemStack Mu_metal_Ring = getModItem(BartWorks.ID, "gt.bwMetaGeneratedring", 1L, 11351);
     public static final ItemStack Lithium_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28006);
@@ -228,7 +265,11 @@ public class RingList {
     public static final ItemStack Epoxid_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28470);
     public static final ItemStack Silicone_Rubber_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28471);
     public static final ItemStack Polycaprolactam_PCL_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28472);
-    public static final ItemStack Polytetrafluoroethylene_PTFE_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28473);
+    public static final ItemStack Polytetrafluoroethylene_PTFE_Ring = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        28473);
     public static final ItemStack Alduorite_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28485);
     public static final ItemStack Rubracium_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28488);
     public static final ItemStack Vulcanite_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28489);
@@ -237,16 +278,28 @@ public class RingList {
     public static final ItemStack TPV_Alloy_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28576);
     public static final ItemStack Transcendent_Metal_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28581);
     public static final ItemStack Enriched_Holmium_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28582);
-    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28583);
+    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Ring = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        28583);
     public static final ItemStack White_Dwarf_Matter_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28585);
     public static final ItemStack Black_Dwarf_Matter_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28586);
     public static final ItemStack SpaceTime_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28588);
     public static final ItemStack Polybenzimidazole_PBI_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28599);
-    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28610);
+    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Ring = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        28610);
     public static final ItemStack Borosilicate_Glass_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28611);
     public static final ItemStack Nickel_Zinc_Ferrite_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28613);
     public static final ItemStack Polyphenylene_Sulfide_PPS_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28631);
-    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28635);
+    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Ring = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        28635);
     public static final ItemStack Polystyrene_PS_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28636);
     public static final ItemStack Polyvinyl_Chloride_PVC_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28649);
     public static final ItemStack Kevlar_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28765);
@@ -255,7 +308,11 @@ public class RingList {
     public static final ItemStack Obsidian_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28804);
     public static final ItemStack Wood_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28809);
     public static final ItemStack Deep_Iron_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28829);
-    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28856);
+    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Ring = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        28856);
     public static final ItemStack Trinium_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28868);
     public static final ItemStack Polyethylene_PE_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28874);
     public static final ItemStack Paper_Ring = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 28879);
@@ -302,7 +359,10 @@ public class RingList {
     public static final ItemStack Zirconium_Carbide_Ring = getModItem(GTPlusPlus.ID, "itemRingZirconiumCarbide", 1L);
     public static final ItemStack Tantalum_Carbide_Ring = getModItem(GTPlusPlus.ID, "itemRingTantalumCarbide", 1L);
     public static final ItemStack Niobium_Carbide_Ring = getModItem(GTPlusPlus.ID, "itemRingNiobiumCarbide", 1L);
-    public static final ItemStack Tungsten_Titanium_Carbide_Ring = getModItem(GTPlusPlus.ID, "itemRingTungstenTitaniumCarbide", 1L);
+    public static final ItemStack Tungsten_Titanium_Carbide_Ring = getModItem(
+        GTPlusPlus.ID,
+        "itemRingTungstenTitaniumCarbide",
+        1L);
     public static final ItemStack Energy_Crystal_Ring = getModItem(GTPlusPlus.ID, "itemRingEnergyCrystal", 1L);
     public static final ItemStack Blood_Steel_Ring = getModItem(GTPlusPlus.ID, "itemRingBloodSteel", 1L);
     public static final ItemStack Zeron_100_Ring = getModItem(GTPlusPlus.ID, "itemRingZeron100", 1L);
@@ -330,8 +390,14 @@ public class RingList {
     public static final ItemStack Incoloy_DS_Ring = getModItem(GTPlusPlus.ID, "itemRingIncoloyDS", 1L);
     public static final ItemStack Incoloy_MA956_Ring = getModItem(GTPlusPlus.ID, "itemRingIncoloyMA956", 1L);
     public static final ItemStack Grisium_Ring = getModItem(GTPlusPlus.ID, "itemRingGrisium", 1L);
-    public static final ItemStack Trinium_Titanium_Alloy_Ring = getModItem(GTPlusPlus.ID, "itemRingTriniumTitaniumAlloy", 1L);
-    public static final ItemStack Trinium_Naquadah_Carbonite_Ring = getModItem(GTPlusPlus.ID, "itemRingTriniumNaquadahCarbonite", 1L);
+    public static final ItemStack Trinium_Titanium_Alloy_Ring = getModItem(
+        GTPlusPlus.ID,
+        "itemRingTriniumTitaniumAlloy",
+        1L);
+    public static final ItemStack Trinium_Naquadah_Carbonite_Ring = getModItem(
+        GTPlusPlus.ID,
+        "itemRingTriniumNaquadahCarbonite",
+        1L);
     public static final ItemStack Arceus_Alloy_2B_Ring = getModItem(GTPlusPlus.ID, "itemRingArceusAlloy2B", 1L);
     public static final ItemStack HeLiCoPtEr_Ring = getModItem(GTPlusPlus.ID, "itemRingHeLiCoPtEr", 1L);
     public static final ItemStack Lafium_Compound_Ring = getModItem(GTPlusPlus.ID, "itemRingLafiumCompound", 1L);
@@ -346,4 +412,67 @@ public class RingList {
     public static final ItemStack Octiron_Ring = getModItem(GTPlusPlus.ID, "itemRingOctiron", 1L);
     public static final ItemStack Quantum_Ring = getModItem(GTPlusPlus.ID, "itemRingQuantum", 1L);
 
+    public static final ItemStack[] Ring_List = new ItemStack[] { Ruthenium_Ring, Rhodium_Ring,
+        Rhodium_Plated_Palladium_Ring, Tiberium_Ring, Ruridit_Ring, High_Durability_Compound_Steel_Ring,
+        Ademic_Steel_Ring, Atomic_Separation_Catalyst_Ring, Extremely_Unstable_Naquadah_Ring, Zircaloy_4_Ring,
+        Zircaloy_2_Ring, Incoloy_903_Ring, Adamantium_Alloy_Ring, MAR_M200_Steel_Ring, MAR_Ce_M200_Steel_Ring,
+        Signalium_Ring, Lumiium_Ring, Artherium_Sn_Ring, Tanmolyium_Beta_C_Ring, Dalisenite_Ring, Hikarium_Ring,
+        Tairitsu_Ring, Precious_Metals_Alloy_Ring, Enriched_Naquadah_Alloy_Ring, Metastable_Oganesson_Ring,
+        Shirabon_Ring, Mu_metal_Ring, Lithium_Ring, Beryllium_Ring, Carbon_Ring, Magnesium_Ring, Aluminium_Ring,
+        Raw_Silicon_Ring, Potassium_Ring, Scandium_Ring, Titanium_Ring, Vanadium_Ring, Chrome_Ring, Manganese_Ring,
+        Iron_Ring, Cobalt_Ring, Nickel_Ring, Copper_Ring, Zinc_Ring, Gallium_Ring, Arsenic_Ring, Rubidium_Ring,
+        Strontium_Ring, Yttrium_Ring, Niobium_Ring, Molybdenum_Ring, Palladium_Ring, Silver_Ring, Indium_Ring, Tin_Ring,
+        Antimony_Ring, Tellurium_Ring, Caesium_Ring, Barium_Ring, Lanthanum_Ring, Cerium_Ring, Praseodymium_Ring,
+        Neodymium_Ring, Promethium_Ring, Samarium_Ring, Europium_Ring, Gadolinium_Ring, Terbium_Ring, Dysprosium_Ring,
+        Holmium_Ring, Erbium_Ring, Thulium_Ring, Ytterbium_Ring, Lutetium_Ring, Tantalum_Ring, Tungsten_Ring,
+        Osmium_Ring, Iridium_Ring, Platinum_Ring, Gold_Ring, Lead_Ring, Bismuth_Ring, Thorium_Ring, Uranium_235_Ring,
+        Uranium_238_Ring, Plutonium_239_Ring, Plutonium_241_Ring, Americium_Ring, Purified_Tengam_Ring,
+        Attuned_Tengam_Ring, Hellish_Metal_Ring, Neutronium_Ring, Superconductor_Base_UIV_Ring, Netherite_Ring,
+        Superconductor_Base_UMV_Ring, Universium_Ring, Eternity_Ring, Magmatter_Ring, Six_Phased_Copper_Ring,
+        Mellion_Ring, Creon_Ring, Hot_Proto_Halkonite_Steel_Ring, Proto_Halkonite_Steel_Ring,
+        Hot_Exo_Halkonite_Steel_Ring, Exo_Halkonite_Steel_Ring, Prismatic_Naquadah_Ring, Hexanite_Ring, Shijima_Ring,
+        Churitsu_Ring, Manasteel_Ring, Terrasteel_Ring, Elven_Elementium_Ring, Gaia_Spirit_Ring, Livingwood_Ring,
+        Dreamwood_Ring, Bronze_Ring, Brass_Ring, Invar_Ring, Electrum_Ring, Cast_Iron_Ring, Steel_Ring,
+        Stainless_Steel_Ring, Pig_Iron_Ring, Red_Alloy_Ring, Blue_Alloy_Ring, Cupronickel_Ring, Nichrome_Ring,
+        Kanthal_Ring, Magnalium_Ring, Soldering_Alloy_Ring, Battery_Alloy_Ring, Tungstensteel_Ring, Osmiridium_Ring,
+        Sunnarium_Ring, Adamantium_Ring, Fluxed_Electrum_Ring, Enderium_Ring, Infused_Gold_Ring, Naquadah_Ring,
+        Naquadah_Alloy_Ring, Enriched_Naquadah_Ring, Naquadria_Ring, Duranium_Ring, Tritanium_Ring, Thaumium_Ring,
+        Mithril_Ring, Astral_Silver_Ring, Black_Steel_Ring, Damascus_Steel_Ring, Shadow_Iron_Ring, Shadow_Steel_Ring,
+        Ironwood_Ring, Steeleaf_Ring, Meteoric_Iron_Ring, Meteoric_Steel_Ring, Deep_Dark_Iron_Ring, Cobalt_Brass_Ring,
+        Ultimet_Ring, Annealed_Copper_Ring, Fiery_Steel_Ring, Red_Steel_Ring, Blue_Steel_Ring, Sterling_Silver_Ring,
+        Rose_Gold_Ring, Black_Bronze_Ring, Bismuth_Bronze_Ring, Magnetic_Iron_Ring, Magnetic_Steel_Ring,
+        Magnetic_Neodymium_Ring, Vanadium_Gallium_Ring, Yttrium_Barium_Cuprate_Ring, Niobium_Nitride_Ring,
+        Niobium_Titanium_Ring, Chromium_Dioxide_Ring, Knightmetal_Ring, Tin_Alloy_Ring, Dark_Steel_Ring,
+        Electrical_Steel_Ring, Energetic_Alloy_Ring, Vibrant_Alloy_Ring, Shadow_Metal_Ring, Conductive_Iron_Ring,
+        Tungstencarbide_Ring, Vanadiumsteel_Ring, HSSG_Ring, HSSE_Ring, HSSS_Ring, Pulsating_Iron_Ring, Soularium_Ring,
+        Enderium_Base_Ring, Redstone_Alloy_Ring, Ardite_Ring, Reinforced_Ring, Galgadorian_Ring,
+        Enhanced_Galgadorian_Ring, Manyullyn_Ring, Mytryl_Ring, Black_Plutonium_Ring, Callisto_Ice_Ring, Ledox_Ring,
+        Quantium_Ring, Duralumin_Ring, Oriharukon_Ring, Infinity_Catalyst_Ring, Bedrockium_Ring, Infinity_Ring,
+        Mysterious_Crystal_Ring, Magnetic_Samarium_Ring, Obzinite_Ring, End_Steel_Ring, Clay_Compound_Ring,
+        Crystalline_Alloy_Ring, Melodic_Alloy_Ring, Stellar_Alloy_Ring, Crystalline_Pink_Slime_Ring,
+        Energetic_Silver_Ring, Vivid_Alloy_Ring, Epoxid_Ring, Silicone_Rubber_Ring, Polycaprolactam_PCL_Ring,
+        Polytetrafluoroethylene_PTFE_Ring, Alduorite_Ring, Rubracium_Ring, Vulcanite_Ring, Force_Ring, Vinteum_Ring,
+        TPV_Alloy_Ring, Transcendent_Metal_Ring, Enriched_Holmium_Ring,
+        Magnetohydrodynamically_Constrained_Star_Matter_Ring, White_Dwarf_Matter_Ring, Black_Dwarf_Matter_Ring,
+        SpaceTime_Ring, Polybenzimidazole_PBI_Ring, Fiber_Reinforced_Epoxy_Resin_Ring, Borosilicate_Glass_Ring,
+        Nickel_Zinc_Ferrite_Ring, Polyphenylene_Sulfide_PPS_Ring, Styrene_Butadiene_Rubber_SBR_Ring,
+        Polystyrene_PS_Ring, Polyvinyl_Chloride_PVC_Ring, Kevlar_Ring, Endium_Ring, Nickel_Aluminide_Ring,
+        Obsidian_Ring, Wood_Ring, Deep_Iron_Ring, Silicon_Solar_Grade_Poly_SI_Ring, Trinium_Ring, Polyethylene_PE_Ring,
+        Paper_Ring, Rubber_Ring, Desh_Ring, Sealed_Wood_Ring, Chrysotile_Ring, Realgar_Ring, Vyroxeres_Ring,
+        Ceruclase_Ring, Tartarite_Ring, Orichalcum_Ring, Void_Metal_Ring, Superconductor_Base_UEV_Ring, Draconium_Ring,
+        Awakened_Draconium_Ring, Blood_Infused_Iron_Ring, Ichorium_Ring, Radox_Polymer_Ring, Gallium_Arsenide_Ring,
+        Indium_Gallium_Phosphide_Ring, Cosmic_Neutronium_Ring, Flerovium_Ring, Superconductor_Base_UHV_Ring,
+        Superconductor_Base_UV_Ring, Superconductor_Base_MV_Ring, Superconductor_Base_HV_Ring,
+        Superconductor_Base_EV_Ring, Superconductor_Base_IV_Ring, Superconductor_Base_LuV_Ring,
+        Superconductor_Base_ZPM_Ring, Selenium_Ring, Iodine_Ring, Rhenium_Ring, Thallium_Ring, Germanium_Ring,
+        Astral_Titanium_Ring, Celestial_Tungsten_Ring, Hypogen_Ring, Chromatic_Glass_Ring, Black_Metal_Ring,
+        Dragonblood_Ring, Silicon_Carbide_Ring, Zirconium_Carbide_Ring, Tantalum_Carbide_Ring, Niobium_Carbide_Ring,
+        Tungsten_Titanium_Carbide_Ring, Energy_Crystal_Ring, Blood_Steel_Ring, Zeron_100_Ring, Tumbaga_Ring, Potin_Ring,
+        Staballoy_Ring, Tantalloy_60_Ring, Tantalloy_61_Ring, Inconel_625_Ring, Inconel_690_Ring, Inconel_792_Ring,
+        Eglin_Steel_Ring, Maraging_Steel_250_Ring, Maraging_Steel_300_Ring, Maraging_Steel_350_Ring,
+        Watertight_Steel_Ring, Nitinol_60_Ring, Stellite_Ring, Talonite_Ring, Hastelloy_W_Ring, Hastelloy_X_Ring,
+        Hastelloy_C276_Ring, Hastelloy_N_Ring, Incoloy_020_Ring, Incoloy_DS_Ring, Incoloy_MA956_Ring, Grisium_Ring,
+        Trinium_Titanium_Alloy_Ring, Trinium_Naquadah_Carbonite_Ring, Arceus_Alloy_2B_Ring, HeLiCoPtEr_Ring,
+        Lafium_Compound_Ring, Cinobite_A243_Ring, Pikyonium_64B_Ring, Abyssal_Alloy_Ring, Laurenium_Ring, Botmium_Ring,
+        HS188_A_Ring, Titansteel_Ring, Arcanite_Ring, Octiron_Ring, Quantum_Ring };
 }

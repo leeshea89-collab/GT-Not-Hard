@@ -23,7 +23,7 @@ public class FakeSingularityDustRecipes {
         .of("Singularity of T0 Dust")
         .maxIO(1, NEI_ItemOutput_Size, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -32,7 +32,7 @@ public class FakeSingularityDustRecipes {
         .of("Singularity of T1 Dust")
         .maxIO(1, NEI_ItemOutput_Size, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -41,7 +41,7 @@ public class FakeSingularityDustRecipes {
         .of("Singularity of T2 Dust")
         .maxIO(1, NEI_ItemOutput_Size, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -50,7 +50,7 @@ public class FakeSingularityDustRecipes {
         .of("Singularity of T3 Dust")
         .maxIO(1, NEI_ItemOutput_Size, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -59,7 +59,7 @@ public class FakeSingularityDustRecipes {
         .of("Singularity of T4 Dust")
         .maxIO(1, NEI_ItemOutput_Size, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -68,7 +68,7 @@ public class FakeSingularityDustRecipes {
         .of("Singularity of T5 Dust")
         .maxIO(1, NEI_ItemOutput_Size, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -77,7 +77,7 @@ public class FakeSingularityDustRecipes {
         .of("Singularity of T6 Dust")
         .maxIO(1, NEI_ItemOutput_Size, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -86,7 +86,7 @@ public class FakeSingularityDustRecipes {
         .of("Singularity of T7 Dust")
         .maxIO(1, NEI_ItemOutput_Size, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -95,7 +95,7 @@ public class FakeSingularityDustRecipes {
         .of("Singularity of T8 Dust")
         .maxIO(1, NEI_ItemOutput_Size, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -104,7 +104,16 @@ public class FakeSingularityDustRecipes {
         .of("Singularity of T9 Dust")
         .maxIO(1, NEI_ItemOutput_Size, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
+        .frontend(OneToManyItemsFrontend_Large::new)
+        .neiTransferRect(81, 27, 14, 16)
+        .build();
+
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T10 = RecipeMapBuilder
+        .of("Singularity of T10 Dust")
+        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
+        .minInputs(1, 0)
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -112,37 +121,27 @@ public class FakeSingularityDustRecipes {
     public static void addFakeVoidDustRecipes_T0() {
         // T0 - Overworld - Ow
         ItemStack[] Fake_T0_Overworld_Dust = addCompressAggregateArray(
-            Vein_Dust.Diamond_Vein,
-            Vein_Dust.Lapis_Vein,
-            Vein_Dust.Vermiculite_Vein,
-            Vein_Dust.Coal_Vein,
-            Vein_Dust.Manganese_Vein,
+            Vein_Dust.Chalcopyrite_Vermiculite_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
             Vein_Dust.Redstone_Vein,
-            Vein_Dust.Mica_Vein,
-            Vein_Dust.Dolomite_Vein,
-            Vein_Dust.Copper_Vein,
-            Vein_Dust.Soapstone_Vein,
-            Vein_Dust.Gold_Vein,
-            Vein_Dust.Kaolinite_Vein,
-            Vein_Dust.Iron_Vein,
-            Vein_Dust.Lignite_Coal_Vein,
+            Vein_Dust.Kyanite_Mica_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
+            Vein_Dust.Brown_Limonite_Iron_Vein,
             Vein_Dust.Apatite_Vein,
             Vein_Dust.Basaltic_Mineral_Sand_Vein,
             Vein_Dust.Magnetite_Vein,
-            Vein_Dust.Tin_Vein,
-            Vein_Dust.Salt_Vein,
-            Vein_Dust.Cassiterite_Vein,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Copper_SmallOre,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Tin_SmallOre,
-            SmallOre_Dust.Redstone_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Diamond_SmallOre,
-            SmallOre_Dust.Lapis_SmallOre,
-            SmallOre_Dust.Coal_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre);
+            Vein_Dust.Cassiterite_Tin_Vein,
+            Vein_Dust.Rock_Salt_Salt_Vein,
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Lazurite_Lapis_Vein,
+            Vein_Dust.Coal_Vein,
+            Vein_Dust.Dolomite_Vein,
+            Vein_Dust.Soapstone_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            Vein_Dust.Kaolinite_Vein,
+            Vein_Dust.Lignite_Coal_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
+            SmallOre_Dust.Overworld_SmallOre);
         ItemStack[] Fake_T0_Overworld_Dust_Checked = checkItemStack(Fake_T0_Overworld_Dust);
         ItemStack[][] Fake_T0_Overworld_Dust_Split = addSplitAggregateArray(
             Fake_T0_Overworld_Dust_Checked,
@@ -160,30 +159,18 @@ public class FakeSingularityDustRecipes {
 
         // T0 - Nether - Ne
         ItemStack[] Fake_T0_Nether_Dust = addCompressAggregateArray(
-            Vein_Dust.Sulfur_Vein,
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Manganese_Vein,
-            Vein_Dust.Quartzite_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
             Vein_Dust.Redstone_Vein,
-            Vein_Dust.Copper_Vein,
-            Vein_Dust.Iron_Vein,
-            Vein_Dust.Beryllium_Vein,
-            Vein_Dust.Electrotine_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
+            Vein_Dust.Brown_Limonite_Iron_Vein,
             Vein_Dust.Tetrahedrite_Vein,
+            Vein_Dust.Sulfur_Vein,
+            Vein_Dust.Quartzite_Vein,
+            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Saltpeter_Electrotine_Vein,
             Vein_Dust.Nether_Quartz_Vein,
-            SmallOre_Dust.Saltpeter_SmallOre,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Copper_SmallOre,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Tin_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Redstone_SmallOre,
-            SmallOre_Dust.Certus_Quartz_SmallOre,
-            SmallOre_Dust.Sulfur_SmallOre,
-            SmallOre_Dust.Nether_Quartz_SmallOre,
-            SmallOre_Dust.Bismuth_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Realgar_SmallOre);
+            SmallOre_Dust.Nether_SmallOre);
         ItemStack[] Fake_T0_Nether_Dust_Checked = checkItemStack(Fake_T0_Nether_Dust);
         ItemStack[][] Fake_T0_Nether_Dust_Split = addSplitAggregateArray(
             Fake_T0_Nether_Dust_Checked,
@@ -201,42 +188,25 @@ public class FakeSingularityDustRecipes {
 
         // T0 - Twilight - TF
         ItemStack[] Fake_T0_Twilight_Dust = addCompressAggregateArray(
-            Vein_Dust.Diamond_Vein,
-            Vein_Dust.Lapis_Vein,
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Olivine_Vein,
-            Vein_Dust.Terra_Aer_Vein,
-            Vein_Dust.Coal_Vein,
-            Vein_Dust.Sapphire_Vein,
-            Vein_Dust.Cryolite_Vein,
-            Vein_Dust.Nickel_Vein,
-            Vein_Dust.Soapstone_Vein,
-            Vein_Dust.Perditio_Ordo_Vein,
-            Vein_Dust.Gold_Vein,
-            Vein_Dust.Iron_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
+            Vein_Dust.Brown_Limonite_Iron_Vein,
             Vein_Dust.Apatite_Vein,
             Vein_Dust.Magnetite_Vein,
-            Vein_Dust.Salt_Vein,
-            Vein_Dust.Cassiterite_Vein,
+            Vein_Dust.Rock_Salt_Salt_Vein,
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Lazurite_Lapis_Vein,
+            Vein_Dust.Bentonite_Olivine_Vein,
+            Vein_Dust.Terra_Aer_Vein,
+            Vein_Dust.Coal_Vein,
+            Vein_Dust.Almandine_Sapphire_Vein,
+            Vein_Dust.Galena_Cryolite_Vein,
+            Vein_Dust.Soapstone_Vein,
+            Vein_Dust.Perditio_Ordo_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
             Vein_Dust.Aqua_Ignis_Amber_Vein,
-            SmallOre_Dust.Amethyst_SmallOre,
-            SmallOre_Dust.Yellow_Garnet_SmallOre,
-            SmallOre_Dust.Tanzanite_SmallOre,
-            SmallOre_Dust.Saltpeter_SmallOre,
-            SmallOre_Dust.Spinel_SmallOre,
-            SmallOre_Dust.Opal_SmallOre,
-            SmallOre_Dust.Ruby_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Emerald_SmallOre,
-            SmallOre_Dust.Amber_SmallOre,
-            SmallOre_Dust.Blue_Topaz_SmallOre,
-            SmallOre_Dust.Topaz_SmallOre,
-            SmallOre_Dust.Jade_SmallOre,
-            SmallOre_Dust.Red_Garnet_SmallOre,
-            SmallOre_Dust.Green_Sapphire_SmallOre,
-            SmallOre_Dust.Sapphire_SmallOre,
-            SmallOre_Dust.Jasper_SmallOre,
-            SmallOre_Dust.Olivine_SmallOre);
+            SmallOre_Dust.Twilight_SmallOre);
         ItemStack[] Fake_T0_Twilight_Dust_Checked = checkItemStack(Fake_T0_Twilight_Dust);
         ItemStack[][] Fake_T0_Twilight_Dust_Split = addSplitAggregateArray(
             Fake_T0_Twilight_Dust_Checked,
@@ -254,21 +224,14 @@ public class FakeSingularityDustRecipes {
 
         // T0 - TheEnd - ED
         ItemStack[] Fake_T0_TheEnd_Dust = addCompressAggregateArray(
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Nickel_Vein,
-            Vein_Dust.Copper_Vein,
-            Vein_Dust.Gold_Vein,
-            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
             Vein_Dust.Tetrahedrite_Vein,
-            Vein_Dust.Cassiterite_Vein,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Copper_SmallOre,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Tin_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre);
+            Vein_Dust.Magnetite_Gold_Vein,
+            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
+            SmallOre_Dust.TheEnd_SmallOre);
         ItemStack[] Fake_T0_TheEnd_Dust_Checked = checkItemStack(Fake_T0_TheEnd_Dust);
         ItemStack[][] Fake_T0_TheEnd_Dust_Split = addSplitAggregateArray(
             Fake_T0_TheEnd_Dust_Checked,
@@ -286,25 +249,20 @@ public class FakeSingularityDustRecipes {
 
         // T0 - EndAsteroid - EA
         ItemStack[] Fake_T0_EndAsteroid_Dust = addCompressAggregateArray(
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Lapis_Vein,
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Olivine_Vein,
-            Vein_Dust.Manganese_Vein,
-            Vein_Dust.Nickel_Vein,
-            Vein_Dust.Copper_Vein,
-            Vein_Dust.Gold_Vein,
-            Vein_Dust.Beryllium_Vein,
-            Vein_Dust.Platinum_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
             Vein_Dust.Tetrahedrite_Vein,
             Vein_Dust.Naquadah_Vein,
-            Vein_Dust.Cassiterite_Vein,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Tin_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre);
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Lazurite_Lapis_Vein,
+            Vein_Dust.Bentonite_Olivine_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Sheldonite_Platinum_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
+            SmallOre_Dust.EndAsteroid_SmallOre);
         ItemStack[] Fake_T0_EndAsteroid_Dust_Checked = checkItemStack(Fake_T0_EndAsteroid_Dust);
         ItemStack[][] Fake_T0_EndAsteroid_Dust_Split = addSplitAggregateArray(
             Fake_T0_EndAsteroid_Dust_Checked,
@@ -319,20 +277,55 @@ public class FakeSingularityDustRecipes {
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T0);
         }
+
+        // T0 - TheToxicEverglades - Eg
+        ItemStack[] Fake_T0_TheToxicEverglades_Dust = addCompressAggregateArray(
+            Vein_Dust.Agardite_Nd_Vein,
+            Vein_Dust.Agardite_Cd_Vein,
+            Vein_Dust.Iron_Vein,
+            Vein_Dust.Xenotime_Vein,
+            Vein_Dust.Hibonite_Vein,
+            Vein_Dust.Geikielite_Vein,
+            Vein_Dust.Cerite_Vein,
+            Vein_Dust.Lanthanite_Ce_Vein,
+            Vein_Dust.Titanite_Vein,
+            Vein_Dust.Honeaite_Vein,
+            Vein_Dust.Demicheleite_Br_Vein,
+            Vein_Dust.Fluorcaphite_Vein,
+            Vein_Dust.Cryolite_F_Vein,
+            Vein_Dust.Fluorite_F_Vein,
+            Vein_Dust.Gadolinite_Ce_Vein,
+            Vein_Dust.Runite_Vein,
+            Vein_Dust.Yttrocerite_Vein,
+            Vein_Dust.Florencite_Vein);
+        ItemStack[] Fake_T0_TheToxicEverglades_Dust_Checked = checkItemStack(Fake_T0_TheToxicEverglades_Dust);
+        ItemStack[][] Fake_T0_TheToxicEverglades_Dust_Split = addSplitAggregateArray(
+            Fake_T0_TheToxicEverglades_Dust_Checked,
+            NEI_ItemOutput_Size);
+        for (ItemStack[] tempItemStacks : Fake_T0_TheToxicEverglades_Dust_Split) {
+            GTValues.RA.stdBuilder()
+                .itemInputs(getModItem(NEIOrePlugin.ID, "blockDimensionDisplay_Eg", 1L))
+                .itemOutputs(tempItemStacks)
+                .fake()
+                .duration(3 * SECONDS)
+                .setNEIDesc("Singularity with Void Dust Mode")
+                .eut(0)
+                .addTo(addFakeVoidDustRecipes_T0);
+        }
     }
 
     public static void addFakeVoidDustRecipes_T1() {
         // T1 - Moon - Mo
         ItemStack[] Fake_T1_Moon_Dust = addCompressAggregateArray(
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Quartz_Vein,
-            Vein_Dust.Monazite_Vein,
-            Vein_Dust.Ilmenite_Vein,
-            Vein_Dust.Copper_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
+            Vein_Dust.Quartzite_Quartz_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
             Vein_Dust.Bauxite_Vein,
             Vein_Dust.Galena_Vein,
-            Vein_Dust.Cassiterite_Vein,
-            SmallOre_Dust.Meteoric_Iron_SmallOre);
+            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
+            SmallOre_Dust.Moon_SmallOre);
         ItemStack[] Fake_T1_Moon_Dust_Checked = checkItemStack(Fake_T1_Moon_Dust);
         ItemStack[][] Fake_T1_Moon_Dust_Split = addSplitAggregateArray(Fake_T1_Moon_Dust_Checked, NEI_ItemOutput_Size);
         for (ItemStack[] tempItemStacks : Fake_T1_Moon_Dust_Split) {
@@ -350,27 +343,17 @@ public class FakeSingularityDustRecipes {
     public static void addFakeVoidDustRecipes_T2() {
         // T2 - Deimos - De
         ItemStack[] Fake_T2_Deimos_Dust = addCompressAggregateArray(
-            Vein_Dust.Uranium238_Vein,
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Sulfur_Vein,
-            Vein_Dust.Lapis_Vein,
-            Vein_Dust.Draconium_Vein,
-            Vein_Dust.Monazite_Vein,
-            Vein_Dust.Nickel_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
             Vein_Dust.Tetrahedrite_Vein,
             Vein_Dust.Oriharukon_Vein,
             Vein_Dust.Magnetite_Vein,
-            SmallOre_Dust.Saltpeter_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Tin_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Diamond_SmallOre,
-            SmallOre_Dust.Draconium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Meteoric_Iron_SmallOre,
-            SmallOre_Dust.Desh_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre);
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Sulfur_Vein,
+            Vein_Dust.Lazurite_Lapis_Vein,
+            Vein_Dust.Draconium_Vein,
+            SmallOre_Dust.Deimos_SmallOre);
         ItemStack[] Fake_T2_Deimos_Dust_Checked = checkItemStack(Fake_T2_Deimos_Dust);
         ItemStack[][] Fake_T2_Deimos_Dust_Split = addSplitAggregateArray(
             Fake_T2_Deimos_Dust_Checked,
@@ -388,35 +371,20 @@ public class FakeSingularityDustRecipes {
 
         // T2 - Mars - Ma
         ItemStack[] Fake_T2_Mars_Dust = addCompressAggregateArray(
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Sulfur_Vein,
-            Vein_Dust.Desh_Vein,
             Vein_Dust.Pitchblende_Vein,
-            Vein_Dust.Quartz_Vein,
+            Vein_Dust.Quartzite_Quartz_Vein,
             Vein_Dust.Redstone_Vein,
-            Vein_Dust.Nickel_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
             Vein_Dust.Arsenic_Vein,
-            Vein_Dust.Gold_Vein,
-            Vein_Dust.Iron_Vein,
-            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Brown_Limonite_Iron_Vein,
             Vein_Dust.Tetrahedrite_Vein,
             Vein_Dust.Galena_Vein,
-            Vein_Dust.Salt_Vein,
-            SmallOre_Dust.Saltpeter_SmallOre,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Copper_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Oriharukon_SmallOre,
-            SmallOre_Dust.Tin_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Redstone_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Meteoric_Iron_SmallOre,
-            SmallOre_Dust.Bismuth_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre);
+            Vein_Dust.Rock_Salt_Salt_Vein,
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Sulfur_Vein,
+            Vein_Dust.Desh_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            SmallOre_Dust.Mars_SmallOre);
         ItemStack[] Fake_T2_Mars_Dust_Checked = checkItemStack(Fake_T2_Mars_Dust);
         ItemStack[][] Fake_T2_Mars_Dust_Split = addSplitAggregateArray(Fake_T2_Mars_Dust_Checked, NEI_ItemOutput_Size);
         for (ItemStack[] tempItemStacks : Fake_T2_Mars_Dust_Split) {
@@ -432,28 +400,19 @@ public class FakeSingularityDustRecipes {
 
         // T2 - Phobos - Ph
         ItemStack[] Fake_T2_Phobos_Dust = addCompressAggregateArray(
-            Vein_Dust.Uranium238_Vein,
-            Vein_Dust.Sulfur_Vein,
-            Vein_Dust.Diamond_Vein,
-            Vein_Dust.Molybdenum_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
             Vein_Dust.Pitchblende_Vein,
-            Vein_Dust.Quartz_Vein,
-            Vein_Dust.Draconium_Vein,
-            Vein_Dust.Nickel_Vein,
+            Vein_Dust.Quartzite_Quartz_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
             Vein_Dust.Arsenic_Vein,
             Vein_Dust.Bauxite_Vein,
-            Vein_Dust.Gold_Vein,
             Vein_Dust.Oriharukon_Vein,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Copper_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Draconium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Meteoric_Iron_SmallOre,
-            SmallOre_Dust.Lapis_SmallOre,
-            SmallOre_Dust.Desh_SmallOre);
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Sulfur_Vein,
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Draconium_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            SmallOre_Dust.Phobos_SmallOre);
         ItemStack[] Fake_T2_Phobos_Dust_Checked = checkItemStack(Fake_T2_Phobos_Dust);
         ItemStack[][] Fake_T2_Phobos_Dust_Split = addSplitAggregateArray(
             Fake_T2_Phobos_Dust_Checked,
@@ -473,20 +432,18 @@ public class FakeSingularityDustRecipes {
     public static void addFakeVoidDustRecipes_T3() {
         // T3 - Asteroids - As
         ItemStack[] Fake_T3_Asteroids_Dust = addCompressAggregateArray(
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Carbon_Dioxide_Vein,
+            Vein_Dust.Sulfur_Dioxide_Vein,
             Vein_Dust.Bauxite_Vein,
-            Vein_Dust.Gold_Vein,
             Vein_Dust.Tetrahedrite_Vein,
             Vein_Dust.Naquadah_Vein,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Diamond_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre);
+            Vein_Dust.Methane_Vein,
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            Vein_Dust.Sheldonite_Platinum_Vein,
+            SmallOre_Dust.Asteroids_SmallOre);
         ItemStack[] Fake_T3_Asteroids_Dust_Checked = checkItemStack(Fake_T3_Asteroids_Dust);
         ItemStack[][] Fake_T3_Asteroids_Dust_Split = addSplitAggregateArray(
             Fake_T3_Asteroids_Dust_Checked,
@@ -504,25 +461,16 @@ public class FakeSingularityDustRecipes {
 
         // T3 - Callisto - Ca
         ItemStack[] Fake_T3_Callisto_Dust = addCompressAggregateArray(
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Plutonium239_Vein,
-            Vein_Dust.Monazite_Vein,
+            Vein_Dust.Uranium238_Plutonium239_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
+            Vein_Dust.Brown_Limonite_Iron_Vein,
+            Vein_Dust.Scheelite_Tungstate_Vein,
             Vein_Dust.Ilmenite_Vein,
-            Vein_Dust.Palladium_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
             Vein_Dust.Callisto_Ice_Vein,
-            Vein_Dust.Copper_Vein,
-            Vein_Dust.Gold_Vein,
-            Vein_Dust.Iron_Vein,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Mytryl_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Ledox_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Diamond_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Desh_SmallOre,
-            SmallOre_Dust.Bismuth_SmallOre);
+            Vein_Dust.Magnetite_Gold_Vein,
+            SmallOre_Dust.Callisto_SmallOre);
         ItemStack[] Fake_T3_Callisto_Dust_Checked = checkItemStack(Fake_T3_Callisto_Dust);
         ItemStack[][] Fake_T3_Callisto_Dust_Split = addSplitAggregateArray(
             Fake_T3_Callisto_Dust_Checked,
@@ -540,30 +488,20 @@ public class FakeSingularityDustRecipes {
 
         // T3 - Ceres - Ce
         ItemStack[] Fake_T3_Ceres_Dust = addCompressAggregateArray(
-            Vein_Dust.Uranium238_Vein,
-            Vein_Dust.Plutonium239_Vein,
-            Vein_Dust.Lapis_Vein,
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Olivine_Vein,
-            Vein_Dust.Manganese_Vein,
-            Vein_Dust.Palladium_Vein,
-            Vein_Dust.Copper_Vein,
-            Vein_Dust.Soapstone_Vein,
-            Vein_Dust.Iron_Vein,
-            Vein_Dust.Beryllium_Vein,
-            Vein_Dust.Electrotine_Vein,
+            Vein_Dust.Uranium238_Plutonium239_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
+            Vein_Dust.Brown_Limonite_Iron_Vein,
             Vein_Dust.Magnetite_Vein,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Oriharukon_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Diamond_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Bismuth_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre,
-            SmallOre_Dust.Quantium_SmallOre,
-            SmallOre_Dust.Naquadah_SmallOre);
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Lazurite_Lapis_Vein,
+            Vein_Dust.Bentonite_Olivine_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
+            Vein_Dust.Soapstone_Vein,
+            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Saltpeter_Electrotine_Vein,
+            SmallOre_Dust.Ceres_SmallOre);
         ItemStack[] Fake_T3_Ceres_Dust_Checked = checkItemStack(Fake_T3_Ceres_Dust);
         ItemStack[][] Fake_T3_Ceres_Dust_Split = addSplitAggregateArray(
             Fake_T3_Ceres_Dust_Checked,
@@ -585,7 +523,7 @@ public class FakeSingularityDustRecipes {
             Vein_Dust.Basaltic_Mineral_Sand_Vein,
             Vein_Dust.Chrome_Vein,
             Vein_Dust.Ledox_Vein,
-            Vein_Dust.Tin_Vein);
+            Vein_Dust.Cassiterite_Tin_Vein);
         ItemStack[] Fake_T3_Europa_Dust_Checked = checkItemStack(Fake_T3_Europa_Dust);
         ItemStack[][] Fake_T3_Europa_Dust_Split = addSplitAggregateArray(
             Fake_T3_Europa_Dust_Checked,
@@ -603,28 +541,18 @@ public class FakeSingularityDustRecipes {
 
         // T3 - Ganymede - Ga
         ItemStack[] Fake_T3_Ganymede_Dust = addCompressAggregateArray(
-            Vein_Dust.Uranium238_Vein,
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Plutonium239_Vein,
-            Vein_Dust.Diamond_Vein,
+            Vein_Dust.Uranium238_Plutonium239_Vein,
             Vein_Dust.Redstone_Vein,
-            Vein_Dust.Ilmenite_Vein,
-            Vein_Dust.Palladium_Vein,
             Vein_Dust.Bauxite_Vein,
-            Vein_Dust.Iron_Vein,
+            Vein_Dust.Brown_Limonite_Iron_Vein,
             Vein_Dust.Tetrahedrite_Vein,
             Vein_Dust.Galena_Vein,
-            SmallOre_Dust.Saltpeter_SmallOre,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Tin_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Redstone_SmallOre,
-            SmallOre_Dust.Draconium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Lapis_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre);
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
+            SmallOre_Dust.Ganymede_SmallOre);
         ItemStack[] Fake_T3_Ganymede_Dust_Checked = checkItemStack(Fake_T3_Ganymede_Dust);
         ItemStack[][] Fake_T3_Ganymede_Dust_Split = addSplitAggregateArray(
             Fake_T3_Ganymede_Dust_Checked,
@@ -642,14 +570,16 @@ public class FakeSingularityDustRecipes {
 
         // T3 - Ross128b - Rb
         ItemStack[] Fake_T3_Ross128b_Dust = addCompressAggregateArray(
-            Vein_Dust.Bismutite_Bismuthinite_Vein,
-            Vein_Dust.Olenite_FluorBuergerite_ChromoAluminoPovondraite_VanadioOxyDravit_Vein,
-            Vein_Dust.Arsenopyrite_Ferberite_Loellingite_Roquesite_Vein,
-            Vein_Dust.Ferberite_Huebnerite_Loellingite_Vein,
-            Vein_Dust.Djurleite_Bornite_Wittichenite_Vein,
+            Vein_Dust.Arsenopyrite_Vein,
+            Vein_Dust.Hedenbergite_Vein,
+            Vein_Dust.Olenite_Vein,
+            Vein_Dust.Forsterite_Vein,
+            Vein_Dust.Djurleite_Vein,
             Vein_Dust.Thorianite_Vein,
-            Vein_Dust.Fayalite_GreenFuchsite_RedZircon_RedFuchsite_Vein,
-            Vein_Dust.Forsterite_Fayalite_OrangeDescloizite_RedDescloizite_Vein);
+            Vein_Dust.Graphite_Vein,
+            Vein_Dust.Fayalite_Vein,
+            Vein_Dust.Ferberite_Vein,
+            Vein_Dust.Bismutite_Vein);
         ItemStack[] Fake_T3_Ross128b_Dust_Checked = checkItemStack(Fake_T3_Ross128b_Dust);
         ItemStack[][] Fake_T3_Ross128b_Dust_Split = addSplitAggregateArray(
             Fake_T3_Ross128b_Dust_Checked,
@@ -669,34 +599,20 @@ public class FakeSingularityDustRecipes {
     public static void addFakeVoidDustRecipes_T4() {
         // T4 - Io - Io
         ItemStack[] Fake_T4_Io_Dust = addCompressAggregateArray(
-            Vein_Dust.Plutonium239_Vein,
-            Vein_Dust.Sulfur_Vein,
-            Vein_Dust.Manganese_Vein,
+            Vein_Dust.Uranium238_Plutonium239_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
             Vein_Dust.Pitchblende_Vein,
-            Vein_Dust.Quartz_Vein,
+            Vein_Dust.Quartzite_Quartz_Vein,
             Vein_Dust.Pyrolusite_Vein,
-            Vein_Dust.Infused_Gold_Vein,
-            Vein_Dust.Monazite_Vein,
-            Vein_Dust.Palladium_Vein,
-            Vein_Dust.Mytryl_Vein,
+            Vein_Dust.Gold_Infused_Gold_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
             Vein_Dust.Magnetite_Vein,
-            Vein_Dust.Iridium_Vein,
-            Vein_Dust.Cassiterite_Vein,
-            SmallOre_Dust.Saltpeter_SmallOre,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Redstone_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Meteoric_Iron_SmallOre,
-            SmallOre_Dust.Firestone_SmallOre,
-            SmallOre_Dust.Lapis_SmallOre,
-            SmallOre_Dust.Tungsten_SmallOre,
-            SmallOre_Dust.Bismuth_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Quantium_SmallOre,
-            SmallOre_Dust.Naquadah_SmallOre);
+            Vein_Dust.Sulfur_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
+            Vein_Dust.Mytryl_Vein,
+            Vein_Dust.Nickel_Iridium_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
+            SmallOre_Dust.Io_SmallOre);
         ItemStack[] Fake_T4_Io_Dust_Checked = checkItemStack(Fake_T4_Io_Dust);
         ItemStack[][] Fake_T4_Io_Dust_Split = addSplitAggregateArray(Fake_T4_Io_Dust_Checked, NEI_ItemOutput_Size);
         for (ItemStack[] tempItemStacks : Fake_T4_Io_Dust_Split) {
@@ -712,30 +628,18 @@ public class FakeSingularityDustRecipes {
 
         // T4 - Mercury - Me
         ItemStack[] Fake_T4_Mercury_Dust = addCompressAggregateArray(
-            Vein_Dust.Diamond_Vein,
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Draconium_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
             Vein_Dust.Redstone_Vein,
-            Vein_Dust.Ilmenite_Vein,
-            Vein_Dust.Palladium_Vein,
             Vein_Dust.Arsenic_Vein,
             Vein_Dust.Bauxite_Vein,
-            Vein_Dust.Iron_Vein,
+            Vein_Dust.Brown_Limonite_Iron_Vein,
             Vein_Dust.Naquadah_Vein,
-            Vein_Dust.Iridium_Vein,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Deep_Iron_SmallOre,
-            SmallOre_Dust.Oriharukon_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Redstone_SmallOre,
-            SmallOre_Dust.Ledox_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Desh_SmallOre,
-            SmallOre_Dust.Bismuth_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre,
-            SmallOre_Dust.Naquadah_SmallOre);
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Draconium_Vein,
+            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
+            Vein_Dust.Nickel_Iridium_Vein,
+            SmallOre_Dust.Mercury_SmallOre);
         ItemStack[] Fake_T4_Mercury_Dust_Checked = checkItemStack(Fake_T4_Mercury_Dust);
         ItemStack[][] Fake_T4_Mercury_Dust_Split = addSplitAggregateArray(
             Fake_T4_Mercury_Dust_Checked,
@@ -753,34 +657,21 @@ public class FakeSingularityDustRecipes {
 
         // T4 - Venus - Ve
         ItemStack[] Fake_T4_Venus_Dust = addCompressAggregateArray(
-            Vein_Dust.Sulfur_Vein,
             Vein_Dust.Pitchblende_Vein,
-            Vein_Dust.Quartz_Vein,
+            Vein_Dust.Quartzite_Quartz_Vein,
             Vein_Dust.Redstone_Vein,
-            Vein_Dust.Monazite_Vein,
-            Vein_Dust.Nickel_Vein,
-            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
             Vein_Dust.Tetrahedrite_Vein,
             Vein_Dust.Galena_Vein,
             Vein_Dust.Naquadah_Vein,
+            Vein_Dust.Sulfur_Vein,
+            Vein_Dust.Beryllium_Vein,
             Vein_Dust.Rutile_Vein,
             Vein_Dust.Quantium_Vein,
-            Vein_Dust.Iridium_Vein,
-            Vein_Dust.Cassiterite_Vein,
-            SmallOre_Dust.Saltpeter_SmallOre,
-            SmallOre_Dust.Mytryl_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Diamond_SmallOre,
-            SmallOre_Dust.Draconium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Meteoric_Iron_SmallOre,
-            SmallOre_Dust.Firestone_SmallOre,
-            SmallOre_Dust.Tungsten_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre,
-            SmallOre_Dust.Naquadah_SmallOre);
+            Vein_Dust.Nickel_Iridium_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
+            SmallOre_Dust.Venus_SmallOre);
         ItemStack[] Fake_T4_Venus_Dust_Checked = checkItemStack(Fake_T4_Venus_Dust);
         ItemStack[][] Fake_T4_Venus_Dust_Split = addSplitAggregateArray(
             Fake_T4_Venus_Dust_Checked,
@@ -800,26 +691,16 @@ public class FakeSingularityDustRecipes {
     public static void addFakeVoidDustRecipes_T5() {
         // T5 - Enceladus - En
         ItemStack[] Fake_T5_Enceladus_Dust = addCompressAggregateArray(
-            Vein_Dust.Uranium238_Vein,
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Lapis_Vein,
-            Vein_Dust.Osmium_Vein,
-            Vein_Dust.Monazite_Vein,
-            Vein_Dust.Copper_Vein,
-            Vein_Dust.Vanadium_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
             Vein_Dust.Ledox_Vein,
-            Vein_Dust.Iridium_Vein,
-            SmallOre_Dust.Saltpeter_SmallOre,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Ledox_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Lapis_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Naquadah_SmallOre);
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Lazurite_Lapis_Vein,
+            Vein_Dust.Nickel_Osmium_Vein,
+            Vein_Dust.Vanadium_Vein,
+            Vein_Dust.Nickel_Iridium_Vein,
+            SmallOre_Dust.Enceladus_SmallOre);
         ItemStack[] Fake_T5_Enceladus_Dust_Checked = checkItemStack(Fake_T5_Enceladus_Dust);
         ItemStack[][] Fake_T5_Enceladus_Dust_Split = addSplitAggregateArray(
             Fake_T5_Enceladus_Dust_Checked,
@@ -837,22 +718,17 @@ public class FakeSingularityDustRecipes {
 
         // T5 - Miranda - Mi
         ItemStack[] Fake_T5_Miranda_Dust = addCompressAggregateArray(
-            Vein_Dust.Diamond_Vein,
-            Vein_Dust.Osmium_Vein,
-            Vein_Dust.Desh_Vein,
-            Vein_Dust.Draconium_Vein,
             Vein_Dust.Redstone_Vein,
             Vein_Dust.Pyrolusite_Vein,
-            Vein_Dust.Ilmenite_Vein,
             Vein_Dust.Tetrahedrite_Vein,
-            Vein_Dust.Iridium_Vein,
-            Vein_Dust.Cassiterite_Vein,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Mytryl_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Desh_SmallOre);
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Nickel_Osmium_Vein,
+            Vein_Dust.Desh_Vein,
+            Vein_Dust.Draconium_Vein,
+            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Nickel_Iridium_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
+            SmallOre_Dust.Miranda_SmallOre);
         ItemStack[] Fake_T5_Miranda_Dust_Checked = checkItemStack(Fake_T5_Miranda_Dust);
         ItemStack[][] Fake_T5_Miranda_Dust_Split = addSplitAggregateArray(
             Fake_T5_Miranda_Dust_Checked,
@@ -870,25 +746,16 @@ public class FakeSingularityDustRecipes {
 
         // T5 - Oberon - Ob
         ItemStack[] Fake_T5_Oberon_Dust = addCompressAggregateArray(
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Osmium_Vein,
             Vein_Dust.Tungsten_Vein,
-            Vein_Dust.Manganese_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
             Vein_Dust.Pitchblende_Vein,
-            Vein_Dust.Palladium_Vein,
-            Vein_Dust.Iron_Vein,
+            Vein_Dust.Brown_Limonite_Iron_Vein,
             Vein_Dust.Galena_Vein,
             Vein_Dust.Naquadah_Vein,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Ledox_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Diamond_SmallOre,
-            SmallOre_Dust.Draconium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Lapis_SmallOre);
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Nickel_Osmium_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
+            SmallOre_Dust.Oberon_SmallOre);
         ItemStack[] Fake_T5_Oberon_Dust_Checked = checkItemStack(Fake_T5_Oberon_Dust);
         ItemStack[][] Fake_T5_Oberon_Dust_Split = addSplitAggregateArray(
             Fake_T5_Oberon_Dust_Checked,
@@ -906,32 +773,21 @@ public class FakeSingularityDustRecipes {
 
         // T5 - Titan - Ti
         ItemStack[] Fake_T5_Titan_Dust = addCompressAggregateArray(
-            Vein_Dust.Diamond_Vein,
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Osmium_Vein,
-            Vein_Dust.Manganese_Vein,
-            Vein_Dust.Infused_Gold_Vein,
-            Vein_Dust.Monazite_Vein,
-            Vein_Dust.Nickel_Vein,
-            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
+            Vein_Dust.Gold_Infused_Gold_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
             Vein_Dust.Arsenic_Vein,
             Vein_Dust.Bauxite_Vein,
-            Vein_Dust.Beryllium_Vein,
             Vein_Dust.Naquadah_Vein,
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Nickel_Osmium_Vein,
+            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Beryllium_Vein,
             Vein_Dust.Rutile_Vein,
-            Vein_Dust.Iridium_Vein,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Oriharukon_SmallOre,
-            SmallOre_Dust.Tin_SmallOre,
-            SmallOre_Dust.Redstone_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Diamond_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Quantium_SmallOre);
+            Vein_Dust.Nickel_Iridium_Vein,
+            SmallOre_Dust.Titan_SmallOre);
         ItemStack[] Fake_T5_Titan_Dust_Checked = checkItemStack(Fake_T5_Titan_Dust);
         ItemStack[][] Fake_T5_Titan_Dust_Split = addSplitAggregateArray(
             Fake_T5_Titan_Dust_Checked,
@@ -949,13 +805,14 @@ public class FakeSingularityDustRecipes {
 
         // T5 - Ross128ba - Ra
         ItemStack[] Fake_T5_Ross128ba_Dust = addCompressAggregateArray(
-            Vein_Dust.Olenite_FluorBuergerite_ChromoAluminoPovondraite_VanadioOxyDravit_Vein,
-            Vein_Dust.Ferberite_Huebnerite_Loellingite_Vein,
-            Vein_Dust.Hedenbergite_Fayalite_OrangeDescloizite_RedDescloizite_Vein,
-            Vein_Dust.Prasiolite_Hedenbergite_Vein,
             Vein_Dust.BArTiMaEuSNeK_Vein,
+            Vein_Dust.Amethyst_Vein,
+            Vein_Dust.Djurleite_Vein,
+            Vein_Dust.Galena_Vein,
+            Vein_Dust.Fayalite_Vein,
+            Vein_Dust.Ferberite_Vein,
             Vein_Dust.Tiberium_Vein,
-            Vein_Dust.Fluorspar_Vein);
+            Vein_Dust.Olenite_Vein);
         ItemStack[] Fake_T5_Ross128ba_Dust_Checked = checkItemStack(Fake_T5_Ross128ba_Dust);
         ItemStack[][] Fake_T5_Ross128ba_Dust_Split = addSplitAggregateArray(
             Fake_T5_Ross128ba_Dust_Checked,
@@ -975,32 +832,19 @@ public class FakeSingularityDustRecipes {
     public static void addFakeVoidDustRecipes_T6() {
         // T6 - Proteus - Pr
         ItemStack[] Fake_T6_Proteus_Dust = addCompressAggregateArray(
-            Vein_Dust.Uranium238_Vein,
-            Vein_Dust.Diamond_Vein,
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Osmium_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
             Vein_Dust.Tungsten_Vein,
-            Vein_Dust.Quartz_Vein,
-            Vein_Dust.Infused_Gold_Vein,
-            Vein_Dust.Ilmenite_Vein,
-            Vein_Dust.Copper_Vein,
-            Vein_Dust.Vanadium_Vein,
+            Vein_Dust.Quartzite_Quartz_Vein,
+            Vein_Dust.Gold_Infused_Gold_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
             Vein_Dust.Bauxite_Vein,
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Nickel_Osmium_Vein,
+            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Vanadium_Vein,
             Vein_Dust.Neutronium_Vein,
-            SmallOre_Dust.Saltpeter_SmallOre,
-            SmallOre_Dust.Copper_SmallOre,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Mytryl_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Tin_SmallOre,
-            SmallOre_Dust.Redstone_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Desh_SmallOre,
-            SmallOre_Dust.Bismuth_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Naquadah_SmallOre);
+            SmallOre_Dust.Proteus_SmallOre);
         ItemStack[] Fake_T6_Proteus_Dust_Checked = checkItemStack(Fake_T6_Proteus_Dust);
         ItemStack[][] Fake_T6_Proteus_Dust_Split = addSplitAggregateArray(
             Fake_T6_Proteus_Dust_Checked,
@@ -1018,29 +862,18 @@ public class FakeSingularityDustRecipes {
 
         // T6 - Triton - Tr
         ItemStack[] Fake_T6_Triton_Dust = addCompressAggregateArray(
-            Vein_Dust.Tungstate_Vein,
             Vein_Dust.Tungsten_Vein,
-            Vein_Dust.Manganese_Vein,
-            Vein_Dust.Monazite_Vein,
-            Vein_Dust.Nickel_Vein,
-            Vein_Dust.Thorium_Vein,
-            Vein_Dust.Neutronium_Vein,
-            Vein_Dust.Gold_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
             Vein_Dust.Galena_Vein,
             Vein_Dust.Niobium_Vein,
-            Vein_Dust.Iridium_Vein,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Copper_SmallOre,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Oriharukon_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Diamond_SmallOre,
-            SmallOre_Dust.Black_Plutonium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Desh_SmallOre);
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Thorium_Vein,
+            Vein_Dust.Neutronium_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            Vein_Dust.Nickel_Iridium_Vein,
+            SmallOre_Dust.Triton_SmallOre);
         ItemStack[] Fake_T6_Triton_Dust_Checked = checkItemStack(Fake_T6_Triton_Dust);
         ItemStack[][] Fake_T6_Triton_Dust_Split = addSplitAggregateArray(
             Fake_T6_Triton_Dust_Checked,
@@ -1060,29 +893,19 @@ public class FakeSingularityDustRecipes {
     public static void addFakeVoidDustRecipes_T7() {
         // T7 - Haumea - Ha
         ItemStack[] Fake_T7_Haumea_Dust = addCompressAggregateArray(
-            Vein_Dust.Uranium238_Vein,
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Olivine_Vein,
             Vein_Dust.Pitchblende_Vein,
-            Vein_Dust.Infused_Gold_Vein,
-            Vein_Dust.Monazite_Vein,
-            Vein_Dust.Thorium_Vein,
+            Vein_Dust.Gold_Infused_Gold_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
             Vein_Dust.Bauxite_Vein,
-            Vein_Dust.Neutronium_Vein,
-            Vein_Dust.Nether_Star_Vein,
-            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Garnet_Sand_Nether_Star_Vein,
             Vein_Dust.Naquadah_Vein,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Oriharukon_SmallOre,
-            SmallOre_Dust.Ledox_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Black_Plutonium_SmallOre,
-            SmallOre_Dust.Draconium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Desh_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Quantium_SmallOre);
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Bentonite_Olivine_Vein,
+            Vein_Dust.Thorium_Vein,
+            Vein_Dust.Neutronium_Vein,
+            Vein_Dust.Beryllium_Vein,
+            SmallOre_Dust.Haumea_SmallOre);
         ItemStack[] Fake_T7_Haumea_Dust_Checked = checkItemStack(Fake_T7_Haumea_Dust);
         ItemStack[][] Fake_T7_Haumea_Dust_Split = addSplitAggregateArray(
             Fake_T7_Haumea_Dust_Checked,
@@ -1098,33 +921,55 @@ public class FakeSingularityDustRecipes {
                 .addTo(addFakeVoidDustRecipes_T7);
         }
 
+        // T7 - Kuiper Belt - KB
+        ItemStack[] Fake_T7_Kuiperbelt_Dust = addCompressAggregateArray(
+            Vein_Dust.Carbon_Dioxide_Vein,
+            Vein_Dust.Pitchblende_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
+            Vein_Dust.Sulfur_Dioxide_Vein,
+            Vein_Dust.Bauxite_Vein,
+            Vein_Dust.Tetrahedrite_Vein,
+            Vein_Dust.Naquadah_Vein,
+            Vein_Dust.Methane_Vein,
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Nickel_Osmium_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
+            Vein_Dust.Neutronium_Vein,
+            Vein_Dust.Nickel_Iridium_Vein,
+            SmallOre_Dust.Kuiperbelt_SmallOre);
+        ItemStack[] Fake_T7_Kuiperbelt_Dust_Checked = checkItemStack(Fake_T7_Kuiperbelt_Dust);
+        ItemStack[][] Fake_T7_Kuiperbelt_Dust_Split = addSplitAggregateArray(
+            Fake_T7_Kuiperbelt_Dust_Checked,
+            NEI_ItemOutput_Size);
+        for (ItemStack[] tempItemStacks : Fake_T7_Kuiperbelt_Dust_Split) {
+            GTValues.RA.stdBuilder()
+                .itemInputs(getModItem(NEIOrePlugin.ID, "blockDimensionDisplay_KB", 1L))
+                .itemOutputs(tempItemStacks)
+                .fake()
+                .duration(3 * SECONDS)
+                .setNEIDesc("Singularity with Void Dust Mode")
+                .eut(0)
+                .addTo(addFakeVoidDustRecipes_T7);
+        }
+
         // T7 - Makemake - MM
         ItemStack[] Fake_T7_Makemake_Dust = addCompressAggregateArray(
-            Vein_Dust.Uranium238_Vein,
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Olivine_Vein,
             Vein_Dust.Pitchblende_Vein,
-            Vein_Dust.Monazite_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
             Vein_Dust.Black_Plutonium_Vein,
-            Vein_Dust.Vanadium_Vein,
             Vein_Dust.Bauxite_Vein,
-            Vein_Dust.Neutronium_Vein,
-            Vein_Dust.Beryllium_Vein,
             Vein_Dust.Red_Garnet_Vein,
             Vein_Dust.Niobium_Vein,
             Vein_Dust.Magnetite_Vein,
-            SmallOre_Dust.Mytryl_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Oriharukon_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Black_Plutonium_SmallOre,
-            SmallOre_Dust.Draconium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Desh_SmallOre,
-            SmallOre_Dust.Bismuth_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre,
-            SmallOre_Dust.Quantium_SmallOre);
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Bentonite_Olivine_Vein,
+            Vein_Dust.Vanadium_Vein,
+            Vein_Dust.Neutronium_Vein,
+            Vein_Dust.Beryllium_Vein,
+            SmallOre_Dust.Makemake_SmallOre);
         ItemStack[] Fake_T7_Makemake_Dust_Checked = checkItemStack(Fake_T7_Makemake_Dust);
         ItemStack[][] Fake_T7_Makemake_Dust_Split = addSplitAggregateArray(
             Fake_T7_Makemake_Dust_Checked,
@@ -1142,35 +987,22 @@ public class FakeSingularityDustRecipes {
 
         // T7 - Pluto - Pl
         ItemStack[] Fake_T7_Pluto_Dust = addCompressAggregateArray(
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Diamond_Vein,
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Osmium_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
             Vein_Dust.Tungsten_Vein,
             Vein_Dust.Black_Plutonium_Vein,
-            Vein_Dust.Ilmenite_Vein,
-            Vein_Dust.Palladium_Vein,
-            Vein_Dust.Thorium_Vein,
             Vein_Dust.Bauxite_Vein,
-            Vein_Dust.Neutronium_Vein,
-            Vein_Dust.Gold_Vein,
-            Vein_Dust.Iron_Vein,
-            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Brown_Limonite_Iron_Vein,
             Vein_Dust.Naquadah_Vein,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Ledox_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Black_Plutonium_SmallOre,
-            SmallOre_Dust.Draconium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Tungstate_SmallOre,
-            SmallOre_Dust.Meteoric_Iron_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre,
-            SmallOre_Dust.Quantium_SmallOre,
-            SmallOre_Dust.Naquadah_SmallOre);
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Nickel_Osmium_Vein,
+            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
+            Vein_Dust.Thorium_Vein,
+            Vein_Dust.Neutronium_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            Vein_Dust.Beryllium_Vein,
+            SmallOre_Dust.Pluto_SmallOre);
         ItemStack[] Fake_T7_Pluto_Dust_Checked = checkItemStack(Fake_T7_Pluto_Dust);
         ItemStack[][] Fake_T7_Pluto_Dust_Split = addSplitAggregateArray(
             Fake_T7_Pluto_Dust_Checked,
@@ -1190,15 +1022,15 @@ public class FakeSingularityDustRecipes {
     public static void addFakeVoidDustRecipes_T8() {
         // T8 - BarnardC - BC
         ItemStack[] Fake_T8_BarnardC_Dust = addCompressAggregateArray(
-            Vein_Dust.Osmium_Vein,
             Vein_Dust.Tungsten_Vein,
-            Vein_Dust.Samarium_Vein,
-            Vein_Dust.Mica_Vein,
+            Vein_Dust.Kyanite_Mica_Vein,
             Vein_Dust.Black_Plutonium_Vein,
             Vein_Dust.Arsenic_Vein,
-            Vein_Dust.Lignite_Coal_Vein,
             Vein_Dust.Basaltic_Mineral_Sand_Vein,
-            Vein_Dust.Salt_Vein);
+            Vein_Dust.Rock_Salt_Salt_Vein,
+            Vein_Dust.Nickel_Osmium_Vein,
+            Vein_Dust.Samarium_Vein,
+            Vein_Dust.Lignite_Coal_Vein);
         ItemStack[] Fake_T8_BarnardC_Dust_Checked = checkItemStack(Fake_T8_BarnardC_Dust);
         ItemStack[][] Fake_T8_BarnardC_Dust_Split = addSplitAggregateArray(
             Fake_T8_BarnardC_Dust_Checked,
@@ -1216,27 +1048,20 @@ public class FakeSingularityDustRecipes {
 
         // T8 - BarnardE - BE
         ItemStack[] Fake_T8_BarnardE_Dust = addCompressAggregateArray(
-            Vein_Dust.Uranium238_Vein,
-            Vein_Dust.Molybdenum_Vein,
-            Vein_Dust.Olivine_Vein,
+            Vein_Dust.Wulfenite_Molybdenum_Vein,
             Vein_Dust.Tungsten_Vein,
-            Vein_Dust.Manganese_Vein,
-            Vein_Dust.Infused_Gold_Vein,
-            Vein_Dust.Rare_Earth_Vein,
-            Vein_Dust.Thorium_Vein,
-            Vein_Dust.Copper_Vein,
-            Vein_Dust.Neutronium_Vein,
-            Vein_Dust.Nether_Star_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
+            Vein_Dust.Gold_Infused_Gold_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
+            Vein_Dust.Garnet_Sand_Nether_Star_Vein,
             Vein_Dust.Naquadah_Vein,
             Vein_Dust.Magnetite_Vein,
-            SmallOre_Dust.Awakened_Draconium_SmallOre,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Black_Plutonium_SmallOre,
-            SmallOre_Dust.Zinc_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre,
-            SmallOre_Dust.Naquadah_SmallOre);
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Bentonite_Olivine_Vein,
+            Vein_Dust.Cadmium_Rare_Earth_Vein,
+            Vein_Dust.Thorium_Vein,
+            Vein_Dust.Neutronium_Vein,
+            SmallOre_Dust.BarnardE_SmallOre);
         ItemStack[] Fake_T8_BarnardE_Dust_Checked = checkItemStack(Fake_T8_BarnardE_Dust);
         ItemStack[][] Fake_T8_BarnardE_Dust_Split = addSplitAggregateArray(
             Fake_T8_BarnardE_Dust_Checked,
@@ -1254,32 +1079,23 @@ public class FakeSingularityDustRecipes {
 
         // T8 - BarnardF - BF
         ItemStack[] Fake_T8_BarnardF_Dust = addCompressAggregateArray(
-            Vein_Dust.Diamond_Vein,
             Vein_Dust.Tungsten_Vein,
-            Vein_Dust.Manganese_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
             Vein_Dust.Pitchblende_Vein,
             Vein_Dust.Redstone_Vein,
-            Vein_Dust.Monazite_Vein,
-            Vein_Dust.Rare_Earth_Vein,
-            Vein_Dust.Thorium_Vein,
-            Vein_Dust.Copper_Vein,
-            Vein_Dust.Vanadium_Vein,
-            Vein_Dust.Neutronium_Vein,
-            Vein_Dust.Gold_Vein,
-            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
+            Vein_Dust.Chalcopyrite_Copper_Vein,
             Vein_Dust.Red_Garnet_Vein,
             Vein_Dust.Naquadah_Vein,
             Vein_Dust.Niobium_Vein,
-            SmallOre_Dust.Awakened_Draconium_SmallOre,
-            SmallOre_Dust.Iron_SmallOre,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Gold_SmallOre,
-            SmallOre_Dust.Black_Plutonium_SmallOre,
-            SmallOre_Dust.Realgar_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre,
-            SmallOre_Dust.Naquadah_SmallOre,
-            SmallOre_Dust.Bedrockium_SmallOre);
+            Vein_Dust.Graphite_Diamond_Vein,
+            Vein_Dust.Cadmium_Rare_Earth_Vein,
+            Vein_Dust.Thorium_Vein,
+            Vein_Dust.Vanadium_Vein,
+            Vein_Dust.Neutronium_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            Vein_Dust.Beryllium_Vein,
+            SmallOre_Dust.BarnardF_SmallOre);
         ItemStack[] Fake_T8_BarnardF_Dust_Checked = checkItemStack(Fake_T8_BarnardF_Dust);
         ItemStack[][] Fake_T8_BarnardF_Dust_Split = addSplitAggregateArray(
             Fake_T8_BarnardF_Dust_Checked,
@@ -1297,18 +1113,18 @@ public class FakeSingularityDustRecipes {
 
         // T8 - α Centauri Bb - CB
         ItemStack[] Fake_T8_Centauri_Dust = addCompressAggregateArray(
-            Vein_Dust.Sulfur_Vein,
-            Vein_Dust.Manganese_Vein,
-            Vein_Dust.Samarium_Vein,
+            Vein_Dust.Grossular_Manganese_Vein,
             Vein_Dust.Pitchblende_Vein,
-            Vein_Dust.Quartz_Vein,
+            Vein_Dust.Quartzite_Quartz_Vein,
             Vein_Dust.Redstone_Vein,
             Vein_Dust.Black_Plutonium_Vein,
-            Vein_Dust.Rare_Earth_Vein,
-            Vein_Dust.Beryllium_Vein,
-            Vein_Dust.Electrotine_Vein,
             Vein_Dust.Tetrahedrite_Vein,
-            Vein_Dust.Tin_Vein,
+            Vein_Dust.Cassiterite_Tin_Vein,
+            Vein_Dust.Sulfur_Vein,
+            Vein_Dust.Samarium_Vein,
+            Vein_Dust.Cadmium_Rare_Earth_Vein,
+            Vein_Dust.Beryllium_Vein,
+            Vein_Dust.Saltpeter_Electrotine_Vein,
             Vein_Dust.Nether_Quartz_Vein);
         ItemStack[] Fake_T8_Centauri_Dust_Checked = checkItemStack(Fake_T8_Centauri_Dust);
         ItemStack[][] Fake_T8_Centauri_Dust_Split = addSplitAggregateArray(
@@ -1328,21 +1144,19 @@ public class FakeSingularityDustRecipes {
         // T8 - TCetiE - TE
         ItemStack[] Fake_T8_TCetiE_Dust = addCompressAggregateArray(
             Vein_Dust.Magnesite_Vein,
-            Vein_Dust.Quartz_Vein,
+            Vein_Dust.Quartzite_Quartz_Vein,
             Vein_Dust.Black_Plutonium_Vein,
-            Vein_Dust.Ilmenite_Vein,
             Vein_Dust.Bauxite_Vein,
-            Vein_Dust.Gold_Vein,
-            Vein_Dust.Kaolinite_Vein,
-            Vein_Dust.Nether_Star_Vein,
+            Vein_Dust.Garnet_Sand_Nether_Star_Vein,
             Vein_Dust.Apatite_Vein,
-            Vein_Dust.Chrome_Vein,
             Vein_Dust.Magnetite_Vein,
-            Vein_Dust.Salt_Vein,
-            Vein_Dust.Cassiterite_Vein,
-            SmallOre_Dust.Awakened_Draconium_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Lapis_SmallOre);
+            Vein_Dust.Rock_Salt_Salt_Vein,
+            Vein_Dust.Ilmenite_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            Vein_Dust.Kaolinite_Vein,
+            Vein_Dust.Chrome_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
+            SmallOre_Dust.TCetiE_SmallOre);
         ItemStack[] Fake_T8_TCetiE_Dust_Checked = checkItemStack(Fake_T8_TCetiE_Dust);
         ItemStack[][] Fake_T8_TCetiE_Dust_Split = addSplitAggregateArray(
             Fake_T8_TCetiE_Dust_Checked,
@@ -1360,32 +1174,24 @@ public class FakeSingularityDustRecipes {
 
         // T8 - VegaB - VB
         ItemStack[] Fake_T8_VegaB_Dust = addCompressAggregateArray(
-            Vein_Dust.Tungstate_Vein,
-            Vein_Dust.Lapis_Vein,
             Vein_Dust.Pitchblende_Vein,
             Vein_Dust.Redstone_Vein,
-            Vein_Dust.Infused_Gold_Vein,
-            Vein_Dust.Rare_Earth_Vein,
-            Vein_Dust.Thorium_Vein,
+            Vein_Dust.Gold_Infused_Gold_Vein,
             Vein_Dust.Arsenic_Vein,
-            Vein_Dust.Vanadium_Vein,
-            Vein_Dust.Neutronium_Vein,
-            Vein_Dust.Gold_Vein,
-            Vein_Dust.Nether_Star_Vein,
+            Vein_Dust.Garnet_Sand_Nether_Star_Vein,
             Vein_Dust.Red_Garnet_Vein,
             Vein_Dust.Tetrahedrite_Vein,
             Vein_Dust.Galena_Vein,
             Vein_Dust.Naquadah_Vein,
             Vein_Dust.Niobium_Vein,
-            SmallOre_Dust.Awakened_Draconium_SmallOre,
-            SmallOre_Dust.Silver_SmallOre,
-            SmallOre_Dust.Lead_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Infinity_Catalyst_SmallOre,
-            SmallOre_Dust.Diamond_SmallOre,
-            SmallOre_Dust.Black_Plutonium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Bismuth_SmallOre);
+            Vein_Dust.Scheelite_Tungstate_Vein,
+            Vein_Dust.Lazurite_Lapis_Vein,
+            Vein_Dust.Cadmium_Rare_Earth_Vein,
+            Vein_Dust.Thorium_Vein,
+            Vein_Dust.Vanadium_Vein,
+            Vein_Dust.Neutronium_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            SmallOre_Dust.VegaB_SmallOre);
         ItemStack[] Fake_T8_VegaB_Dust_Checked = checkItemStack(Fake_T8_VegaB_Dust);
         ItemStack[][] Fake_T8_VegaB_Dust_Split = addSplitAggregateArray(
             Fake_T8_VegaB_Dust_Checked,
@@ -1405,19 +1211,19 @@ public class FakeSingularityDustRecipes {
     public static void addFakeVoidDustRecipes_T9() {
         // T9 - Anubis - An
         ItemStack[] Fake_T9_Anubis_Dust = addCompressAggregateArray(
+            Vein_Dust.Neutronium_Infinity_Catalyst_Vein,
+            Vein_Dust.Kyanite_Mica_Vein,
+            Vein_Dust.Basaltic_Mineral_Sand_Vein,
             Vein_Dust.Sulfur_Vein,
-            Vein_Dust.Infinity_Catalyst_Vein,
-            Vein_Dust.Olivine_Vein,
+            Vein_Dust.Bentonite_Olivine_Vein,
             Vein_Dust.Desh_Vein,
-            Vein_Dust.Mica_Vein,
-            Vein_Dust.Cryolite_Vein,
+            Vein_Dust.Galena_Cryolite_Vein,
             Vein_Dust.Dolomite_Vein,
             Vein_Dust.Callisto_Ice_Vein,
             Vein_Dust.Soapstone_Vein,
             Vein_Dust.Mytryl_Vein,
             Vein_Dust.Rutile_Vein,
-            Vein_Dust.Basaltic_Mineral_Sand_Vein,
-            SmallOre_Dust.Infinity_Catalyst_SmallOre);
+            SmallOre_Dust.Anubis_SmallOre);
         ItemStack[] Fake_T9_Anubis_Dust_Checked = checkItemStack(Fake_T9_Anubis_Dust);
         ItemStack[][] Fake_T9_Anubis_Dust_Split = addSplitAggregateArray(
             Fake_T9_Anubis_Dust_Checked,
@@ -1436,36 +1242,19 @@ public class FakeSingularityDustRecipes {
         // T9 - Horus - Ho
         ItemStack[] Fake_T9_Horus_Dust = addCompressAggregateArray(
             Vein_Dust.Magnesite_Vein,
-            Vein_Dust.Certus_Quartz_Vein,
-            Vein_Dust.Quartz_Vein,
-            Vein_Dust.Draconium_Vein,
-            Vein_Dust.Sapphire_Vein,
+            Vein_Dust.Quartzite_Quartz_Vein,
             Vein_Dust.Black_Plutonium_Vein,
-            Vein_Dust.Cosmic_Neutronium_Vein,
-            Vein_Dust.Mytryl_Vein,
-            Vein_Dust.Nether_Star_Vein,
+            Vein_Dust.Neutronium_Cosmic_Neutronium_Vein,
+            Vein_Dust.Garnet_Sand_Nether_Star_Vein,
             Vein_Dust.Red_Garnet_Vein,
             Vein_Dust.Oriharukon_Vein,
-            Vein_Dust.Quantium_Vein,
             Vein_Dust.Ledox_Vein,
-            SmallOre_Dust.Amethyst_SmallOre,
-            SmallOre_Dust.Red_Garnet_SmallOre,
-            SmallOre_Dust.Yellow_Garnet_SmallOre,
-            SmallOre_Dust.Tanzanite_SmallOre,
-            SmallOre_Dust.Spinel_SmallOre,
-            SmallOre_Dust.Opal_SmallOre,
-            SmallOre_Dust.Charged_Certus_Quartz_SmallOre,
-            SmallOre_Dust.Mytryl_SmallOre,
-            SmallOre_Dust.Ruby_SmallOre,
-            SmallOre_Dust.Emerald_SmallOre,
-            SmallOre_Dust.Blue_Topaz_SmallOre,
-            SmallOre_Dust.Topaz_SmallOre,
-            SmallOre_Dust.Certus_Quartz_SmallOre,
-            SmallOre_Dust.Jade_SmallOre,
-            SmallOre_Dust.Green_Sapphire_SmallOre,
-            SmallOre_Dust.Sapphire_SmallOre,
-            SmallOre_Dust.Jasper_SmallOre,
-            SmallOre_Dust.Olivine_SmallOre);
+            Vein_Dust.Certus_Quartz_Vein,
+            Vein_Dust.Draconium_Vein,
+            Vein_Dust.Almandine_Sapphire_Vein,
+            Vein_Dust.Mytryl_Vein,
+            Vein_Dust.Quantium_Vein,
+            SmallOre_Dust.Horus_SmallOre);
         ItemStack[] Fake_T9_Horus_Dust_Checked = checkItemStack(Fake_T9_Horus_Dust);
         ItemStack[][] Fake_T9_Horus_Dust_Split = addSplitAggregateArray(
             Fake_T9_Horus_Dust_Checked,
@@ -1483,15 +1272,15 @@ public class FakeSingularityDustRecipes {
 
         // T9 - Maahes - Mh
         ItemStack[] Fake_T9_Maahes_Dust = addCompressAggregateArray(
-            Vein_Dust.Naquadria_Vein,
-            Vein_Dust.Cryolite_Vein,
+            Vein_Dust.Naquadah_Vein,
+            Vein_Dust.Basaltic_Mineral_Sand_Vein,
+            Vein_Dust.Naquadah_Naquadria_Vein,
+            Vein_Dust.Galena_Cryolite_Vein,
             Vein_Dust.Callisto_Ice_Vein,
             Vein_Dust.Vanadium_Vein,
             Vein_Dust.Soapstone_Vein,
             Vein_Dust.Neutronium_Vein,
-            Vein_Dust.Platinum_Vein,
-            Vein_Dust.Naquadria_Vein,
-            Vein_Dust.Basaltic_Mineral_Sand_Vein,
+            Vein_Dust.Sheldonite_Platinum_Vein,
             Vein_Dust.Quantium_Vein,
             Vein_Dust.Chrome_Vein);
         ItemStack[] Fake_T9_Maahes_Dust_Checked = checkItemStack(Fake_T9_Maahes_Dust);
@@ -1511,25 +1300,19 @@ public class FakeSingularityDustRecipes {
 
         // T9 - MehenBelt - MB
         ItemStack[] Fake_T9_MehenBelt_Dust = addCompressAggregateArray(
-            Vein_Dust.Uranium238_Vein,
-            Vein_Dust.Lapis_Vein,
-            Vein_Dust.Awakened_Draconium_Vein,
-            Vein_Dust.Olivine_Vein,
-            Vein_Dust.Osmium_Vein,
-            Vein_Dust.Nickel_Vein,
+            Vein_Dust.Draconium_Awakened_Draconium_Vein,
+            Vein_Dust.Garnierite_Nickel_Vein,
+            Vein_Dust.Uraninite_Uranium238_Vein,
+            Vein_Dust.Lazurite_Lapis_Vein,
+            Vein_Dust.Bentonite_Olivine_Vein,
+            Vein_Dust.Nickel_Osmium_Vein,
             Vein_Dust.Ilmenite_Vein,
-            Vein_Dust.Palladium_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
             Vein_Dust.Neutronium_Vein,
-            Vein_Dust.Platinum_Vein,
-            Vein_Dust.Iridium_Vein,
-            Vein_Dust.Cassiterite_Vein,
-            SmallOre_Dust.Titanium_SmallOre,
-            SmallOre_Dust.Tin_SmallOre,
-            SmallOre_Dust.Neutronium_SmallOre,
-            SmallOre_Dust.Chromite_SmallOre,
-            SmallOre_Dust.Lapis_SmallOre,
-            SmallOre_Dust.Nickel_SmallOre,
-            SmallOre_Dust.Olivine_SmallOre);
+            Vein_Dust.Sheldonite_Platinum_Vein,
+            Vein_Dust.Nickel_Iridium_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
+            SmallOre_Dust.MehenBelt_SmallOre);
         ItemStack[] Fake_T9_MehenBelt_Dust_Checked = checkItemStack(Fake_T9_MehenBelt_Dust);
         ItemStack[][] Fake_T9_MehenBelt_Dust_Split = addSplitAggregateArray(
             Fake_T9_MehenBelt_Dust_Checked,
@@ -1548,13 +1331,13 @@ public class FakeSingularityDustRecipes {
         // T9 - Neper - Np
         ItemStack[] Fake_T9_Neper_Dust = addCompressAggregateArray(
             Vein_Dust.Tungsten_Vein,
+            Vein_Dust.Dilithium_Vein,
+            Vein_Dust.Kyanite_Mica_Vein,
+            Vein_Dust.Arsenic_Vein,
             Vein_Dust.Terra_Aer_Vein,
             Vein_Dust.Certus_Quartz_Vein,
             Vein_Dust.Quartzite_Vein,
-            Vein_Dust.Dilithium_Vein,
-            Vein_Dust.Mica_Vein,
             Vein_Dust.Dolomite_Vein,
-            Vein_Dust.Arsenic_Vein,
             Vein_Dust.Perditio_Ordo_Vein,
             Vein_Dust.Kaolinite_Vein,
             Vein_Dust.Aqua_Ignis_Amber_Vein,
@@ -1576,19 +1359,18 @@ public class FakeSingularityDustRecipes {
 
         // T9 - Seth - Se
         ItemStack[] Fake_T9_Seth_Dust = addCompressAggregateArray(
-            Vein_Dust.Osmium_Vein,
-            Vein_Dust.Samarium_Vein,
-            Vein_Dust.Draconium_Vein,
-            Vein_Dust.Monazite_Vein,
-            Vein_Dust.Palladium_Vein,
+            Vein_Dust.Bastnasite_Monazite_Vein,
             Vein_Dust.Bauxite_Vein,
-            Vein_Dust.Gold_Vein,
             Vein_Dust.Raw_Tengam_Vein,
             Vein_Dust.Magnetite_Vein,
-            Vein_Dust.Iridium_Vein,
-            Vein_Dust.Cassiterite_Vein,
-            SmallOre_Dust.Awakened_Draconium_SmallOre,
-            SmallOre_Dust.Draconium_SmallOre);
+            Vein_Dust.Nickel_Osmium_Vein,
+            Vein_Dust.Samarium_Vein,
+            Vein_Dust.Draconium_Vein,
+            Vein_Dust.Platinum_Palladium_Vein,
+            Vein_Dust.Magnetite_Gold_Vein,
+            Vein_Dust.Nickel_Iridium_Vein,
+            Vein_Dust.Tin_Cassiterite_Vein,
+            SmallOre_Dust.Seth_SmallOre);
         ItemStack[] Fake_T9_Seth_Dust_Checked = checkItemStack(Fake_T9_Seth_Dust);
         ItemStack[][] Fake_T9_Seth_Dust_Split = addSplitAggregateArray(Fake_T9_Seth_Dust_Checked, NEI_ItemOutput_Size);
         for (ItemStack[] tempItemStacks : Fake_T9_Seth_Dust_Split) {
@@ -1600,6 +1382,22 @@ public class FakeSingularityDustRecipes {
                 .setNEIDesc("Singularity with Void Dust Mode")
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T9);
+        }
+    }
+
+    public static void addFakeVoidDustRecipes_T10() {
+        // T10 - DeepDark - DD
+        ItemStack[] Fake_T10_Dust_Checked = checkItemStack(Vein_Dust.T10_Dust);
+        ItemStack[][] Fake_T10_DeepDark_Dust_Split = addSplitAggregateArray(Fake_T10_Dust_Checked, NEI_ItemOutput_Size);
+        for (ItemStack[] tempItemStacks : Fake_T10_DeepDark_Dust_Split) {
+            GTValues.RA.stdBuilder()
+                .itemInputs(getModItem(NEIOrePlugin.ID, "blockDimensionDisplay_DD", 1L))
+                .itemOutputs(tempItemStacks)
+                .fake()
+                .duration(3 * SECONDS)
+                .setNEIDesc("Singularity with Void Dust Mode")
+                .eut(0)
+                .addTo(addFakeVoidDustRecipes_T10);
         }
     }
 }

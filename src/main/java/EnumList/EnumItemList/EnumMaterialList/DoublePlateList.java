@@ -1,27 +1,84 @@
 package EnumList.EnumItemList.EnumMaterialList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.BartWorks;
 import static gregtech.api.enums.Mods.GTPlusPlus;
 import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class DoublePlateList {
-    public static final ItemStack Double_Rhodium_Plated_Palladium_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 88);
-    public static final ItemStack Double_Ruridit_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 90);
-    public static final ItemStack Double_High_Durability_Compound_Steel_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 92);
-    public static final ItemStack Double_Ademic_Steel_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 96);
-    public static final ItemStack Double_Atomic_Separation_Catalyst_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 10022);
-    public static final ItemStack Double_Extremely_Unstable_Naquadah_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 10024);
-    public static final ItemStack Double_Adamantium_Alloy_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 10085);
-    public static final ItemStack Double_MAR_M200_Steel_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 10096);
-    public static final ItemStack Double_MAR_Ce_M200_Steel_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 10097);
-    public static final ItemStack Double_Precious_Metals_Alloy_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 10109);
-    public static final ItemStack Double_Enriched_Naquadah_Alloy_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 10110);
-    public static final ItemStack Double_Metastable_Oganesson_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 10111);
-    public static final ItemStack Double_Shirabon_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 10112);
-    public static final ItemStack Double_Mu_metal_Plate = getModItem(BartWorks.ID, "gt.bwMetaGeneratedplateDouble", 1L, 11351);
+
+    public static final ItemStack Double_Rhodium_Plated_Palladium_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        88);
+    public static final ItemStack Double_Ruridit_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        90);
+    public static final ItemStack Double_High_Durability_Compound_Steel_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        92);
+    public static final ItemStack Double_Ademic_Steel_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        96);
+    public static final ItemStack Double_Atomic_Separation_Catalyst_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        10022);
+    public static final ItemStack Double_Extremely_Unstable_Naquadah_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        10024);
+    public static final ItemStack Double_Adamantium_Alloy_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        10085);
+    public static final ItemStack Double_MAR_M200_Steel_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        10096);
+    public static final ItemStack Double_MAR_Ce_M200_Steel_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        10097);
+    public static final ItemStack Double_Precious_Metals_Alloy_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        10109);
+    public static final ItemStack Double_Enriched_Naquadah_Alloy_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        10110);
+    public static final ItemStack Double_Metastable_Oganesson_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        10111);
+    public static final ItemStack Double_Shirabon_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        10112);
+    public static final ItemStack Double_Mu_metal_Plate = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedplateDouble",
+        1L,
+        11351);
     public static final ItemStack Double_Lithium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18006);
     public static final ItemStack Double_Beryllium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18008);
     public static final ItemStack Double_Carbon_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18010);
@@ -87,20 +144,48 @@ public class DoublePlateList {
     public static final ItemStack Double_Attuned_Tengam_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18112);
     public static final ItemStack Double_Hellish_Metal_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18125);
     public static final ItemStack Double_Neutronium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18129);
-    public static final ItemStack Double_Superconductor_Base_UIV_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18131);
+    public static final ItemStack Double_Superconductor_Base_UIV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18131);
     public static final ItemStack Double_Netherite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18132);
-    public static final ItemStack Double_Superconductor_Base_UMV_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18134);
+    public static final ItemStack Double_Superconductor_Base_UMV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18134);
     public static final ItemStack Double_Universium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18139);
     public static final ItemStack Double_Eternity_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18141);
     public static final ItemStack Double_Magmatter_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18143);
     public static final ItemStack Double_Six_Phased_Copper_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18147);
     public static final ItemStack Double_Mellion_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18148);
     public static final ItemStack Double_Creon_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18149);
-    public static final ItemStack Double_Hot_Proto_Halkonite_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18153);
-    public static final ItemStack Double_Proto_Halkonite_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18154);
-    public static final ItemStack Double_Hot_Exo_Halkonite_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18156);
-    public static final ItemStack Double_Exo_Halkonite_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18157);
-    public static final ItemStack Double_Prismatic_Naquadah_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18163);
+    public static final ItemStack Double_Hot_Proto_Halkonite_Steel_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18153);
+    public static final ItemStack Double_Proto_Halkonite_Steel_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18154);
+    public static final ItemStack Double_Hot_Exo_Halkonite_Steel_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18156);
+    public static final ItemStack Double_Exo_Halkonite_Steel_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18157);
+    public static final ItemStack Double_Prismatic_Naquadah_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18163);
     public static final ItemStack Double_Hexanite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18174);
     public static final ItemStack Double_Shijima_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18189);
     public static final ItemStack Double_Churitsu_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18190);
@@ -161,9 +246,17 @@ public class DoublePlateList {
     public static final ItemStack Double_Bismuth_Bronze_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18353);
     public static final ItemStack Double_Magnetic_Iron_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18354);
     public static final ItemStack Double_Magnetic_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18355);
-    public static final ItemStack Double_Magnetic_Neodymium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18356);
+    public static final ItemStack Double_Magnetic_Neodymium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18356);
     public static final ItemStack Double_Vanadium_Gallium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18357);
-    public static final ItemStack Double_Yttrium_Barium_Cuprate_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18358);
+    public static final ItemStack Double_Yttrium_Barium_Cuprate_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18358);
     public static final ItemStack Double_Niobium_Nitride_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18359);
     public static final ItemStack Double_Niobium_Titanium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18360);
     public static final ItemStack Double_Chromium_Dioxide_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18361);
@@ -187,7 +280,11 @@ public class DoublePlateList {
     public static final ItemStack Double_Ardite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18382);
     public static final ItemStack Double_Reinforced_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18383);
     public static final ItemStack Double_Galgadorian_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18384);
-    public static final ItemStack Double_Enhanced_Galgadorian_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18385);
+    public static final ItemStack Double_Enhanced_Galgadorian_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18385);
     public static final ItemStack Double_Manyullyn_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18386);
     public static final ItemStack Double_Mytryl_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18387);
     public static final ItemStack Double_Black_Plutonium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18388);
@@ -199,7 +296,11 @@ public class DoublePlateList {
     public static final ItemStack Double_Infinity_Catalyst_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18394);
     public static final ItemStack Double_Bedrockium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18395);
     public static final ItemStack Double_Infinity_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18397);
-    public static final ItemStack Double_Mysterious_Crystal_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18398);
+    public static final ItemStack Double_Mysterious_Crystal_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18398);
     public static final ItemStack Double_Magnetic_Samarium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18399);
     public static final ItemStack Double_Obzinite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18400);
     public static final ItemStack Double_End_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18401);
@@ -207,37 +308,93 @@ public class DoublePlateList {
     public static final ItemStack Double_Crystalline_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18403);
     public static final ItemStack Double_Melodic_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18404);
     public static final ItemStack Double_Stellar_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18405);
-    public static final ItemStack Double_Crystalline_Pink_Slime_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18406);
+    public static final ItemStack Double_Crystalline_Pink_Slime_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18406);
     public static final ItemStack Double_Energetic_Silver_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18407);
     public static final ItemStack Double_Vivid_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18408);
     public static final ItemStack Double_Epoxid_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18470);
     public static final ItemStack Double_Silicone_Rubber_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18471);
-    public static final ItemStack Double_Polycaprolactam_PCL_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18472);
-    public static final ItemStack Double_Polytetrafluoroethylene_PTFE_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18473);
+    public static final ItemStack Double_Polycaprolactam_PCL_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18472);
+    public static final ItemStack Double_Polytetrafluoroethylene_PTFE_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18473);
     public static final ItemStack Double_Alduorite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18485);
     public static final ItemStack Double_Rubracium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18488);
     public static final ItemStack Double_Vulcanite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18489);
     public static final ItemStack Double_Force_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18521);
     public static final ItemStack Double_Vinteum_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18529);
     public static final ItemStack Double_TPV_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18576);
-    public static final ItemStack Double_Transcendent_Metal_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18581);
+    public static final ItemStack Double_Transcendent_Metal_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18581);
     public static final ItemStack Double_Enriched_Holmium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18582);
-    public static final ItemStack Double_Magnetohydrodynamically_Constrained_Star_Matter_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18583);
-    public static final ItemStack Double_White_Dwarf_Matter_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18585);
-    public static final ItemStack Double_Black_Dwarf_Matter_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18586);
+    public static final ItemStack Double_Magnetohydrodynamically_Constrained_Star_Matter_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18583);
+    public static final ItemStack Double_White_Dwarf_Matter_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18585);
+    public static final ItemStack Double_Black_Dwarf_Matter_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18586);
     public static final ItemStack Double_SpaceTime_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18588);
-    public static final ItemStack Double_Polybenzimidazole_PBI_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18599);
-    public static final ItemStack Double_Fiber_Reinforced_Epoxy_Resin_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18610);
-    public static final ItemStack Double_Nickel_Zinc_Ferrite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18613);
-    public static final ItemStack Double_Polyphenylene_Sulfide_PPS_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18631);
-    public static final ItemStack Double_Styrene_Butadiene_Rubber_SBR_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18635);
+    public static final ItemStack Double_Polybenzimidazole_PBI_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18599);
+    public static final ItemStack Double_Fiber_Reinforced_Epoxy_Resin_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18610);
+    public static final ItemStack Double_Nickel_Zinc_Ferrite_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18613);
+    public static final ItemStack Double_Polyphenylene_Sulfide_PPS_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18631);
+    public static final ItemStack Double_Styrene_Butadiene_Rubber_SBR_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18635);
     public static final ItemStack Double_Polystyrene_PS_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18636);
-    public static final ItemStack Double_Polyvinyl_Chloride_PVC_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18649);
+    public static final ItemStack Double_Polyvinyl_Chloride_PVC_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18649);
     public static final ItemStack Double_Kevlar_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18765);
     public static final ItemStack Double_Endium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18770);
     public static final ItemStack Double_Nickel_Aluminide_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18772);
     public static final ItemStack Double_Deep_Iron_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18829);
-    public static final ItemStack Double_Silicon_Solar_Grade_Poly_SI_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18856);
+    public static final ItemStack Double_Silicon_Solar_Grade_Poly_SI_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18856);
     public static final ItemStack Double_Trinium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18868);
     public static final ItemStack Double_Polyethylene_PE_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18874);
     public static final ItemStack Paperboard = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18879);
@@ -250,24 +407,72 @@ public class DoublePlateList {
     public static final ItemStack Double_Tartarite_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18956);
     public static final ItemStack Double_Orichalcum_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18966);
     public static final ItemStack Double_Void_Metal_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18970);
-    public static final ItemStack Double_Superconductor_Base_UEV_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18974);
+    public static final ItemStack Double_Superconductor_Base_UEV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18974);
     public static final ItemStack Double_Draconium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18975);
-    public static final ItemStack Double_Awakened_Draconium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18976);
-    public static final ItemStack Double_Blood_Infused_Iron_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18977);
+    public static final ItemStack Double_Awakened_Draconium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18976);
+    public static final ItemStack Double_Blood_Infused_Iron_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18977);
     public static final ItemStack Double_Ichorium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18978);
     public static final ItemStack Double_Radox_Polymer_Sheet = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18979);
     public static final ItemStack Double_Gallium_Arsenide_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18980);
-    public static final ItemStack Double_Indium_Gallium_Phosphide_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18981);
+    public static final ItemStack Double_Indium_Gallium_Phosphide_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18981);
     public static final ItemStack Double_Cosmic_Neutronium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18982);
     public static final ItemStack Double_Flerovium_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18984);
-    public static final ItemStack Double_Superconductor_Base_UHV_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18985);
-    public static final ItemStack Double_Superconductor_Base_UV_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18986);
-    public static final ItemStack Double_Superconductor_Base_MV_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18987);
-    public static final ItemStack Double_Superconductor_Base_HV_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18988);
-    public static final ItemStack Double_Superconductor_Base_EV_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18989);
-    public static final ItemStack Double_Superconductor_Base_IV_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18990);
-    public static final ItemStack Double_Superconductor_Base_LuV_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18991);
-    public static final ItemStack Double_Superconductor_Base_ZPM_Plate = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 18992);
+    public static final ItemStack Double_Superconductor_Base_UHV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18985);
+    public static final ItemStack Double_Superconductor_Base_UV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18986);
+    public static final ItemStack Double_Superconductor_Base_MV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18987);
+    public static final ItemStack Double_Superconductor_Base_HV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18988);
+    public static final ItemStack Double_Superconductor_Base_EV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18989);
+    public static final ItemStack Double_Superconductor_Base_IV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18990);
+    public static final ItemStack Double_Superconductor_Base_LuV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18991);
+    public static final ItemStack Double_Superconductor_Base_ZPM_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        18992);
     public static final ItemStack Double_Clay_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleClay", 1L);
     public static final ItemStack Double_Selenium_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleSelenium", 1L);
     public static final ItemStack Double_Iodine_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleIodine", 1L);
@@ -275,67 +480,249 @@ public class DoublePlateList {
     public static final ItemStack Double_Thallium_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleThallium", 1L);
     public static final ItemStack Double_Germanium_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleGermanium", 1L);
     public static final ItemStack Double_Lithium_7_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleLithium7", 1L);
-    public static final ItemStack Double_Advanced_Nitinol_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleAdvancedNitinol", 1L);
-    public static final ItemStack Double_Astral_Titanium_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleAstralTitanium", 1L);
-    public static final ItemStack Double_Celestial_Tungsten_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleCelestialTungsten", 1L);
+    public static final ItemStack Double_Advanced_Nitinol_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleAdvancedNitinol",
+        1L);
+    public static final ItemStack Double_Astral_Titanium_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleAstralTitanium",
+        1L);
+    public static final ItemStack Double_Celestial_Tungsten_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleCelestialTungsten",
+        1L);
     public static final ItemStack Double_Hypogen_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleHypogen", 1L);
-    public static final ItemStack Double_Chromatic_Glass_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleChromaticGlass", 1L);
+    public static final ItemStack Double_Chromatic_Glass_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleChromaticGlass",
+        1L);
     public static final ItemStack Double_Black_Metal_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleBlackMetal", 1L);
-    public static final ItemStack Double_Ancient_Granite_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleAncientGranite", 1L);
+    public static final ItemStack Double_Ancient_Granite_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleAncientGranite",
+        1L);
     public static final ItemStack Double_Runite_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleRunite", 1L);
-    public static final ItemStack Double_Dragonblood_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleDragonblood", 1L);
-    public static final ItemStack Double_Silicon_Carbide_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleSiliconCarbide", 1L);
-    public static final ItemStack Double_Zirconium_Carbide_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleZirconiumCarbide", 1L);
-    public static final ItemStack Double_Tantalum_Carbide_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleTantalumCarbide", 1L);
-    public static final ItemStack Double_Niobium_Carbide_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleNiobiumCarbide", 1L);
-    public static final ItemStack Double_Tungsten_Titanium_Carbide_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleTungstenTitaniumCarbide", 1L);
-    public static final ItemStack Double_Energy_Crystal_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleEnergyCrystal", 1L);
+    public static final ItemStack Double_Dragonblood_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleDragonblood",
+        1L);
+    public static final ItemStack Double_Silicon_Carbide_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleSiliconCarbide",
+        1L);
+    public static final ItemStack Double_Zirconium_Carbide_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleZirconiumCarbide",
+        1L);
+    public static final ItemStack Double_Tantalum_Carbide_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleTantalumCarbide",
+        1L);
+    public static final ItemStack Double_Niobium_Carbide_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleNiobiumCarbide",
+        1L);
+    public static final ItemStack Double_Tungsten_Titanium_Carbide_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleTungstenTitaniumCarbide",
+        1L);
+    public static final ItemStack Double_Energy_Crystal_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleEnergyCrystal",
+        1L);
     public static final ItemStack Double_Blood_Steel_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleBloodSteel", 1L);
     public static final ItemStack Double_Zeron_100_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleZeron100", 1L);
     public static final ItemStack Double_Tumbaga_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleTumbaga", 1L);
     public static final ItemStack Double_Potin_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoublePotin", 1L);
     public static final ItemStack Double_Staballoy_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleStaballoy", 1L);
-    public static final ItemStack Double_Tantalloy_60_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleTantalloy60", 1L);
-    public static final ItemStack Double_Tantalloy_61_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleTantalloy61", 1L);
+    public static final ItemStack Double_Tantalloy_60_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleTantalloy60",
+        1L);
+    public static final ItemStack Double_Tantalloy_61_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleTantalloy61",
+        1L);
     public static final ItemStack Double_Inconel_625_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleInconel625", 1L);
     public static final ItemStack Double_Inconel_690_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleInconel690", 1L);
     public static final ItemStack Double_Inconel_792_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleInconel792", 1L);
     public static final ItemStack Double_Eglin_Steel_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleEglinSteel", 1L);
-    public static final ItemStack Double_Maraging_Steel_250_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleMaragingSteel250", 1L);
-    public static final ItemStack Double_Maraging_Steel_300_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleMaragingSteel300", 1L);
-    public static final ItemStack Double_Maraging_Steel_350_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleMaragingSteel350", 1L);
-    public static final ItemStack Double_Watertight_Steel_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleWatertightSteel", 1L);
+    public static final ItemStack Double_Maraging_Steel_250_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleMaragingSteel250",
+        1L);
+    public static final ItemStack Double_Maraging_Steel_300_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleMaragingSteel300",
+        1L);
+    public static final ItemStack Double_Maraging_Steel_350_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleMaragingSteel350",
+        1L);
+    public static final ItemStack Double_Watertight_Steel_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleWatertightSteel",
+        1L);
     public static final ItemStack Double_Nitinol_60_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleNitinol60", 1L);
     public static final ItemStack Double_Stellite_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleStellite", 1L);
     public static final ItemStack Double_Talonite_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleTalonite", 1L);
     public static final ItemStack Double_Hastelloy_W_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleHastelloyW", 1L);
     public static final ItemStack Double_Hastelloy_X_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleHastelloyX", 1L);
-    public static final ItemStack Double_Hastelloy_C276_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleHastelloyC276", 1L);
+    public static final ItemStack Double_Hastelloy_C276_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleHastelloyC276",
+        1L);
     public static final ItemStack Double_Hastelloy_N_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleHastelloyN", 1L);
     public static final ItemStack Double_Incoloy_020_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleIncoloy020", 1L);
     public static final ItemStack Double_Incoloy_DS_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleIncoloyDS", 1L);
-    public static final ItemStack Double_Incoloy_MA956_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleIncoloyMA956", 1L);
+    public static final ItemStack Double_Incoloy_MA956_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleIncoloyMA956",
+        1L);
     public static final ItemStack Double_Grisium_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleGrisium", 1L);
     public static final ItemStack Double_HG_1223_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleHG1223", 1L);
-    public static final ItemStack Double_Trinium_Titanium_Alloy_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleTriniumTitaniumAlloy", 1L);
-    public static final ItemStack Double_Trinium_Naquadah_Alloy_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleTriniumNaquadahAlloy", 1L);
-    public static final ItemStack Double_Trinium_Naquadah_Carbonite_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleTriniumNaquadahCarbonite", 1L);
-    public static final ItemStack Double_Arceus_Alloy_2B_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleArceusAlloy2B", 1L);
+    public static final ItemStack Double_Trinium_Titanium_Alloy_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleTriniumTitaniumAlloy",
+        1L);
+    public static final ItemStack Double_Trinium_Naquadah_Alloy_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleTriniumNaquadahAlloy",
+        1L);
+    public static final ItemStack Double_Trinium_Naquadah_Carbonite_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleTriniumNaquadahCarbonite",
+        1L);
+    public static final ItemStack Double_Arceus_Alloy_2B_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleArceusAlloy2B",
+        1L);
     public static final ItemStack Double_HeLiCoPtEr_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleHeLiCoPtEr", 1L);
-    public static final ItemStack Double_Lafium_Compound_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleLafiumCompound", 1L);
-    public static final ItemStack Double_Cinobite_A243_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleCinobiteA243", 1L);
-    public static final ItemStack Double_Pikyonium_64B_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoublePikyonium64B", 1L);
-    public static final ItemStack Double_Abyssal_Alloy_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleAbyssalAlloy", 1L);
+    public static final ItemStack Double_Lafium_Compound_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleLafiumCompound",
+        1L);
+    public static final ItemStack Double_Cinobite_A243_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleCinobiteA243",
+        1L);
+    public static final ItemStack Double_Pikyonium_64B_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoublePikyonium64B",
+        1L);
+    public static final ItemStack Double_Abyssal_Alloy_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleAbyssalAlloy",
+        1L);
     public static final ItemStack Double_Laurenium_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleLaurenium", 1L);
     public static final ItemStack Double_Botmium_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleBotmium", 1L);
     public static final ItemStack Double_HS188_A_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleHS188A", 1L);
     public static final ItemStack Double_Titansteel_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleTitansteel", 1L);
     public static final ItemStack Double_Arcanite_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleArcanite", 1L);
     public static final ItemStack Double_Octiron_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleOctiron", 1L);
-    public static final ItemStack Double_Babbit_Alloy_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleBabbitAlloy", 1L);
-    public static final ItemStack Double_Black_Titanium_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleBlackTitanium", 1L);
-    public static final ItemStack Double_Indalloy_140_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleIndalloy140", 1L);
+    public static final ItemStack Double_Babbit_Alloy_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleBabbitAlloy",
+        1L);
+    public static final ItemStack Double_Black_Titanium_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleBlackTitanium",
+        1L);
+    public static final ItemStack Double_Indalloy_140_Plate = getModItem(
+        GTPlusPlus.ID,
+        "itemPlateDoubleIndalloy140",
+        1L);
     public static final ItemStack Double_Rhugnor_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleRhugnor", 1L);
     public static final ItemStack Double_Quantum_Plate = getModItem(GTPlusPlus.ID, "itemPlateDoubleQuantum", 1L);
 
+    public static final ItemStack[] DoublePlate_List = new ItemStack[] { Double_Rhodium_Plated_Palladium_Plate,
+        Double_Ruridit_Plate, Double_High_Durability_Compound_Steel_Plate, Double_Ademic_Steel_Plate,
+        Double_Atomic_Separation_Catalyst_Plate, Double_Extremely_Unstable_Naquadah_Plate,
+        Double_Adamantium_Alloy_Plate, Double_MAR_M200_Steel_Plate, Double_MAR_Ce_M200_Steel_Plate,
+        Double_Precious_Metals_Alloy_Plate, Double_Enriched_Naquadah_Alloy_Plate, Double_Metastable_Oganesson_Plate,
+        Double_Shirabon_Plate, Double_Mu_metal_Plate, Double_Lithium_Plate, Double_Beryllium_Plate, Double_Carbon_Plate,
+        Double_Magnesium_Plate, Double_Aluminium_Plate, Double_Raw_Silicon_Plate, Double_Potassium_Plate,
+        Double_Scandium_Plate, Double_Titanium_Plate, Double_Vanadium_Plate, Double_Chrome_Plate,
+        Double_Manganese_Plate, Double_Iron_Plate, Double_Cobalt_Plate, Double_Nickel_Plate, Double_Copper_Plate,
+        Double_Zinc_Plate, Double_Gallium_Plate, Double_Arsenic_Plate, Double_Rubidium_Plate, Double_Strontium_Plate,
+        Double_Yttrium_Plate, Double_Niobium_Plate, Double_Molybdenum_Plate, Double_Palladium_Plate,
+        Double_Silver_Plate, Double_Indium_Plate, Double_Tin_Plate, Double_Antimony_Plate, Double_Tellurium_Plate,
+        Double_Caesium_Plate, Double_Barium_Plate, Double_Lanthanum_Plate, Double_Cerium_Plate,
+        Double_Praseodymium_Plate, Double_Neodymium_Plate, Double_Promethium_Plate, Double_Samarium_Plate,
+        Double_Europium_Plate, Double_Gadolinium_Plate, Double_Terbium_Plate, Double_Dysprosium_Plate,
+        Double_Holmium_Plate, Double_Erbium_Plate, Double_Thulium_Plate, Double_Ytterbium_Plate, Double_Lutetium_Plate,
+        Double_Tantalum_Plate, Double_Tungsten_Plate, Double_Osmium_Plate, Double_Iridium_Plate, Double_Platinum_Plate,
+        Double_Gold_Plate, Double_Lead_Plate, Double_Bismuth_Plate, Double_Thorium_Plate, Double_Uranium_235_Plate,
+        Double_Uranium_238_Plate, Double_Plutonium_239_Plate, Double_Plutonium_241_Plate, Double_Americium_Plate,
+        Double_Purified_Tengam_Plate, Double_Attuned_Tengam_Plate, Double_Hellish_Metal_Plate, Double_Neutronium_Plate,
+        Double_Superconductor_Base_UIV_Plate, Double_Netherite_Plate, Double_Superconductor_Base_UMV_Plate,
+        Double_Universium_Plate, Double_Eternity_Plate, Double_Magmatter_Plate, Double_Six_Phased_Copper_Plate,
+        Double_Mellion_Plate, Double_Creon_Plate, Double_Hot_Proto_Halkonite_Steel_Plate,
+        Double_Proto_Halkonite_Steel_Plate, Double_Hot_Exo_Halkonite_Steel_Plate, Double_Exo_Halkonite_Steel_Plate,
+        Double_Prismatic_Naquadah_Plate, Double_Hexanite_Plate, Double_Shijima_Plate, Double_Churitsu_Plate,
+        Double_Manasteel_Plate, Double_Terrasteel_Plate, Double_Elven_Elementium_Plate, Double_Gaia_Spirit_Plate,
+        Double_Bronze_Plate, Double_Brass_Plate, Double_Invar_Plate, Double_Electrum_Plate, Double_Cast_Iron_Plate,
+        Double_Steel_Plate, Double_Stainless_Steel_Plate, Double_Pig_Iron_Plate, Double_Red_Alloy_Plate,
+        Double_Blue_Alloy_Plate, Double_Cupronickel_Plate, Double_Nichrome_Plate, Double_Kanthal_Plate,
+        Double_Magnalium_Plate, Double_Soldering_Alloy_Plate, Double_Battery_Alloy_Plate, Double_Tungstensteel_Plate,
+        Double_Osmiridium_Plate, Double_Sunnarium_Plate, Double_Adamantium_Plate, Double_Fluxed_Electrum_Plate,
+        Double_Enderium_Plate, Double_Infused_Gold_Plate, Double_Naquadah_Plate, Double_Naquadah_Alloy_Plate,
+        Double_Enriched_Naquadah_Plate, Double_Naquadria_Plate, Double_Duranium_Plate, Double_Tritanium_Plate,
+        Double_Thaumium_Plate, Double_Mithril_Plate, Double_Astral_Silver_Plate, Double_Black_Steel_Plate,
+        Double_Damascus_Steel_Plate, Double_Shadow_Iron_Plate, Double_Shadow_Steel_Plate, Double_Ironwood_Plate,
+        Double_Steeleaf_Plate, Double_Meteoric_Iron_Plate, Double_Meteoric_Steel_Plate, Double_Deep_Dark_Iron_Plate,
+        Double_Cobalt_Brass_Plate, Double_Ultimet_Plate, Double_Annealed_Copper_Plate, Double_Fiery_Steel_Plate,
+        Double_Red_Steel_Plate, Double_Blue_Steel_Plate, Double_Sterling_Silver_Plate, Double_Rose_Gold_Plate,
+        Double_Black_Bronze_Plate, Double_Bismuth_Bronze_Plate, Double_Magnetic_Iron_Plate, Double_Magnetic_Steel_Plate,
+        Double_Magnetic_Neodymium_Plate, Double_Vanadium_Gallium_Plate, Double_Yttrium_Barium_Cuprate_Plate,
+        Double_Niobium_Nitride_Plate, Double_Niobium_Titanium_Plate, Double_Chromium_Dioxide_Plate,
+        Double_Knightmetal_Plate, Double_Tin_Alloy_Plate, Double_Dark_Steel_Plate, Double_Electrical_Steel_Plate,
+        Double_Energetic_Alloy_Plate, Double_Vibrant_Alloy_Plate, Double_Shadow_Metal_Plate,
+        Double_Conductive_Iron_Plate, Double_Tungstencarbide_Plate, Double_Vanadiumsteel_Plate, Double_HSSG_Plate,
+        Double_HSSE_Plate, Double_HSSS_Plate, Double_Pulsating_Iron_Plate, Double_Soularium_Plate,
+        Double_Enderium_Base_Plate, Double_Redstone_Alloy_Plate, Double_Ardite_Plate, Double_Reinforced_Plate,
+        Double_Galgadorian_Plate, Double_Enhanced_Galgadorian_Plate, Double_Manyullyn_Plate, Double_Mytryl_Plate,
+        Double_Black_Plutonium_Plate, Double_Callisto_Ice_Plate, Double_Ledox_Plate, Double_Quantium_Plate,
+        Double_Duralumin_Plate, Double_Oriharukon_Plate, Double_Infinity_Catalyst_Plate, Double_Bedrockium_Plate,
+        Double_Infinity_Plate, Double_Mysterious_Crystal_Plate, Double_Magnetic_Samarium_Plate, Double_Obzinite_Plate,
+        Double_End_Steel_Plate, Double_Clay_Compound_Plate, Double_Crystalline_Alloy_Plate, Double_Melodic_Alloy_Plate,
+        Double_Stellar_Alloy_Plate, Double_Crystalline_Pink_Slime_Plate, Double_Energetic_Silver_Plate,
+        Double_Vivid_Alloy_Plate, Double_Epoxid_Sheet, Double_Silicone_Rubber_Sheet, Double_Polycaprolactam_PCL_Sheet,
+        Double_Polytetrafluoroethylene_PTFE_Sheet, Double_Alduorite_Plate, Double_Rubracium_Plate,
+        Double_Vulcanite_Plate, Double_Force_Plate, Double_Vinteum_Plate, Double_TPV_Alloy_Plate,
+        Double_Transcendent_Metal_Plate, Double_Enriched_Holmium_Plate,
+        Double_Magnetohydrodynamically_Constrained_Star_Matter_Plate, Double_White_Dwarf_Matter_Plate,
+        Double_Black_Dwarf_Matter_Plate, Double_SpaceTime_Plate, Double_Polybenzimidazole_PBI_Sheet,
+        Double_Fiber_Reinforced_Epoxy_Resin_Sheet, Double_Nickel_Zinc_Ferrite_Plate,
+        Double_Polyphenylene_Sulfide_PPS_Sheet, Double_Styrene_Butadiene_Rubber_SBR_Sheet, Double_Polystyrene_PS_Sheet,
+        Double_Polyvinyl_Chloride_PVC_Sheet, Double_Kevlar_Plate, Double_Endium_Plate, Double_Nickel_Aluminide_Plate,
+        Double_Deep_Iron_Plate, Double_Silicon_Solar_Grade_Poly_SI_Plate, Double_Trinium_Plate,
+        Double_Polyethylene_PE_Sheet, Paperboard, Double_Rubber_Sheet, Double_Desh_Plate, Double_Chrysotile_Plate,
+        Double_Realgar_Plate, Double_Vyroxeres_Plate, Double_Ceruclase_Plate, Double_Tartarite_Plate,
+        Double_Orichalcum_Plate, Double_Void_Metal_Plate, Double_Superconductor_Base_UEV_Plate, Double_Draconium_Plate,
+        Double_Awakened_Draconium_Plate, Double_Blood_Infused_Iron_Plate, Double_Ichorium_Plate,
+        Double_Radox_Polymer_Sheet, Double_Gallium_Arsenide_Plate, Double_Indium_Gallium_Phosphide_Plate,
+        Double_Cosmic_Neutronium_Plate, Double_Flerovium_Plate, Double_Superconductor_Base_UHV_Plate,
+        Double_Superconductor_Base_UV_Plate, Double_Superconductor_Base_MV_Plate, Double_Superconductor_Base_HV_Plate,
+        Double_Superconductor_Base_EV_Plate, Double_Superconductor_Base_IV_Plate, Double_Superconductor_Base_LuV_Plate,
+        Double_Superconductor_Base_ZPM_Plate, Double_Clay_Plate, Double_Selenium_Plate, Double_Iodine_Plate,
+        Double_Rhenium_Plate, Double_Thallium_Plate, Double_Germanium_Plate, Double_Lithium_7_Plate,
+        Double_Advanced_Nitinol_Plate, Double_Astral_Titanium_Plate, Double_Celestial_Tungsten_Plate,
+        Double_Hypogen_Plate, Double_Chromatic_Glass_Plate, Double_Black_Metal_Plate, Double_Ancient_Granite_Plate,
+        Double_Runite_Plate, Double_Dragonblood_Plate, Double_Silicon_Carbide_Plate, Double_Zirconium_Carbide_Plate,
+        Double_Tantalum_Carbide_Plate, Double_Niobium_Carbide_Plate, Double_Tungsten_Titanium_Carbide_Plate,
+        Double_Energy_Crystal_Plate, Double_Blood_Steel_Plate, Double_Zeron_100_Plate, Double_Tumbaga_Plate,
+        Double_Potin_Plate, Double_Staballoy_Plate, Double_Tantalloy_60_Plate, Double_Tantalloy_61_Plate,
+        Double_Inconel_625_Plate, Double_Inconel_690_Plate, Double_Inconel_792_Plate, Double_Eglin_Steel_Plate,
+        Double_Maraging_Steel_250_Plate, Double_Maraging_Steel_300_Plate, Double_Maraging_Steel_350_Plate,
+        Double_Watertight_Steel_Plate, Double_Nitinol_60_Plate, Double_Stellite_Plate, Double_Talonite_Plate,
+        Double_Hastelloy_W_Plate, Double_Hastelloy_X_Plate, Double_Hastelloy_C276_Plate, Double_Hastelloy_N_Plate,
+        Double_Incoloy_020_Plate, Double_Incoloy_DS_Plate, Double_Incoloy_MA956_Plate, Double_Grisium_Plate,
+        Double_HG_1223_Plate, Double_Trinium_Titanium_Alloy_Plate, Double_Trinium_Naquadah_Alloy_Plate,
+        Double_Trinium_Naquadah_Carbonite_Plate, Double_Arceus_Alloy_2B_Plate, Double_HeLiCoPtEr_Plate,
+        Double_Lafium_Compound_Plate, Double_Cinobite_A243_Plate, Double_Pikyonium_64B_Plate,
+        Double_Abyssal_Alloy_Plate, Double_Laurenium_Plate, Double_Botmium_Plate, Double_HS188_A_Plate,
+        Double_Titansteel_Plate, Double_Arcanite_Plate, Double_Octiron_Plate, Double_Babbit_Alloy_Plate,
+        Double_Black_Titanium_Plate, Double_Indalloy_140_Plate, Double_Rhugnor_Plate, Double_Quantum_Plate };
 }

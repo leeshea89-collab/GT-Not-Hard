@@ -1,7 +1,6 @@
 package util.RecipesFrontend;
 
 import java.util.List;
-import java.util.function.Supplier;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
@@ -56,13 +55,13 @@ public class OneToManyItemsFrontend_Large extends RecipeMapFrontend {
         }
     }
 
-    public void addProgressBar(ModularWindow.Builder builder, Supplier<Float> progressSupplier, Pos2d windowOffset) {
+    public void addProgressBar(ModularWindow.Builder builder, GTNEIDefaultHandler.NEITemplateContext ctx) {
         builder.widget(
             (new ProgressBar()).setTexture(GTUITextures.PROGRESSBAR_HAMMER, 16)
                 .setDirection(Direction.DOWN)
-                .setProgress(progressSupplier)
+                .setProgress(ctx.progressSupplier)
                 .setSynced(false, false)
-                .setPos((new Pos2d(81, 27)).add(windowOffset))
+                .setPos((new Pos2d(81, 27)).add(ctx.windowOffset))
                 .setSize(14, 16));
     }
 }

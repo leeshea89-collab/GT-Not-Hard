@@ -1,11 +1,12 @@
 package EnumList.EnumItemList.EnumMaterialList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class CasingList {
+
     public static final ItemStack Lithium_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18006);
     public static final ItemStack Beryllium_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18008);
     public static final ItemStack Carbon_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18010);
@@ -197,7 +198,11 @@ public class CasingList {
     public static final ItemStack Epoxid_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18470);
     public static final ItemStack Silicone_Rubber_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18471);
     public static final ItemStack Polycaprolactam_PCL_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18472);
-    public static final ItemStack Polytetrafluoroethylene_PTFE_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18473);
+    public static final ItemStack Polytetrafluoroethylene_PTFE_Casing = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        18473);
     public static final ItemStack Alduorite_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18485);
     public static final ItemStack Rubracium_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18488);
     public static final ItemStack Vulcanite_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18489);
@@ -248,16 +253,32 @@ public class CasingList {
     public static final ItemStack TPV_Alloy_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18576);
     public static final ItemStack Transcendent_Metal_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18581);
     public static final ItemStack Enriched_Holmium_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18582);
-    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18583);
+    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Casing = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        18583);
     public static final ItemStack White_Dwarf_Matter_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18585);
     public static final ItemStack Black_Dwarf_Matter_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18586);
     public static final ItemStack SpaceTime_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18588);
     public static final ItemStack Polybenzimidazole_PBI_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18599);
-    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18610);
+    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Casing = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        18610);
     public static final ItemStack Borosilicate_Glass_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18611);
     public static final ItemStack Nickel_Zinc_Ferrite_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18613);
-    public static final ItemStack Polyphenylene_Sulfide_PPS_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18631);
-    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18635);
+    public static final ItemStack Polyphenylene_Sulfide_PPS_Casing = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        18631);
+    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Casing = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        18635);
     public static final ItemStack Polystyrene_PS_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18636);
     public static final ItemStack Polyvinyl_Chloride_PVC_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18649);
     public static final ItemStack Kevlar_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18765);
@@ -266,7 +287,11 @@ public class CasingList {
     public static final ItemStack Obsidian_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18804);
     public static final ItemStack Wood_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18809);
     public static final ItemStack Deep_Iron_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18829);
-    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18856);
+    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Casing = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        18856);
     public static final ItemStack Trinium_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18868);
     public static final ItemStack Polyethylene_PE_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18874);
     public static final ItemStack Rubber_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18880);
@@ -287,7 +312,11 @@ public class CasingList {
     public static final ItemStack Ichorium_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18978);
     public static final ItemStack Radox_Polymer_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18979);
     public static final ItemStack Gallium_Arsenide_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18980);
-    public static final ItemStack Indium_Gallium_Phosphide_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18981);
+    public static final ItemStack Indium_Gallium_Phosphide_Casing = getModItem(
+        GregTech.ID,
+        "gt.metaitem.02",
+        1L,
+        18981);
     public static final ItemStack Cosmic_Neutronium_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18982);
     public static final ItemStack Flerovium_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18984);
     public static final ItemStack Superconductor_Base_UHV_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18985);
@@ -298,4 +327,62 @@ public class CasingList {
     public static final ItemStack Superconductor_Base_IV_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18990);
     public static final ItemStack Superconductor_Base_LuV_Casing = getModItem(GregTech.ID, "gt.metaitem.02", 1L, 18991);
 
+    public static final ItemStack[] Casing_List = new ItemStack[] { Lithium_Casing, Beryllium_Casing, Carbon_Casing,
+        Magnesium_Casing, Aluminium_Casing, Raw_Silicon_Casing, Potassium_Casing, Scandium_Casing, Titanium_Casing,
+        Vanadium_Casing, Chrome_Casing, Manganese_Casing, Iron_Casing, Cobalt_Casing, Nickel_Casing, Copper_Casing,
+        Zinc_Casing, Gallium_Casing, Arsenic_Casing, Rubidium_Casing, Strontium_Casing, Yttrium_Casing, Niobium_Casing,
+        Molybdenum_Casing, Palladium_Casing, Silver_Casing, Indium_Casing, Tin_Casing, Antimony_Casing,
+        Tellurium_Casing, Caesium_Casing, Barium_Casing, Lanthanum_Casing, Cerium_Casing, Praseodymium_Casing,
+        Neodymium_Casing, Promethium_Casing, Samarium_Casing, Europium_Casing, Gadolinium_Casing, Terbium_Casing,
+        Dysprosium_Casing, Holmium_Casing, Erbium_Casing, Thulium_Casing, Ytterbium_Casing, Lutetium_Casing,
+        Tantalum_Casing, Tungsten_Casing, Osmium_Casing, Iridium_Casing, Platinum_Casing, Gold_Casing, Lead_Casing,
+        Bismuth_Casing, Thorium_Casing, Uranium_235_Casing, Uranium_238_Casing, Plutonium_239_Casing,
+        Plutonium_241_Casing, Americium_Casing, Purified_Tengam_Casing, Attuned_Tengam_Casing, Neutronium_Casing,
+        Superconductor_Base_UIV_Casing, Netherite_Casing, Superconductor_Base_UMV_Casing, Universium_Casing,
+        Eternity_Casing, Magmatter_Casing, Six_Phased_Copper_Casing, Mellion_Casing, Creon_Casing,
+        Prismatic_Naquadah_Casing, Hexanite_Casing, Shijima_Casing, Churitsu_Casing, Manasteel_Casing,
+        Terrasteel_Casing, Elven_Elementium_Casing, Gaia_Spirit_Casing, Livingwood_Casing, Dreamwood_Casing,
+        Mana_Diamond_Casing, Dragonstone_Casing, Bronze_Casing, Brass_Casing, Invar_Casing, Electrum_Casing,
+        Cast_Iron_Casing, Steel_Casing, Stainless_Steel_Casing, Pig_Iron_Casing, Red_Alloy_Casing, Blue_Alloy_Casing,
+        Cupronickel_Casing, Nichrome_Casing, Kanthal_Casing, Magnalium_Casing, Soldering_Alloy_Casing,
+        Battery_Alloy_Casing, Tungstensteel_Casing, Osmiridium_Casing, Sunnarium_Casing, Adamantium_Casing,
+        Fluxed_Electrum_Casing, Enderium_Casing, Infused_Gold_Casing, Naquadah_Casing, Naquadah_Alloy_Casing,
+        Enriched_Naquadah_Casing, Naquadria_Casing, Duranium_Casing, Tritanium_Casing, Thaumium_Casing, Mithril_Casing,
+        Astral_Silver_Casing, Black_Steel_Casing, Damascus_Steel_Casing, Shadow_Iron_Casing, Shadow_Steel_Casing,
+        Ironwood_Casing, Steeleaf_Casing, Meteoric_Iron_Casing, Meteoric_Steel_Casing, Deep_Dark_Iron_Casing,
+        Cobalt_Brass_Casing, Ultimet_Casing, Annealed_Copper_Casing, Fiery_Steel_Casing, Firestone_Casing,
+        Red_Steel_Casing, Blue_Steel_Casing, Sterling_Silver_Casing, Rose_Gold_Casing, Black_Bronze_Casing,
+        Bismuth_Bronze_Casing, Magnetic_Iron_Casing, Magnetic_Steel_Casing, Magnetic_Neodymium_Casing,
+        Vanadium_Gallium_Casing, Yttrium_Barium_Cuprate_Casing, Niobium_Nitride_Casing, Niobium_Titanium_Casing,
+        Chromium_Dioxide_Casing, Knightmetal_Casing, Tin_Alloy_Casing, Dark_Steel_Casing, Electrical_Steel_Casing,
+        Energetic_Alloy_Casing, Vibrant_Alloy_Casing, Shadow_Metal_Casing, Conductive_Iron_Casing,
+        Tungstencarbide_Casing, Vanadiumsteel_Casing, HSSG_Casing, HSSE_Casing, HSSS_Casing, Pulsating_Iron_Casing,
+        Soularium_Casing, Enderium_Base_Casing, Redstone_Alloy_Casing, Ardite_Casing, Reinforced_Casing,
+        Galgadorian_Casing, Enhanced_Galgadorian_Casing, Manyullyn_Casing, Mytryl_Casing, Black_Plutonium_Casing,
+        Callisto_Ice_Casing, Ledox_Casing, Quantium_Casing, Duralumin_Casing, Oriharukon_Casing,
+        Infinity_Catalyst_Casing, Bedrockium_Casing, Infinity_Casing, Mysterious_Crystal_Casing,
+        Magnetic_Samarium_Casing, Obzinite_Casing, End_Steel_Casing, Clay_Compound_Casing, Crystalline_Alloy_Casing,
+        Melodic_Alloy_Casing, Stellar_Alloy_Casing, Crystalline_Pink_Slime_Casing, Energetic_Silver_Casing,
+        Vivid_Alloy_Casing, Epoxid_Casing, Silicone_Rubber_Casing, Polycaprolactam_PCL_Casing,
+        Polytetrafluoroethylene_PTFE_Casing, Alduorite_Casing, Rubracium_Casing, Vulcanite_Casing, Diamond_Casing,
+        Emerald_Casing, Ruby_Casing, Sapphire_Casing, Green_Sapphire_Casing, Olivine_Casing, Nether_Star_Casing,
+        Topaz_Casing, Tanzanite_Casing, Amethyst_Casing, Opal_Casing, Jasper_Casing, Spinel_Casing, Blue_Topaz_Casing,
+        Amber_Casing, Dilithium_Casing, Certus_Quartz_Casing, Forcicium_Casing, Forcillium_Casing, Monazite_Casing,
+        Force_Casing, Nether_Quartz_Casing, Quartzite_Casing, Lazurite_Casing, Sodalite_Casing, Lapis_Casing,
+        Red_Garnet_Casing, Yellow_Garnet_Casing, Vinteum_Casing, Apatite_Casing, Niter_Casing, Enderpearl_Casing,
+        Endereye_Casing, Tricalcium_Phosphate_Casing, Coal_Casing, Charcoal_Casing, Jade_Casing, Lignite_Coal_Casing,
+        Aer_Casing, Ignis_Casing, Terra_Casing, Aqua_Casing, Perditio_Casing, Ordo_Casing, TPV_Alloy_Casing,
+        Transcendent_Metal_Casing, Enriched_Holmium_Casing, Magnetohydrodynamically_Constrained_Star_Matter_Casing,
+        White_Dwarf_Matter_Casing, Black_Dwarf_Matter_Casing, SpaceTime_Casing, Polybenzimidazole_PBI_Casing,
+        Fiber_Reinforced_Epoxy_Resin_Casing, Borosilicate_Glass_Casing, Nickel_Zinc_Ferrite_Casing,
+        Polyphenylene_Sulfide_PPS_Casing, Styrene_Butadiene_Rubber_SBR_Casing, Polystyrene_PS_Casing,
+        Polyvinyl_Chloride_PVC_Casing, Kevlar_Casing, Endium_Casing, Nickel_Aluminide_Casing, Obsidian_Casing,
+        Wood_Casing, Deep_Iron_Casing, Silicon_Solar_Grade_Poly_SI_Casing, Trinium_Casing, Polyethylene_PE_Casing,
+        Rubber_Casing, Desh_Casing, Sealed_Wood_Casing, Glass_Casing, Chrysotile_Casing, Realgar_Casing,
+        Vyroxeres_Casing, Ceruclase_Casing, Tartarite_Casing, Orichalcum_Casing, Void_Metal_Casing,
+        Superconductor_Base_UEV_Casing, Draconium_Casing, Awakened_Draconium_Casing, Blood_Infused_Iron_Casing,
+        Ichorium_Casing, Radox_Polymer_Casing, Gallium_Arsenide_Casing, Indium_Gallium_Phosphide_Casing,
+        Cosmic_Neutronium_Casing, Flerovium_Casing, Superconductor_Base_UHV_Casing, Superconductor_Base_UV_Casing,
+        Superconductor_Base_MV_Casing, Superconductor_Base_HV_Casing, Superconductor_Base_EV_Casing,
+        Superconductor_Base_IV_Casing, Superconductor_Base_LuV_Casing };
 }

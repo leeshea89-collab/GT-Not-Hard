@@ -1,11 +1,12 @@
 package EnumList.EnumItemList.EnumGTList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class WireList {
+
     public static final ItemStack Cobalt_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1200);
     public static final ItemStack Lead_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1220);
     public static final ItemStack Tin_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1240);
@@ -34,7 +35,11 @@ public class WireList {
     public static final ItemStack HSSG_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1700);
     public static final ItemStack Niobium_Titanium_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1720);
     public static final ItemStack Vanadium_Gallium_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1740);
-    public static final ItemStack Yttrium_Barium_Cuprate_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1760);
+    public static final ItemStack Yttrium_Barium_Cuprate_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        1760);
     public static final ItemStack Naquadah_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1780);
     public static final ItemStack Naquadah_Alloy_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1800);
     public static final ItemStack Duranium_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1820);
@@ -44,17 +49,53 @@ public class WireList {
     public static final ItemStack Red_Alloy_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2000);
     public static final ItemStack Superconductor_UHV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2020);
     public static final ItemStack Superconductor_UEV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2026);
-    public static final ItemStack Superconductor_Base_UEV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2032);
-    public static final ItemStack Superconductor_Base_UIV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2052);
-    public static final ItemStack Superconductor_Base_UMV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2072);
+    public static final ItemStack Superconductor_Base_UEV_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2032);
+    public static final ItemStack Superconductor_Base_UIV_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2052);
+    public static final ItemStack Superconductor_Base_UMV_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2072);
     public static final ItemStack Superconductor_UIV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2081);
     public static final ItemStack Superconductor_UMV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2089);
-    public static final ItemStack Superconductor_Base_MV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2200);
-    public static final ItemStack Superconductor_Base_HV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2220);
-    public static final ItemStack Superconductor_Base_EV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2240);
-    public static final ItemStack Superconductor_Base_IV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2260);
-    public static final ItemStack Superconductor_Base_LuV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2280);
-    public static final ItemStack Superconductor_Base_ZPM_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2300);
+    public static final ItemStack Superconductor_Base_MV_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2200);
+    public static final ItemStack Superconductor_Base_HV_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2220);
+    public static final ItemStack Superconductor_Base_EV_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2240);
+    public static final ItemStack Superconductor_Base_IV_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2260);
+    public static final ItemStack Superconductor_Base_LuV_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2280);
+    public static final ItemStack Superconductor_Base_ZPM_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2300);
     public static final ItemStack Superconductor_MV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2320);
     public static final ItemStack Superconductor_HV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2340);
     public static final ItemStack Superconductor_EV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2360);
@@ -62,8 +103,16 @@ public class WireList {
     public static final ItemStack Superconductor_LuV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2400);
     public static final ItemStack Superconductor_ZPM_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2420);
     public static final ItemStack Superconductor_UV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2440);
-    public static final ItemStack Superconductor_Base_UV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2500);
-    public static final ItemStack Superconductor_Base_UHV_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2520);
+    public static final ItemStack Superconductor_Base_UV_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2500);
+    public static final ItemStack Superconductor_Base_UHV_Wire_1x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2520);
     public static final ItemStack Ichorium_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2600);
     public static final ItemStack SpaceTime_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2606);
     public static final ItemStack Bedrockium_Wire_1x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 11310);
@@ -115,7 +164,11 @@ public class WireList {
     public static final ItemStack HSSG_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1701);
     public static final ItemStack Niobium_Titanium_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1721);
     public static final ItemStack Vanadium_Gallium_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1741);
-    public static final ItemStack Yttrium_Barium_Cuprate_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1761);
+    public static final ItemStack Yttrium_Barium_Cuprate_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        1761);
     public static final ItemStack Naquadah_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1781);
     public static final ItemStack Naquadah_Alloy_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1801);
     public static final ItemStack Duranium_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1821);
@@ -125,17 +178,53 @@ public class WireList {
     public static final ItemStack Red_Alloy_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2001);
     public static final ItemStack Superconductor_UHV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2021);
     public static final ItemStack Superconductor_UEV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2027);
-    public static final ItemStack Superconductor_Base_UEV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2033);
-    public static final ItemStack Superconductor_Base_UIV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2053);
-    public static final ItemStack Superconductor_Base_UMV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2073);
+    public static final ItemStack Superconductor_Base_UEV_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2033);
+    public static final ItemStack Superconductor_Base_UIV_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2053);
+    public static final ItemStack Superconductor_Base_UMV_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2073);
     public static final ItemStack Superconductor_UIV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2082);
     public static final ItemStack Superconductor_UMV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2090);
-    public static final ItemStack Superconductor_Base_MV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2201);
-    public static final ItemStack Superconductor_Base_HV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2221);
-    public static final ItemStack Superconductor_Base_EV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2241);
-    public static final ItemStack Superconductor_Base_IV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2261);
-    public static final ItemStack Superconductor_Base_LuV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2281);
-    public static final ItemStack Superconductor_Base_ZPM_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2301);
+    public static final ItemStack Superconductor_Base_MV_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2201);
+    public static final ItemStack Superconductor_Base_HV_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2221);
+    public static final ItemStack Superconductor_Base_EV_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2241);
+    public static final ItemStack Superconductor_Base_IV_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2261);
+    public static final ItemStack Superconductor_Base_LuV_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2281);
+    public static final ItemStack Superconductor_Base_ZPM_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2301);
     public static final ItemStack Superconductor_MV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2321);
     public static final ItemStack Superconductor_HV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2341);
     public static final ItemStack Superconductor_EV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2361);
@@ -143,8 +232,16 @@ public class WireList {
     public static final ItemStack Superconductor_LuV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2401);
     public static final ItemStack Superconductor_ZPM_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2421);
     public static final ItemStack Superconductor_UV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2441);
-    public static final ItemStack Superconductor_Base_UV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2501);
-    public static final ItemStack Superconductor_Base_UHV_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2521);
+    public static final ItemStack Superconductor_Base_UV_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2501);
+    public static final ItemStack Superconductor_Base_UHV_Wire_2x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2521);
     public static final ItemStack Ichorium_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2601);
     public static final ItemStack SpaceTime_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2607);
     public static final ItemStack Bedrockium_Wire_2x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 11311);
@@ -196,7 +293,11 @@ public class WireList {
     public static final ItemStack HSSG_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1702);
     public static final ItemStack Niobium_Titanium_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1722);
     public static final ItemStack Vanadium_Gallium_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1742);
-    public static final ItemStack Yttrium_Barium_Cuprate_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1762);
+    public static final ItemStack Yttrium_Barium_Cuprate_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        1762);
     public static final ItemStack Naquadah_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1782);
     public static final ItemStack Naquadah_Alloy_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1802);
     public static final ItemStack Duranium_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1822);
@@ -206,17 +307,53 @@ public class WireList {
     public static final ItemStack Red_Alloy_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2002);
     public static final ItemStack Superconductor_UHV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2022);
     public static final ItemStack Superconductor_UEV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2028);
-    public static final ItemStack Superconductor_Base_UEV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2034);
-    public static final ItemStack Superconductor_Base_UIV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2054);
-    public static final ItemStack Superconductor_Base_UMV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2074);
+    public static final ItemStack Superconductor_Base_UEV_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2034);
+    public static final ItemStack Superconductor_Base_UIV_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2054);
+    public static final ItemStack Superconductor_Base_UMV_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2074);
     public static final ItemStack Superconductor_UIV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2083);
     public static final ItemStack Superconductor_UMV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2091);
-    public static final ItemStack Superconductor_Base_MV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2202);
-    public static final ItemStack Superconductor_Base_HV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2222);
-    public static final ItemStack Superconductor_Base_EV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2242);
-    public static final ItemStack Superconductor_Base_IV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2262);
-    public static final ItemStack Superconductor_Base_LuV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2282);
-    public static final ItemStack Superconductor_Base_ZPM_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2302);
+    public static final ItemStack Superconductor_Base_MV_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2202);
+    public static final ItemStack Superconductor_Base_HV_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2222);
+    public static final ItemStack Superconductor_Base_EV_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2242);
+    public static final ItemStack Superconductor_Base_IV_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2262);
+    public static final ItemStack Superconductor_Base_LuV_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2282);
+    public static final ItemStack Superconductor_Base_ZPM_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2302);
     public static final ItemStack Superconductor_MV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2322);
     public static final ItemStack Superconductor_HV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2342);
     public static final ItemStack Superconductor_EV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2362);
@@ -224,8 +361,16 @@ public class WireList {
     public static final ItemStack Superconductor_LuV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2402);
     public static final ItemStack Superconductor_ZPM_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2422);
     public static final ItemStack Superconductor_UV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2442);
-    public static final ItemStack Superconductor_Base_UV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2502);
-    public static final ItemStack Superconductor_Base_UHV_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2522);
+    public static final ItemStack Superconductor_Base_UV_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2502);
+    public static final ItemStack Superconductor_Base_UHV_Wire_4x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2522);
     public static final ItemStack Ichorium_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2602);
     public static final ItemStack SpaceTime_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2608);
     public static final ItemStack Bedrockium_Wire_4x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 11312);
@@ -277,7 +422,11 @@ public class WireList {
     public static final ItemStack HSSG_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1703);
     public static final ItemStack Niobium_Titanium_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1723);
     public static final ItemStack Vanadium_Gallium_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1743);
-    public static final ItemStack Yttrium_Barium_Cuprate_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1763);
+    public static final ItemStack Yttrium_Barium_Cuprate_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        1763);
     public static final ItemStack Naquadah_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1783);
     public static final ItemStack Naquadah_Alloy_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1803);
     public static final ItemStack Duranium_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1823);
@@ -287,17 +436,53 @@ public class WireList {
     public static final ItemStack Red_Alloy_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2003);
     public static final ItemStack Superconductor_UHV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2023);
     public static final ItemStack Superconductor_UEV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2029);
-    public static final ItemStack Superconductor_Base_UEV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2035);
-    public static final ItemStack Superconductor_Base_UIV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2055);
-    public static final ItemStack Superconductor_Base_UMV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2075);
+    public static final ItemStack Superconductor_Base_UEV_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2035);
+    public static final ItemStack Superconductor_Base_UIV_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2055);
+    public static final ItemStack Superconductor_Base_UMV_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2075);
     public static final ItemStack Superconductor_UIV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2084);
     public static final ItemStack Superconductor_UMV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2092);
-    public static final ItemStack Superconductor_Base_MV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2203);
-    public static final ItemStack Superconductor_Base_HV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2223);
-    public static final ItemStack Superconductor_Base_EV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2243);
-    public static final ItemStack Superconductor_Base_IV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2263);
-    public static final ItemStack Superconductor_Base_LuV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2283);
-    public static final ItemStack Superconductor_Base_ZPM_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2303);
+    public static final ItemStack Superconductor_Base_MV_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2203);
+    public static final ItemStack Superconductor_Base_HV_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2223);
+    public static final ItemStack Superconductor_Base_EV_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2243);
+    public static final ItemStack Superconductor_Base_IV_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2263);
+    public static final ItemStack Superconductor_Base_LuV_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2283);
+    public static final ItemStack Superconductor_Base_ZPM_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2303);
     public static final ItemStack Superconductor_MV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2323);
     public static final ItemStack Superconductor_HV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2343);
     public static final ItemStack Superconductor_EV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2363);
@@ -305,8 +490,16 @@ public class WireList {
     public static final ItemStack Superconductor_LuV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2403);
     public static final ItemStack Superconductor_ZPM_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2423);
     public static final ItemStack Superconductor_UV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2443);
-    public static final ItemStack Superconductor_Base_UV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2503);
-    public static final ItemStack Superconductor_Base_UHV_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2523);
+    public static final ItemStack Superconductor_Base_UV_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2503);
+    public static final ItemStack Superconductor_Base_UHV_Wire_8x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2523);
     public static final ItemStack Ichorium_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2603);
     public static final ItemStack SpaceTime_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2609);
     public static final ItemStack Bedrockium_Wire_8x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 11313);
@@ -358,7 +551,11 @@ public class WireList {
     public static final ItemStack HSSG_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1704);
     public static final ItemStack Niobium_Titanium_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1724);
     public static final ItemStack Vanadium_Gallium_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1744);
-    public static final ItemStack Yttrium_Barium_Cuprate_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1764);
+    public static final ItemStack Yttrium_Barium_Cuprate_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        1764);
     public static final ItemStack Naquadah_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1784);
     public static final ItemStack Naquadah_Alloy_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1804);
     public static final ItemStack Duranium_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1824);
@@ -368,17 +565,53 @@ public class WireList {
     public static final ItemStack Red_Alloy_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2004);
     public static final ItemStack Superconductor_UHV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2024);
     public static final ItemStack Superconductor_UEV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2030);
-    public static final ItemStack Superconductor_Base_UEV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2036);
-    public static final ItemStack Superconductor_Base_UIV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2056);
-    public static final ItemStack Superconductor_Base_UMV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2076);
+    public static final ItemStack Superconductor_Base_UEV_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2036);
+    public static final ItemStack Superconductor_Base_UIV_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2056);
+    public static final ItemStack Superconductor_Base_UMV_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2076);
     public static final ItemStack Superconductor_UIV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2085);
     public static final ItemStack Superconductor_UMV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2093);
-    public static final ItemStack Superconductor_Base_MV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2204);
-    public static final ItemStack Superconductor_Base_HV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2224);
-    public static final ItemStack Superconductor_Base_EV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2244);
-    public static final ItemStack Superconductor_Base_IV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2264);
-    public static final ItemStack Superconductor_Base_LuV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2284);
-    public static final ItemStack Superconductor_Base_ZPM_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2304);
+    public static final ItemStack Superconductor_Base_MV_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2204);
+    public static final ItemStack Superconductor_Base_HV_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2224);
+    public static final ItemStack Superconductor_Base_EV_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2244);
+    public static final ItemStack Superconductor_Base_IV_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2264);
+    public static final ItemStack Superconductor_Base_LuV_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2284);
+    public static final ItemStack Superconductor_Base_ZPM_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2304);
     public static final ItemStack Superconductor_MV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2324);
     public static final ItemStack Superconductor_HV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2344);
     public static final ItemStack Superconductor_EV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2364);
@@ -386,8 +619,16 @@ public class WireList {
     public static final ItemStack Superconductor_LuV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2404);
     public static final ItemStack Superconductor_ZPM_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2424);
     public static final ItemStack Superconductor_UV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2444);
-    public static final ItemStack Superconductor_Base_UV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2504);
-    public static final ItemStack Superconductor_Base_UHV_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2524);
+    public static final ItemStack Superconductor_Base_UV_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2504);
+    public static final ItemStack Superconductor_Base_UHV_Wire_12x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2524);
     public static final ItemStack Ichorium_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2604);
     public static final ItemStack SpaceTime_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2610);
     public static final ItemStack Bedrockium_Wire_12x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 11314);
@@ -439,7 +680,11 @@ public class WireList {
     public static final ItemStack HSSG_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1705);
     public static final ItemStack Niobium_Titanium_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1725);
     public static final ItemStack Vanadium_Gallium_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1745);
-    public static final ItemStack Yttrium_Barium_Cuprate_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1765);
+    public static final ItemStack Yttrium_Barium_Cuprate_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        1765);
     public static final ItemStack Naquadah_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1785);
     public static final ItemStack Naquadah_Alloy_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1805);
     public static final ItemStack Duranium_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 1825);
@@ -449,17 +694,53 @@ public class WireList {
     public static final ItemStack Red_Alloy_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2005);
     public static final ItemStack Superconductor_UHV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2025);
     public static final ItemStack Superconductor_UEV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2031);
-    public static final ItemStack Superconductor_Base_UEV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2037);
-    public static final ItemStack Superconductor_Base_UIV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2057);
-    public static final ItemStack Superconductor_Base_UMV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2077);
+    public static final ItemStack Superconductor_Base_UEV_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2037);
+    public static final ItemStack Superconductor_Base_UIV_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2057);
+    public static final ItemStack Superconductor_Base_UMV_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2077);
     public static final ItemStack Superconductor_UIV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2086);
     public static final ItemStack Superconductor_UMV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2094);
-    public static final ItemStack Superconductor_Base_MV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2205);
-    public static final ItemStack Superconductor_Base_HV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2225);
-    public static final ItemStack Superconductor_Base_EV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2245);
-    public static final ItemStack Superconductor_Base_IV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2265);
-    public static final ItemStack Superconductor_Base_LuV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2285);
-    public static final ItemStack Superconductor_Base_ZPM_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2305);
+    public static final ItemStack Superconductor_Base_MV_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2205);
+    public static final ItemStack Superconductor_Base_HV_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2225);
+    public static final ItemStack Superconductor_Base_EV_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2245);
+    public static final ItemStack Superconductor_Base_IV_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2265);
+    public static final ItemStack Superconductor_Base_LuV_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2285);
+    public static final ItemStack Superconductor_Base_ZPM_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2305);
     public static final ItemStack Superconductor_MV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2325);
     public static final ItemStack Superconductor_HV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2345);
     public static final ItemStack Superconductor_EV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2365);
@@ -467,8 +748,16 @@ public class WireList {
     public static final ItemStack Superconductor_LuV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2405);
     public static final ItemStack Superconductor_ZPM_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2425);
     public static final ItemStack Superconductor_UV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2445);
-    public static final ItemStack Superconductor_Base_UV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2505);
-    public static final ItemStack Superconductor_Base_UHV_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2525);
+    public static final ItemStack Superconductor_Base_UV_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2505);
+    public static final ItemStack Superconductor_Base_UHV_Wire_16x = getModItem(
+        GregTech.ID,
+        "gt.blockmachines",
+        1L,
+        2525);
     public static final ItemStack Ichorium_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2605);
     public static final ItemStack SpaceTime_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 2611);
     public static final ItemStack Bedrockium_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 11315);
@@ -492,4 +781,115 @@ public class WireList {
     public static final ItemStack Lumiium_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 32742);
     public static final ItemStack Signalium_Wire_16x = getModItem(GregTech.ID, "gt.blockmachines", 1L, 32754);
 
+    public static final ItemStack[] Wire_List = new ItemStack[] { Cobalt_Wire_1x, Lead_Wire_1x, Tin_Wire_1x,
+        Zinc_Wire_1x, Soldering_Alloy_Wire_1x, Iron_Wire_1x, Nickel_Wire_1x, Cupronickel_Wire_1x, Copper_Wire_1x,
+        Annealed_Copper_Wire_1x, Kanthal_Wire_1x, Gold_Wire_1x, Electrum_Wire_1x, Silver_Wire_1x, Blue_Alloy_Wire_1x,
+        Nichrome_Wire_1x, Steel_Wire_1x, Black_Steel_Wire_1x, Titanium_Wire_1x, Aluminium_Wire_1x, Graphene_Wire_1x,
+        Osmium_Wire_1x, Platinum_Wire_1x, Tungstensteel_Wire_1x, Tungsten_Wire_1x, HSSG_Wire_1x,
+        Niobium_Titanium_Wire_1x, Vanadium_Gallium_Wire_1x, Yttrium_Barium_Cuprate_Wire_1x, Naquadah_Wire_1x,
+        Naquadah_Alloy_Wire_1x, Duranium_Wire_1x, TPV_Alloy_Wire_1x, End_Steel_Wire_1x, Fluxed_Electrum_Wire_1x,
+        Red_Alloy_Wire_1x, Superconductor_UHV_Wire_1x, Superconductor_UEV_Wire_1x, Superconductor_Base_UEV_Wire_1x,
+        Superconductor_Base_UIV_Wire_1x, Superconductor_Base_UMV_Wire_1x, Superconductor_UIV_Wire_1x,
+        Superconductor_UMV_Wire_1x, Superconductor_Base_MV_Wire_1x, Superconductor_Base_HV_Wire_1x,
+        Superconductor_Base_EV_Wire_1x, Superconductor_Base_IV_Wire_1x, Superconductor_Base_LuV_Wire_1x,
+        Superconductor_Base_ZPM_Wire_1x, Superconductor_MV_Wire_1x, Superconductor_HV_Wire_1x,
+        Superconductor_EV_Wire_1x, Superconductor_IV_Wire_1x, Superconductor_LuV_Wire_1x, Superconductor_ZPM_Wire_1x,
+        Superconductor_UV_Wire_1x, Superconductor_Base_UV_Wire_1x, Superconductor_Base_UHV_Wire_1x, Ichorium_Wire_1x,
+        SpaceTime_Wire_1x, Bedrockium_Wire_1x, Draconium_Wire_1x, Nether_Star_Wire_1x, Quantium_Wire_1x,
+        Black_Plutonium_Wire_1x, Awakened_Draconium_Wire_1x, Infinity_Wire_1x, Trinium_Wire_1x, HSSS_Wire_1x,
+        Electrical_Steel_Wire_1x, Energetic_Alloy_Wire_1x, Vibrant_Alloy_Wire_1x, Melodic_Alloy_Wire_1x,
+        Stellar_Alloy_Wire_1x, HSSE_Wire_1x, Osmiridium_Wire_1x, Hypogen_Wire_1x, Redstone_Alloy_Wire_1x,
+        Lumiium_Wire_1x, Signalium_Wire_1x, Cobalt_Wire_2x, Lead_Wire_2x, Tin_Wire_2x, Zinc_Wire_2x,
+        Soldering_Alloy_Wire_2x, Iron_Wire_2x, Nickel_Wire_2x, Cupronickel_Wire_2x, Copper_Wire_2x,
+        Annealed_Copper_Wire_2x, Kanthal_Wire_2x, Gold_Wire_2x, Electrum_Wire_2x, Silver_Wire_2x, Blue_Alloy_Wire_2x,
+        Nichrome_Wire_2x, Steel_Wire_2x, Black_Steel_Wire_2x, Titanium_Wire_2x, Aluminium_Wire_2x, Graphene_Wire_2x,
+        Osmium_Wire_2x, Platinum_Wire_2x, Tungstensteel_Wire_2x, Tungsten_Wire_2x, HSSG_Wire_2x,
+        Niobium_Titanium_Wire_2x, Vanadium_Gallium_Wire_2x, Yttrium_Barium_Cuprate_Wire_2x, Naquadah_Wire_2x,
+        Naquadah_Alloy_Wire_2x, Duranium_Wire_2x, TPV_Alloy_Wire_2x, End_Steel_Wire_2x, Fluxed_Electrum_Wire_2x,
+        Red_Alloy_Wire_2x, Superconductor_UHV_Wire_2x, Superconductor_UEV_Wire_2x, Superconductor_Base_UEV_Wire_2x,
+        Superconductor_Base_UIV_Wire_2x, Superconductor_Base_UMV_Wire_2x, Superconductor_UIV_Wire_2x,
+        Superconductor_UMV_Wire_2x, Superconductor_Base_MV_Wire_2x, Superconductor_Base_HV_Wire_2x,
+        Superconductor_Base_EV_Wire_2x, Superconductor_Base_IV_Wire_2x, Superconductor_Base_LuV_Wire_2x,
+        Superconductor_Base_ZPM_Wire_2x, Superconductor_MV_Wire_2x, Superconductor_HV_Wire_2x,
+        Superconductor_EV_Wire_2x, Superconductor_IV_Wire_2x, Superconductor_LuV_Wire_2x, Superconductor_ZPM_Wire_2x,
+        Superconductor_UV_Wire_2x, Superconductor_Base_UV_Wire_2x, Superconductor_Base_UHV_Wire_2x, Ichorium_Wire_2x,
+        SpaceTime_Wire_2x, Bedrockium_Wire_2x, Draconium_Wire_2x, Nether_Star_Wire_2x, Quantium_Wire_2x,
+        Black_Plutonium_Wire_2x, Awakened_Draconium_Wire_2x, Infinity_Wire_2x, Trinium_Wire_2x, HSSS_Wire_2x,
+        Electrical_Steel_Wire_2x, Energetic_Alloy_Wire_2x, Vibrant_Alloy_Wire_2x, Melodic_Alloy_Wire_2x,
+        Stellar_Alloy_Wire_2x, HSSE_Wire_2x, Osmiridium_Wire_2x, Hypogen_Wire_2x, Redstone_Alloy_Wire_2x,
+        Lumiium_Wire_2x, Signalium_Wire_2x, Cobalt_Wire_4x, Lead_Wire_4x, Tin_Wire_4x, Zinc_Wire_4x,
+        Soldering_Alloy_Wire_4x, Iron_Wire_4x, Nickel_Wire_4x, Cupronickel_Wire_4x, Copper_Wire_4x,
+        Annealed_Copper_Wire_4x, Kanthal_Wire_4x, Gold_Wire_4x, Electrum_Wire_4x, Silver_Wire_4x, Blue_Alloy_Wire_4x,
+        Nichrome_Wire_4x, Steel_Wire_4x, Black_Steel_Wire_4x, Titanium_Wire_4x, Aluminium_Wire_4x, Graphene_Wire_4x,
+        Osmium_Wire_4x, Platinum_Wire_4x, Tungstensteel_Wire_4x, Tungsten_Wire_4x, HSSG_Wire_4x,
+        Niobium_Titanium_Wire_4x, Vanadium_Gallium_Wire_4x, Yttrium_Barium_Cuprate_Wire_4x, Naquadah_Wire_4x,
+        Naquadah_Alloy_Wire_4x, Duranium_Wire_4x, TPV_Alloy_Wire_4x, End_Steel_Wire_4x, Fluxed_Electrum_Wire_4x,
+        Red_Alloy_Wire_4x, Superconductor_UHV_Wire_4x, Superconductor_UEV_Wire_4x, Superconductor_Base_UEV_Wire_4x,
+        Superconductor_Base_UIV_Wire_4x, Superconductor_Base_UMV_Wire_4x, Superconductor_UIV_Wire_4x,
+        Superconductor_UMV_Wire_4x, Superconductor_Base_MV_Wire_4x, Superconductor_Base_HV_Wire_4x,
+        Superconductor_Base_EV_Wire_4x, Superconductor_Base_IV_Wire_4x, Superconductor_Base_LuV_Wire_4x,
+        Superconductor_Base_ZPM_Wire_4x, Superconductor_MV_Wire_4x, Superconductor_HV_Wire_4x,
+        Superconductor_EV_Wire_4x, Superconductor_IV_Wire_4x, Superconductor_LuV_Wire_4x, Superconductor_ZPM_Wire_4x,
+        Superconductor_UV_Wire_4x, Superconductor_Base_UV_Wire_4x, Superconductor_Base_UHV_Wire_4x, Ichorium_Wire_4x,
+        SpaceTime_Wire_4x, Bedrockium_Wire_4x, Draconium_Wire_4x, Nether_Star_Wire_4x, Quantium_Wire_4x,
+        Black_Plutonium_Wire_4x, Awakened_Draconium_Wire_4x, Infinity_Wire_4x, Trinium_Wire_4x, HSSS_Wire_4x,
+        Electrical_Steel_Wire_4x, Energetic_Alloy_Wire_4x, Vibrant_Alloy_Wire_4x, Melodic_Alloy_Wire_4x,
+        Stellar_Alloy_Wire_4x, HSSE_Wire_4x, Osmiridium_Wire_4x, Hypogen_Wire_4x, Redstone_Alloy_Wire_4x,
+        Lumiium_Wire_4x, Signalium_Wire_4x, Cobalt_Wire_8x, Lead_Wire_8x, Tin_Wire_8x, Zinc_Wire_8x,
+        Soldering_Alloy_Wire_8x, Iron_Wire_8x, Nickel_Wire_8x, Cupronickel_Wire_8x, Copper_Wire_8x,
+        Annealed_Copper_Wire_8x, Kanthal_Wire_8x, Gold_Wire_8x, Electrum_Wire_8x, Silver_Wire_8x, Blue_Alloy_Wire_8x,
+        Nichrome_Wire_8x, Steel_Wire_8x, Black_Steel_Wire_8x, Titanium_Wire_8x, Aluminium_Wire_8x, Graphene_Wire_8x,
+        Osmium_Wire_8x, Platinum_Wire_8x, Tungstensteel_Wire_8x, Tungsten_Wire_8x, HSSG_Wire_8x,
+        Niobium_Titanium_Wire_8x, Vanadium_Gallium_Wire_8x, Yttrium_Barium_Cuprate_Wire_8x, Naquadah_Wire_8x,
+        Naquadah_Alloy_Wire_8x, Duranium_Wire_8x, TPV_Alloy_Wire_8x, End_Steel_Wire_8x, Fluxed_Electrum_Wire_8x,
+        Red_Alloy_Wire_8x, Superconductor_UHV_Wire_8x, Superconductor_UEV_Wire_8x, Superconductor_Base_UEV_Wire_8x,
+        Superconductor_Base_UIV_Wire_8x, Superconductor_Base_UMV_Wire_8x, Superconductor_UIV_Wire_8x,
+        Superconductor_UMV_Wire_8x, Superconductor_Base_MV_Wire_8x, Superconductor_Base_HV_Wire_8x,
+        Superconductor_Base_EV_Wire_8x, Superconductor_Base_IV_Wire_8x, Superconductor_Base_LuV_Wire_8x,
+        Superconductor_Base_ZPM_Wire_8x, Superconductor_MV_Wire_8x, Superconductor_HV_Wire_8x,
+        Superconductor_EV_Wire_8x, Superconductor_IV_Wire_8x, Superconductor_LuV_Wire_8x, Superconductor_ZPM_Wire_8x,
+        Superconductor_UV_Wire_8x, Superconductor_Base_UV_Wire_8x, Superconductor_Base_UHV_Wire_8x, Ichorium_Wire_8x,
+        SpaceTime_Wire_8x, Bedrockium_Wire_8x, Draconium_Wire_8x, Nether_Star_Wire_8x, Quantium_Wire_8x,
+        Black_Plutonium_Wire_8x, Awakened_Draconium_Wire_8x, Infinity_Wire_8x, Trinium_Wire_8x, HSSS_Wire_8x,
+        Electrical_Steel_Wire_8x, Energetic_Alloy_Wire_8x, Vibrant_Alloy_Wire_8x, Melodic_Alloy_Wire_8x,
+        Stellar_Alloy_Wire_8x, HSSE_Wire_8x, Osmiridium_Wire_8x, Hypogen_Wire_8x, Redstone_Alloy_Wire_8x,
+        Lumiium_Wire_8x, Signalium_Wire_8x, Cobalt_Wire_12x, Lead_Wire_12x, Tin_Wire_12x, Zinc_Wire_12x,
+        Soldering_Alloy_Wire_12x, Iron_Wire_12x, Nickel_Wire_12x, Cupronickel_Wire_12x, Copper_Wire_12x,
+        Annealed_Copper_Wire_12x, Kanthal_Wire_12x, Gold_Wire_12x, Electrum_Wire_12x, Silver_Wire_12x,
+        Blue_Alloy_Wire_12x, Nichrome_Wire_12x, Steel_Wire_12x, Black_Steel_Wire_12x, Titanium_Wire_12x,
+        Aluminium_Wire_12x, Graphene_Wire_12x, Osmium_Wire_12x, Platinum_Wire_12x, Tungstensteel_Wire_12x,
+        Tungsten_Wire_12x, HSSG_Wire_12x, Niobium_Titanium_Wire_12x, Vanadium_Gallium_Wire_12x,
+        Yttrium_Barium_Cuprate_Wire_12x, Naquadah_Wire_12x, Naquadah_Alloy_Wire_12x, Duranium_Wire_12x,
+        TPV_Alloy_Wire_12x, End_Steel_Wire_12x, Fluxed_Electrum_Wire_12x, Red_Alloy_Wire_12x,
+        Superconductor_UHV_Wire_12x, Superconductor_UEV_Wire_12x, Superconductor_Base_UEV_Wire_12x,
+        Superconductor_Base_UIV_Wire_12x, Superconductor_Base_UMV_Wire_12x, Superconductor_UIV_Wire_12x,
+        Superconductor_UMV_Wire_12x, Superconductor_Base_MV_Wire_12x, Superconductor_Base_HV_Wire_12x,
+        Superconductor_Base_EV_Wire_12x, Superconductor_Base_IV_Wire_12x, Superconductor_Base_LuV_Wire_12x,
+        Superconductor_Base_ZPM_Wire_12x, Superconductor_MV_Wire_12x, Superconductor_HV_Wire_12x,
+        Superconductor_EV_Wire_12x, Superconductor_IV_Wire_12x, Superconductor_LuV_Wire_12x,
+        Superconductor_ZPM_Wire_12x, Superconductor_UV_Wire_12x, Superconductor_Base_UV_Wire_12x,
+        Superconductor_Base_UHV_Wire_12x, Ichorium_Wire_12x, SpaceTime_Wire_12x, Bedrockium_Wire_12x,
+        Draconium_Wire_12x, Nether_Star_Wire_12x, Quantium_Wire_12x, Black_Plutonium_Wire_12x,
+        Awakened_Draconium_Wire_12x, Infinity_Wire_12x, Trinium_Wire_12x, HSSS_Wire_12x, Electrical_Steel_Wire_12x,
+        Energetic_Alloy_Wire_12x, Vibrant_Alloy_Wire_12x, Melodic_Alloy_Wire_12x, Stellar_Alloy_Wire_12x, HSSE_Wire_12x,
+        Osmiridium_Wire_12x, Hypogen_Wire_12x, Redstone_Alloy_Wire_12x, Lumiium_Wire_12x, Signalium_Wire_12x,
+        Cobalt_Wire_16x, Lead_Wire_16x, Tin_Wire_16x, Zinc_Wire_16x, Soldering_Alloy_Wire_16x, Iron_Wire_16x,
+        Nickel_Wire_16x, Cupronickel_Wire_16x, Copper_Wire_16x, Annealed_Copper_Wire_16x, Kanthal_Wire_16x,
+        Gold_Wire_16x, Electrum_Wire_16x, Silver_Wire_16x, Blue_Alloy_Wire_16x, Nichrome_Wire_16x, Steel_Wire_16x,
+        Black_Steel_Wire_16x, Titanium_Wire_16x, Aluminium_Wire_16x, Graphene_Wire_16x, Osmium_Wire_16x,
+        Platinum_Wire_16x, Tungstensteel_Wire_16x, Tungsten_Wire_16x, HSSG_Wire_16x, Niobium_Titanium_Wire_16x,
+        Vanadium_Gallium_Wire_16x, Yttrium_Barium_Cuprate_Wire_16x, Naquadah_Wire_16x, Naquadah_Alloy_Wire_16x,
+        Duranium_Wire_16x, TPV_Alloy_Wire_16x, End_Steel_Wire_16x, Fluxed_Electrum_Wire_16x, Red_Alloy_Wire_16x,
+        Superconductor_UHV_Wire_16x, Superconductor_UEV_Wire_16x, Superconductor_Base_UEV_Wire_16x,
+        Superconductor_Base_UIV_Wire_16x, Superconductor_Base_UMV_Wire_16x, Superconductor_UIV_Wire_16x,
+        Superconductor_UMV_Wire_16x, Superconductor_Base_MV_Wire_16x, Superconductor_Base_HV_Wire_16x,
+        Superconductor_Base_EV_Wire_16x, Superconductor_Base_IV_Wire_16x, Superconductor_Base_LuV_Wire_16x,
+        Superconductor_Base_ZPM_Wire_16x, Superconductor_MV_Wire_16x, Superconductor_HV_Wire_16x,
+        Superconductor_EV_Wire_16x, Superconductor_IV_Wire_16x, Superconductor_LuV_Wire_16x,
+        Superconductor_ZPM_Wire_16x, Superconductor_UV_Wire_16x, Superconductor_Base_UV_Wire_16x,
+        Superconductor_Base_UHV_Wire_16x, Ichorium_Wire_16x, SpaceTime_Wire_16x, Bedrockium_Wire_16x,
+        Draconium_Wire_16x, Nether_Star_Wire_16x, Quantium_Wire_16x, Black_Plutonium_Wire_16x,
+        Awakened_Draconium_Wire_16x, Infinity_Wire_16x, Trinium_Wire_16x, HSSS_Wire_16x, Electrical_Steel_Wire_16x,
+        Energetic_Alloy_Wire_16x, Vibrant_Alloy_Wire_16x, Melodic_Alloy_Wire_16x, Stellar_Alloy_Wire_16x, HSSE_Wire_16x,
+        Osmiridium_Wire_16x, Hypogen_Wire_16x, Redstone_Alloy_Wire_16x, Lumiium_Wire_16x, Signalium_Wire_16x };
 }

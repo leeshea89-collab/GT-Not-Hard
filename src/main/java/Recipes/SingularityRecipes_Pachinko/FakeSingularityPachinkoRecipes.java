@@ -28,7 +28,7 @@ public class FakeSingularityPachinkoRecipes {
         .of("Singularity of Pachinko_GT_Item")
         .maxIO(1, NEI_ItemOutput_Size_Large, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -46,7 +46,7 @@ public class FakeSingularityPachinkoRecipes {
         .of("Singularity of Pachinko_GT_Machine_Special")
         .maxIO(1, NEI_ItemOutput_Size_Large, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
@@ -55,7 +55,7 @@ public class FakeSingularityPachinkoRecipes {
         .of("Singularity of Pachinko_Storage")
         .maxIO(1, NEI_ItemOutput_Size_Large, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(builder -> builder.setHeight(255))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();

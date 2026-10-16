@@ -1,13 +1,14 @@
 package EnumList.EnumItemList.EnumMaterialList;
 
-import net.minecraft.item.ItemStack;
-
 import static gregtech.api.enums.Mods.GTNHLanthanides;
 import static gregtech.api.enums.Mods.GregTech;
 import static gregtech.api.enums.Mods.KekzTech;
 import static gregtech.api.util.GTModHandler.getModItem;
 
+import net.minecraft.item.ItemStack;
+
 public class SuperdensePlateList {
+
     public static final ItemStack Superdense_Lithium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6006);
     public static final ItemStack Superdense_Beryllium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6008);
     public static final ItemStack Superdense_Carbon_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6010);
@@ -69,28 +70,60 @@ public class SuperdensePlateList {
     public static final ItemStack Superdense_Plutonium_239_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6100);
     public static final ItemStack Superdense_Plutonium_241_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6101);
     public static final ItemStack Superdense_Americium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6103);
-    public static final ItemStack Superdense_Purified_Tengam_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6111);
+    public static final ItemStack Superdense_Purified_Tengam_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6111);
     public static final ItemStack Superdense_Attuned_Tengam_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6112);
     public static final ItemStack Superdense_Hellish_Metal_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6125);
     public static final ItemStack Superdense_Neutronium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6129);
-    public static final ItemStack Superdense_Superconductor_Base_UIV_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6131);
+    public static final ItemStack Superdense_Superconductor_Base_UIV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6131);
     public static final ItemStack Superdense_Netherite_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6132);
-    public static final ItemStack Superdense_Superconductor_Base_UMV_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6134);
+    public static final ItemStack Superdense_Superconductor_Base_UMV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6134);
     public static final ItemStack Superdense_Universium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6139);
     public static final ItemStack Superdense_Eternity_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6141);
     public static final ItemStack Superdense_Magmatter_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6143);
-    public static final ItemStack Superdense_Six_Phased_Copper_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6147);
+    public static final ItemStack Superdense_Six_Phased_Copper_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6147);
     public static final ItemStack Superdense_Mellion_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6148);
     public static final ItemStack Superdense_Creon_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6149);
-    public static final ItemStack Superdense_Hot_Proto_Halkonite_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6153);
-    public static final ItemStack Superdense_Proto_Halkonite_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6154);
-    public static final ItemStack Superdense_Prismatic_Naquadah_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6163);
+    public static final ItemStack Superdense_Hot_Proto_Halkonite_Steel_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6153);
+    public static final ItemStack Superdense_Proto_Halkonite_Steel_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6154);
+    public static final ItemStack Superdense_Prismatic_Naquadah_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6163);
     public static final ItemStack Superdense_Hexanite_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6174);
     public static final ItemStack Superdense_Shijima_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6189);
     public static final ItemStack Superdense_Churitsu_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6190);
     public static final ItemStack Superdense_Manasteel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6201);
     public static final ItemStack Superdense_Terrasteel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6202);
-    public static final ItemStack Superdense_Elven_Elementium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6203);
+    public static final ItemStack Superdense_Elven_Elementium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6203);
     public static final ItemStack Superdense_Gaia_Spirit_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6205);
     public static final ItemStack Superdense_Bronze_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6300);
     public static final ItemStack Superdense_Brass_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6301);
@@ -98,7 +131,11 @@ public class SuperdensePlateList {
     public static final ItemStack Superdense_Electrum_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6303);
     public static final ItemStack Superdense_Cast_Iron_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6304);
     public static final ItemStack Superdense_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6305);
-    public static final ItemStack Superdense_Stainless_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6306);
+    public static final ItemStack Superdense_Stainless_Steel_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6306);
     public static final ItemStack Superdense_Pig_Iron_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6307);
     public static final ItemStack Superdense_Red_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6308);
     public static final ItemStack Superdense_Blue_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6309);
@@ -106,18 +143,30 @@ public class SuperdensePlateList {
     public static final ItemStack Superdense_Nichrome_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6311);
     public static final ItemStack Superdense_Kanthal_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6312);
     public static final ItemStack Superdense_Magnalium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6313);
-    public static final ItemStack Superdense_Soldering_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6314);
+    public static final ItemStack Superdense_Soldering_Alloy_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6314);
     public static final ItemStack Superdense_Battery_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6315);
     public static final ItemStack Superdense_Tungstensteel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6316);
     public static final ItemStack Superdense_Osmiridium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6317);
     public static final ItemStack Superdense_Sunnarium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6318);
     public static final ItemStack Superdense_Adamantium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6319);
-    public static final ItemStack Superdense_Fluxed_Electrum_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6320);
+    public static final ItemStack Superdense_Fluxed_Electrum_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6320);
     public static final ItemStack Superdense_Enderium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6321);
     public static final ItemStack Superdense_Infused_Gold_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6323);
     public static final ItemStack Superdense_Naquadah_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6324);
     public static final ItemStack Superdense_Naquadah_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6325);
-    public static final ItemStack Superdense_Enriched_Naquadah_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6326);
+    public static final ItemStack Superdense_Enriched_Naquadah_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6326);
     public static final ItemStack Superdense_Naquadria_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6327);
     public static final ItemStack Superdense_Duranium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6328);
     public static final ItemStack Superdense_Tritanium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6329);
@@ -135,31 +184,79 @@ public class SuperdensePlateList {
     public static final ItemStack Superdense_Deep_Dark_Iron_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6342);
     public static final ItemStack Superdense_Cobalt_Brass_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6343);
     public static final ItemStack Superdense_Ultimet_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6344);
-    public static final ItemStack Superdense_Annealed_Copper_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6345);
+    public static final ItemStack Superdense_Annealed_Copper_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6345);
     public static final ItemStack Superdense_Fiery_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6346);
     public static final ItemStack Superdense_Red_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6348);
     public static final ItemStack Superdense_Blue_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6349);
-    public static final ItemStack Superdense_Sterling_Silver_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6350);
+    public static final ItemStack Superdense_Sterling_Silver_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6350);
     public static final ItemStack Superdense_Rose_Gold_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6351);
     public static final ItemStack Superdense_Black_Bronze_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6352);
     public static final ItemStack Superdense_Bismuth_Bronze_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6353);
     public static final ItemStack Superdense_Magnetic_Iron_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6354);
     public static final ItemStack Superdense_Magnetic_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6355);
-    public static final ItemStack Superdense_Magnetic_Neodymium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6356);
-    public static final ItemStack Superdense_Vanadium_Gallium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6357);
-    public static final ItemStack Superdense_Yttrium_Barium_Cuprate_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6358);
-    public static final ItemStack Superdense_Niobium_Nitride_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6359);
-    public static final ItemStack Superdense_Niobium_Titanium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6360);
-    public static final ItemStack Superdense_Chromium_Dioxide_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6361);
+    public static final ItemStack Superdense_Magnetic_Neodymium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6356);
+    public static final ItemStack Superdense_Vanadium_Gallium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6357);
+    public static final ItemStack Superdense_Yttrium_Barium_Cuprate_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6358);
+    public static final ItemStack Superdense_Niobium_Nitride_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6359);
+    public static final ItemStack Superdense_Niobium_Titanium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6360);
+    public static final ItemStack Superdense_Chromium_Dioxide_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6361);
     public static final ItemStack Superdense_Knightmetal_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6362);
     public static final ItemStack Superdense_Tin_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6363);
     public static final ItemStack Superdense_Dark_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6364);
-    public static final ItemStack Superdense_Electrical_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6365);
-    public static final ItemStack Superdense_Energetic_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6366);
+    public static final ItemStack Superdense_Electrical_Steel_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6365);
+    public static final ItemStack Superdense_Energetic_Alloy_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6366);
     public static final ItemStack Superdense_Vibrant_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6367);
     public static final ItemStack Superdense_Shadow_Metal_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6368);
-    public static final ItemStack Superdense_Conductive_Iron_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6369);
-    public static final ItemStack Superdense_Tungstencarbide_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6370);
+    public static final ItemStack Superdense_Conductive_Iron_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6369);
+    public static final ItemStack Superdense_Tungstencarbide_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6370);
     public static final ItemStack Superdense_Vanadiumsteel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6371);
     public static final ItemStack Superdense_HSSG_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6372);
     public static final ItemStack Superdense_HSSE_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6373);
@@ -171,59 +268,159 @@ public class SuperdensePlateList {
     public static final ItemStack Superdense_Ardite_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6382);
     public static final ItemStack Superdense_Reinforced_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6383);
     public static final ItemStack Superdense_Galgadorian_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6384);
-    public static final ItemStack Superdense_Enhanced_Galgadorian_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6385);
+    public static final ItemStack Superdense_Enhanced_Galgadorian_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6385);
     public static final ItemStack Superdense_Manyullyn_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6386);
     public static final ItemStack Superdense_Mytryl_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6387);
-    public static final ItemStack Superdense_Black_Plutonium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6388);
+    public static final ItemStack Superdense_Black_Plutonium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6388);
     public static final ItemStack Superdense_Callisto_Ice_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6389);
     public static final ItemStack Superdense_Ledox_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6390);
     public static final ItemStack Superdense_Quantium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6391);
     public static final ItemStack Superdense_Duralumin_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6392);
     public static final ItemStack Superdense_Oriharukon_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6393);
-    public static final ItemStack Superdense_Infinity_Catalyst_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6394);
+    public static final ItemStack Superdense_Infinity_Catalyst_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6394);
     public static final ItemStack Superdense_Bedrockium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6395);
     public static final ItemStack Superdense_Infinity_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6397);
-    public static final ItemStack Superdense_Mysterious_Crystal_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6398);
-    public static final ItemStack Superdense_Magnetic_Samarium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6399);
+    public static final ItemStack Superdense_Mysterious_Crystal_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6398);
+    public static final ItemStack Superdense_Magnetic_Samarium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6399);
     public static final ItemStack Superdense_Obzinite_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6400);
     public static final ItemStack Superdense_End_Steel_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6401);
     public static final ItemStack Superdense_Clay_Compound_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6402);
-    public static final ItemStack Superdense_Crystalline_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6403);
+    public static final ItemStack Superdense_Crystalline_Alloy_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6403);
     public static final ItemStack Superdense_Melodic_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6404);
     public static final ItemStack Superdense_Stellar_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6405);
-    public static final ItemStack Superdense_Crystalline_Pink_Slime_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6406);
-    public static final ItemStack Superdense_Energetic_Silver_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6407);
+    public static final ItemStack Superdense_Crystalline_Pink_Slime_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6406);
+    public static final ItemStack Superdense_Energetic_Silver_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6407);
     public static final ItemStack Superdense_Vivid_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6408);
     public static final ItemStack Superdense_Epoxid_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6470);
-    public static final ItemStack Superdense_Silicone_Rubber_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6471);
-    public static final ItemStack Superdense_Polycaprolactam_PCL_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6472);
-    public static final ItemStack Superdense_Polytetrafluoroethylene_PTFE_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6473);
+    public static final ItemStack Superdense_Silicone_Rubber_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6471);
+    public static final ItemStack Superdense_Polycaprolactam_PCL_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6472);
+    public static final ItemStack Superdense_Polytetrafluoroethylene_PTFE_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6473);
     public static final ItemStack Superdense_Alduorite_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6485);
     public static final ItemStack Superdense_Rubracium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6488);
     public static final ItemStack Superdense_Vulcanite_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6489);
     public static final ItemStack Superdense_Force_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6521);
     public static final ItemStack Superdense_Vinteum_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6529);
     public static final ItemStack Superdense_TPV_Alloy_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6576);
-    public static final ItemStack Superdense_Transcendent_Metal_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6581);
-    public static final ItemStack Superdense_Enriched_Holmium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6582);
-    public static final ItemStack Superdense_Magnetohydrodynamically_Constrained_Star_Matter_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6583);
-    public static final ItemStack Superdense_White_Dwarf_Matter_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6585);
-    public static final ItemStack Superdense_Black_Dwarf_Matter_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6586);
+    public static final ItemStack Superdense_Transcendent_Metal_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6581);
+    public static final ItemStack Superdense_Enriched_Holmium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6582);
+    public static final ItemStack Superdense_Magnetohydrodynamically_Constrained_Star_Matter_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6583);
+    public static final ItemStack Superdense_White_Dwarf_Matter_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6585);
+    public static final ItemStack Superdense_Black_Dwarf_Matter_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6586);
     public static final ItemStack Superdense_SpaceTime_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6588);
-    public static final ItemStack Superdense_Polybenzimidazole_PBI_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6599);
-    public static final ItemStack Superdense_Fiber_Reinforced_Epoxy_Resin_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6610);
-    public static final ItemStack Superdense_Nickel_Zinc_Ferrite_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6613);
-    public static final ItemStack Superdense_Polyphenylene_Sulfide_PPS_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6631);
-    public static final ItemStack Superdense_Styrene_Butadiene_Rubber_SBR_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6635);
+    public static final ItemStack Superdense_Polybenzimidazole_PBI_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6599);
+    public static final ItemStack Superdense_Fiber_Reinforced_Epoxy_Resin_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6610);
+    public static final ItemStack Superdense_Nickel_Zinc_Ferrite_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6613);
+    public static final ItemStack Superdense_Polyphenylene_Sulfide_PPS_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6631);
+    public static final ItemStack Superdense_Styrene_Butadiene_Rubber_SBR_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6635);
     public static final ItemStack Superdense_Polystyrene_PS_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6636);
-    public static final ItemStack Superdense_Polyvinyl_Chloride_PVC_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6649);
+    public static final ItemStack Superdense_Polyvinyl_Chloride_PVC_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6649);
     public static final ItemStack Superdense_Kevlar_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6765);
     public static final ItemStack Superdense_Endium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6770);
-    public static final ItemStack Superdense_Nickel_Aluminide_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6772);
+    public static final ItemStack Superdense_Nickel_Aluminide_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6772);
     public static final ItemStack Superdense_Deep_Iron_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6829);
-    public static final ItemStack Superdense_Silicon_Solar_Grade_Poly_SI_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6856);
+    public static final ItemStack Superdense_Silicon_Solar_Grade_Poly_SI_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6856);
     public static final ItemStack Superdense_Trinium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6868);
-    public static final ItemStack Superdense_Polyethylene_PE_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6874);
+    public static final ItemStack Superdense_Polyethylene_PE_Sheet = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6874);
     public static final ItemStack Superdense_Rubber_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6880);
     public static final ItemStack Superdense_Desh_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6884);
     public static final ItemStack Superdense_Chrysotile_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6912);
@@ -233,27 +430,161 @@ public class SuperdensePlateList {
     public static final ItemStack Superdense_Tartarite_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6956);
     public static final ItemStack Superdense_Orichalcum_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6966);
     public static final ItemStack Superdense_Void_Metal_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6970);
-    public static final ItemStack Superdense_Superconductor_Base_UEV_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6974);
+    public static final ItemStack Superdense_Superconductor_Base_UEV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6974);
     public static final ItemStack Superdense_Draconium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6975);
-    public static final ItemStack Superdense_Awakened_Draconium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6976);
-    public static final ItemStack Superdense_Blood_Infused_Iron_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6977);
+    public static final ItemStack Superdense_Awakened_Draconium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6976);
+    public static final ItemStack Superdense_Blood_Infused_Iron_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6977);
     public static final ItemStack Superdense_Ichorium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6978);
     public static final ItemStack Superdense_Radox_Polymer_Sheet = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6979);
-    public static final ItemStack Superdense_Gallium_Arsenide_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6980);
-    public static final ItemStack Superdense_Indium_Gallium_Phosphide_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6981);
-    public static final ItemStack Superdense_Cosmic_Neutronium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6982);
+    public static final ItemStack Superdense_Gallium_Arsenide_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6980);
+    public static final ItemStack Superdense_Indium_Gallium_Phosphide_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6981);
+    public static final ItemStack Superdense_Cosmic_Neutronium_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6982);
     public static final ItemStack Superdense_Flerovium_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6984);
-    public static final ItemStack Superdense_Superconductor_Base_UHV_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6985);
-    public static final ItemStack Superdense_Superconductor_Base_UV_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6986);
-    public static final ItemStack Superdense_Superconductor_Base_MV_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6987);
-    public static final ItemStack Superdense_Superconductor_Base_HV_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6988);
-    public static final ItemStack Superdense_Superconductor_Base_EV_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6989);
-    public static final ItemStack Superdense_Superconductor_Base_IV_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6990);
-    public static final ItemStack Superdense_Superconductor_Base_LuV_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6991);
-    public static final ItemStack Superdense_Superconductor_Base_ZPM_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 6992);
+    public static final ItemStack Superdense_Superconductor_Base_UHV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6985);
+    public static final ItemStack Superdense_Superconductor_Base_UV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6986);
+    public static final ItemStack Superdense_Superconductor_Base_MV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6987);
+    public static final ItemStack Superdense_Superconductor_Base_HV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6988);
+    public static final ItemStack Superdense_Superconductor_Base_EV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6989);
+    public static final ItemStack Superdense_Superconductor_Base_IV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6990);
+    public static final ItemStack Superdense_Superconductor_Base_LuV_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6991);
+    public static final ItemStack Superdense_Superconductor_Base_ZPM_Plate = getModItem(
+        GregTech.ID,
+        "gt.metaitem.03",
+        1L,
+        6992);
     public static final ItemStack Beryllium_Shielding_Plate = getModItem(GregTech.ID, "gt.metaitem.03", 1L, 32255);
     public static final ItemStack Iron_Quartz_Plate = getModItem(GTNHLanthanides.ID, "item.iron_quartz_plate", 1L);
     public static final ItemStack YSZ_Ceramic_Plate = getModItem(KekzTech.ID, "kekztech_crafting_item", 1L, 14);
     public static final ItemStack GDC_Ceramic_Plate = getModItem(KekzTech.ID, "kekztech_crafting_item", 1L, 15);
 
+    public static final ItemStack[] SuperdensePlate_List = new ItemStack[] { Superdense_Lithium_Plate,
+        Superdense_Beryllium_Plate, Superdense_Carbon_Plate, Superdense_Magnesium_Plate, Superdense_Aluminium_Plate,
+        Superdense_Raw_Silicon_Plate, Superdense_Potassium_Plate, Superdense_Scandium_Plate, Superdense_Titanium_Plate,
+        Superdense_Vanadium_Plate, Superdense_Chrome_Plate, Superdense_Manganese_Plate, Superdense_Iron_Plate,
+        Superdense_Cobalt_Plate, Superdense_Nickel_Plate, Superdense_Copper_Plate, Superdense_Zinc_Plate,
+        Superdense_Gallium_Plate, Superdense_Arsenic_Plate, Superdense_Rubidium_Plate, Superdense_Strontium_Plate,
+        Superdense_Yttrium_Plate, Superdense_Niobium_Plate, Superdense_Molybdenum_Plate, Superdense_Palladium_Plate,
+        Superdense_Silver_Plate, Superdense_Indium_Plate, Superdense_Tin_Plate, Superdense_Antimony_Plate,
+        Superdense_Tellurium_Plate, Superdense_Caesium_Plate, Superdense_Barium_Plate, Superdense_Lanthanum_Plate,
+        Superdense_Cerium_Plate, Superdense_Praseodymium_Plate, Superdense_Neodymium_Plate, Superdense_Promethium_Plate,
+        Superdense_Samarium_Plate, Superdense_Europium_Plate, Superdense_Gadolinium_Plate, Superdense_Terbium_Plate,
+        Superdense_Dysprosium_Plate, Superdense_Holmium_Plate, Superdense_Erbium_Plate, Superdense_Thulium_Plate,
+        Superdense_Ytterbium_Plate, Superdense_Lutetium_Plate, Superdense_Tantalum_Plate, Superdense_Tungsten_Plate,
+        Superdense_Osmium_Plate, Superdense_Iridium_Plate, Superdense_Platinum_Plate, Superdense_Gold_Plate,
+        Superdense_Lead_Plate, Superdense_Bismuth_Plate, Superdense_Thorium_Plate, Superdense_Uranium_235_Plate,
+        Superdense_Uranium_238_Plate, Superdense_Plutonium_239_Plate, Superdense_Plutonium_241_Plate,
+        Superdense_Americium_Plate, Superdense_Purified_Tengam_Plate, Superdense_Attuned_Tengam_Plate,
+        Superdense_Hellish_Metal_Plate, Superdense_Neutronium_Plate, Superdense_Superconductor_Base_UIV_Plate,
+        Superdense_Netherite_Plate, Superdense_Superconductor_Base_UMV_Plate, Superdense_Universium_Plate,
+        Superdense_Eternity_Plate, Superdense_Magmatter_Plate, Superdense_Six_Phased_Copper_Plate,
+        Superdense_Mellion_Plate, Superdense_Creon_Plate, Superdense_Hot_Proto_Halkonite_Steel_Plate,
+        Superdense_Proto_Halkonite_Steel_Plate, Superdense_Prismatic_Naquadah_Plate, Superdense_Hexanite_Plate,
+        Superdense_Shijima_Plate, Superdense_Churitsu_Plate, Superdense_Manasteel_Plate, Superdense_Terrasteel_Plate,
+        Superdense_Elven_Elementium_Plate, Superdense_Gaia_Spirit_Plate, Superdense_Bronze_Plate,
+        Superdense_Brass_Plate, Superdense_Invar_Plate, Superdense_Electrum_Plate, Superdense_Cast_Iron_Plate,
+        Superdense_Steel_Plate, Superdense_Stainless_Steel_Plate, Superdense_Pig_Iron_Plate, Superdense_Red_Alloy_Plate,
+        Superdense_Blue_Alloy_Plate, Superdense_Cupronickel_Plate, Superdense_Nichrome_Plate, Superdense_Kanthal_Plate,
+        Superdense_Magnalium_Plate, Superdense_Soldering_Alloy_Plate, Superdense_Battery_Alloy_Plate,
+        Superdense_Tungstensteel_Plate, Superdense_Osmiridium_Plate, Superdense_Sunnarium_Plate,
+        Superdense_Adamantium_Plate, Superdense_Fluxed_Electrum_Plate, Superdense_Enderium_Plate,
+        Superdense_Infused_Gold_Plate, Superdense_Naquadah_Plate, Superdense_Naquadah_Alloy_Plate,
+        Superdense_Enriched_Naquadah_Plate, Superdense_Naquadria_Plate, Superdense_Duranium_Plate,
+        Superdense_Tritanium_Plate, Superdense_Thaumium_Plate, Superdense_Mithril_Plate, Superdense_Astral_Silver_Plate,
+        Superdense_Black_Steel_Plate, Superdense_Damascus_Steel_Plate, Superdense_Shadow_Iron_Plate,
+        Superdense_Shadow_Steel_Plate, Superdense_Ironwood_Plate, Superdense_Steeleaf_Plate,
+        Superdense_Meteoric_Iron_Plate, Superdense_Meteoric_Steel_Plate, Superdense_Deep_Dark_Iron_Plate,
+        Superdense_Cobalt_Brass_Plate, Superdense_Ultimet_Plate, Superdense_Annealed_Copper_Plate,
+        Superdense_Fiery_Steel_Plate, Superdense_Red_Steel_Plate, Superdense_Blue_Steel_Plate,
+        Superdense_Sterling_Silver_Plate, Superdense_Rose_Gold_Plate, Superdense_Black_Bronze_Plate,
+        Superdense_Bismuth_Bronze_Plate, Superdense_Magnetic_Iron_Plate, Superdense_Magnetic_Steel_Plate,
+        Superdense_Magnetic_Neodymium_Plate, Superdense_Vanadium_Gallium_Plate, Superdense_Yttrium_Barium_Cuprate_Plate,
+        Superdense_Niobium_Nitride_Plate, Superdense_Niobium_Titanium_Plate, Superdense_Chromium_Dioxide_Plate,
+        Superdense_Knightmetal_Plate, Superdense_Tin_Alloy_Plate, Superdense_Dark_Steel_Plate,
+        Superdense_Electrical_Steel_Plate, Superdense_Energetic_Alloy_Plate, Superdense_Vibrant_Alloy_Plate,
+        Superdense_Shadow_Metal_Plate, Superdense_Conductive_Iron_Plate, Superdense_Tungstencarbide_Plate,
+        Superdense_Vanadiumsteel_Plate, Superdense_HSSG_Plate, Superdense_HSSE_Plate, Superdense_HSSS_Plate,
+        Superdense_Pulsating_Iron_Plate, Superdense_Soularium_Plate, Superdense_Enderium_Base_Plate,
+        Superdense_Redstone_Alloy_Plate, Superdense_Ardite_Plate, Superdense_Reinforced_Plate,
+        Superdense_Galgadorian_Plate, Superdense_Enhanced_Galgadorian_Plate, Superdense_Manyullyn_Plate,
+        Superdense_Mytryl_Plate, Superdense_Black_Plutonium_Plate, Superdense_Callisto_Ice_Plate,
+        Superdense_Ledox_Plate, Superdense_Quantium_Plate, Superdense_Duralumin_Plate, Superdense_Oriharukon_Plate,
+        Superdense_Infinity_Catalyst_Plate, Superdense_Bedrockium_Plate, Superdense_Infinity_Plate,
+        Superdense_Mysterious_Crystal_Plate, Superdense_Magnetic_Samarium_Plate, Superdense_Obzinite_Plate,
+        Superdense_End_Steel_Plate, Superdense_Clay_Compound_Plate, Superdense_Crystalline_Alloy_Plate,
+        Superdense_Melodic_Alloy_Plate, Superdense_Stellar_Alloy_Plate, Superdense_Crystalline_Pink_Slime_Plate,
+        Superdense_Energetic_Silver_Plate, Superdense_Vivid_Alloy_Plate, Superdense_Epoxid_Sheet,
+        Superdense_Silicone_Rubber_Sheet, Superdense_Polycaprolactam_PCL_Sheet,
+        Superdense_Polytetrafluoroethylene_PTFE_Sheet, Superdense_Alduorite_Plate, Superdense_Rubracium_Plate,
+        Superdense_Vulcanite_Plate, Superdense_Force_Plate, Superdense_Vinteum_Plate, Superdense_TPV_Alloy_Plate,
+        Superdense_Transcendent_Metal_Plate, Superdense_Enriched_Holmium_Plate,
+        Superdense_Magnetohydrodynamically_Constrained_Star_Matter_Plate, Superdense_White_Dwarf_Matter_Plate,
+        Superdense_Black_Dwarf_Matter_Plate, Superdense_SpaceTime_Plate, Superdense_Polybenzimidazole_PBI_Sheet,
+        Superdense_Fiber_Reinforced_Epoxy_Resin_Sheet, Superdense_Nickel_Zinc_Ferrite_Plate,
+        Superdense_Polyphenylene_Sulfide_PPS_Sheet, Superdense_Styrene_Butadiene_Rubber_SBR_Sheet,
+        Superdense_Polystyrene_PS_Sheet, Superdense_Polyvinyl_Chloride_PVC_Sheet, Superdense_Kevlar_Plate,
+        Superdense_Endium_Plate, Superdense_Nickel_Aluminide_Plate, Superdense_Deep_Iron_Plate,
+        Superdense_Silicon_Solar_Grade_Poly_SI_Plate, Superdense_Trinium_Plate, Superdense_Polyethylene_PE_Sheet,
+        Superdense_Rubber_Sheet, Superdense_Desh_Plate, Superdense_Chrysotile_Plate, Superdense_Realgar_Plate,
+        Superdense_Vyroxeres_Plate, Superdense_Ceruclase_Plate, Superdense_Tartarite_Plate, Superdense_Orichalcum_Plate,
+        Superdense_Void_Metal_Plate, Superdense_Superconductor_Base_UEV_Plate, Superdense_Draconium_Plate,
+        Superdense_Awakened_Draconium_Plate, Superdense_Blood_Infused_Iron_Plate, Superdense_Ichorium_Plate,
+        Superdense_Radox_Polymer_Sheet, Superdense_Gallium_Arsenide_Plate, Superdense_Indium_Gallium_Phosphide_Plate,
+        Superdense_Cosmic_Neutronium_Plate, Superdense_Flerovium_Plate, Superdense_Superconductor_Base_UHV_Plate,
+        Superdense_Superconductor_Base_UV_Plate, Superdense_Superconductor_Base_MV_Plate,
+        Superdense_Superconductor_Base_HV_Plate, Superdense_Superconductor_Base_EV_Plate,
+        Superdense_Superconductor_Base_IV_Plate, Superdense_Superconductor_Base_LuV_Plate,
+        Superdense_Superconductor_Base_ZPM_Plate, Beryllium_Shielding_Plate, Iron_Quartz_Plate, YSZ_Ceramic_Plate,
+        GDC_Ceramic_Plate };
 }

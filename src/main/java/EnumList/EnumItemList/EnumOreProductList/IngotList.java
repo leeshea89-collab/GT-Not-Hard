@@ -1,7 +1,6 @@
 package EnumList.EnumItemList.EnumOreProductList;
 
-import net.minecraft.item.ItemStack;
-
+import static gregtech.api.enums.Mods.AdvancedSolarPanel;
 import static gregtech.api.enums.Mods.Avaritia;
 import static gregtech.api.enums.Mods.BartWorks;
 import static gregtech.api.enums.Mods.Botania;
@@ -25,6 +24,8 @@ import static gregtech.api.enums.Mods.TinkersDefence;
 import static gregtech.api.enums.Mods.TwilightForest;
 import static gregtech.api.enums.Mods.Witchery;
 import static gregtech.api.util.GTModHandler.getModItem;
+
+import net.minecraft.item.ItemStack;
 
 public class IngotList {
     public static final ItemStack Iron_Ingot = getModItem(Minecraft.ID, "iron_ingot", 1L);
@@ -55,9 +56,13 @@ public class IngotList {
     public static final ItemStack Energetic_Silver = getModItem(EnderIO.ID, "itemAlloyEndergy", 1L, 5);
     public static final ItemStack Vivid_Alloy = getModItem(EnderIO.ID, "itemAlloyEndergy", 1L, 6);
     public static final ItemStack Unstable_Ingot = getModItem(ExtraUtilities.ID, "unstableingot", 1L);
-    public static final ItemStack Mobius_ = getModItem(ExtraUtilities.ID, "unstableingot", 1L, 2);
+    public static final ItemStack Mobius_Unstable_Stable_Ingot = getModItem(ExtraUtilities.ID, "unstableingot", 1L, 2);
     public static final ItemStack Endium_Ingot = getModItem(HardcoreEnderExpansion.ID, "endium_ingot", 1L);
-    public static final ItemStack Electrotine_Alloy_Ingot = getModItem(ProjectRedCore.ID, "projectred.core.part", 1L, 55);
+    public static final ItemStack Electrotine_Alloy_Ingot = getModItem(
+        ProjectRedCore.ID,
+        "projectred.core.part",
+        1L,
+        55);
     public static final ItemStack Seared_Brick = getModItem(TinkerConstruct.ID, "materials", 1L, 2);
     public static final ItemStack Aluminum_Brass_Ingot = getModItem(TinkerConstruct.ID, "materials", 1L, 14);
     public static final ItemStack Pig_Iron_Ingot_TC = getModItem(TinkerConstruct.ID, "materials", 1L, 34);
@@ -75,38 +80,90 @@ public class IngotList {
     public static final ItemStack BArTiMaEuSNeK_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 43);
     public static final ItemStack Ruthenium_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 64);
     public static final ItemStack Rhodium_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 78);
-    public static final ItemStack Rhodium_Plated_Palladium_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 88);
+    public static final ItemStack Rhodium_Plated_Palladium_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        88);
     public static final ItemStack Ruridit_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 90);
-    public static final ItemStack High_Durability_Compound_Steel_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 92);
+    public static final ItemStack High_Durability_Compound_Steel_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        92);
     public static final ItemStack Ademic_Steel_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 96);
     public static final ItemStack Fluorophlogopite_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 104);
-    public static final ItemStack Tantalum_Hafnium_Carbide_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 11503);
+    public static final ItemStack Tantalum_Hafnium_Carbide_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        11503);
     public static final ItemStack Magnesia_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 32237);
-    public static final ItemStack Atomic_Separation_Catalyst_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10022);
-    public static final ItemStack Extremely_Unstable_Naquadah_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10024);
+    public static final ItemStack Atomic_Separation_Catalyst_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        10022);
+    public static final ItemStack Extremely_Unstable_Naquadah_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        10024);
     public static final ItemStack Zn_Th_Alloy_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10053);
     public static final ItemStack Zircaloy_4_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10082);
     public static final ItemStack Zircaloy_2_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10083);
     public static final ItemStack Incoloy_903_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10084);
-    public static final ItemStack Adamantium_Alloy_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10085);
+    public static final ItemStack Adamantium_Alloy_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        10085);
     public static final ItemStack MAR_M200_Steel_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10096);
-    public static final ItemStack MAR_Ce_M200_Steel_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10097);
-    public static final ItemStack Lithium_Chloride_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10098);
+    public static final ItemStack MAR_Ce_M200_Steel_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        10097);
+    public static final ItemStack Lithium_Chloride_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        10098);
     public static final ItemStack Signalium_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10099);
     public static final ItemStack Lumiium_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10101);
     public static final ItemStack Artherium_Sn_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10102);
-    public static final ItemStack Tanmolyium_Beta_C_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10103);
+    public static final ItemStack Tanmolyium_Beta_C_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        10103);
     public static final ItemStack Dalisenite_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10104);
     public static final ItemStack Hikarium_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10105);
     public static final ItemStack Tairitsu_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10106);
-    public static final ItemStack Precious_Metals_Alloy_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10109);
-    public static final ItemStack Enriched_Naquadah_Alloy_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10110);
-    public static final ItemStack Metastable_Oganesson_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10111);
+    public static final ItemStack Precious_Metals_Alloy_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        10109);
+    public static final ItemStack Enriched_Naquadah_Alloy_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        10110);
+    public static final ItemStack Metastable_Oganesson_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        10111);
     public static final ItemStack Shirabon_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 10112);
     public static final ItemStack Hafnium_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 11000);
     public static final ItemStack Permalloy_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 11350);
     public static final ItemStack Mu_metal_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 11351);
-    public static final ItemStack Silicon_Nitride_Ingot = getModItem(BartWorks.ID, "gt.bwMetaGeneratedingot", 1L, 11353);
+    public static final ItemStack Silicon_Nitride_Ingot = getModItem(
+        BartWorks.ID,
+        "gt.bwMetaGeneratedingot",
+        1L,
+        11353);
     public static final ItemStack Coke_Oven_Brick = getModItem(NewHorizonsCoreMod.ID, "CokeOvenBrick", 1L);
     public static final ItemStack Quartz_Ingot = getModItem(Fether.ID, "quartz_ingot", 1L);
     public static final ItemStack Lithium_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11006);
@@ -287,7 +344,11 @@ public class IngotList {
     public static final ItemStack Epoxid_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11470);
     public static final ItemStack Silicone_Rubber_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11471);
     public static final ItemStack Polycaprolactam_PCL_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11472);
-    public static final ItemStack Polytetrafluoroethylene_PTFE_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11473);
+    public static final ItemStack Polytetrafluoroethylene_PTFE_Bar = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        11473);
     public static final ItemStack Alduorite_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11485);
     public static final ItemStack Rubracium_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11488);
     public static final ItemStack Vulcanite_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11489);
@@ -296,23 +357,39 @@ public class IngotList {
     public static final ItemStack TPV_Alloy_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11576);
     public static final ItemStack Transcendent_Metal_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11581);
     public static final ItemStack Enriched_Holmium_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11582);
-    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11583);
+    public static final ItemStack Magnetohydrodynamically_Constrained_Star_Matter_Ingot = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        11583);
     public static final ItemStack White_Dwarf_Matter_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11585);
     public static final ItemStack Black_Dwarf_Matter_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11586);
     public static final ItemStack SpaceTime_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11588);
     public static final ItemStack Polybenzimidazole_PBI_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11599);
-    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11610);
+    public static final ItemStack Fiber_Reinforced_Epoxy_Resin_Bar = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        11610);
     public static final ItemStack Borosilicate_Glass_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11611);
     public static final ItemStack Nickel_Zinc_Ferrite_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11613);
     public static final ItemStack Polyphenylene_Sulfide_PPS_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11631);
-    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11635);
+    public static final ItemStack Styrene_Butadiene_Rubber_SBR_Bar = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        11635);
     public static final ItemStack Polystyrene_PS_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11636);
     public static final ItemStack Polyvinyl_Chloride_PVC_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11649);
     public static final ItemStack Kevlar_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11765);
     public static final ItemStack Nickel_Aluminide_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11772);
     public static final ItemStack Obsidian_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11804);
     public static final ItemStack Deep_Iron_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11829);
-    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11856);
+    public static final ItemStack Silicon_Solar_Grade_Poly_SI_Ingot = getModItem(
+        GregTech.ID,
+        "gt.metaitem.01",
+        1L,
+        11856);
     public static final ItemStack Trinium_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11868);
     public static final ItemStack Polyethylene_PE_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11874);
     public static final ItemStack Desh_Ingot = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11884);
@@ -358,7 +435,10 @@ public class IngotList {
     public static final ItemStack Plutonium_238_Ingot = getModItem(GTPlusPlus.ID, "itemIngotPlutonium238", 1L);
     public static final ItemStack Advanced_Nitinol_Ingot = getModItem(GTPlusPlus.ID, "itemIngotAdvancedNitinol", 1L);
     public static final ItemStack Astral_Titanium_Ingot = getModItem(GTPlusPlus.ID, "itemIngotAstralTitanium", 1L);
-    public static final ItemStack Celestial_Tungsten_Ingot = getModItem(GTPlusPlus.ID, "itemIngotCelestialTungsten", 1L);
+    public static final ItemStack Celestial_Tungsten_Ingot = getModItem(
+        GTPlusPlus.ID,
+        "itemIngotCelestialTungsten",
+        1L);
     public static final ItemStack Hypogen_Ingot = getModItem(GTPlusPlus.ID, "itemIngotHypogen", 1L);
     public static final ItemStack Chromatic_Glass_Ingot = getModItem(GTPlusPlus.ID, "itemIngotChromaticGlass", 1L);
     public static final ItemStack Black_Metal_Ingot = getModItem(GTPlusPlus.ID, "itemIngotBlackMetal", 1L);
@@ -369,7 +449,10 @@ public class IngotList {
     public static final ItemStack Zirconium_Carbide_Ingot = getModItem(GTPlusPlus.ID, "itemIngotZirconiumCarbide", 1L);
     public static final ItemStack Tantalum_Carbide_Ingot = getModItem(GTPlusPlus.ID, "itemIngotTantalumCarbide", 1L);
     public static final ItemStack Niobium_Carbide_Ingot = getModItem(GTPlusPlus.ID, "itemIngotNiobiumCarbide", 1L);
-    public static final ItemStack Tungsten_Titanium_Carbide_Ingot = getModItem(GTPlusPlus.ID, "itemIngotTungstenTitaniumCarbide", 1L);
+    public static final ItemStack Tungsten_Titanium_Carbide_Ingot = getModItem(
+        GTPlusPlus.ID,
+        "itemIngotTungstenTitaniumCarbide",
+        1L);
     public static final ItemStack Energy_Crystal_Ingot = getModItem(GTPlusPlus.ID, "itemIngotEnergyCrystal", 1L);
     public static final ItemStack Blood_Steel_Ingot = getModItem(GTPlusPlus.ID, "itemIngotBloodSteel", 1L);
     public static final ItemStack Zeron_100_Ingot = getModItem(GTPlusPlus.ID, "itemIngotZeron100", 1L);
@@ -398,9 +481,18 @@ public class IngotList {
     public static final ItemStack Incoloy_MA956_Ingot = getModItem(GTPlusPlus.ID, "itemIngotIncoloyMA956", 1L);
     public static final ItemStack Grisium_Ingot = getModItem(GTPlusPlus.ID, "itemIngotGrisium", 1L);
     public static final ItemStack HG_1223_Ingot = getModItem(GTPlusPlus.ID, "itemIngotHG1223", 1L);
-    public static final ItemStack Trinium_Titanium_Alloy_Ingot = getModItem(GTPlusPlus.ID, "itemIngotTriniumTitaniumAlloy", 1L);
-    public static final ItemStack Trinium_Naquadah_Alloy_Ingot = getModItem(GTPlusPlus.ID, "itemIngotTriniumNaquadahAlloy", 1L);
-    public static final ItemStack Trinium_Naquadah_Carbonite_Ingot = getModItem(GTPlusPlus.ID, "itemIngotTriniumNaquadahCarbonite", 1L);
+    public static final ItemStack Trinium_Titanium_Alloy_Ingot = getModItem(
+        GTPlusPlus.ID,
+        "itemIngotTriniumTitaniumAlloy",
+        1L);
+    public static final ItemStack Trinium_Naquadah_Alloy_Ingot = getModItem(
+        GTPlusPlus.ID,
+        "itemIngotTriniumNaquadahAlloy",
+        1L);
+    public static final ItemStack Trinium_Naquadah_Carbonite_Ingot = getModItem(
+        GTPlusPlus.ID,
+        "itemIngotTriniumNaquadahCarbonite",
+        1L);
     public static final ItemStack Arceus_Alloy_2B_Ingot = getModItem(GTPlusPlus.ID, "itemIngotArceusAlloy2B", 1L);
     public static final ItemStack HeLiCoPtEr_Ingot = getModItem(GTPlusPlus.ID, "itemIngotHeLiCoPtEr", 1L);
     public static final ItemStack Lafium_Compound_Ingot = getModItem(GTPlusPlus.ID, "itemIngotLafiumCompound", 1L);
@@ -424,12 +516,30 @@ public class IngotList {
     public static final ItemStack Wrapped_Thorium_Ingot = getModItem(GoodGenerator.ID, "wrappedThoriumIngot", 1L);
     public static final ItemStack Wrapped_Plutonium_Ingot = getModItem(GoodGenerator.ID, "wrappedPlutoniumIngot", 1L);
     public static final ItemStack Mixed_Metal_Ingot = getModItem(IndustrialCraft2.ID, "itemIngot", 1L, 4);
-    public static final ItemStack Heavy_Duty_Alloy_Ingot_T4 = getModItem(NewHorizonsCoreMod.ID, "HeavyDutyAlloyIngotT4", 1L);
-    public static final ItemStack Heavy_Duty_Alloy_Ingot_T5 = getModItem(NewHorizonsCoreMod.ID, "HeavyDutyAlloyIngotT5", 1L);
-    public static final ItemStack Heavy_Duty_Alloy_Ingot_T6 = getModItem(NewHorizonsCoreMod.ID, "HeavyDutyAlloyIngotT6", 1L);
-    public static final ItemStack Heavy_Duty_Alloy_Ingot_T7 = getModItem(NewHorizonsCoreMod.ID, "HeavyDutyAlloyIngotT7", 1L);
-    public static final ItemStack Heavy_Duty_Alloy_Ingot_T8 = getModItem(NewHorizonsCoreMod.ID, "HeavyDutyAlloyIngotT8", 1L);
-    public static final ItemStack Lightweight_Alloy_Ingot = getModItem(NewHorizonsCoreMod.ID, "HeavyDutyAlloyIngotT9", 1L);
+    public static final ItemStack Heavy_Duty_Alloy_Ingot_T4 = getModItem(
+        NewHorizonsCoreMod.ID,
+        "HeavyDutyAlloyIngotT4",
+        1L);
+    public static final ItemStack Heavy_Duty_Alloy_Ingot_T5 = getModItem(
+        NewHorizonsCoreMod.ID,
+        "HeavyDutyAlloyIngotT5",
+        1L);
+    public static final ItemStack Heavy_Duty_Alloy_Ingot_T6 = getModItem(
+        NewHorizonsCoreMod.ID,
+        "HeavyDutyAlloyIngotT6",
+        1L);
+    public static final ItemStack Heavy_Duty_Alloy_Ingot_T7 = getModItem(
+        NewHorizonsCoreMod.ID,
+        "HeavyDutyAlloyIngotT7",
+        1L);
+    public static final ItemStack Heavy_Duty_Alloy_Ingot_T8 = getModItem(
+        NewHorizonsCoreMod.ID,
+        "HeavyDutyAlloyIngotT8",
+        1L);
+    public static final ItemStack Lightweight_Alloy_Ingot = getModItem(
+        NewHorizonsCoreMod.ID,
+        "HeavyDutyAlloyIngotT9",
+        1L);
     public static final ItemStack Rubber_Bar = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 11880);
     public static final ItemStack Heavy_Duty_Alloy_Ingot_T1 = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 32462);
     public static final ItemStack Heavy_Duty_Alloy_Ingot_T2 = getModItem(GregTech.ID, "gt.metaitem.01", 1L, 32463);
@@ -439,4 +549,85 @@ public class IngotList {
     public static final ItemStack Queens_Gold_Ingot = getModItem(TinkersDefence.ID, "Queen's Gold Ingot", 1L);
     public static final ItemStack Dogbearium_Ingot = getModItem(TinkersDefence.ID, "DogbeariumIngot", 1L);
 
+    public static final ItemStack[] Ingot_List = new ItemStack[] { Iron_Ingot, Gold_Ingot, Brick, Nether_Brick,
+        Crystal_Matrix_Ingot, Cosmic_Neutronium_Ingot, Infinity_Ingot, Manasteel_Ingot, Terrasteel_Ingot,
+        Elementium_Ingot, Gaia_Spirit_Ingot, Electrical_Steel, Energetic_Alloy, Vibrant_Alloy, Redstone_Alloy,
+        Conductive_Iron, Pulsating_Iron, Dark_Steel, Soularium, End_Steel, Clay_Compound, Crystalline_Alloy,
+        Melodic_Alloy, Stellar_Alloy, Crystalline_Pink_Slime, Energetic_Silver, Vivid_Alloy, Unstable_Ingot,
+        Mobius_Unstable_Stable_Ingot, Endium_Ingot, Electrotine_Alloy_Ingot, Seared_Brick, Aluminum_Brass_Ingot,
+        Pig_Iron_Ingot_TC, Shadowmetal_Ingot, Thaumium_Ingot, Void_Metal_Ingot, Ichorium, Ironwood_Ingot, Fiery_Ingot,
+        Knightmetal_Ingot, Zirconium_Ingot, Thorium_232_Ingot, Californium_Ingot, Calcium_Ingot, BArTiMaEuSNeK_Ingot,
+        Ruthenium_Ingot, Rhodium_Ingot, Rhodium_Plated_Palladium_Ingot, Ruridit_Ingot,
+        High_Durability_Compound_Steel_Ingot, Ademic_Steel_Ingot, Fluorophlogopite_Ingot,
+        Tantalum_Hafnium_Carbide_Ingot, Magnesia_Ingot, Atomic_Separation_Catalyst_Ingot,
+        Extremely_Unstable_Naquadah_Ingot, Zn_Th_Alloy_Ingot, Zircaloy_4_Ingot, Zircaloy_2_Ingot, Incoloy_903_Ingot,
+        Adamantium_Alloy_Ingot, MAR_M200_Steel_Ingot, MAR_Ce_M200_Steel_Ingot, Lithium_Chloride_Ingot, Signalium_Ingot,
+        Lumiium_Ingot, Artherium_Sn_Ingot, Tanmolyium_Beta_C_Ingot, Dalisenite_Ingot, Hikarium_Ingot, Tairitsu_Ingot,
+        Precious_Metals_Alloy_Ingot, Enriched_Naquadah_Alloy_Ingot, Metastable_Oganesson_Ingot, Shirabon_Ingot,
+        Hafnium_Ingot, Permalloy_Ingot, Mu_metal_Ingot, Silicon_Nitride_Ingot, Coke_Oven_Brick, Quartz_Ingot,
+        Lithium_Ingot, Beryllium_Ingot, Carbon_Ingot, Magnesium_Ingot, Aluminium_Ingot, Raw_Silicon_Ingot,
+        Potassium_Ingot, Scandium_Ingot, Titanium_Ingot, Vanadium_Ingot, Chrome_Ingot, Manganese_Ingot, Cobalt_Ingot,
+        Nickel_Ingot, Copper_Ingot, Zinc_Ingot, Gallium_Ingot, Arsenic_Ingot, Rubidium_Ingot, Strontium_Ingot,
+        Yttrium_Ingot, Niobium_Ingot, Molybdenum_Ingot, Palladium_Ingot, Silver_Ingot, Indium_Ingot, Tin_Ingot,
+        Antimony_Ingot, Tellurium_Ingot, Caesium_Ingot, Barium_Ingot, Lanthanum_Ingot, Cerium_Ingot, Praseodymium_Ingot,
+        Neodymium_Ingot, Promethium_Ingot, Samarium_Ingot, Europium_Ingot, Gadolinium_Ingot, Terbium_Ingot,
+        Dysprosium_Ingot, Holmium_Ingot, Erbium_Ingot, Thulium_Ingot, Ytterbium_Ingot, Lutetium_Ingot, Tantalum_Ingot,
+        Tungsten_Ingot, Osmium_Ingot, Iridium_Ingot, Platinum_Ingot, Lead_Ingot, Bismuth_Ingot, Thorium_Ingot,
+        Uranium_235_Ingot, Uranium_238_Ingot, Plutonium_239_Ingot, Plutonium_241_Ingot, Americium_Ingot,
+        Purified_Tengam_Ingot, Attuned_Tengam_Ingot, Hellish_Metal_Ingot, Neutronium_Ingot,
+        Superconductor_Base_UIV_Ingot, Netherite_Ingot, Superconductor_Base_UMV_Ingot, Universium_Ingot, Eternity_Ingot,
+        Magmatter_Ingot, Six_Phased_Copper_Ingot, Mellion_Ingot, Creon_Ingot, Proto_Halkonite_Steel_Ingot,
+        Exo_Halkonite_Steel_Ingot, Prismatic_Naquadah_Ingot, Hexanite_Ingot, Shijima_Ingot, Churitsu_Ingot,
+        Bronze_Ingot, Brass_Ingot, Invar_Ingot, Electrum_Ingot, Cast_Iron_Ingot, Steel_Ingot, Stainless_Steel_Ingot,
+        Pig_Iron_Ingot_GT, Red_Alloy_Ingot, Blue_Alloy_Ingot, Cupronickel_Ingot, Nichrome_Ingot, Kanthal_Ingot,
+        Magnalium_Ingot, Soldering_Alloy_Ingot, Battery_Alloy_Ingot, Tungstensteel_Ingot, Osmiridium_Ingot,
+        Sunnarium_Ingot, Adamantium_Ingot, Fluxed_Electrum_Ingot, Enderium_Ingot, Infused_Gold_Ingot, Naquadah_Ingot,
+        Naquadah_Alloy_Ingot, Enriched_Naquadah_Ingot, Naquadria_Ingot, Duranium_Ingot, Tritanium_Ingot, Mithril_Ingot,
+        Astral_Silver_Ingot, Black_Steel_Ingot, Damascus_Steel_Ingot, Shadow_Iron_Ingot, Shadow_Steel_Ingot,
+        Meteoric_Iron_Ingot, Meteoric_Steel_Ingot, Deep_Dark_Iron_Ingot, Cobalt_Brass_Ingot, Ultimet_Ingot,
+        Annealed_Copper_Ingot, Fiery_Steel_Ingot, Red_Steel_Ingot, Blue_Steel_Ingot, Sterling_Silver_Ingot,
+        Rose_Gold_Ingot, Black_Bronze_Ingot, Bismuth_Bronze_Ingot, Magnetic_Iron_Ingot, Magnetic_Steel_Ingot,
+        Magnetic_Neodymium_Ingot, Vanadium_Gallium_Ingot, Yttrium_Barium_Cuprate_Ingot, Niobium_Nitride_Ingot,
+        Niobium_Titanium_Ingot, Chromium_Dioxide_Ingot, Tin_Alloy_Ingot, Dark_Steel_Ingot, Electrical_Steel_Ingot,
+        Energetic_Alloy_Ingot, Vibrant_Alloy_Ingot, Shadow_Metal_Ingot, Conductive_Iron_Ingot, Tungstencarbide_Ingot,
+        Vanadiumsteel_Ingot, HSSG_Ingot, HSSE_Ingot, HSSS_Ingot, Pulsating_Iron_Ingot, Soularium_Ingot,
+        Enderium_Base_Ingot, Redstone_Alloy_Ingot, Ardite_Ingot, Reinforced_Ingot, Galgadorian_Ingot,
+        Enhanced_Galgadorian_Ingot, Manyullyn_Ingot, Mytryl_Ingot, Black_Plutonium_Ingot, Callisto_Ice_Ingot,
+        Ledox_Ingot, Quantium_Ingot, Duralumin_Ingot, Oriharukon_Ingot, Infinity_Catalyst_Ingot, Bedrockium_Ingot,
+        Mysterious_Crystal_Ingot, Magnetic_Samarium_Ingot, Obzinite_Ingot, End_Steel_Ingot, Clay_Compound_Ingot,
+        Crystalline_Alloy_Ingot, Melodic_Alloy_Ingot, Stellar_Alloy_Ingot, Crystalline_Pink_Slime_Ingot,
+        Energetic_Silver_Ingot, Vivid_Alloy_Ingot, Epoxid_Bar, Silicone_Rubber_Bar, Polycaprolactam_PCL_Bar,
+        Polytetrafluoroethylene_PTFE_Bar, Alduorite_Ingot, Rubracium_Ingot, Vulcanite_Ingot, Force_Ingot, Vinteum_Ingot,
+        TPV_Alloy_Ingot, Transcendent_Metal_Ingot, Enriched_Holmium_Ingot,
+        Magnetohydrodynamically_Constrained_Star_Matter_Ingot, White_Dwarf_Matter_Ingot, Black_Dwarf_Matter_Ingot,
+        SpaceTime_Ingot, Polybenzimidazole_PBI_Bar, Fiber_Reinforced_Epoxy_Resin_Bar, Borosilicate_Glass_Bar,
+        Nickel_Zinc_Ferrite_Ingot, Polyphenylene_Sulfide_PPS_Bar, Styrene_Butadiene_Rubber_SBR_Bar, Polystyrene_PS_Bar,
+        Polyvinyl_Chloride_PVC_Bar, Kevlar_Ingot, Nickel_Aluminide_Ingot, Obsidian_Ingot, Deep_Iron_Ingot,
+        Silicon_Solar_Grade_Poly_SI_Ingot, Trinium_Ingot, Polyethylene_PE_Bar, Desh_Ingot, Chrysotile_Ingot,
+        Realgar_Ingot, Vyroxeres_Ingot, Ceruclase_Ingot, Tartarite_Ingot, Orichalcum_Ingot,
+        Superconductor_Base_UEV_Ingot, Draconium_Ingot, Awakened_Draconium_Ingot, Blood_Infused_Iron_Ingot,
+        Ichorium_Ingot, Radox_Polymer_Bar, Gallium_Arsenide_Ingot, Indium_Gallium_Phosphide_Ingot, Flerovium_Ingot,
+        Superconductor_Base_UHV_Ingot, Superconductor_Base_UV_Ingot, Superconductor_Base_MV_Ingot,
+        Superconductor_Base_HV_Ingot, Superconductor_Base_EV_Ingot, Superconductor_Base_IV_Ingot,
+        Superconductor_Base_LuV_Ingot, Superconductor_Base_ZPM_Ingot, Firebrick, Selenium_Ingot, Iodine_Ingot,
+        Rhenium_Ingot, Thallium_Ingot, Germanium_Ingot, Technetium_Ingot, Polonium_Ingot, Radium_Ingot,
+        Protactinium_Ingot, Curium_Ingot, Neptunium_Ingot, Fermium_Ingot, Lithium_7_Ingot, Uranium_232_Ingot,
+        Uranium_233_Ingot, Plutonium_238_Ingot, Advanced_Nitinol_Ingot, Astral_Titanium_Ingot, Celestial_Tungsten_Ingot,
+        Hypogen_Ingot, Chromatic_Glass_Ingot, Black_Metal_Ingot, Ancient_Granite_Ingot, Runite_Ingot, Dragonblood_Ingot,
+        Silicon_Carbide_Ingot, Zirconium_Carbide_Ingot, Tantalum_Carbide_Ingot, Niobium_Carbide_Ingot,
+        Tungsten_Titanium_Carbide_Ingot, Energy_Crystal_Ingot, Blood_Steel_Ingot, Zeron_100_Ingot, Tumbaga_Ingot,
+        Potin_Ingot, Staballoy_Ingot, Tantalloy_60_Ingot, Tantalloy_61_Ingot, Inconel_625_Ingot, Inconel_690_Ingot,
+        Inconel_792_Ingot, Eglin_Steel_Ingot, Maraging_Steel_250_Ingot, Maraging_Steel_300_Ingot,
+        Maraging_Steel_350_Ingot, Watertight_Steel_Ingot, Nitinol_60_Ingot, Stellite_Ingot, Talonite_Ingot,
+        Hastelloy_W_Ingot, Hastelloy_X_Ingot, Hastelloy_C276_Ingot, Hastelloy_N_Ingot, Incoloy_020_Ingot,
+        Incoloy_DS_Ingot, Incoloy_MA956_Ingot, Grisium_Ingot, HG_1223_Ingot, Trinium_Titanium_Alloy_Ingot,
+        Trinium_Naquadah_Alloy_Ingot, Trinium_Naquadah_Carbonite_Ingot, Arceus_Alloy_2B_Ingot, HeLiCoPtEr_Ingot,
+        Lafium_Compound_Ingot, Cinobite_A243_Ingot, Pikyonium_64B_Ingot, Abyssal_Alloy_Ingot, Laurenium_Ingot,
+        Botmium_Ingot, HS188_A_Ingot, Titansteel_Ingot, Arcanite_Ingot, Octiron_Ingot, Babbit_Alloy_Ingot,
+        Black_Titanium_Ingot, Indalloy_140_Ingot, Rhugnor_Ingot, Quantum_Ingot, Thauminite_Ingot, Koboldite_Ingot,
+        Wrapped_Uranium_Ingot, Wrapped_Thorium_Ingot, Wrapped_Plutonium_Ingot, Mixed_Metal_Ingot,
+        Heavy_Duty_Alloy_Ingot_T4, Heavy_Duty_Alloy_Ingot_T5, Heavy_Duty_Alloy_Ingot_T6, Heavy_Duty_Alloy_Ingot_T7,
+        Heavy_Duty_Alloy_Ingot_T8, Lightweight_Alloy_Ingot, Rubber_Bar, Heavy_Duty_Alloy_Ingot_T1,
+        Heavy_Duty_Alloy_Ingot_T2, Heavy_Duty_Alloy_Ingot_T3, Iridium_Alloy_Ingot, Aeon_Steel_Ingot, Queens_Gold_Ingot,
+        Dogbearium_Ingot };
 }

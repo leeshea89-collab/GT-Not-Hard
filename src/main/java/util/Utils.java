@@ -1,10 +1,17 @@
 package util;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidStack;
+
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public final class Utils {
 
@@ -71,5 +78,42 @@ public final class Utils {
         }
         if (list.isEmpty()) return new FluidStack[0];
         return list.toArray(new FluidStack[0]);
+    }
+
+    /**
+     * Return a shallow copy of the array where the {@code null} elements are removed.
+     * <p>
+     *
+     * @param array the array
+     * @param <T>   the type of elements
+     * @return the array copy where the {@code null} elements are removed.
+     */
+    @SuppressWarnings("unchecked")
+    public static <T> T[] toNonNullArray(@Nullable T @NotNull [] array, Class<T> tClass) {
+        return Arrays.stream(array)
+            .filter(Objects::nonNull)
+            .toArray(size -> (T[]) Array.newInstance(tClass, size));
+    }
+
+    /**
+     * Return a shallow copy of the array where the {@code null} elements are removed.
+     *
+     * @param array the array
+     * @return the array copy where the {@code null} elements are removed.
+     */
+    @Contract("null -> null; !null -> !null")
+    public static ItemStack[] toNonNullItemStackArray(@Nullable ItemStack @Nullable [] array) {
+        return array != null ? toNonNullArray(array, ItemStack.class) : null;
+    }
+
+    /**
+     * Return a shallow copy of the array where the {@code null} elements are removed.
+     *
+     * @param array the array
+     * @return the array copy where the {@code null} elements are removed.
+     */
+    @Contract("null -> null; !null -> !null")
+    public static FluidStack[] toNonNullFluidStackArray(@Nullable FluidStack @Nullable [] array) {
+        return array != null ? toNonNullArray(array, FluidStack.class) : null;
     }
 }
