@@ -808,6 +808,27 @@ public class Singularity extends MTEExtendedPowerMultiBlockBase<Singularity> imp
         }
         // Singularity of Pachinko
         else {
+            // Planet display items in the controller slot now select surface blocks.
+            // Original machine-item Pachinko tables below are left unchanged.
+            if (slot != null && slot.getItem() instanceof ItemDimensionDisplay) {
+                String selectedPlanet = ItemDimensionDisplay.getDimension(slot);
+                ItemStack[] surfaceDrops = Recipes.SingularityRecipes_Pachinko.PlanetSurfacePachinko
+                    .get(selectedPlanet);
+                if (surfaceDrops == null || surfaceDrops.length == 0) {
+                    return CheckRecipeResultRegistry.NO_RECIPE;
+                }
+                Random surfaceRandom = new Random();
+                for (int pick = 0; pick < 4; pick++) {
+                    ItemStack selectedBlock = surfaceDrops[surfaceRandom.nextInt(surfaceDrops.length)];
+                    for (int n = 0; n < 64; n++) {
+                        ItemStack output = selectedBlock.copy();
+                        output.stackSize = getMaxParallel();
+                        addOutputAtomic(output);
+                    }
+                }
+                return CheckRecipeResultRegistry.SUCCESSFUL;
+            }
+
             ItemStack[] PachinkoRecipes = switch (getControllerSlot().getItemDamage()) {
 
                 // Steam Tier: "Bronze Hull" - 1
