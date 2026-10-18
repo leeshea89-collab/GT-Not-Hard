@@ -25,6 +25,8 @@ import javax.annotation.Nonnull;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.init.Blocks;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumChatFormatting;
@@ -808,6 +810,35 @@ public class Singularity extends MTEExtendedPowerMultiBlockBase<Singularity> imp
         }
         // Singularity of Pachinko
         else {
+            // Planet display items in the controller slot now select surface blocks.
+            // Original machine-item Pachinko tables below are left unchanged.
+            // Either use a dimension display directly in the controller, or
+            // keep it in the existing dimension slot and use cobblestone as
+            // the dedicated surface-mining input. The latter preserves the
+            // same planet-selection workflow as the other mining modes.
+            if (slot != null && (slot.getItem() instanceof ItemDimensionDisplay
+                || (slot.getItem() == Item.getItemFromBlock(Blocks.cobblestone)
+                    && !"None".equals(dim)))) {
+                String selectedPlanet = slot.getItem() instanceof ItemDimensionDisplay
+                    ? ItemDimensionDisplay.getDimension(slot)
+                    : dim;
+                ItemStack[] surfaceDrops = Recipes.SingularityRecipes_Pachinko.PlanetSurfacePachinko
+                    .get(selectedPlanet);
+                if (surfaceDrops == null || surfaceDrops.length == 0) {
+                    return CheckRecipeResultRegistry.NO_RECIPE;
+                }
+                Random surfaceRandom = new Random();
+                for (int pick = 0; pick < 4; pick++) {
+                    ItemStack selectedBlock = surfaceDrops[surfaceRandom.nextInt(surfaceDrops.length)];
+                    for (int n = 0; n < 64; n++) {
+                        ItemStack output = selectedBlock.copy();
+                        output.stackSize = getMaxParallel();
+                        addOutputAtomic(output);
+                    }
+                }
+                return CheckRecipeResultRegistry.SUCCESSFUL;
+            }
+
             ItemStack[] PachinkoRecipes = switch (getControllerSlot().getItemDamage()) {
 
                 // Steam Tier: "Bronze Hull" - 1
