@@ -13,110 +13,36 @@ import gregtech.api.enums.GTValues;
 import gregtech.api.recipe.RecipeMap;
 import gregtech.api.recipe.RecipeMapBackend;
 import gregtech.api.recipe.RecipeMapBuilder;
+import util.SingularityNEI;
 import util.RecipesFrontend.OneToManyItemsFrontend_Large;
 
 public class FakeSingularityIngotRecipes {
 
     public static int NEI_ItemOutput_Size = 90;
 
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T0 = RecipeMapBuilder
-        .of("Singularity of T0 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
+    // One NEI tab for the whole mode; each planet is a page (see SingularityNEI).
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes = RecipeMapBuilder
+        .of("Singularity of Void Ingot")
+        .maxIO(1, 90, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
+        .neiHandlerInfo(
+            builder -> builder.setHeight(255)
+                .setDisplayStack(SingularityNEI.icon("Ingot")))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
 
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T1 = RecipeMapBuilder
-        .of("Singularity of T1 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T2 = RecipeMapBuilder
-        .of("Singularity of T2 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T3 = RecipeMapBuilder
-        .of("Singularity of T3 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T4 = RecipeMapBuilder
-        .of("Singularity of T4 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T5 = RecipeMapBuilder
-        .of("Singularity of T5 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T6 = RecipeMapBuilder
-        .of("Singularity of T6 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T7 = RecipeMapBuilder
-        .of("Singularity of T7 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T8 = RecipeMapBuilder
-        .of("Singularity of T8 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T9 = RecipeMapBuilder
-        .of("Singularity of T9 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T10 = RecipeMapBuilder
-        .of("Singularity of T10 Ingot")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T0 = addFakeVoidIngotRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T1 = addFakeVoidIngotRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T2 = addFakeVoidIngotRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T3 = addFakeVoidIngotRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T4 = addFakeVoidIngotRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T5 = addFakeVoidIngotRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T6 = addFakeVoidIngotRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T7 = addFakeVoidIngotRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T8 = addFakeVoidIngotRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T9 = addFakeVoidIngotRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidIngotRecipes_T10 = addFakeVoidIngotRecipes;
 
     public static void addFakeVoidIngotRecipes_T0() {
         // T0 - Overworld - Ow
@@ -152,7 +78,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Overworld (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T0);
         }
@@ -181,7 +108,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Nether (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T0);
         }
@@ -217,7 +145,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Twilight Forest (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T0);
         }
@@ -242,7 +171,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: The End (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T0);
         }
@@ -273,7 +203,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: End Asteroids (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T0);
         }
@@ -308,7 +239,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Toxic Everglades (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T0);
         }
@@ -336,7 +268,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Moon (T1)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T1);
         }
@@ -366,7 +299,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Deimos (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T2);
         }
@@ -397,7 +331,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Mars (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T2);
         }
@@ -427,7 +362,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Phobos (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T2);
         }
@@ -457,7 +393,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Asteroids (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T3);
         }
@@ -484,7 +421,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Callisto (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T3);
         }
@@ -515,7 +453,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Ceres (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T3);
         }
@@ -537,7 +476,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Europa (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T3);
         }
@@ -566,7 +506,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Ganymede (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T3);
         }
@@ -593,7 +534,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Ross 128b (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T3);
         }
@@ -624,7 +566,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Io (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T4);
         }
@@ -653,7 +596,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Mercury (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T4);
         }
@@ -685,7 +629,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Venus (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T4);
         }
@@ -714,7 +659,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Enceladus (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T5);
         }
@@ -742,7 +688,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Miranda (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T5);
         }
@@ -769,7 +716,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Oberon (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T5);
         }
@@ -801,7 +749,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Titan (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T5);
         }
@@ -826,7 +775,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Ross 128ba (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T5);
         }
@@ -858,7 +808,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Proteus (T6)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T6);
         }
@@ -887,7 +838,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Triton (T6)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T6);
         }
@@ -919,7 +871,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Haumea (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T7);
         }
@@ -949,7 +902,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Kuiper Belt (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T7);
         }
@@ -980,7 +934,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Makemake (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T7);
         }
@@ -1013,7 +968,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Pluto (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T7);
         }
@@ -1041,7 +997,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Barnard C (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T8);
         }
@@ -1072,7 +1029,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Barnard E (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T8);
         }
@@ -1106,7 +1064,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Barnard F (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T8);
         }
@@ -1136,7 +1095,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Centauri Bb (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T8);
         }
@@ -1167,7 +1127,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Tau Ceti E (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T8);
         }
@@ -1202,7 +1163,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Vega B (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T8);
         }
@@ -1234,7 +1196,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Anubis (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T9);
         }
@@ -1265,7 +1228,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Horus (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T9);
         }
@@ -1293,7 +1257,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Maahes (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T9);
         }
@@ -1323,7 +1288,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Mehen Belt (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T9);
         }
@@ -1352,7 +1318,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Neper (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T9);
         }
@@ -1381,7 +1348,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Seth (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T9);
         }
@@ -1399,7 +1367,8 @@ public class FakeSingularityIngotRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ingot Mode")
+                .setNEIDesc("Void Ingot Mode: Deep Dark (T10)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidIngotRecipes_T10);
         }

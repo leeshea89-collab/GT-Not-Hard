@@ -13,110 +13,36 @@ import gregtech.api.enums.GTValues;
 import gregtech.api.recipe.RecipeMap;
 import gregtech.api.recipe.RecipeMapBackend;
 import gregtech.api.recipe.RecipeMapBuilder;
+import util.SingularityNEI;
 import util.RecipesFrontend.OneToManyItemsFrontend_Large;
 
 public class FakeSingularityDustRecipes {
 
     public static int NEI_ItemOutput_Size = 90;
 
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T0 = RecipeMapBuilder
-        .of("Singularity of T0 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
+    // One NEI tab for the whole mode; each planet is a page (see SingularityNEI).
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes = RecipeMapBuilder
+        .of("Singularity of Void Dust")
+        .maxIO(1, 90, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
+        .neiHandlerInfo(
+            builder -> builder.setHeight(255)
+                .setDisplayStack(SingularityNEI.icon("Dust")))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
 
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T1 = RecipeMapBuilder
-        .of("Singularity of T1 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T2 = RecipeMapBuilder
-        .of("Singularity of T2 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T3 = RecipeMapBuilder
-        .of("Singularity of T3 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T4 = RecipeMapBuilder
-        .of("Singularity of T4 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T5 = RecipeMapBuilder
-        .of("Singularity of T5 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T6 = RecipeMapBuilder
-        .of("Singularity of T6 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T7 = RecipeMapBuilder
-        .of("Singularity of T7 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T8 = RecipeMapBuilder
-        .of("Singularity of T8 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T9 = RecipeMapBuilder
-        .of("Singularity of T9 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T10 = RecipeMapBuilder
-        .of("Singularity of T10 Dust")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T0 = addFakeVoidDustRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T1 = addFakeVoidDustRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T2 = addFakeVoidDustRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T3 = addFakeVoidDustRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T4 = addFakeVoidDustRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T5 = addFakeVoidDustRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T6 = addFakeVoidDustRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T7 = addFakeVoidDustRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T8 = addFakeVoidDustRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T9 = addFakeVoidDustRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidDustRecipes_T10 = addFakeVoidDustRecipes;
 
     public static void addFakeVoidDustRecipes_T0() {
         // T0 - Overworld - Ow
@@ -152,7 +78,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Overworld (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T0);
         }
@@ -181,7 +108,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Nether (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T0);
         }
@@ -217,7 +145,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Twilight Forest (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T0);
         }
@@ -242,7 +171,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: The End (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T0);
         }
@@ -273,7 +203,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: End Asteroids (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T0);
         }
@@ -308,7 +239,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Toxic Everglades (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T0);
         }
@@ -334,7 +266,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Moon (T1)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T1);
         }
@@ -364,7 +297,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Deimos (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T2);
         }
@@ -393,7 +327,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Mars (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T2);
         }
@@ -423,7 +358,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Phobos (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T2);
         }
@@ -454,7 +390,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Asteroids (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T3);
         }
@@ -481,7 +418,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Callisto (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T3);
         }
@@ -512,7 +450,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Ceres (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T3);
         }
@@ -534,7 +473,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Europa (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T3);
         }
@@ -563,7 +503,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Ganymede (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T3);
         }
@@ -590,7 +531,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Ross 128b (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T3);
         }
@@ -621,7 +563,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Io (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T4);
         }
@@ -650,7 +593,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Mercury (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T4);
         }
@@ -682,7 +626,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Venus (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T4);
         }
@@ -711,7 +656,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Enceladus (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T5);
         }
@@ -739,7 +685,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Miranda (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T5);
         }
@@ -766,7 +713,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Oberon (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T5);
         }
@@ -798,7 +746,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Titan (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T5);
         }
@@ -823,7 +772,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Ross 128ba (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T5);
         }
@@ -855,7 +805,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Proteus (T6)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T6);
         }
@@ -884,7 +835,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Triton (T6)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T6);
         }
@@ -916,7 +868,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Haumea (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T7);
         }
@@ -949,7 +902,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Kuiper Belt (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T7);
         }
@@ -980,7 +934,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Makemake (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T7);
         }
@@ -1013,7 +968,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Pluto (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T7);
         }
@@ -1041,7 +997,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Barnard C (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T8);
         }
@@ -1072,7 +1029,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Barnard E (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T8);
         }
@@ -1106,7 +1064,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Barnard F (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T8);
         }
@@ -1136,7 +1095,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Centauri Bb (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T8);
         }
@@ -1167,7 +1127,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Tau Ceti E (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T8);
         }
@@ -1202,7 +1163,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Vega B (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T8);
         }
@@ -1234,7 +1196,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Anubis (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T9);
         }
@@ -1265,7 +1228,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Horus (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T9);
         }
@@ -1293,7 +1257,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Maahes (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T9);
         }
@@ -1323,7 +1288,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Mehen Belt (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T9);
         }
@@ -1352,7 +1318,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Neper (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T9);
         }
@@ -1379,7 +1346,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Seth (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T9);
         }
@@ -1395,7 +1363,8 @@ public class FakeSingularityDustRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Dust Mode")
+                .setNEIDesc("Void Dust Mode: Deep Dark (T10)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidDustRecipes_T10);
         }

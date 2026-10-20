@@ -13,110 +13,36 @@ import gregtech.api.enums.GTValues;
 import gregtech.api.recipe.RecipeMap;
 import gregtech.api.recipe.RecipeMapBackend;
 import gregtech.api.recipe.RecipeMapBuilder;
+import util.SingularityNEI;
 import util.RecipesFrontend.OneToManyItemsFrontend_Large;
 
 public class FakeSingularityOreRecipes {
 
     public static int NEI_ItemOutput_Size = 90;
 
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T0 = RecipeMapBuilder
-        .of("Singularity of T0 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
+    // One NEI tab for the whole mode; each planet is a page (see SingularityNEI).
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes = RecipeMapBuilder
+        .of("Singularity of Void Ore")
+        .maxIO(1, 90, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
+        .neiHandlerInfo(
+            builder -> builder.setHeight(255)
+                .setDisplayStack(SingularityNEI.icon("Ore")))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
 
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T1 = RecipeMapBuilder
-        .of("Singularity of T1 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T2 = RecipeMapBuilder
-        .of("Singularity of T2 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T3 = RecipeMapBuilder
-        .of("Singularity of T3 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T4 = RecipeMapBuilder
-        .of("Singularity of T4 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T5 = RecipeMapBuilder
-        .of("Singularity of T5 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T6 = RecipeMapBuilder
-        .of("Singularity of T6 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T7 = RecipeMapBuilder
-        .of("Singularity of T7 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T8 = RecipeMapBuilder
-        .of("Singularity of T8 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T9 = RecipeMapBuilder
-        .of("Singularity of T9 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T10 = RecipeMapBuilder
-        .of("Singularity of T10 Ore")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(255))
-        .frontend(OneToManyItemsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T0 = addFakeVoidOreRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T1 = addFakeVoidOreRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T2 = addFakeVoidOreRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T3 = addFakeVoidOreRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T4 = addFakeVoidOreRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T5 = addFakeVoidOreRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T6 = addFakeVoidOreRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T7 = addFakeVoidOreRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T8 = addFakeVoidOreRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T9 = addFakeVoidOreRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidOreRecipes_T10 = addFakeVoidOreRecipes;
 
     public static void addFakeVoidOreRecipes_T0() {
         // T0 - Overworld - Ow
@@ -153,7 +79,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Overworld (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T0);
         }
@@ -182,7 +109,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Nether (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T0);
         }
@@ -218,7 +146,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Twilight Forest (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T0);
         }
@@ -243,7 +172,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: The End (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T0);
         }
@@ -274,7 +204,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: End Asteroids (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T0);
         }
@@ -309,7 +240,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Toxic Everglades (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T0);
         }
@@ -335,7 +267,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Moon (T1)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T1);
         }
@@ -365,7 +298,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Deimos (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T2);
         }
@@ -394,7 +328,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Mars (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T2);
         }
@@ -424,7 +359,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Phobos (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T2);
         }
@@ -457,7 +393,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Asteroids (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T3);
         }
@@ -484,7 +421,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Callisto (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T3);
         }
@@ -513,7 +451,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Ceres (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T3);
         }
@@ -535,7 +474,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Europa (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T3);
         }
@@ -564,7 +504,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Ganymede (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T3);
         }
@@ -591,7 +532,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Ross 128b (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T3);
         }
@@ -622,7 +564,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Io (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T4);
         }
@@ -651,7 +594,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Mercury (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T4);
         }
@@ -681,7 +625,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Venus (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T4);
         }
@@ -710,7 +655,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Enceladus (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T5);
         }
@@ -738,7 +684,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Miranda (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T5);
         }
@@ -765,7 +712,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Oberon (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T5);
         }
@@ -795,7 +743,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Titan (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T5);
         }
@@ -820,7 +769,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Ross 128ba (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T5);
         }
@@ -852,7 +802,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Proteus (T6)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T6);
         }
@@ -881,7 +832,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Triton (T6)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T6);
         }
@@ -913,7 +865,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Haumea (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T7);
         }
@@ -948,7 +901,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Kuiper Belt (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T7);
         }
@@ -979,7 +933,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Makemake (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T7);
         }
@@ -1010,7 +965,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Pluto (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T7);
         }
@@ -1039,7 +995,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Barnard C (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T8);
         }
@@ -1070,7 +1027,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Barnard E (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T8);
         }
@@ -1104,7 +1062,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Barnard F (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T8);
         }
@@ -1134,7 +1093,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Centauri Bb (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T8);
         }
@@ -1166,7 +1126,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Tau Ceti E (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T8);
         }
@@ -1199,7 +1160,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Vega B (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T8);
         }
@@ -1231,7 +1193,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Anubis (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T9);
         }
@@ -1260,7 +1223,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Horus (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T9);
         }
@@ -1288,7 +1252,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Maahes (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T9);
         }
@@ -1318,7 +1283,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Mehen Belt (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T9);
         }
@@ -1345,7 +1311,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Neper (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T9);
         }
@@ -1372,7 +1339,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Seth (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T9);
         }
@@ -1388,7 +1356,8 @@ public class FakeSingularityOreRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Ore Mode")
+                .setNEIDesc("Void Ore Mode: Deep Dark (T10)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidOreRecipes_T10);
         }

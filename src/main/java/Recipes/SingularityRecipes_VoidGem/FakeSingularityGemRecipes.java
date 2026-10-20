@@ -13,111 +13,36 @@ import gregtech.api.enums.GTValues;
 import gregtech.api.recipe.RecipeMap;
 import gregtech.api.recipe.RecipeMapBackend;
 import gregtech.api.recipe.RecipeMapBuilder;
+import util.SingularityNEI;
 import util.RecipesFrontend.OneToManyItemsFrontend_Large;
-import util.RecipesFrontend.OneToManyItemsFrontend_Small;
 
 public class FakeSingularityGemRecipes {
 
     public static int NEI_ItemOutput_Size = 27;
 
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T0 = RecipeMapBuilder
-        .of("Singularity of T0 Gem")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(165))
-        .frontend(OneToManyItemsFrontend_Small::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T1 = RecipeMapBuilder
-        .of("Singularity of T1 Gem")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(165))
-        .frontend(OneToManyItemsFrontend_Small::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T2 = RecipeMapBuilder
-        .of("Singularity of T2 Gem")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(165))
-        .frontend(OneToManyItemsFrontend_Small::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T3 = RecipeMapBuilder
-        .of("Singularity of T3 Gem")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(165))
-        .frontend(OneToManyItemsFrontend_Small::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T4 = RecipeMapBuilder
-        .of("Singularity of T4 Gem")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(165))
-        .frontend(OneToManyItemsFrontend_Small::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T5 = RecipeMapBuilder
-        .of("Singularity of T5 Gem")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(165))
-        .frontend(OneToManyItemsFrontend_Small::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T6 = RecipeMapBuilder
-        .of("Singularity of T6 Gem")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(165))
-        .frontend(OneToManyItemsFrontend_Small::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T7 = RecipeMapBuilder
-        .of("Singularity of T7 Gem")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(165))
-        .frontend(OneToManyItemsFrontend_Small::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T8 = RecipeMapBuilder
-        .of("Singularity of T8 Gem")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(165))
-        .frontend(OneToManyItemsFrontend_Small::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T9 = RecipeMapBuilder
-        .of("Singularity of T9 Gem")
-        .maxIO(1, NEI_ItemOutput_Size, 0, 0)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(165))
-        .frontend(OneToManyItemsFrontend_Small::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T10 = RecipeMapBuilder
-        .of("Singularity of T10 Gem")
+    // One NEI tab for the whole mode; each planet is a page (see SingularityNEI).
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes = RecipeMapBuilder
+        .of("Singularity of Void Gem")
         .maxIO(1, 90, 0, 0)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(
+            builder -> builder.setHeight(335)
+                .setDisplayStack(SingularityNEI.icon("Gem")))
         .frontend(OneToManyItemsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
+
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T0 = addFakeVoidGemRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T1 = addFakeVoidGemRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T2 = addFakeVoidGemRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T3 = addFakeVoidGemRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T4 = addFakeVoidGemRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T5 = addFakeVoidGemRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T6 = addFakeVoidGemRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T7 = addFakeVoidGemRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T8 = addFakeVoidGemRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T9 = addFakeVoidGemRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidGemRecipes_T10 = addFakeVoidGemRecipes;
 
     public static void addFakeVoidGemRecipes_T0() {
         // T0 - Overworld - Ow
@@ -143,7 +68,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Overworld (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T0);
         }
@@ -168,7 +94,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Nether (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T0);
         }
@@ -197,7 +124,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Twilight Forest (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T0);
         }
@@ -214,7 +142,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: The End (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T0);
         }
@@ -236,7 +165,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: End Asteroids (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T0);
         }
@@ -258,7 +188,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Toxic Everglades (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T0);
         }
@@ -278,7 +209,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Moon (T1)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T1);
         }
@@ -303,7 +235,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Deimos (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T2);
         }
@@ -323,7 +256,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Mars (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T2);
         }
@@ -346,7 +280,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Phobos (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T2);
         }
@@ -369,7 +304,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Asteroids (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T3);
         }
@@ -392,7 +328,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Callisto (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T3);
         }
@@ -414,7 +351,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Ceres (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T3);
         }
@@ -431,7 +369,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Europa (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T3);
         }
@@ -454,7 +393,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Ganymede (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T3);
         }
@@ -478,7 +418,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Ross 128b (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T3);
         }
@@ -505,7 +446,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Io (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T4);
         }
@@ -529,7 +471,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Mercury (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T4);
         }
@@ -552,7 +495,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Venus (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T4);
         }
@@ -577,7 +521,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Enceladus (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T5);
         }
@@ -601,7 +546,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Miranda (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T5);
         }
@@ -623,7 +569,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Oberon (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T5);
         }
@@ -647,7 +594,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Titan (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T5);
         }
@@ -669,7 +617,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Ross 128ba (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T5);
         }
@@ -693,7 +642,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Proteus (T6)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T6);
         }
@@ -714,7 +664,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Triton (T6)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T6);
         }
@@ -738,7 +689,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Haumea (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T7);
         }
@@ -760,7 +712,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Kuiper Belt (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T7);
         }
@@ -782,7 +735,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Makemake (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T7);
         }
@@ -804,7 +758,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Pluto (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T7);
         }
@@ -828,7 +783,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Barnard C (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T8);
         }
@@ -849,7 +805,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Barnard E (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T8);
         }
@@ -872,7 +829,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Barnard F (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T8);
         }
@@ -897,7 +855,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Centauri Bb (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T8);
         }
@@ -922,7 +881,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Tau Ceti E (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T8);
         }
@@ -943,7 +903,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Vega B (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T8);
         }
@@ -967,7 +928,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Anubis (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T9);
         }
@@ -995,7 +957,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Horus (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T9);
         }
@@ -1015,7 +978,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Maahes (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T9);
         }
@@ -1041,7 +1005,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Mehen Belt (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T9);
         }
@@ -1064,7 +1029,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Neper (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T9);
         }
@@ -1085,7 +1051,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Seth (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T9);
         }
@@ -1101,7 +1068,8 @@ public class FakeSingularityGemRecipes {
                 .itemOutputs(tempItemStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Gem Mode")
+                .setNEIDesc("Void Gem Mode: Deep Dark (T10)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidGemRecipes_T10);
         }

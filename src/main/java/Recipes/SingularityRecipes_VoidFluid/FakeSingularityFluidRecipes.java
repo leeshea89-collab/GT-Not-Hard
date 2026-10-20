@@ -12,101 +12,35 @@ import gregtech.api.enums.GTValues;
 import gregtech.api.recipe.RecipeMap;
 import gregtech.api.recipe.RecipeMapBackend;
 import gregtech.api.recipe.RecipeMapBuilder;
+import util.SingularityNEI;
 import util.RecipesFrontend.OneToManyFluidsFrontend_Large;
 
 public class FakeSingularityFluidRecipes {
 
     public static int NEI_ItemOutput_Size = 90;
 
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T0 = RecipeMapBuilder
-        .of("Singularity of T0 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
+    // One NEI tab for the whole mode; each planet is a page (see SingularityNEI).
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes = RecipeMapBuilder
+        .of("Singularity of Void Fluid")
+        .maxIO(1, 0, 0, 90)
         .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
+        .neiHandlerInfo(
+            builder -> builder.setHeight(335)
+                .setDisplayStack(SingularityNEI.icon("Fluid")))
         .frontend(OneToManyFluidsFrontend_Large::new)
         .neiTransferRect(81, 27, 14, 16)
         .build();
 
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T1 = RecipeMapBuilder
-        .of("Singularity of T1 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
-        .frontend(OneToManyFluidsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T2 = RecipeMapBuilder
-        .of("Singularity of T2 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
-        .frontend(OneToManyFluidsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T3 = RecipeMapBuilder
-        .of("Singularity of T3 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
-        .frontend(OneToManyFluidsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T4 = RecipeMapBuilder
-        .of("Singularity of T4 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
-        .frontend(OneToManyFluidsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T5 = RecipeMapBuilder
-        .of("Singularity of T5 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
-        .frontend(OneToManyFluidsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T6 = RecipeMapBuilder
-        .of("Singularity of T6 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
-        .frontend(OneToManyFluidsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T7 = RecipeMapBuilder
-        .of("Singularity of T7 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
-        .frontend(OneToManyFluidsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T8 = RecipeMapBuilder
-        .of("Singularity of T8 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
-        .frontend(OneToManyFluidsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
-
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T9 = RecipeMapBuilder
-        .of("Singularity of T9 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
-        .frontend(OneToManyFluidsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T0 = addFakeVoidFluidRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T1 = addFakeVoidFluidRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T2 = addFakeVoidFluidRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T3 = addFakeVoidFluidRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T4 = addFakeVoidFluidRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T5 = addFakeVoidFluidRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T6 = addFakeVoidFluidRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T7 = addFakeVoidFluidRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T8 = addFakeVoidFluidRecipes;
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T9 = addFakeVoidFluidRecipes;
 
     public static void addFakeVoidFluidRecipes_T0() {
         // T0 - Overworld - Ow
@@ -152,7 +86,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Overworld (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T0);
         }
@@ -190,7 +125,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Nether (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T0);
         }
@@ -242,7 +178,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Twilight Forest (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T0);
         }
@@ -271,7 +208,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: The End (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T0);
         }
@@ -306,7 +244,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: End Asteroids (T0)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T0);
         }
@@ -332,7 +271,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Moon (T1)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T1);
         }
@@ -368,7 +308,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Deimos (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T2);
         }
@@ -412,7 +353,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Mars (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T2);
         }
@@ -448,7 +390,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Phobos (T2)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T2);
         }
@@ -479,7 +422,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Asteroids (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T3);
         }
@@ -514,7 +458,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Callisto (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T3);
         }
@@ -552,7 +497,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Ceres (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T3);
         }
@@ -571,7 +517,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Europa (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T3);
         }
@@ -609,7 +556,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Ganymede (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T3);
         }
@@ -634,7 +582,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Ross 128b (T3)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T3);
         }
@@ -678,7 +627,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Io (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T4);
         }
@@ -717,7 +667,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Mercury (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T4);
         }
@@ -758,7 +709,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Venus (T4)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T4);
         }
@@ -796,7 +748,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Enceladus (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T5);
         }
@@ -827,7 +780,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Miranda (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T5);
         }
@@ -860,7 +814,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Oberon (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T5);
         }
@@ -900,7 +855,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Titan (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T5);
         }
@@ -924,7 +880,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Ross 128ba (T5)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T5);
         }
@@ -967,7 +924,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Proteus (T6)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T6);
         }
@@ -1004,7 +962,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Triton (T6)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T6);
         }
@@ -1043,7 +1002,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Haumea (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T7);
         }
@@ -1085,7 +1045,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Makemake (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T7);
         }
@@ -1129,7 +1090,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Pluto (T7)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T7);
         }
@@ -1158,7 +1120,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Barnard C (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T8);
         }
@@ -1196,7 +1159,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Barnard E (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T8);
         }
@@ -1239,7 +1203,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Barnard F (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T8);
         }
@@ -1269,7 +1234,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Centauri Bb (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T8);
         }
@@ -1301,7 +1267,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Tau Ceti E (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T8);
         }
@@ -1340,7 +1307,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Vega B (T8)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T8);
         }
@@ -1369,7 +1337,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Anubis (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T9);
         }
@@ -1414,7 +1383,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Horus (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T9);
         }
@@ -1439,7 +1409,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Maahes (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T9);
         }
@@ -1474,7 +1445,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Mehen Belt (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T9);
         }
@@ -1500,7 +1472,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Neper (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T9);
         }
@@ -1527,7 +1500,8 @@ public class FakeSingularityFluidRecipes {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Seth (T9)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T9);
         }

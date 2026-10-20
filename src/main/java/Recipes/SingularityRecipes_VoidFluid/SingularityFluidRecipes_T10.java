@@ -15,8 +15,7 @@ import net.minecraftforge.fluids.FluidStack;
 import gregtech.api.enums.GTValues;
 import gregtech.api.recipe.RecipeMap;
 import gregtech.api.recipe.RecipeMapBackend;
-import gregtech.api.recipe.RecipeMapBuilder;
-import util.RecipesFrontend.OneToManyFluidsFrontend_Large;
+import util.SingularityNEI;
 
 public class SingularityFluidRecipes_T10 {
 
@@ -24,14 +23,8 @@ public class SingularityFluidRecipes_T10 {
 
     public static int NEI_ItemOutput_Size = 90;
 
-    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T10 = RecipeMapBuilder
-        .of("Singularity of T10 Fluid")
-        .maxIO(1, 0, 0, NEI_ItemOutput_Size)
-        .minInputs(1, 0)
-        .neiHandlerInfo(builder -> builder.setHeight(335))
-        .frontend(OneToManyFluidsFrontend_Large::new)
-        .neiTransferRect(81, 27, 14, 16)
-        .build();
+    // Shares the single Void Fluid NEI tab.
+    public static final RecipeMap<RecipeMapBackend> addFakeVoidFluidRecipes_T10 = FakeSingularityFluidRecipes.addFakeVoidFluidRecipes;
 
     public static final FluidStack[] T10_Fluid = new FluidStack[] {
         // NEI Page 1/18
@@ -4684,7 +4677,8 @@ public class SingularityFluidRecipes_T10 {
                 .fluidOutputs(tempFluidStacks)
                 .fake()
                 .duration(3 * SECONDS)
-                .setNEIDesc("Singularity with Void Fluid Mode")
+                .setNEIDesc("Void Fluid Mode: Deep Dark (T10)")
+                .specialValue(SingularityNEI.nextOrder())
                 .eut(0)
                 .addTo(addFakeVoidFluidRecipes_T10);
         }

@@ -1,0 +1,44 @@
+name: Publish Singularity NEI tabs preview
+
+on:
+  push:
+    branches: [singularity-nei-tabs]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    env:
+      TAG: v1.2.5-gtnh2.9.0-rc2-nei-tabs
+      JAR: GT-Not-Hard-1.2.5-GTNH-2.9.0-RC2-NEI-Tabs.jar
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Build JAR
+        run: |
+          chmod +x ./gradlew
+          ./gradlew assemble --no-daemon
+          f=$(find build/libs -maxdepth 1 -name '*.jar' ! -name '*-dev.jar' ! -name '*-sources.jar' | head -1)
+          cp "$f" "$JAR"
+          unzip -l "$JAR" | grep -E 'util/SingularityNEI.class|FakeSingularityIngotRecipes.class'
+      - name: Publish pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete "$TAG" --yes --cleanup-tag -R "$GITHUB_REPOSITORY" || true
+          gh release create "$TAG" "$JAR" -R "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease \
+            --title "GT-Not-Hard for GTNH 2.9.0-RC-2 (Singularity NEI tabs preview)" \
+            --notes "Based on the RC2 preview. Singularity NEI: one tab per void mode (Ore, Ingot, Gem, Dust, Fluid) with an icon each; every planet is a page labelled with its name and tier. Unofficial community build, not endorsed by the original author or GTNH."
+      - name: Copy JAR to test-builds branch
+        run: |
+          mkdir out && cd out && git init -q -b test-builds
+          cp "../$JAR" .
+          git -c user.name=github-actions -c user.email=actions@github.com add .
+          git -c user.name=github-actions -c user.email=actions@github.com commit -qm "$TAG"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/$GITHUB_REPOSITORY" test-builds
